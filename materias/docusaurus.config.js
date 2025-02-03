@@ -15,16 +15,18 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://LeCipher.github.io',
 
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/RepoMaestria',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'GitHub', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'LeCipher', // Usually your GitHub org/user name.
+  projectName: 'RepoMaestria', // Usually your repo name.
+  trailingSlash: false,
+  deploymentBranch: 'gh-pages', // Rama para el despliegue
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -116,7 +118,7 @@ const config = {
             items: [
               {
                 label: 'Análisis de Riesgo',
-                to: '/docs/analisis-de-riesgo/intro',
+                to: '/docs/materia/analisis-de-riesgo/intro',
               },
             ],
           },
