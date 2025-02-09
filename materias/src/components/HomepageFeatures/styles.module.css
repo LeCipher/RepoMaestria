@@ -9,3 +9,9 @@
   height: 200px;
   width: 200px;
 }
+
+.featureCard {
+  padding: 1rem;
+  display: flex;
+  width: calc(33.33% - 2rem); /* Ajuste para 3 tarjetas por fila */
+}

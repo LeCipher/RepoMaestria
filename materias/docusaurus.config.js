@@ -7,7 +7,6 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
@@ -46,17 +45,20 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+          docs: {
+            path: 'docs',
+            remarkPlugins: [remarkMath],
+            rehypePlugins: [rehypeKatex],
+            sidebarPath: './sidebars.js',
+            // Please change this to your repo.
+            // Remove this to remove the "edit this page" links.
+            // editUrl:
+            //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          },
         blog: {
           showReadingTime: true,
+          remarkPlugins: [require('remark-math')],
+          rehypePlugins: [require('rehype-katex')],
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -76,6 +78,15 @@ const config = {
       }),
     ],
   ],
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -90,7 +101,7 @@ const config = {
         items: [
           {to: '/blog', label: 'Blog', position: 'right'},
           {
-            href: 'https://github.com/LuisEAlmeida/RepoMaestria',
+            href: 'https://github.com/LeCipher/RepoMaestria',
             label: 'GitHub',
             position: 'right',
           },
@@ -109,6 +120,11 @@ const config = {
                 type: 'docSidebar',
                 sidebarId: 'analisisDeRiesgosSidebar',
                 label: 'Análisis de Riesgos',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'CriptografiaGICA',
+                label: 'Criptografia - GICA',
               },
             ],
           },
@@ -131,7 +147,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/LuisEAlmeida/RepoMaestria',
+                href: 'https://github.com/LeCipher/RepoMaestria',
               },
             ],
           },
