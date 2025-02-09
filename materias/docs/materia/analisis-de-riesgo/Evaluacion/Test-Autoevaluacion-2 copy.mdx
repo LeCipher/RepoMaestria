@@ -1,0 +1,266 @@
+---
+sidebar_position: 1
+title: Repaso 2
+---
+import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
+
+# Preguntas Generadas
+<InteractiveQuiz
+  question="¿Cuál de los siguientes tipos de riesgo NO se considera en un SGSI si hablamos de riesgo inherente, residual y aceptado?"
+  options={{
+    A: "Riesgo técnico",
+    B: "Riesgo aceptado",
+    C: "Riesgo residual",
+    D: "Riesgo inherente"
+  }}
+  correctAnswer="A"
+  correctExplanation="El 'riesgo técnico' no es un término estándar dentro de la clasificación inherente-residual-aceptado. Estos últimos se refieren a fases o estados del riesgo durante el proceso de gestión."
+  incorrectExplanation="La respuesta correcta es A, ya que el 'riesgo técnico' no se considera una categoría formal en la clasificación de riesgos en un SGSI."
+/>
+
+<InteractiveQuiz
+  question="¿En qué fase de la gestión de riesgos se identifican y documentan las posibles amenazas a los activos?"
+  options={{
+    A: "Valoración de riesgos",
+    B: "Análisis de riesgos",
+    C: "Tratamiento de riesgos",
+    D: "Monitoreo de riesgos"
+  }}
+  correctAnswer="B"
+  correctExplanation="En la fase de 'Análisis de riesgos' se identifican, documentan y evalúan tanto amenazas como vulnerabilidades."
+  incorrectExplanation="La respuesta correcta es B, pues la identificación de amenazas ocurre durante el análisis de riesgos."
+/>
+
+<InteractiveQuiz
+  question="¿Cuál de estos atributos NO pertenece al modelo CIDAT (Confidencialidad, Integridad, Disponibilidad, Autenticidad, Trazabilidad)?"
+  options={{
+    A: "Confidencialidad",
+    B: "Auditoría",
+    C: "Disponibilidad",
+    D: "Integridad"
+  }}
+  correctAnswer="B"
+  correctExplanation="Auditoría no forma parte de CIDAT: las cinco dimensiones son Confidencialidad, Integridad, Disponibilidad, Autenticidad y Trazabilidad."
+  incorrectExplanation="La opción B es la correcta porque 'Auditoría' no es uno de los atributos principales en el modelo CIDAT."
+/>
+
+<InteractiveQuiz
+  question="¿Cuál es la finalidad de analizar las dependencias entre activos en un entorno corporativo?"
+  options={{
+    A: "Reducir el número total de activos",
+    B: "Determinar los roles y responsabilidades del personal",
+    C: "Prever el posible efecto dominó ante la caída de un activo",
+    D: "Clasificar los activos en confidencial, interno o público"
+  }}
+  correctAnswer="C"
+  correctExplanation="El análisis de dependencias ayuda a entender cómo la pérdida de un activo afecta a otros, evitando efectos en cadena no previstos."
+  incorrectExplanation="La respuesta correcta es C, dado que el objetivo principal de estudiar dependencias es evaluar el potencial efecto dominó."
+/>
+
+<InteractiveQuiz
+  question="¿Cuál de las siguientes prácticas ayuda a estimar mejor la probabilidad de ocurrencia de una amenaza si no se dispone de históricos fiables?"
+  options={{
+    A: "Análisis de escenarios y opinión de expertos",
+    B: "Revisar estándares únicamente",
+    C: "Ignorar la probabilidad y enfocarse en el impacto",
+    D: "Realizar una encuesta anónima a proveedores"
+  }}
+  correctAnswer="A"
+  correctExplanation="Cuando no hay datos históricos confiables, se suele recurrir a métodos cualitativos como opinión de expertos y análisis de escenarios."
+  incorrectExplanation="La opción A es correcta porque permite aproximarse a la probabilidad de manera cualitativa y justificada, en ausencia de datos duros."
+/>
+
+<InteractiveQuiz
+  question="¿Qué sucede si el alcance definido para un SGSI es demasiado limitado?"
+  options={{
+    A: "Se cubren todos los activos críticos",
+    B: "Se incrementa el costo de implementación",
+    C: "Podrían quedar activos vitales fuera del análisis de riesgos",
+    D: "No tiene consecuencia, pues el SGSI se ajusta al perímetro definido"
+  }}
+  correctAnswer="C"
+  correctExplanation="Un alcance muy restringido puede hacer que activos cruciales queden excluidos, elevando el riesgo real para la organización."
+  incorrectExplanation="La respuesta correcta es C, ya que definir un alcance inadecuado puede dejar activos críticos sin protección."
+/>
+
+<InteractiveQuiz
+  question="Al hablar de 'riesgo residual', nos referimos al riesgo que..."
+  options={{
+    A: "Permanece tras aplicar los controles de seguridad",
+    B: "Se asume cuando no se instala ningún control",
+    C: "Se reduce a cero con medidas de seguridad exhaustivas",
+    D: "Surge exclusivamente por amenazas internas"
+  }}
+  correctAnswer="A"
+  correctExplanation="El riesgo residual es el que queda después de aplicar los controles, nunca se elimina completamente."
+  incorrectExplanation="La respuesta correcta es A, pues incluso con controles, siempre queda un nivel de riesgo, denominado residual."
+/>
+
+<InteractiveQuiz
+  question="¿Cuál de los siguientes podría considerarse un riesgo con 'impacto alto' en la mayoría de organizaciones?"
+  options={{
+    A: "Fuga de datos confidenciales de clientes",
+    B: "Incidencia menor en una impresora compartida",
+    C: "Sobrecalentamiento de un equipo auxiliar",
+    D: "Fallo en el monitor de un usuario"
+  }}
+  correctAnswer="A"
+  correctExplanation="La fuga de datos de clientes acarrea graves consecuencias legales, económicas y reputacionales, por lo que se califica de alto impacto."
+  incorrectExplanation="La respuesta A es la correcta, ya que el acceso no autorizado o pérdida de datos confidenciales supone un gran riesgo."
+/>
+
+<InteractiveQuiz
+  question="Una forma de clasificar los controles de seguridad es según su finalidad. ¿Cuál de los siguientes pares NO se corresponde con esta clasificación?"
+  options={{
+    A: "Controles preventivos y controles correctivos",
+    B: "Controles directivos y controles desviativos",
+    C: "Controles de detección y controles disuasorios",
+    D: "Controles preventivos y controles de detección"
+  }}
+  correctAnswer="B"
+  correctExplanation="La clasificación de controles no suele incluir el concepto 'desviativos'. Se usan términos como directivos, preventivos, detectivos, correctivos o disuasorios."
+  incorrectExplanation="La opción B es correcta: 'controles desviativos' no es un término habitual, a diferencia de preventivos, detectivos o correctivos."
+/>
+
+<InteractiveQuiz
+  question="¿Qué ocurre si se subestima la probabilidad de una amenaza durante la evaluación de riesgos?"
+  options={{
+    A: "Se incrementa el gasto en controles innecesariamente",
+    B: "Se podría instaurar un plan de concienciación extra",
+    C: "La organización puede adoptar controles insuficientes",
+    D: "Se eleva el riesgo residual intencionadamente"
+  }}
+  correctAnswer="C"
+  correctExplanation="Subestimar la probabilidad hace que la empresa aplique controles menos rigurosos de los necesarios, quedando expuesta."
+  incorrectExplanation="La respuesta C es correcta, ya que una probabilidad mal calculada conduce a aplicar menos controles de los requeridos."
+/>
+
+<InteractiveQuiz
+  question="¿En qué situación se considera que existe un 'riesgo aceptado'?"
+  options={{
+    A: "Cuando la organización implementa controles exhaustivos",
+    B: "Cuando la dirección decide no invertir más recursos para mitigar un riesgo",
+    C: "Cuando el riesgo es desconocido para la organización",
+    D: "Cuando el riesgo se elimina por completo"
+  }}
+  correctAnswer="B"
+  correctExplanation="El 'riesgo aceptado' es aquel que la dirección opta por no mitigar más, asumiendo las posibles consecuencias."
+  incorrectExplanation="La respuesta B es correcta, pues refleja la decisión explícita de no invertir más en reducir un riesgo."
+/>
+
+<InteractiveQuiz
+  question="¿Cuál de los siguientes elementos NO forma parte del proceso de análisis de riesgos?"
+  options={{
+    A: "Identificar las vulnerabilidades de los activos",
+    B: "Calcular el ROI (Retorno de la Inversión) para proyectos de TI",
+    C: "Determinar la probabilidad de materialización de las amenazas",
+    D: "Estimar el posible impacto en caso de incidente"
+  }}
+  correctAnswer="B"
+  correctExplanation="Aunque puede ser deseable analizar el ROI de los controles, no es un paso esencial dentro del 'análisis de riesgos' formal, sino más bien parte de la gestión financiera."
+  incorrectExplanation="La opción B es correcta: el ROI no es un componente obligatorio del análisis de riesgos, aunque sí puede considerarse en el tratamiento de riesgos."
+/>
+
+<InteractiveQuiz
+  question="¿Por qué se considera fundamental la implicación de la alta dirección en la gestión de riesgos?"
+  options={{
+    A: "Porque exigen informes para auditar al personal",
+    B: "Porque son los únicos que conocen las amenazas técnicas",
+    C: "Porque deben aprobar recursos y políticas para mitigar riesgos",
+    D: "Porque son responsables de las auditorías internas"
+  }}
+  correctAnswer="C"
+  correctExplanation="La alta dirección proporciona la autoridad y los recursos necesarios para implantar controles y políticas efectivas."
+  incorrectExplanation="La respuesta C es la correcta, ya que sin su aprobación y respaldo es difícil que la gestión de riesgos sea eficaz."
+/>
+
+<InteractiveQuiz
+  question="¿Qué factor se analiza durante la evaluación de riesgos para priorizar qué amenazas tratar primero?"
+  options={{
+    A: "La accesibilidad del ataque",
+    B: "La relevancia mediática",
+    C: "La combinación de probabilidad e impacto",
+    D: "La posibilidad de delegar la responsabilidad"
+  }}
+  correctAnswer="C"
+  correctExplanation="La priorización se basa en amenazas con mayor probabilidad e impacto, que representan un mayor riesgo."
+  incorrectExplanation="La respuesta C es correcta, pues el eje para priorizar amenazas es su probabilidad e impacto."
+/>
+
+<InteractiveQuiz
+  question="¿Cuál de los siguientes se considera un ejemplo de amenaza interna intencionada?"
+  options={{
+    A: "Fallo de alimentación eléctrica",
+    B: "Sabotaje por parte de un empleado descontento",
+    C: "Phishing masivo a la organización",
+    D: "Incendio en la sala de servidores"
+  }}
+  correctAnswer="B"
+  correctExplanation="El sabotaje interno es un ataque deliberado efectuado por alguien con acceso legítimo a la organización."
+  incorrectExplanation="La opción B es la correcta, ya que describe una acción intencionada llevada a cabo por un insider."
+/>
+
+<InteractiveQuiz
+  question="¿Qué acción describe mejor el concepto de 'transferir un riesgo'?"
+  options={{
+    A: "Aplicar parches de seguridad para mitigarlo",
+    B: "Contratar un seguro que cubra los daños potenciales",
+    C: "Cancelar un proyecto para eliminar el riesgo",
+    D: "Aceptar el riesgo sin tomar más medidas"
+  }}
+  correctAnswer="B"
+  correctExplanation="La transferencia de riesgo consiste en desplazar la consecuencia económica o legal a un tercero, por ejemplo, mediante seguros."
+  incorrectExplanation="La respuesta B es la correcta, pues la transferencia se logra habitualmente con seguros o acuerdos contractuales."
+/>
+
+<InteractiveQuiz
+  question="¿Por qué es importante actualizar periódicamente el análisis de riesgos en un SGSI?"
+  options={{
+    A: "Para cumplir con las ordenanzas locales de urbanismo",
+    B: "Porque las amenazas y vulnerabilidades cambian con el tiempo",
+    C: "Para prescindir de controles de seguridad obsoletos",
+    D: "No es necesario, basta con una evaluación inicial"
+  }}
+  correctAnswer="B"
+  correctExplanation="El entorno de amenazas evoluciona (nuevas vulnerabilidades, cambios en la organización, etc.), por lo que es vital revisar el análisis."
+  incorrectExplanation="La respuesta B es correcta, ya que la gestión de riesgos es un proceso continuo debido a la naturaleza dinámica de los riesgos."
+/>
+
+<InteractiveQuiz
+  question="Un plan de contingencia se redacta principalmente para..."
+  options={{
+    A: "Contrarrestar las amenazas de tipo intencionado",
+    B: "Preparar la respuesta y recuperación ante incidentes",
+    C: "Documentar políticas de recursos humanos",
+    D: "Prohibir el uso de contraseñas débiles"
+  }}
+  correctAnswer="B"
+  correctExplanation="Los planes de contingencia se diseñan para garantizar la recuperación de los servicios y activos tras un incidente."
+  incorrectExplanation="La opción B es la correcta, pues los planes de contingencia se enfocan en la preparación y la respuesta ante eventos disruptivos."
+/>
+
+<InteractiveQuiz
+  question="Si un activo con alta disponibilidad requerida sufre un corte prolongado, ¿qué dimensión de seguridad se ve primordialmente afectada?"
+  options={{
+    A: "Confidencialidad",
+    B: "Integridad",
+    C: "Disponibilidad",
+    D: "Trazabilidad"
+  }}
+  correctAnswer="C"
+  correctExplanation="La indisponibilidad de un servicio o activo ataca directamente a la dimensión de Disponibilidad."
+  incorrectExplanation="La respuesta correcta es C. Si un activo deja de funcionar, el problema principal es de Disponibilidad."
+/>
+
+<InteractiveQuiz
+  question="¿Cuál es el objetivo fundamental de un 'Plan de Mejora' derivado de la gestión de riesgos?"
+  options={{
+    A: "Incrementar los costos de seguridad para proteger todo a la vez",
+    B: "Priorizar la implementación de controles basados en los riesgos más críticos",
+    C: "Eliminar todos los riesgos existentes en la organización",
+    D: "Detectar a los responsables de incidentes para sancionarlos"
+  }}
+  correctAnswer="B"
+  correctExplanation="Un plan de mejora prioriza y aplica controles a los riesgos más críticos, optimizando recursos y reduciendo el riesgo global."
+  incorrectExplanation="La opción B es la correcta, ya que el enfoque de la mejora es priorizar la reducción de los riesgos de mayor criticidad."
+/>
