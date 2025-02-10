@@ -17,3 +17,13 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+comptia:
+  label: comptia
+  permalink: /comptia
+  description: Comptia tag description
+
+certificaciones:
+  label: certificaciones
+  permalink: /certificaciones
+  description: Certificaciones tag description
