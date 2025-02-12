@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmaterias=self.webpackChunkmaterias||[]).push([[2177],{7730:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/RepoMaestria/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
