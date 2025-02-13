@@ -3,6 +3,8 @@ title: Horarios
 sidebar_position: 1
 ---
 
+## hORARIO DE LAS MATERIAS
+
 | Cód. | Cód Asignatura | Asignatura                                              | Fecha      | ES    | EC    |
 | ---- | -------------- | ------------------------------------------------------- | ---------- | ----- | ----- |
 | MCIB | SM141703       | [Inteligencia de amenazas](https://otx.alienvault.com/) | 14/02/2025 | 14:00 | 08:00 |
