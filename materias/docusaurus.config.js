@@ -118,6 +118,11 @@ const config = {
             items: [
               {
                 type: 'docSidebar',
+                sidebarId: 'InteligenciaDeAmenazasSidebar',
+                label: 'Inteligencia de Amenazas',
+              },
+              {
+                type: 'docSidebar',
                 sidebarId: 'analisisDeRiesgosSidebar',
                 label: 'Análisis de Riesgos',
               },
@@ -125,7 +130,7 @@ const config = {
                 type: 'docSidebar',
                 sidebarId: 'CriptografiaGICA',
                 label: 'Criptografia - GICA',
-              },
+              }
             ],
           },
         ],

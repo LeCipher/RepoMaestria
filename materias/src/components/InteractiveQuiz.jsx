@@ -1,40 +1,71 @@
-import React, { useState } from 'react';
-import '../css/quiz.css';
-import { FiCheckCircle, FiXCircle, FiAlertCircle } from 'react-icons/fi';
+import React, { useState, useEffect } from "react";
+import "../css/quiz.css";
+import { FiCheckCircle, FiXCircle, FiAlertCircle } from "react-icons/fi";
 
 const InteractiveQuiz = ({
   question,
   options,
   correctAnswer,
   correctExplanation,
-  incorrectExplanation
+  incorrectExplanation,
 }) => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [showFeedback, setShowFeedback] = useState(false);
+  const [progress, setProgress] = useState({ total: 0, correct: 0 });
+
+  // Este useEffect se ejecuta una sola vez cuando se monta el componente.
+  // Aquí reiniciamos el contador en localStorage.
+  useEffect(() => {
+    const initialProgress = { total: 0, correct: 0 };
+    localStorage.setItem("quizProgress", JSON.stringify(initialProgress));
+    setProgress(initialProgress);
+  }, []);
+
+  // Función para actualizar el progreso y guardarlo en localStorage
+  const updateProgress = (isCorrect) => {
+    const stored = localStorage.getItem("quizProgress");
+    let currentProgress = stored
+      ? JSON.parse(stored)
+      : { total: 0, correct: 0 };
+    currentProgress.total += 1;
+    if (isCorrect) {
+      currentProgress.correct += 1;
+    }
+    localStorage.setItem("quizProgress", JSON.stringify(currentProgress));
+    setProgress(currentProgress);
+  };
 
   const handleSelect = (option) => {
     if (!showFeedback) {
       setSelectedOption(option);
       setShowFeedback(true);
+      updateProgress(option === correctAnswer);
     }
   };
 
   const getOptionState = (optionKey) => {
-    if (!showFeedback) return '';
-    if (optionKey === correctAnswer) return 'correct';
-    if (optionKey === selectedOption) return 'incorrect';
-    return 'disabled';
+    if (!showFeedback) return "";
+    if (optionKey === correctAnswer) return "correct";
+    if (optionKey === selectedOption) return "incorrect";
+    return "disabled";
   };
+
+  // Calcular porcentajes
+  const percentCorrect =
+    progress.total > 0
+      ? ((progress.correct / progress.total) * 100).toFixed(0)
+      : 0;
+  const percentIncorrect =
+    progress.total > 0
+      ? (((progress.total - progress.correct) / progress.total) * 100).toFixed(
+          0
+        )
+      : 0;
 
   return (
     <div className="quiz-card">
       <div className="quiz-header">
         <h3 className="quiz-question">{question}</h3>
-        {/* <div className="progress-indicator">
-          {Array.from({ length: 5 }).map((_, i) => (
-            <div key={i} className={`progress-dot ${i < 1 ? 'active' : ''}`} />
-          ))}
-        </div> */}
       </div>
 
       <div className="options-list">
@@ -64,7 +95,11 @@ const InteractiveQuiz = ({
       </div>
 
       {showFeedback && (
-        <div className={`feedback-box ${selectedOption === correctAnswer ? 'success' : 'error'}`}>
+        <div
+          className={`feedback-box ${
+            selectedOption === correctAnswer ? "success" : "error"
+          }`}
+        >
           <div className="feedback-header">
             {selectedOption === correctAnswer ? (
               <>
@@ -79,15 +114,38 @@ const InteractiveQuiz = ({
             )}
           </div>
           <div className="feedback-content">
-            <p><strong>Tu selección:</strong> {options[selectedOption]}</p>
-            <p><strong>Explicación:</strong> <div>{selectedOption === correctAnswer ? correctExplanation : incorrectExplanation}</div></p>
+            <p>
+              <strong>Tu selección:</strong> {options[selectedOption]}
+            </p>
+            <p>
+              <strong>Explicación:</strong>{" "}
+              <span>
+                {selectedOption === correctAnswer
+                  ? correctExplanation
+                  : incorrectExplanation}
+              </span>
+            </p>
             <div className="correct-answer">
               <FiCheckCircle />
               <span>
-                Respuesta correcta:
-                <div><strong>{correctAnswer}) {options[correctAnswer]}</strong></div>
+                Respuesta correcta:{" "}
+                <strong>
+                  {correctAnswer}) {options[correctAnswer]}
+                </strong>
               </span>
             </div>
+          </div>
+          {/* Sección de seguimiento de progreso */}
+          <div className="progress-tracker">
+            <p>
+              <strong>Progreso:</strong> {progress.total} pregunta
+              {progress.total !== 1 && "s"} respondida
+              {progress.total !== 1 && "s"}
+            </p>
+            <p>
+              <strong>Correctas:</strong> {percentCorrect}% -{" "}
+              <strong>Incorrectas:</strong> {percentIncorrect}%
+            </p>
           </div>
         </div>
       )}
