@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-materia/inteligencia-amenazas/sesion-3" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Sesion - 3 | Maestria en Ciberseguridad UAX</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://LeCipher.github.io/RepoMaestria/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://LeCipher.github.io/RepoMaestria/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://LeCipher.github.io/RepoMaestria/docs/materia/inteligencia-amenazas/sesion-3"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Sesion - 3 | Maestria en Ciberseguridad UAX"><meta data-rh="true" name="description" content="A continuación, se presenta un repaso en profundidad de los principales conceptos abordados, organizados de forma clara y didáctica para su fácil comprensión. Este material está dirigido tanto a lectores de blog interesados en ciberseguridad como a estudiantes que buscan apuntes de estudio en un máster o curso especializado."><meta data-rh="true" property="og:description" content="A continuación, se presenta un repaso en profundidad de los principales conceptos abordados, organizados de forma clara y didáctica para su fácil comprensión. Este material está dirigido tanto a lectores de blog interesados en ciberseguridad como a estudiantes que buscan apuntes de estudio en un máster o curso especializado."><link data-rh="true" rel="icon" href="/RepoMaestria/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://LeCipher.github.io/RepoMaestria/docs/materia/inteligencia-amenazas/sesion-3"><link data-rh="true" rel="alternate" href="https://LeCipher.github.io/RepoMaestria/docs/materia/inteligencia-amenazas/sesion-3" hreflang="es"><link data-rh="true" rel="alternate" href="https://LeCipher.github.io/RepoMaestria/docs/materia/inteligencia-amenazas/sesion-3" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/RepoMaestria/blog/rss.xml" title="Maestria en Ciberseguridad UAX RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/RepoMaestria/blog/atom.xml" title="Maestria en Ciberseguridad UAX Atom Feed">
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/RepoMaestria/assets/css/styles.303cffbc.css">
+<script src="/RepoMaestria/assets/js/runtime~main.97192cbb.js" defer="defer"></script>
+<script src="/RepoMaestria/assets/js/main.4dfee3c1.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/RepoMaestria/img/logo.svg"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/RepoMaestria/"><div class="navbar__logo"><img src="/RepoMaestria/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/RepoMaestria/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Materias del Master</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/RepoMaestria/docs/materia/inteligencia-amenazas/intro">Inteligencia de Amenazas</a></li><li><a class="dropdown__link" href="/RepoMaestria/docs/materia/analisis-de-riesgo/intro">Análisis de Riesgos</a></li><li><a class="dropdown__link" href="/RepoMaestria/docs/materia/criptografia/intro">Criptografia - GICA</a></li></ul></div><a class="navbar__item navbar__link" href="/RepoMaestria/docs/materia/horarios">Horario - Examenes</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/RepoMaestria/blog">Blog</a><a href="https://github.com/LeCipher/RepoMaestria" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Cambiar entre modo oscuro y claro (actualmente modo claro)" aria-label="Cambiar entre modo oscuro y claro (actualmente modo claro)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/RepoMaestria/docs/materia/inteligencia-amenazas/intro">Introducción</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/RepoMaestria/docs/materia/inteligencia-amenazas/sesion-1">Sesion - 1</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/RepoMaestria/docs/materia/inteligencia-amenazas/sesion-2">Sesion - 2</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/RepoMaestria/docs/materia/inteligencia-amenazas/sesion-3">Sesion - 3</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/RepoMaestria/docs/materia/inteligencia-amenazas/sesion-4">Sesion - 4</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/RepoMaestria/docs/materia/inteligencia-amenazas/sesion-5">Sesion - 5</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/RepoMaestria/docs/category/evaluaciones">Evaluaciones</a><button aria-label="Ampliar la categoría &#x27;Evaluaciones&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/RepoMaestria/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Sesion - 3</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>Lectura exhaustiva</h1></header>
+<p>A continuación, se presenta un repaso en profundidad de los principales conceptos abordados, organizados de forma clara y didáctica para su fácil comprensión. Este material está dirigido tanto a lectores de blog interesados en ciberseguridad como a estudiantes que buscan apuntes de estudio en un máster o curso especializado.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-tipos-de-actores-en-la-organización">1. Tipos de actores en la organización<a href="#1-tipos-de-actores-en-la-organización" class="hash-link" aria-label="Enlace directo al 1. Tipos de actores en la organización" title="Enlace directo al 1. Tipos de actores en la organización">​</a></h2>
+<p>La Inteligencia de Amenazas (Cyber Threat Intelligence, CTI) beneficia a todos los niveles de una organización, ya que permite:</p>
+<ul>
+<li>
+<p><strong>Dirección (CEO, CIO, CISO)</strong></p>
+<ul>
+<li>Comprender los riesgos a los que se expone la organización.</li>
+<li>Gestionar dichos riesgos y proponer medidas para minimizar su impacto.</li>
+</ul>
+</li>
+<li>
+<p><strong>Analista de inteligencia</strong></p>
+<ul>
+<li>Identificar, rastrear y comprender amenazas específicas que afectan a la organización.</li>
+<li>Proporcionar informes y recomendaciones accionables para la toma de decisiones.</li>
+</ul>
+</li>
+<li>
+<p><strong>CSIRT (Computer Security Incident Response Team)</strong></p>
+<ul>
+<li>Agilizar la investigación de incidentes de seguridad.</li>
+<li>Gestionar cada incidente mediante registro, priorización y catalogación, asegurando una respuesta eficiente.</li>
+</ul>
+</li>
+<li>
+<p><strong>SOC (Security Operations Center)</strong></p>
+<ul>
+<li>Priorizar incidentes en función del riesgo y el impacto para la organización.</li>
+<li>El equipo SOC es responsable de la vigilancia continua de la seguridad y la respuesta a amenazas en tiempo real.</li>
+</ul>
+</li>
+<li>
+<p><strong>Analista de seguridad</strong></p>
+<ul>
+<li>Mejorar las medidas de prevención, detección y protección.</li>
+<li>Implementar y supervisar las soluciones de seguridad, ajustándolas conforme evolucionan las amenazas.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-pirámide-del-dolor">2. Pirámide del dolor<a href="#2-pirámide-del-dolor" class="hash-link" aria-label="Enlace directo al 2. Pirámide del dolor" title="Enlace directo al 2. Pirámide del dolor">​</a></h2>
+<p>Desarrollada por David Bianco en 2013, la Pirámide del Dolor (Pyramid of Pain) clasifica distintos tipos de <strong>Indicadores de Compromiso (IoC)</strong> según el nivel de dificultad que supone para un atacante modificar dichos indicadores. Cuanto mayor es la dificultad de cambio (y, por tanto, el “dolor” para el adversario), más efectiva es la estrategia de defensa.</p>
+<ol>
+<li>
+<p><strong>Valores Hash</strong></p>
+<ul>
+<li>Ubicados en la base de la pirámide.</li>
+<li>Muy fáciles de cambiar para un atacante (solo se necesita alterar mínimamente el archivo para cambiar el hash).</li>
+</ul>
+</li>
+<li>
+<p><strong>Direcciones IP</strong></p>
+<ul>
+<li>Más difíciles de modificar que los hashes, pero siguen siendo relativamente sencillas de alterar (por ejemplo, cambiando de proveedor o usando servicios de anonimización).</li>
+</ul>
+</li>
+<li>
+<p><strong>Nombres de dominio</strong></p>
+<ul>
+<li>Requieren mayor esfuerzo para cambiar, ya que registrarlos o configurarlos de nuevo puede ser costoso y lleva tiempo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Artefactos de red/host</strong></p>
+<ul>
+<li>Incluyen patrones de tráfico o configuraciones de sistemas que son más complicados de imitar sin alterar el funcionamiento del malware o exponer la actividad maliciosa.</li>
+</ul>
+</li>
+<li>
+<p><strong>Herramientas y TTPs (Tácticas, Técnicas y Procedimientos)</strong></p>
+<ul>
+<li>Son los más costosos de modificar. Requieren cambiar la estrategia, las herramientas o incluso la capacitación de los atacantes para continuar su actividad maliciosa.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-qué-son-los-iocs">3. ¿Qué son los IoCs?<a href="#3-qué-son-los-iocs" class="hash-link" aria-label="Enlace directo al 3. ¿Qué son los IoCs?" title="Enlace directo al 3. ¿Qué son los IoCs?">​</a></h2>
+<p>Los <strong>Indicadores de Compromiso (IoC)</strong> son evidencias forenses que señalan actividad potencialmente maliciosa en un sistema o red. Pueden encontrarse en:</p>
+<ul>
+<li>Entradas del Registro del sistema (Windows, por ejemplo).</li>
+<li>Archivos de configuración.</li>
+<li>Patrones de red anómalos, etc.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="importancia-de-los-iocs">Importancia de los IoCs<a href="#importancia-de-los-iocs" class="hash-link" aria-label="Enlace directo al Importancia de los IoCs" title="Enlace directo al Importancia de los IoCs">​</a></h3>
+<ul>
+<li><strong>Detección temprana de ataques</strong>: Al monitorizarlos, se identifican amenazas y se toman acciones preventivas para minimizar el daño.</li>
+<li><strong>Rapidez de respuesta</strong>: Permiten reaccionar y detener ataques en fases iniciales, evitando fugas de información o daños mayores.</li>
+<li><strong>Guía de investigación</strong>: Funcionan como “migas de pan” que conducen al descubrimiento de la raíz de la actividad maliciosa.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="estándares-de-intercambio-de-iocs">Estándares de intercambio de IoCs<a href="#estándares-de-intercambio-de-iocs" class="hash-link" aria-label="Enlace directo al Estándares de intercambio de IoCs" title="Enlace directo al Estándares de intercambio de IoCs">​</a></h3>
+<ul>
+<li><strong>OpenIOC (Open Indicators of Compromise)</strong></li>
+<li><strong>Oasis Cyber Threat Intelligence (CTI)</strong></li>
+<li><strong>Cybox (Cyber Observable eXpression)</strong></li>
+<li><strong>MAEC (Malware Attribute Enumeration and Characterization)</strong></li>
+</ul>
+<p>Estos sistemas facilitan el intercambio estructurado de información sobre amenazas, mejorando la colaboración entre organizaciones y profesionales de ciberseguridad.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-ejemplos-típicos-de-iocs">4. Ejemplos típicos de IoCs<a href="#4-ejemplos-típicos-de-iocs" class="hash-link" aria-label="Enlace directo al 4. Ejemplos típicos de IoCs" title="Enlace directo al 4. Ejemplos típicos de IoCs">​</a></h2>
+<ol>
+<li>
+<p><strong>Patrones de tráfico de red inusuales</strong>:</p>
+<ul>
+<li>Salida repentina de grandes volúmenes de datos o conexiones a destinos sospechosos.</li>
+</ul>
+</li>
+<li>
+<p><strong>Anomalías geográficas</strong>:</p>
+<ul>
+<li>Conexiones entrantes o salientes desde localizaciones con las que la organización no tiene relación comercial o actividad habitual.</li>
+</ul>
+</li>
+<li>
+<p><strong>Aplicaciones desconocidas o hashes maliciosos</strong>:</p>
+<ul>
+<li>Coincidencias con feeds de inteligencia sobre amenazas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Actividad inusual de cuentas privilegiadas</strong>:</p>
+<ul>
+<li>Uso fuera del horario laboral o desde ubicaciones poco comunes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Intentos de inicio de sesión anómalos</strong>:</p>
+<ul>
+<li>Frecuencia inusual, ubicación remota inesperada, múltiples fallos seguidos.</li>
+</ul>
+</li>
+<li>
+<p><strong>Aumento de lecturas de bases de datos o archivos corporativos</strong>:</p>
+<ul>
+<li>Puede indicar una fase de reconocimiento y recolección de información previa a la exfiltración.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cambios sospechosos en configuraciones o en el Registro de Windows</strong>:</p>
+<ul>
+<li>Creación de persistencia maliciosa o desactivación de medidas de seguridad.</li>
+</ul>
+</li>
+<li>
+<p><strong>Solicitudes de DNS o HTTPS a dominios desconocidos o sospechosos</strong>.</p>
+</li>
+<li>
+<p><strong>Generación de un gran número de archivos comprimidos o cifrados</strong>:</p>
+<ul>
+<li>Podría ser síntoma de preparación de datos para filtración.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-cyber-security-kill-chain">5. Cyber Security Kill Chain<a href="#5-cyber-security-kill-chain" class="hash-link" aria-label="Enlace directo al 5. Cyber Security Kill Chain" title="Enlace directo al 5. Cyber Security Kill Chain">​</a></h2>
+<p>La <strong>Cyber Security Kill Chain</strong> describe de manera sistemática las etapas que transita un ciberataque. A modo general, las fases son:</p>
+<ol>
+<li>
+<p><strong>Reconocimiento (Reconnaissance)</strong></p>
+<ul>
+<li>El atacante investiga la organización para descubrir activos, tecnologías empleadas y posibles vulnerabilidades.</li>
+</ul>
+</li>
+<li>
+<p><strong>Arma o Preparación (Weaponization)</strong></p>
+<ul>
+<li>El atacante desarrolla o adapta el malware, exploit o vector de ataque.</li>
+</ul>
+</li>
+<li>
+<p><strong>Entrega (Delivery)</strong></p>
+<ul>
+<li>Se hace llegar el payload al objetivo (p.e., phishing, adjunto malicioso, drive-by download).</li>
+</ul>
+</li>
+<li>
+<p><strong>Explotación (Exploitation)</strong></p>
+<ul>
+<li>Se aprovecha la vulnerabilidad del sistema o del usuario para ejecutar el código malicioso.</li>
+</ul>
+</li>
+<li>
+<p><strong>Instalación (Installation)</strong></p>
+<ul>
+<li>El atacante instala puertas traseras (backdoors) o herramientas de persistencia.</li>
+</ul>
+</li>
+<li>
+<p><strong>Comando y Control (C2)</strong></p>
+<ul>
+<li>El sistema comprometido se comunica con la infraestructura del atacante para recibir órdenes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Acciones sobre el Objetivo (Actions on Objectives)</strong></p>
+<ul>
+<li>Se extraen datos (exfiltración), se cifran archivos (ransomware) o se realizan otras acciones maliciosas.</li>
+</ul>
+</li>
+</ol>
+<p>Entender este ciclo ayuda a identificar en qué momento actuar para mitigar o detener el ataque.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-apt-amenazas-persistentes-avanzadas">6. APT (Amenazas Persistentes Avanzadas)<a href="#6-apt-amenazas-persistentes-avanzadas" class="hash-link" aria-label="Enlace directo al 6. APT (Amenazas Persistentes Avanzadas)" title="Enlace directo al 6. APT (Amenazas Persistentes Avanzadas)">​</a></h2>
+<p>Una <strong>APT</strong> (Advanced Persistent Threat) es un tipo de ataque caracterizado por:</p>
+<ul>
+<li><strong>Acceso no autorizado y prolongado</strong> a la red de la víctima, permaneciendo <strong>sigiloso</strong> el máximo tiempo posible.</li>
+<li><strong>Objetivo</strong>: robar información sensible (propiedad intelectual, datos financieros, información confidencial, etc.).</li>
+<li><strong>Fases</strong>:<!-- -->
+<ol>
+<li>Comprometer la red de forma inicial.</li>
+<li>Esconderse y mantener persistencia.</li>
+<li>Recolectar y exfiltrar datos sin ser detectado.</li>
+</ol>
+</li>
+</ul>
+<p>Las APTs se consideran especialmente peligrosas porque:</p>
+<ul>
+<li><strong>Duración e impacto</strong>: pueden mantenerse durante semanas o meses, extrayendo información crítica.</li>
+<li><strong>Recursos y sofisticación</strong>: suelen estar respaldadas por grupos muy organizados (incluso patrocinados por Estados o grandes organizaciones criminales).</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-tácticas-técnicas-y-procedimientos-ttps">7. Tácticas, Técnicas y Procedimientos (TTPs)<a href="#7-tácticas-técnicas-y-procedimientos-ttps" class="hash-link" aria-label="Enlace directo al 7. Tácticas, Técnicas y Procedimientos (TTPs)" title="Enlace directo al 7. Tácticas, Técnicas y Procedimientos (TTPs)">​</a></h2>
+<p>Las <strong>TTPs</strong> describen el comportamiento o modus operandi de los actores maliciosos y engloban tres conceptos:</p>
+<ol>
+<li>
+<p><strong>Táctica</strong></p>
+<ul>
+<li>Estrategia o proceso general para lograr un objetivo de ataque.</li>
+</ul>
+</li>
+<li>
+<p><strong>Técnica</strong></p>
+<ul>
+<li>Manera específica de ejecutar la táctica empleando un patrón conocido (ej.: phishing, inyección SQL, etc.).</li>
+</ul>
+</li>
+<li>
+<p><strong>Procedimiento</strong></p>
+<ul>
+<li>Conjunto de pasos detallados y documentados para llevar a cabo las técnicas dentro de una táctica, buscando garantizar un resultado predecible.</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>MITRE ATT&amp;CK</strong> es la referencia mundial donde se categorizan y documentan TTPs de forma detallada. Sirve como base de conocimiento para simular y evaluar ataques, así como para mejorar defensas.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-fuentes-de-información-sobre-amenazas">8. Fuentes de información sobre amenazas<a href="#8-fuentes-de-información-sobre-amenazas" class="hash-link" aria-label="Enlace directo al 8. Fuentes de información sobre amenazas" title="Enlace directo al 8. Fuentes de información sobre amenazas">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="81-fuentes-abiertas-open-source">8.1 Fuentes abiertas (Open Source)<a href="#81-fuentes-abiertas-open-source" class="hash-link" aria-label="Enlace directo al 8.1 Fuentes abiertas (Open Source)" title="Enlace directo al 8.1 Fuentes abiertas (Open Source)">​</a></h3>
+<p>Son flujos de datos continuos que proporcionan información en tiempo real sobre la evolución de amenazas y tendencias de ciberseguridad. Ejemplos:</p>
+<ul>
+<li><strong>Yeti</strong>: <a href="https://yeti-platform.io/" target="_blank" rel="noopener noreferrer">https://yeti-platform.io/</a></li>
+<li><strong>MISP (Malware Information Sharing Platform)</strong>: <a href="https://www.misp-project.org/" target="_blank" rel="noopener noreferrer">https://www.misp-project.org/</a></li>
+<li><strong>OpenCTI</strong>: <a href="https://github.com/OpenCTI-Platform/opencti" target="_blank" rel="noopener noreferrer">https://github.com/OpenCTI-Platform/opencti</a></li>
+<li><strong>TheHive</strong>: <a href="https://github.com/TheHive-Project/TheHive" target="_blank" rel="noopener noreferrer">https://github.com/TheHive-Project/TheHive</a></li>
+<li><strong>Cuckoo Sandbox</strong>: <a href="https://cuckoosandbox.org/" target="_blank" rel="noopener noreferrer">https://cuckoosandbox.org/</a></li>
+<li><strong>Harpoon</strong>: <a href="https://github.com/Te-k/harpoon" target="_blank" rel="noopener noreferrer">https://github.com/Te-k/harpoon</a></li>
+<li><strong>GOSINT</strong>: <a href="https://github.com/ciscocsirt/GOSINT" target="_blank" rel="noopener noreferrer">https://github.com/ciscocsirt/GOSINT</a></li>
+<li><strong>MITRE Framework</strong>: <a href="https://attack.mitre.org/" target="_blank" rel="noopener noreferrer">https://attack.mitre.org/</a></li>
+<li><strong>VirusTotal</strong>: <a href="https://www.virustotal.com/gui/home/upload" target="_blank" rel="noopener noreferrer">https://www.virustotal.com/gui/home/upload</a></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="82-fuentes-de-pago">8.2 Fuentes de pago<a href="#82-fuentes-de-pago" class="hash-link" aria-label="Enlace directo al 8.2 Fuentes de pago" title="Enlace directo al 8.2 Fuentes de pago">​</a></h3>
+<ul>
+<li>Cisco AMP Threat Grid</li>
+<li>DeepSight</li>
+<li>Anomali</li>
+<li>SIS</li>
+<li>Blueliv</li>
+<li>Cofense</li>
+<li>CrowdStrike</li>
+<li>Georgia Tech</li>
+<li>Flashpoint</li>
+<li>Fox IT</li>
+<li>FireEye</li>
+</ul>
+<p>Estas fuentes comerciales suelen ofrecer un servicio más robusto y especializado, incluyendo alertas avanzadas y soporte dedicado.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="9-profundidad-en-la-obtención-de-información-para-generar-inteligencia">9. Profundidad en la obtención de información para generar inteligencia<a href="#9-profundidad-en-la-obtención-de-información-para-generar-inteligencia" class="hash-link" aria-label="Enlace directo al 9. Profundidad en la obtención de información para generar inteligencia" title="Enlace directo al 9. Profundidad en la obtención de información para generar inteligencia">​</a></h2>
+<p>La búsqueda de información en Internet se clasifica en <strong>tres niveles de profundidad</strong>:</p>
+<ol>
+<li>
+<p><strong>Clear Web</strong></p>
+<ul>
+<li>Contenido indexado por motores de búsqueda convencionales (Google, Bing...).</li>
+<li>Acceso normalmente directo (algunas webs requieren pago o suscripción).</li>
+<li>El contenido suele permanecer disponible por períodos largos.</li>
+</ul>
+</li>
+<li>
+<p><strong>Deep Web</strong></p>
+<ul>
+<li>No indexada por motores de búsqueda tradicionales.</li>
+<li>Acceso restringido, a menudo requiere registro.</li>
+<li>En ocasiones, solo por invitación, lo que dificulta la localización de la información.</li>
+</ul>
+</li>
+<li>
+<p><strong>Dark Web</strong></p>
+<ul>
+<li>No indexada por motores de búsqueda convencionales.</li>
+<li>Acceso mediante redes y protocolos específicos (Tor, I2P, Freenet...).</li>
+<li>Alta volatilidad; el contenido puede desaparecer a los pocos minutos u horas.</li>
+<li>Suele utilizarse para actividades ilegales, tráfico de datos robados, etc.</li>
+</ul>
+</li>
+</ol>
+<p>La exploración controlada y legal de estos ámbitos es esencial para obtener inteligencia detallada sobre amenazas potenciales y actores maliciosos.</p>
+<hr>
+<h1>Resumen</h1>
+<ol>
+<li>
+<p><strong>La Inteligencia de Amenazas (CTI)</strong></p>
+<ul>
+<li>Beneficia a todos los niveles organizativos (Dirección, SOC, CSIRT, analistas...).</li>
+<li>Facilita la toma de decisiones informada para prevenir y responder a incidentes de ciberseguridad.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pirámide del Dolor</strong></p>
+<ul>
+<li>Cuanto más complejo sea el indicador (TTPs, artefactos de red/host), más “dolor” causa al atacante y más efectiva resulta la defensa.</li>
+</ul>
+</li>
+<li>
+<p><strong>IoCs</strong></p>
+<ul>
+<li>Indicadores críticos para detectar y responder ante amenazas (patrones de tráfico, hashes maliciosos, anomalías de cuentas…).</li>
+<li>Su intercambio mediante estándares (OpenIOC, STIX, MISP, etc.) mejora la colaboración entre organizaciones.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cyber Kill Chain</strong></p>
+<ul>
+<li>Visión clara de las fases de un ataque (Reconocimiento, Entrega, Explotación, Comando y Control...).</li>
+<li>Identificar dónde detener o contener la amenaza es fundamental.</li>
+</ul>
+</li>
+<li>
+<p><strong>APT</strong></p>
+<ul>
+<li>Amenaza sofisticada, persistente y diseñada para permanecer sin ser detectada durante largo tiempo.</li>
+<li>Requiere defensas proactivas y monitorización continua.</li>
+</ul>
+</li>
+<li>
+<p><strong>TTPs</strong></p>
+<ul>
+<li>Conocer las tácticas, técnicas y procedimientos de los atacantes (e.g., MITRE ATT&amp;CK) permite robustecer la seguridad.</li>
+</ul>
+</li>
+<li>
+<p><strong>Fuentes de inteligencia</strong></p>
+<ul>
+<li>Existen fuentes abiertas y comerciales para recopilar información y mantenerse actualizado.</li>
+<li>Uso de plataformas (MISP, VirusTotal, etc.) para validar y correlacionar indicadores.</li>
+</ul>
+</li>
+<li>
+<p><strong>Clear Web, Deep Web, Dark Web</strong></p>
+<ul>
+<li>Tres niveles de la web donde buscar información.</li>
+<li>La Dark Web puede ser crucial para descubrir amenazas reales (filtración de datos, venta de exploits), pero requiere precaución y métodos especializados.</li>
+</ul>
+</li>
+</ol>
+<p>En conjunto, estos elementos conforman el núcleo de la Inteligencia de Amenazas y constituyen la base de la defensa cibernética moderna.</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/RepoMaestria/docs/materia/inteligencia-amenazas/sesion-2"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Sesion - 2</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/RepoMaestria/docs/materia/inteligencia-amenazas/sesion-4"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">Sesion - 4</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-tipos-de-actores-en-la-organización" class="table-of-contents__link toc-highlight">1. Tipos de actores en la organización</a></li><li><a href="#2-pirámide-del-dolor" class="table-of-contents__link toc-highlight">2. Pirámide del dolor</a></li><li><a href="#3-qué-son-los-iocs" class="table-of-contents__link toc-highlight">3. ¿Qué son los IoCs?</a><ul><li><a href="#importancia-de-los-iocs" class="table-of-contents__link toc-highlight">Importancia de los IoCs</a></li><li><a href="#estándares-de-intercambio-de-iocs" class="table-of-contents__link toc-highlight">Estándares de intercambio de IoCs</a></li></ul></li><li><a href="#4-ejemplos-típicos-de-iocs" class="table-of-contents__link toc-highlight">4. Ejemplos típicos de IoCs</a></li><li><a href="#5-cyber-security-kill-chain" class="table-of-contents__link toc-highlight">5. Cyber Security Kill Chain</a></li><li><a href="#6-apt-amenazas-persistentes-avanzadas" class="table-of-contents__link toc-highlight">6. APT (Amenazas Persistentes Avanzadas)</a></li><li><a href="#7-tácticas-técnicas-y-procedimientos-ttps" class="table-of-contents__link toc-highlight">7. Tácticas, Técnicas y Procedimientos (TTPs)</a></li><li><a href="#8-fuentes-de-información-sobre-amenazas" class="table-of-contents__link toc-highlight">8. Fuentes de información sobre amenazas</a><ul><li><a href="#81-fuentes-abiertas-open-source" class="table-of-contents__link toc-highlight">8.1 Fuentes abiertas (Open Source)</a></li><li><a href="#82-fuentes-de-pago" class="table-of-contents__link toc-highlight">8.2 Fuentes de pago</a></li></ul></li><li><a href="#9-profundidad-en-la-obtención-de-información-para-generar-inteligencia" class="table-of-contents__link toc-highlight">9. Profundidad en la obtención de información para generar inteligencia</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Materias</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/RepoMaestria/docs/materia/analisis-de-riesgo/intro">Análisis de Riesgo</a></li></ul></div><div class="col footer__col"><div class="footer__title">Contribuir</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/LeCipher/RepoMaestria" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Conoce Más</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/RepoMaestria/blog">Blog</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025.</div></div></div></footer></div>
+</body>
+</html>
