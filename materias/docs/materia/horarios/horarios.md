@@ -8,7 +8,7 @@ sidebar_position: 1
 | Cód. | Cód Asignatura | Asignatura                                                     | Fecha      | ES    | EC    |
 | ---- | -------------- | -------------------------------------------------------------- | ---------- | ----- | ----- |
 | MCIB | SM141703       | [Inteligencia de amenazas](../inteligencia-amenazas/intro.mdx) | 14/02/2025 | 14:00 | 08:00 |
-| MCIB | SM141700       | Análisis de riesgos                                            | 14/02/2025 | 16:00 | 10:00 |
+| MCIB | SM141700       | [Análisis de riesgos](../analisis-de-riesgo/intro.mdx)         | 14/02/2025 | 16:00 | 10:00 |
 | MCIB | SM141701       | Control del riesgo de ciberseguridad                           | 14/02/2025 | 17:30 | 11:30 |
 | MCIB | SM141702       | Gobernanza de la ciberseguridad                                | 14/02/2025 | 19:00 | 13:00 |
 | MCIB | SM141704       | Marco normativo                                                | 14/02/2025 | 20:30 | 14:30 |

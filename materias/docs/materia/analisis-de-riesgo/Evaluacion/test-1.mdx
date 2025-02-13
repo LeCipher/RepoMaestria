@@ -57,19 +57,6 @@ import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
 />
 
 <InteractiveQuiz 
-  question="¿Existen catálogos completos de amenazas?"
-  options={{
-    A: "No",
-    B: "Ninguna de las anteriores",
-    C: "Para algunos sectores sí",
-    D: "Sí"
-  }}
-  correctAnswer="A"
-  correctExplanation="Aunque existen listas y estándares que recogen y clasifican amenazas comunes, no existe un catálogo absoluto y completo que abarque todas las amenazas posibles, debido a que estas evolucionan constantemente y varían según el contexto o la tecnología involucrada."
-  incorrectExplanation="Aunque existen listas y estándares que recogen y clasifican amenazas comunes, no existe un catálogo absoluto y completo que abarque todas las amenazas posibles, debido a que estas evolucionan constantemente y varían según el contexto o la tecnología involucrada."
-/>
-
-<InteractiveQuiz 
   question="Las métricas son importantes para:"
   options={{
     A: "Ninguna de las anteriores",
@@ -109,19 +96,6 @@ import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
 />
 
 <InteractiveQuiz 
-  question="En el diseño de un SGSI además del alcance es importante seleccionar de forma correcta"
-  options={{
-    A: "El objetivo general y objetivos específicos",
-    B: "Los objetivos específicos",
-    C: "El objetivo general",
-    D: "Ninguna de las anteriores"
-  }}
-  correctAnswer="A"
-  correctExplanation="Al diseñar un Sistema de Gestión de Seguridad de la Información (SGSI), se requiere establecer un objetivo general de seguridad y, a la vez, concretar objetivos específicos que permitan desplegar acciones medibles y coherentes con el objetivo global."
-  incorrectExplanation="Al diseñar un Sistema de Gestión de Seguridad de la Información (SGSI), se requiere establecer un objetivo general de seguridad y, a la vez, concretar objetivos específicos que permitan desplegar acciones medibles y coherentes con el objetivo global."
-/>
-
-<InteractiveQuiz 
   question="¿El riesgo potencial es?"
   options={{
     A: "La estimación del grado de exposición a que una amenaza se materialice sobre uno o más activos",
@@ -158,19 +132,6 @@ import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
   correctAnswer="B"
   correctExplanation="Un criterio común para clasificar amenazas distingue entre amenazas naturales (por ejemplo, desastres naturales), amenazas industriales (p. ej. fallos eléctricos, accidentes técnicos) y amenazas de origen humano (intencionadas o no). Estas categorías cubren la mayoría de escenarios tradicionales de riesgo."
   incorrectExplanation="Un criterio común para clasificar amenazas distingue entre amenazas naturales (por ejemplo, desastres naturales), amenazas industriales (p. ej. fallos eléctricos, accidentes técnicos) y amenazas de origen humano (intencionadas o no). Estas categorías cubren la mayoría de escenarios tradicionales de riesgo."
-/>
-
-<InteractiveQuiz 
-  question="¿Las dependencias entre los activos pueden propiciar que las amenazas afecten a los activos de nivel superior?"
-  options={{
-    A: "No",
-    B: "Según el sector",
-    C: "Ninguna de las anteriores",
-    D: "Sí"
-  }}
-  correctAnswer="D"
-  correctExplanation="Si un activo de nivel inferior sufre un incidente o deja de funcionar, puede impactar directamente en aquellos activos o servicios que dependen de él, generando un “efecto dominó”. Por eso, se recomienda mapear las dependencias para entender la propagación potencial de los riesgos."
-  incorrectExplanation="Si un activo de nivel inferior sufre un incidente o deja de funcionar, puede impactar directamente en aquellos activos o servicios que dependen de él, generando un “efecto dominó”. Por eso, se recomienda mapear las dependencias para entender la propagación potencial de los riesgos."
 />
 
 <InteractiveQuiz 
@@ -263,3 +224,108 @@ import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
   correctExplanation="La extorsión (incluida la modalidad de ransomware o amenazas de difundir información sensible) es una acción deliberada con ánimo de lucro o coacción. Por tanto, se considera un ataque intencionado, no un error, un desastre ni un incidente industrial."
   incorrectExplanation="La extorsión (incluida la modalidad de ransomware o amenazas de difundir información sensible) es una acción deliberada con ánimo de lucro o coacción. Por tanto, se considera un ataque intencionado, no un error, un desastre ni un incidente industrial."
 />
+<InteractiveQuiz 
+  question="Los errores de usuario son un ejemplo de:"
+  options={{
+    A: "Errores y fallos no intencionados",
+    B: "Ataques intencionados",
+    C: "Amenaza de origen industrial",
+    D: "Desastre natural"
+  }}
+  correctAnswer="A"
+  correctExplanation="Los errores de usuario son acciones accidentales que no buscan causar daño, por lo que se clasifican como fallos no intencionados."
+  incorrectExplanation="Los ataques intencionados, amenazas industriales o desastres naturales implican acciones o eventos deliberados o externos, no errores humanos involuntarios."
+/>
+
+<InteractiveQuiz 
+  question="En el diseño de un SGSI además del alcance es importante seleccionar de forma correcta"
+  options={{
+    A: "Los objetivos específicos",
+    B: "El objetivo general y objetivos específicos",
+    C: "El objetivo general",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="B"
+  correctExplanation="Definir tanto el objetivo general como los objetivos específicos asegura una alineación clara con las necesidades de la organización y su estrategia de seguridad."
+  incorrectExplanation="Centrarse solo en el objetivo general o en los específicos de forma aislada limita la efectividad del SGSI."
+/>
+
+<InteractiveQuiz 
+  question="Los catálogos de amenazas deben considerase como un punto de partida"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Sí",
+    C: "No",
+    D: " Depende del análisis de riesgos"
+  }}
+  correctAnswer="B"
+  correctExplanation="Los catálogos ofrecen una base inicial para identificar amenazas, pero deben adaptarse al contexto específico de cada organización."
+  incorrectExplanation="Ignorar estos catálogos dificulta la identificación sistemática de riesgos, aunque no sustituyen un análisis personalizado."
+/>
+
+<InteractiveQuiz 
+  question="¿Existen catálogos completos de amenazas?"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "No",
+    C: "Sí",
+    D: " Para algunos sectores sí"
+  }}
+  correctAnswer="B"
+  correctExplanation="Las amenazas evolucionan constantemente y varían según el contexto, por lo que ningún catálogo puede ser totalmente exhaustivo."
+  incorrectExplanation="Aunque existen guías sectoriales, ninguna abarca todas las amenazas posibles de manera universal."
+/>
+
+<InteractiveQuiz 
+  question="¿Las dependencias entre los activos pueden propiciar que las amenazas afecten a los activos de nivel superior?"
+  options={{
+    A: "Según el sector",
+    B: "Sí",
+    C: "Ninguna de las anteriores",
+    D: " No"
+  }}
+  correctAnswer="B"
+  correctExplanation="Las dependencias entre activos crean cadenas de impacto, permitiendo que una amenaza en un activo secundario afecte a otros más críticos."
+  incorrectExplanation="Subestimar estas dependencias puede llevar a proteger solo activos aislados, ignorando riesgos en cascada."
+/>
+
+<InteractiveQuiz 
+  question="El fuego es un ejemplo de"
+  options={{
+    A: " Desastre natural",
+    B: " Amenaza de origen industrial",
+    C: "Errores y fallos no intencionados",
+    D: "Ataques intencionados"
+  }}
+  correctAnswer="A"
+  correctExplanation="El fuego puede originarse por causas naturales (incendios forestales) y, aunque también puede ser provocado, su clasificación principal aquí es como desastre natural."
+  incorrectExplanation="El fuego no se considera típicamente un error humano o un ataque deliberado en este contexto."
+/>
+
+<InteractiveQuiz 
+  question="Los cortes de electricidad son un ejemplo de"
+  options={{
+    A: "Ataques intencionados",
+    B: "Errores y fallos no intencionados",
+    C: "Amenaza de origen industrial",
+    D: "Desastre natural"
+  }}
+  correctAnswer="C"
+  correctExplanation="Los cortes de energía suelen relacionarse con fallas en infraestructuras o procesos industriales, no con desastres naturales o errores humanos."
+  incorrectExplanation="A menos que el corte sea por un fenómeno natural (ej. huracán) o un error operativo, su origen principal es industrial."
+/>
+
+{/* ---
+
+<InteractiveQuiz 
+  question=""
+  options={{
+    A: "",
+    B: "",
+    C: "",
+    D: ""
+  }}
+  correctAnswer="A"
+  correctExplanation="[Pendiente]"
+  incorrectExplanation="[Pendiente]"
+/> */}

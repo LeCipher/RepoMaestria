@@ -1,17 +1,15 @@
 ---
 title: Sesion - 4
-sidebar_position: 4
+sidebar_position: 5
 ---
 
-# Análisis de Riesgos en Ciberseguridad: Metodologías y Aplicaciones Prácticas
-
-## Introducción
+## 1. Introducción
 
 El análisis de riesgos es un proceso fundamental en la gestión de la seguridad de la información, ya que permite identificar, evaluar y mitigar amenazas que afectan a los activos de una organización. Con la creciente sofisticación de los ataques cibernéticos, es crucial contar con estrategias bien definidas para minimizar la exposición a amenazas y vulnerabilidades. Este artículo explora las metodologías clave para el análisis de riesgos, sus aplicaciones prácticas y la implementación de controles de seguridad basados en marcos reconocidos como **ISO 31000**, **ISO 27005** y **NIST 800-30**.
 
-## Metodologías de Análisis de Riesgos
+## 2. Metodologías de Análisis de Riesgos
 
-### ISO 31000: Gestión del Riesgo Empresarial
+### 2.1 ISO 31000: Gestión del Riesgo Empresarial
 
 ISO 31000 proporciona un marco genérico para la gestión del riesgo, aplicable a cualquier tipo de organización. Su enfoque está basado en:
 
@@ -21,7 +19,7 @@ ISO 31000 proporciona un marco genérico para la gestión del riesgo, aplicable 
 
 Esta norma se ha convertido en un estándar de referencia para las organizaciones que buscan establecer una cultura de prevención del riesgo y protección de sus recursos más críticos.
 
-### ISO 27005: Gestión de Riesgos en Seguridad de la Información
+### 2.2 ISO 27005: Gestión de Riesgos en Seguridad de la Información
 
 Esta norma está enfocada específicamente en la seguridad de la información y se basa en los principios de ISO 31000, pero aplicados a activos digitales y sistemas TI. Propone:
 
@@ -33,7 +31,7 @@ Esta norma está enfocada específicamente en la seguridad de la información y 
 
 ISO 27005 proporciona una guía detallada para la gestión de riesgos en entornos TI, garantizando la protección de datos y la continuidad del negocio.
 
-### NIST 800-30: Guía de Gestión de Riesgos en TI
+### 2.3 NIST 800-30: Guía de Gestión de Riesgos en TI
 
 El marco NIST 800-30 proporciona un enfoque detallado para la evaluación de riesgos en sistemas de información mediante:
 
@@ -44,9 +42,9 @@ El marco NIST 800-30 proporciona un enfoque detallado para la evaluación de rie
 
 NIST 800-30 es especialmente útil en sectores donde la regulación exige el cumplimiento de estrictos estándares de seguridad.
 
-## Aplicación Práctica: Evaluación de Riesgos en una Organización
+## 3. Aplicación Práctica: Evaluación de Riesgos en una Organización
 
-### Paso 1: Identificación de Activos y Amenazas
+### 3.1 Paso 1: Identificación de Activos y Amenazas
 
 Se deben identificar los activos clave en las siguientes categorías:
 
@@ -57,7 +55,7 @@ Se deben identificar los activos clave en las siguientes categorías:
 - **Datos:** Información sensible, bases de datos.
 - **Entorno físico:** Instalaciones, equipos de respaldo, energía.
 
-### Paso 2: Evaluación de Riesgos
+### 3.2 Paso 2: Evaluación de Riesgos
 
 Cada activo se valora en una escala del 1 al 3 en los siguientes aspectos:
 
@@ -67,15 +65,9 @@ Cada activo se valora en una escala del 1 al 3 en los siguientes aspectos:
 
 El cálculo del **nivel de riesgo** de cada activo se obtiene mediante la fórmula: NR_activo = ∑ (VALOR_activo) x Max (∑ IMPACTO)
 
-### Paso 3: Priorización y Mitigación de Riesgos
+### 3.3 Paso 3: Priorización y Mitigación de Riesgos
 
 - **Definir umbral de riesgo:** Establecer un nivel de aceptación del riesgo.
 - **Aplicar controles de mitigación:** Basados en ISO 27002 y NIST 800-53.
 - **Monitoreo continuo:** Implementar indicadores clave de rendimiento (KPIs) para evaluar la efectividad de los controles.
 - **Desarrollo de estrategias de contingencia y respuesta a incidentes.**
-
-## Conclusión
-
-El análisis de riesgos en ciberseguridad es un proceso crítico para la protección de los activos digitales de una organización. La aplicación de metodologías como **ISO 31000, ISO 27005 y NIST 800-30** permite evaluar y mitigar amenazas de manera estructurada y efectiva. 
-
-El uso de estrategias de gestión del riesgo permite una mejor preparación ante ataques cibernéticos, protegiendo los datos y garantizando la continuidad del negocio. La implementación de controles adecuados y el monitoreo continuo garantizan una postura de seguridad robusta y resiliente ante los riesgos emergentes en el panorama digital.
