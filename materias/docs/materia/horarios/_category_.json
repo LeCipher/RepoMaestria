@@ -1,0 +1,8 @@
+{
+    "label": "Horarios Examenes",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "title": "Horario de Examenes"
+    }
+}
