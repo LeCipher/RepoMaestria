@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-materia/control-ciberseguridad/sesion-2" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Sesion - 2 | Maestria en Ciberseguridad UAX</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://LeCipher.github.io/RepoMaestria/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://LeCipher.github.io/RepoMaestria/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://LeCipher.github.io/RepoMaestria/docs/materia/control-ciberseguridad/sesion-2"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Sesion - 2 | Maestria en Ciberseguridad UAX"><meta data-rh="true" name="description" content="1. Introducción a la Certificación de Productos de Seguridad"><meta data-rh="true" property="og:description" content="1. Introducción a la Certificación de Productos de Seguridad"><link data-rh="true" rel="icon" href="/RepoMaestria/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://LeCipher.github.io/RepoMaestria/docs/materia/control-ciberseguridad/sesion-2"><link data-rh="true" rel="alternate" href="https://LeCipher.github.io/RepoMaestria/docs/materia/control-ciberseguridad/sesion-2" hreflang="es"><link data-rh="true" rel="alternate" href="https://LeCipher.github.io/RepoMaestria/docs/materia/control-ciberseguridad/sesion-2" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/RepoMaestria/blog/rss.xml" title="Maestria en Ciberseguridad UAX RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/RepoMaestria/blog/atom.xml" title="Maestria en Ciberseguridad UAX Atom Feed">
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/RepoMaestria/assets/css/styles.303cffbc.css">
+<script src="/RepoMaestria/assets/js/runtime~main.06b1748a.js" defer="defer"></script>
+<script src="/RepoMaestria/assets/js/main.b29e1462.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/RepoMaestria/img/logo.svg"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/RepoMaestria/"><div class="navbar__logo"><img src="/RepoMaestria/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/RepoMaestria/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Materias del Master</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/RepoMaestria/docs/materia/inteligencia-amenazas/intro">Inteligencia de Amenazas</a></li><li><a class="dropdown__link" href="/RepoMaestria/docs/materia/analisis-de-riesgo/intro">Análisis de Riesgos</a></li><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/RepoMaestria/docs/materia/control-ciberseguridad/intro">Control del Riesgo de Ciberseguridad	</a></li><li><a class="dropdown__link" href="/RepoMaestria/docs/materia/criptografia/intro">Criptografia - GICA</a></li></ul></div><a class="navbar__item navbar__link" href="/RepoMaestria/docs/materia/horarios">Horario - Examenes</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/RepoMaestria/blog">Blog</a><a href="https://github.com/LeCipher/RepoMaestria" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Cambiar entre modo oscuro y claro (actualmente modo claro)" aria-label="Cambiar entre modo oscuro y claro (actualmente modo claro)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/RepoMaestria/docs/materia/control-ciberseguridad/intro">Inteligencia de Amenazas</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/RepoMaestria/docs/materia/control-ciberseguridad/sesion-1">Sesion - 1</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/RepoMaestria/docs/materia/control-ciberseguridad/sesion-2">Sesion - 2</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/RepoMaestria/docs/materia/control-ciberseguridad/sesion-3">Sesion - 3</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/RepoMaestria/docs/materia/control-ciberseguridad/sesion-4">Sesion - 4</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/RepoMaestria/docs/materia/control-ciberseguridad/sesion-5">Sesion - 5</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/RepoMaestria/docs/category/evaluaciones-2">Evaluaciones</a><button aria-label="Ampliar la categoría &#x27;Evaluaciones&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/RepoMaestria/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Sesion - 2</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>Sesion - 2</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-introducción-a-la-certificación-de-productos-de-seguridad">1. Introducción a la Certificación de Productos de Seguridad<a href="#1-introducción-a-la-certificación-de-productos-de-seguridad" class="hash-link" aria-label="Enlace directo al 1. Introducción a la Certificación de Productos de Seguridad" title="Enlace directo al 1. Introducción a la Certificación de Productos de Seguridad">​</a></h2>
+<p>La certificación de productos de seguridad consiste en que una entidad externa, imparcial y reconocida, valide por escrito que determinados productos o soluciones de TI (Tecnologías de la Información) cumplen con una serie de requisitos de calidad y seguridad establecidos.</p>
+<ul>
+<li><strong>Objetivo principal</strong>: Generar confianza y ofrecer garantías tanto a los usuarios como a las organizaciones que decidan adquirir dichos productos.</li>
+<li><strong>Definición de certificación</strong>:<!-- -->
+<ul>
+<li>Declaración imparcial de un tercero de que un producto cumple los requisitos definidos tras un proceso de evaluación formal.</li>
+<li>Auditoría realizada con respecto a una norma o estándar, efectuada por un organismo independiente.</li>
+</ul>
+</li>
+<li><strong>Razones para certificar</strong>:<!-- -->
+<ol>
+<li><strong>Cumplir requisitos legales</strong>: Cada vez hay más regulaciones que exigen o valoran la certificación de productos y servicios.</li>
+<li><strong>Obtener ventaja competitiva</strong>: La certificación aporta un sello de confianza al mercado.</li>
+<li><strong>Aumento de la confianza del cliente</strong>: Facilita la toma de decisiones de compra y reduce la incertidumbre sobre la seguridad y calidad del producto.</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p><strong>¿Significa que un producto certificado es 100% ciberseguro?</strong><br>
+<!-- -->No necesariamente; una certificación demuestra que cumple los requisitos evaluados bajo ciertos criterios y hasta cierto nivel de profundidad, pero no garantiza la ausencia total de vulnerabilidades.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-common-criteria-cc">2. Common Criteria (CC)<a href="#2-common-criteria-cc" class="hash-link" aria-label="Enlace directo al 2. Common Criteria (CC)" title="Enlace directo al 2. Common Criteria (CC)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-origen-e-importancia">2.1. Origen e Importancia<a href="#21-origen-e-importancia" class="hash-link" aria-label="Enlace directo al 2.1. Origen e Importancia" title="Enlace directo al 2.1. Origen e Importancia">​</a></h3>
+<p>Common Criteria (o Criterios Comunes) es un estándar internacional para la certificación de la seguridad en productos de TI. Surgió en los años 90 a partir de la unificación de criterios de distintos países (EE.UU., Canadá, Reino Unido, etc.) y fue adoptado por la ISO como norma de referencia para la evaluación de la ciberseguridad de software, hardware y firmware.</p>
+<ul>
+<li><strong>Alcance internacional</strong>: Firmado inicialmente por varios países, hoy son 26 naciones las que reconocen y aplican esta certificación.</li>
+<li><strong>Beneficio para usuarios y fabricantes</strong>:<!-- -->
+<ul>
+<li><strong>Usuarios</strong>: Pueden comprobar el nivel de seguridad que ofrece un producto según un estándar común y objetivo.</li>
+<li><strong>Fabricantes</strong>: Deben proveer documentación exhaustiva de sus productos y pasar las evaluaciones en laboratorios independientes, lo que incrementa la confianza del mercado.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="22-estructura-de-la-norma">2.2. Estructura de la Norma<a href="#22-estructura-de-la-norma" class="hash-link" aria-label="Enlace directo al 2.2. Estructura de la Norma" title="Enlace directo al 2.2. Estructura de la Norma">​</a></h3>
+<p>Se divide en tres partes principales:</p>
+<ol>
+<li>
+<p><strong>Parte 1 (Introducción y conceptos generales)</strong></p>
+<ul>
+<li>Define los términos básicos (TOE, <em>Target of Evaluation</em>) y el modelo de evaluación.</li>
+</ul>
+</li>
+<li>
+<p><strong>Parte 2 (Requisitos Funcionales de Seguridad - SFRs)</strong></p>
+<ul>
+<li>Recoge los atributos de seguridad que declara el fabricante de sus productos.</li>
+<li>Documento clave: <strong>Declaración de Seguridad</strong> (<em>Security Target</em>, ST).</li>
+</ul>
+</li>
+<li>
+<p><strong>Parte 3 (Criterios de Evaluación y Niveles de Garantía - EAL)</strong></p>
+<ul>
+<li>Define cómo se evalúan los <em>Perfiles de Protección</em> (PP) y las declaraciones de seguridad (ST).</li>
+<li>Establece los <strong>siete niveles de garantía de evaluación</strong> (EAL1 a EAL7).<!-- -->
+<ul>
+<li>Los niveles superiores implican evaluaciones más exhaustivas y costosas.</li>
+<li><strong>EAL1</strong> no es &quot;menos seguro&quot; que EAL7 en sí, sino que ha pasado pruebas menos profundas.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="23-proceso-de-certificación">2.3. Proceso de Certificación<a href="#23-proceso-de-certificación" class="hash-link" aria-label="Enlace directo al 2.3. Proceso de Certificación" title="Enlace directo al 2.3. Proceso de Certificación">​</a></h3>
+<ul>
+<li>El fabricante envía la documentación para que un laboratorio acreditado realice la evaluación.</li>
+<li>Se corrigen no conformidades o hallazgos.</li>
+<li>El laboratorio analiza el producto conforme al nivel EAL que se quiera alcanzar, revisando aspectos como diseño, tests, vulnerabilidades, etc.</li>
+<li>Si el producto cumple, se emite el certificado correspondiente.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="24-beneficiarios-de-common-criteria">2.4. Beneficiarios de Common Criteria<a href="#24-beneficiarios-de-common-criteria" class="hash-link" aria-label="Enlace directo al 2.4. Beneficiarios de Common Criteria" title="Enlace directo al 2.4. Beneficiarios de Common Criteria">​</a></h3>
+<ol>
+<li><strong>Consumidores</strong>:<!-- -->
+<ul>
+<li>Pueden definir sus necesidades de seguridad y comparar productos con criterios comunes.</li>
+</ul>
+</li>
+<li><strong>Desarrolladores</strong>:<!-- -->
+<ul>
+<li>Saben qué se exige y cómo se evaluará su producto.</li>
+</ul>
+</li>
+<li><strong>Evaluadores</strong>:<!-- -->
+<ul>
+<li>Cuentan con un marco formal y objetivos claros.</li>
+</ul>
+</li>
+<li><strong>Administraciones y organismos de certificación</strong>:<!-- -->
+<ul>
+<li>Se apoyan en un lenguaje y criterios estandarizados a nivel internacional.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-certificación-lince">3. Certificación LINCE<a href="#3-certificación-lince" class="hash-link" aria-label="Enlace directo al 3. Certificación LINCE" title="Enlace directo al 3. Certificación LINCE">​</a></h2>
+<p>Es la <strong>Certificación Nacional Esencial de Seguridad</strong> desarrollada por el Centro Criptológico Nacional (CCN) de España. Apunta a una metodología de evaluación más ligera que Common Criteria, pensada para productos que gestionan información sensible pero con un nivel de amenaza considerado bajo.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="31-características-principales">3.1. Características Principales<a href="#31-características-principales" class="hash-link" aria-label="Enlace directo al 3.1. Características Principales" title="Enlace directo al 3.1. Características Principales">​</a></h3>
+<ul>
+<li>Menor coste y esfuerzo en comparación con Common Criteria.</li>
+<li>Elimina gran parte de la complejidad asociada a las evaluaciones EAL altas.</li>
+<li>Reconocimiento a nivel nacional (a diferencia del carácter internacional de Common Criteria).</li>
+<li>Enfoque <strong>orientado al análisis de vulnerabilidades y tests de penetración</strong>.</li>
+<li>Ideal para <strong>pymes</strong> o productos con menor presupuesto de certificación.</li>
+<li>Permite el <strong>acceso al CPSTIC</strong> (Catálogo de productos y servicios de seguridad del CCN), lo que facilita la integración de los productos en entornos gubernamentales o de alta exigencia dentro del país.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="32-diferencias-con-common-criteria">3.2. Diferencias con Common Criteria<a href="#32-diferencias-con-common-criteria" class="hash-link" aria-label="Enlace directo al 3.2. Diferencias con Common Criteria" title="Enlace directo al 3.2. Diferencias con Common Criteria">​</a></h3>
+<ul>
+<li><strong>Alcance</strong>: CC es internacional, LINCE es nacional (España).</li>
+<li><strong>Coste y complejidad</strong>: LINCE es más ágil y económico.</li>
+<li><strong>Nivel de profundidad</strong>: CC ofrece un abanico de EALs con evaluaciones muy exhaustivas para niveles altos de amenaza.</li>
+<li><strong>Tipo de enfoque</strong>: LINCE es más práctico para un entorno de amenazas menores.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-estándar-pci-dss-payment-card-industry-data-security-standard">4. Estándar PCI DSS (Payment Card Industry Data Security Standard)<a href="#4-estándar-pci-dss-payment-card-industry-data-security-standard" class="hash-link" aria-label="Enlace directo al 4. Estándar PCI DSS (Payment Card Industry Data Security Standard)" title="Enlace directo al 4. Estándar PCI DSS (Payment Card Industry Data Security Standard)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="41-contexto-e-historia">4.1. Contexto e Historia<a href="#41-contexto-e-historia" class="hash-link" aria-label="Enlace directo al 4.1. Contexto e Historia" title="Enlace directo al 4.1. Contexto e Historia">​</a></h3>
+<p>PCI DSS es el estándar creado por el <strong>PCI Security Standards Council</strong> (PCI SSC) para definir las medidas de seguridad que deben cumplir las compañías que manejan, procesan o almacenan datos de tarjetas de pago.</p>
+<ul>
+<li><strong>Origen</strong>: Antes de PCI DSS, cada marca de tarjeta (Visa, Mastercard, etc.) tenía su propio programa de seguridad (CISP, SDP, DISC...), generando duplicidades y confusión para las empresas.</li>
+<li><strong>Objetivo</strong>: Unificar las políticas y controles de seguridad para la protección de la información del titular de la tarjeta y los datos confidenciales de autenticación.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="42-a-quién-aplica">4.2. ¿A quién aplica?<a href="#42-a-quién-aplica" class="hash-link" aria-label="Enlace directo al 4.2. ¿A quién aplica?" title="Enlace directo al 4.2. ¿A quién aplica?">​</a></h3>
+<ul>
+<li>A toda entidad que <strong>acepte, procese o almacene</strong> datos de titulares de tarjetas de pago.</li>
+<li>A nivel práctico, cualquier empresa que maneje transacciones con tarjetas (e-commerce, bancos, retailers, etc.).</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="43-estructura-del-estándar">4.3. Estructura del Estándar<a href="#43-estructura-del-estándar" class="hash-link" aria-label="Enlace directo al 4.3. Estructura del Estándar" title="Enlace directo al 4.3. Estructura del Estándar">​</a></h3>
+<p>PCI DSS se organiza en:</p>
+<ul>
+<li><strong>Seis grupos de requerimientos</strong> (más de 200 controles en total).</li>
+<li><strong>Doce requerimientos principales</strong> que cubren ámbitos como:<!-- -->
+<ol>
+<li>Construcción y mantenimiento de una red segura.</li>
+<li>Protección de datos de titulares de tarjetas.</li>
+<li>Mantenimiento de un programa de gestión de vulnerabilidades.</li>
+<li>Implementación de medidas de control de acceso.</li>
+<li>Monitoreo de redes y pruebas regulares.</li>
+<li>Políticas de seguridad de la información.</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-informes-soc-service-organization-control">5. Informes SOC (Service Organization Control)<a href="#5-informes-soc-service-organization-control" class="hash-link" aria-label="Enlace directo al 5. Informes SOC (Service Organization Control)" title="Enlace directo al 5. Informes SOC (Service Organization Control)">​</a></h2>
+<p>Existen varios tipos de informes SOC, siendo los más populares:</p>
+<ul>
+<li><strong>SOC 1</strong>: Centrado en controles relacionados con estados financieros.</li>
+<li><strong>SOC 2</strong>: Enfocado en controles de seguridad, disponibilidad, confidencialidad, integridad del procesamiento y privacidad de los datos.</li>
+</ul>
+<p>Estos informes los emite un auditor independiente (generalmente bajo la normativa de AICPA) y sirven para proveer transparencia y confianza a los clientes y partes interesadas sobre cómo se gestionan y protegen los datos en una organización.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-estándar-fido-fast-identity-online">6. Estándar FIDO (Fast Identity Online)<a href="#6-estándar-fido-fast-identity-online" class="hash-link" aria-label="Enlace directo al 6. Estándar FIDO (Fast Identity Online)" title="Enlace directo al 6. Estándar FIDO (Fast Identity Online)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="61-contexto-y-misión">6.1. Contexto y Misión<a href="#61-contexto-y-misión" class="hash-link" aria-label="Enlace directo al 6.1. Contexto y Misión" title="Enlace directo al 6.1. Contexto y Misión">​</a></h3>
+<p>El método más habitual de autenticación sigue siendo la contraseña. Sin embargo:</p>
+<ul>
+<li>Contraseñas largas y complejas son difíciles de recordar.</li>
+<li>Muchos usuarios reutilizan la misma contraseña.</li>
+<li>Las contraseñas son blanco fácil para ataques de phishing, malware, ataques de fuerza bruta, etc.</li>
+</ul>
+<p>FIDO busca <strong>reducir el uso de contraseñas</strong> y mejorar la seguridad de los procesos de autenticación.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="62-qué-es-fido">6.2. ¿Qué es FIDO?<a href="#62-qué-es-fido" class="hash-link" aria-label="Enlace directo al 6.2. ¿Qué es FIDO?" title="Enlace directo al 6.2. ¿Qué es FIDO?">​</a></h3>
+<ul>
+<li>Conjunto de <strong>estándares de autenticación</strong> impulsados por la <em>FIDO Alliance</em>, que agrupa a más de 250 organizaciones (Samsung, Google, Intel, Visa...).</li>
+<li><strong>Objetivo</strong>: Proporcionar autenticaciones más seguras y sencillas mediante <strong>criptografía de clave pública</strong> y autenticadores biométricos (huellas, rostro, voz, venas, etc.).</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="63-funcionamiento-básico">6.3. Funcionamiento Básico<a href="#63-funcionamiento-básico" class="hash-link" aria-label="Enlace directo al 6.3. Funcionamiento Básico" title="Enlace directo al 6.3. Funcionamiento Básico">​</a></h3>
+<ol>
+<li>El usuario accede a un servicio web y elige un <strong>autenticador FIDO</strong> (ej. lector de huellas en el móvil).</li>
+<li>El usuario desbloquea el dispositivo (huella, rostro, PIN...).</li>
+<li>El sistema genera un par de claves pública/privada único para cada servicio y cuenta.</li>
+<li>La <strong>clave pública</strong> se envía al servicio, la <strong>clave privada</strong> permanece en el dispositivo del usuario.</li>
+<li>Cada vez que se accede, el servicio pide validar la identidad con la clave privada (almacenada en el dispositivo).</li>
+<li>El servicio verifica que la clave recibida coincide con la pública vinculada a la cuenta.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="64-ventajas-de-fido">6.4. Ventajas de FIDO<a href="#64-ventajas-de-fido" class="hash-link" aria-label="Enlace directo al 6.4. Ventajas de FIDO" title="Enlace directo al 6.4. Ventajas de FIDO">​</a></h3>
+<ul>
+<li>El usuario no comparte contraseñas estáticas.</li>
+<li>Reduce el riesgo de phishing y robo de credenciales.</li>
+<li>Admite múltiples métodos biométricos.</li>
+<li>Experiencia de login más fluida y segura.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-resumen">7 Resumen<a href="#7-resumen" class="hash-link" aria-label="Enlace directo al 7 Resumen" title="Enlace directo al 7 Resumen">​</a></h2>
+<p>A continuación, se presenta el 20% de la información que cubre el 80% del valor de todo lo aprendido:</p>
+<ol>
+<li>
+<p><strong>Certificaciones de Seguridad</strong></p>
+<ul>
+<li>Son evaluaciones independientes que verifican si un producto cumple requisitos específicos.</li>
+<li>Aportan <strong>credibilidad</strong> y <strong>confianza</strong> a usuarios y empresas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Common Criteria</strong></p>
+<ul>
+<li>Norma internacional con distintos niveles de garantía (EAL1-EAL7).</li>
+<li>Profundidad de evaluación creciente para cada nivel, avalada por laboratorios independientes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Certificación LINCE</strong></p>
+<ul>
+<li>Versión <strong>más ligera</strong> de certificación de seguridad, enfocada a entornos de menor riesgo.</li>
+<li>Reconocimiento nacional (España) y <strong>coste reducido</strong> en comparación con Common Criteria.</li>
+</ul>
+</li>
+<li>
+<p><strong>PCI DSS</strong></p>
+<ul>
+<li>Estándar para proteger <strong>datos de tarjetas de pago</strong>.</li>
+<li><strong>Requerido</strong> para cualquier empresa que procese, almacene o transmita datos de tarjetas.</li>
+<li>Evita la duplicidad de programas de seguridad de las diferentes marcas (Visa, MasterCard, etc.).</li>
+</ul>
+</li>
+<li>
+<p><strong>Informes SOC</strong></p>
+<ul>
+<li>Proporcionan transparencia sobre <strong>controles y procesos</strong> en organizaciones que manejan datos críticos.</li>
+<li>SOC 1 (financiero), SOC 2 (seguridad y privacidad).</li>
+</ul>
+</li>
+<li>
+<p><strong>FIDO (Fast Identity Online)</strong></p>
+<ul>
+<li>Principal objetivo: <strong>reducir el uso de contraseñas</strong> y aprovechar la <strong>criptografía de clave pública</strong>.</li>
+<li>Facilita la autenticación biométrica y mejora la seguridad contra ataques de phishing.</li>
+</ul>
+</li>
+</ol></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/RepoMaestria/docs/materia/control-ciberseguridad/sesion-1"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Sesion - 1</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/RepoMaestria/docs/materia/control-ciberseguridad/sesion-3"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">Sesion - 3</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-introducción-a-la-certificación-de-productos-de-seguridad" class="table-of-contents__link toc-highlight">1. Introducción a la Certificación de Productos de Seguridad</a></li><li><a href="#2-common-criteria-cc" class="table-of-contents__link toc-highlight">2. Common Criteria (CC)</a><ul><li><a href="#21-origen-e-importancia" class="table-of-contents__link toc-highlight">2.1. Origen e Importancia</a></li><li><a href="#22-estructura-de-la-norma" class="table-of-contents__link toc-highlight">2.2. Estructura de la Norma</a></li><li><a href="#23-proceso-de-certificación" class="table-of-contents__link toc-highlight">2.3. Proceso de Certificación</a></li><li><a href="#24-beneficiarios-de-common-criteria" class="table-of-contents__link toc-highlight">2.4. Beneficiarios de Common Criteria</a></li></ul></li><li><a href="#3-certificación-lince" class="table-of-contents__link toc-highlight">3. Certificación LINCE</a><ul><li><a href="#31-características-principales" class="table-of-contents__link toc-highlight">3.1. Características Principales</a></li><li><a href="#32-diferencias-con-common-criteria" class="table-of-contents__link toc-highlight">3.2. Diferencias con Common Criteria</a></li></ul></li><li><a href="#4-estándar-pci-dss-payment-card-industry-data-security-standard" class="table-of-contents__link toc-highlight">4. Estándar PCI DSS (Payment Card Industry Data Security Standard)</a><ul><li><a href="#41-contexto-e-historia" class="table-of-contents__link toc-highlight">4.1. Contexto e Historia</a></li><li><a href="#42-a-quién-aplica" class="table-of-contents__link toc-highlight">4.2. ¿A quién aplica?</a></li><li><a href="#43-estructura-del-estándar" class="table-of-contents__link toc-highlight">4.3. Estructura del Estándar</a></li></ul></li><li><a href="#5-informes-soc-service-organization-control" class="table-of-contents__link toc-highlight">5. Informes SOC (Service Organization Control)</a></li><li><a href="#6-estándar-fido-fast-identity-online" class="table-of-contents__link toc-highlight">6. Estándar FIDO (Fast Identity Online)</a><ul><li><a href="#61-contexto-y-misión" class="table-of-contents__link toc-highlight">6.1. Contexto y Misión</a></li><li><a href="#62-qué-es-fido" class="table-of-contents__link toc-highlight">6.2. ¿Qué es FIDO?</a></li><li><a href="#63-funcionamiento-básico" class="table-of-contents__link toc-highlight">6.3. Funcionamiento Básico</a></li><li><a href="#64-ventajas-de-fido" class="table-of-contents__link toc-highlight">6.4. Ventajas de FIDO</a></li></ul></li><li><a href="#7-resumen" class="table-of-contents__link toc-highlight">7 Resumen</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Materias</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/RepoMaestria/docs/materia/analisis-de-riesgo/intro">Análisis de Riesgo</a></li></ul></div><div class="col footer__col"><div class="footer__title">Contribuir</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/LeCipher/RepoMaestria" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Conoce Más</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/RepoMaestria/blog">Blog</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025.</div></div></div></footer></div>
+</body>
+</html>
