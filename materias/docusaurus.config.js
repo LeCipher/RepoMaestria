@@ -129,6 +129,11 @@ const config = {
               },
               {
                 type: "docSidebar",
+                sidebarId: "ControlDelRiesgoCiberseguridad",
+                label: "Control del Riesgo de Ciberseguridad	",
+              },
+              {
+                type: "docSidebar",
                 sidebarId: "CriptografiaGICA",
                 label: "Criptografia - GICA",
               },

@@ -3,7 +3,7 @@ title: Horarios
 sidebar_position: 1
 ---
 
-## hORARIO DE LAS MATERIAS
+## Horario de Examenes UAX Online
 
 | Cód. | Cód Asignatura | Asignatura                                                     | Fecha      | ES    | EC    |
 | ---- | -------------- | -------------------------------------------------------------- | ---------- | ----- | ----- |

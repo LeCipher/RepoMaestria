@@ -1,0 +1,140 @@
+---
+sidebar_position: 2
+title: Evaluación UD2
+---
+import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
+
+# Evaluación UD
+
+Cuestionario de evaluación UD
+{/* truncate */}
+
+<InteractiveQuiz
+question="A mayor EAL o nivel de garantía para certificarse en Common Criteria "
+options={{
+  A: "El esfuerzo por los fabricantes y por los evaluadores no depende del nivel de garantia a certificarse",
+  B: "El esfuerzo a realizar por los evaluadores aumenta, asi como la cantidad de documentación a entregar por el fabricante",
+  C: "La documentación solicitada a los fabricantes será menos exhaustiva y detallada",
+  D: "En ningún caso existirá un intercambio de requisitos funcionales entre los fabricantes y los evaluadores."
+ }} 
+correctAnswer="B"
+correctExplanation="La respuesta correcta es la B. A mayor nivel EAL, más rigurosa es la evaluación y, por lo tanto, se requiere más esfuerzo por parte de los evaluadores y una documentación más exhaustiva por parte del fabricante para demostrar el cumplimiento de los requisitos de seguridad."
+incorrectExplanation="Las otras opciones son incorrectas porque contradicen el principio fundamental de los EALs en Common Criteria.  Un EAL superior implica una evaluación más profunda y exigente, lo que necesariamente aumenta el esfuerzo y la documentación."
+/>
+
+<InteractiveQuiz 
+question="¿Cuál es la diferencia principal entre PCI DSS y Common Criteria? "
+options={{
+  A: "PCI DSS se centra solo en software y Common Criteria solo en hardware.",
+  B: "PCI DSS se centra en ciberseguridad general y Common Criteria en datos financieros.",
+  C: "PCI DSS se aplica a transacciones de pago, mientras que Common Criteria cubre la seguridad de productos tecnológicos",
+  D: "PCI DSS es opcional, Common Criteria es obligatorio."
+ }} 
+correctAnswer="C"
+correctExplanation="La respuesta correcta es la C. PCI DSS (Payment Card Industry Data Security Standard) se centra específicamente en la seguridad de los datos de tarjetas de pago durante las transacciones. Common Criteria, por otro lado, es un marco general para evaluar la seguridad de productos tecnológicos de diversa índole, no limitado a un sector específico."
+incorrectExplanation="Las opciones A, B y D son incorrectas porque presentan diferencias erróneas o incompletas entre PCI DSS y Common Criteria. PCI DSS no se limita al software, Common Criteria no se limita al hardware ni a datos financieros en exclusividad, y ninguno de los dos estándares es inherentemente obligatorio u opcional en todos los contextos."
+/>
+
+<InteractiveQuiz 
+question="Selecciona la afirmación correcta respecto a Common Criteria "
+options={{
+  A: "Los fabricantes de productos podrán siempre certificarse en el EAL máximo independientemente de los requisitos funcionales del producto.",
+  B: "Common Criteria ofrece diferentes niveles de garantía o EALs y el nivel se establece previo acuerdo entre los fabricantes y el organismo de Common Criteria.",
+  C: "Todos los productos deben cumplir como mínimo el nivel de garantía EAL 4.",
+  D: "Todas las anteriores son correctas."
+ }} 
+correctAnswer="B"
+correctExplanation="La respuesta correcta es la B. Common Criteria define varios niveles de garantía (EALs) que representan diferentes grados de profundidad y rigor en la evaluación de seguridad. El nivel de EAL se selecciona en función de las necesidades de seguridad del producto y se acuerda entre el fabricante y el organismo de certificación."
+incorrectExplanation="Las opciones A y C son incorrectas. No todos los productos pueden alcanzar el EAL máximo, ya que depende de sus requisitos funcionales y de seguridad.  Tampoco existe un EAL mínimo obligatorio para todos los productos bajo Common Criteria; el nivel se elige según las necesidades."
+/>
+
+<InteractiveQuiz 
+question="¿Qué empresas deben cumplir con el estándar PCI DSS? "
+options={{
+  A: "Todas las empresas que aceptan, procesan o almacenan información de pagos con tarjeta",
+  B: "Empresas que emiten tarjetas de crédito.",
+  C: "Solo empresas financieras.",
+  D: "Solo comercios electrónicos"
+ }} 
+correctAnswer="A"
+correctExplanation="La respuesta correcta es la A. El estándar PCI DSS (Payment Card Industry Data Security Standard) aplica a cualquier organización, sin importar su tamaño o ubicación, que participe en el procesamiento, almacenamiento o transmisión de datos de tarjetas de pago de marca."
+incorrectExplanation="Las opciones B, C y D son demasiado restrictivas. PCI DSS no se limita solo a emisores de tarjetas, entidades financieras o comercios electrónicos.  Afecta a cualquier empresa que maneje datos de tarjetas de pago, incluyendo comercios físicos, procesadores de pago, proveedores de servicios, etc."
+/>
+
+<InteractiveQuiz 
+question="La certificación PCI DSS persigue "
+options={{
+  A: "Incrementar la confianza de los titulares de tarjetas en las transacciones garantizando la protección de sus datos.",
+  B: "Minimizar el riesgo de posibles intrusiones no autorizadas o compromiso de la información",
+  C: "Mejorar el nivel de seguridad de los pagos realizados mediante tarjetas",
+  D: "Todas las anteriores son correctas"
+ }} 
+correctAnswer="D"
+correctExplanation="La respuesta correcta es la D. La certificación PCI DSS persigue todos los objetivos mencionados: aumentar la confianza de los titulares de tarjetas, minimizar riesgos de intrusiones y mejorar la seguridad de los pagos con tarjeta.  De hecho, estos objetivos están interrelacionados y forman parte del propósito integral del estándar PCI DSS."
+incorrectExplanation="Las opciones A, B y C, aunque individualmente son objetivos válidos de PCI DSS,  son incompletas si se consideran como la *única* finalidad del estándar.  La opción D es la correcta porque engloba todos los objetivos principales de la certificación PCI DSS."
+/>
+
+<InteractiveQuiz 
+question="¿Qué ventaja ofrece Common Criteria para los usuarios y clientes? "
+options={{
+  A: "Permite que los usuarios configuren su propio estándar de seguridad",
+  B: "Proporciona confianza en la evaluación de seguridad de los productos",
+  C: "Facilita la autenticación biométrica",
+  D: "Elimina la necesidad de certificaciones adicionales"
+ }} 
+correctAnswer="B"
+correctExplanation="La respuesta correcta es la B. Common Criteria ofrece a los usuarios y clientes la ventaja principal de generar confianza en la seguridad de los productos tecnológicos que han sido evaluados y certificados bajo este estándar.  La certificación Common Criteria es un sello de calidad reconocido internacionalmente en cuanto a seguridad."
+incorrectExplanation="Las opciones A, C y D son incorrectas porque describen beneficios que no son la ventaja principal de Common Criteria para usuarios y clientes. Common Criteria no permite a usuarios configurar estándares (opción A), no se centra en la autenticación biométrica (opción C), y no elimina la necesidad de otras certificaciones (opción D), ya que puede ser complementaria a otros esquemas de certificación."
+/>
+
+<InteractiveQuiz 
+question="El organismo de PCI DSS "
+options={{
+  A: "Ofrece un framework de evaluación bien acotado en 12 requerimientos principales subdivididos en 6 grupos principales.",
+  B: "Establece un framework complejo subdividido en un mapa de procesos y es abierta interpretación para el evaluador",
+  C: "Da flexibilidad respecto a los controles que un tercero debe evaluar sobre la empresa",
+  D: "Ninguna de las anteriores es correcta"
+ }} 
+correctAnswer="A"
+correctExplanation="La respuesta correcta es la A. El PCI Security Standards Council, organismo que gestiona PCI DSS,  proporciona un framework de evaluación muy bien definido y estructurado. Este framework se compone de 12 requerimientos principales, que a su vez se organizan en 6 grupos lógicos (objetivos de control). Esta estructura clara facilita la evaluación y estandarización de la seguridad."
+incorrectExplanation="Las opciones B y C son incorrectas porque describen características que no se corresponden con el framework de PCI DSS.  El framework no es de 'abierta interpretación' (opción B), sino más bien preciso y detallado.  Tampoco da 'flexibilidad' en los controles a evaluar por un tercero (opción C), ya que el estándar define los controles específicos que deben ser evaluados para la certificación."
+/>
+
+<InteractiveQuiz 
+question="Selecciona la afirmación más correcta respecto al informe SOC 2 "
+options={{
+  A: "Los informes de SOC 2 deberán contrar sus controles relativos a la seguridad de la información bajo los criterios de seguridad, disponibilidad, integridad, confidencialidad y privacidad",
+  B: "Los informes de SOC 2 son flexibles y únicos para cada compañía, adaptados a sus entornos.",
+  C: "Todas las afirmaciones anteriores son correctas",
+  D: "Los informes de SOC 2 Tipo 1 representarian el estado de los controles en un determinado momento mientras que SOC 2 de Tipo 2, mediria la efectividad de esos controles durante un periodo de tiempo"
+ }} 
+correctAnswer="C"
+correctExplanation="La respuesta correcta es la C.  Todas las afirmaciones anteriores son correctas y describen aspectos clave de los informes SOC 2 (System and Organization Controls 2).  Los informes SOC 2 efectivamente cubren los criterios de seguridad, disponibilidad, integridad, confidencialidad y privacidad (opción A). Son flexibles y adaptados a cada organización (opción B). Y, finalmente, los informes Tipo 1 y Tipo 2 difieren en el alcance temporal de la evaluación (opción D)."
+incorrectExplanation="Dado que la opción C ('Todas las afirmaciones anteriores son correctas') es la respuesta correcta según la imagen, no hay opciones incorrectas como tal.  Sin embargo, si se eligiera A, B o D individualmente, se estaría dando una respuesta incompleta, ya que todas las afirmaciones son válidas y relevantes para describir los informes SOC 2."
+/>
+
+<InteractiveQuiz 
+question="¿Cuál es la principal característica de un informe SOC 2 de Tipo 2? "
+options={{
+  A: "Evalúa controles financieros exclusivamente.",
+  B: "Solo aplica a organizaciones financieras.",
+  C: "Evalúa la efectividad de los controles en un periodo de al menos seis meses.",
+  D: "Se centra en la evaluación en un único punto en el tiempo."
+ }} 
+correctAnswer="C"
+correctExplanation="La respuesta correcta es la C. La principal característica distintiva de un informe SOC 2 Tipo 2 es que evalúa la efectividad operativa de los controles de una organización durante un período de tiempo, que generalmente abarca al menos seis meses. Esto proporciona una visión más profunda y robusta de la seguridad y los controles a lo largo del tiempo, en comparación con el Tipo 1."
+incorrectExplanation="Las opciones A, B y D son incorrectas porque no reflejan la característica principal del informe SOC 2 Tipo 2.  Los informes SOC 2 no se limitan a controles financieros (opción A) ni a organizaciones financieras (opción B).  La opción D describe el informe SOC 2 Tipo 1, que se centra en la evaluación en un momento específico, a diferencia del Tipo 2 que evalúa un periodo."
+/>
+
+<InteractiveQuiz 
+question="¿Qué característica define al informe SOC 2? "
+options={{
+  A: "Solo es válido en los EE.UU.",
+  B: "Evalúa la seguridad, disponibilidad y privacidad de los sistemas de información.",
+  C: "Es obligatorio para todas las empresas públicas",
+  D: "Se aplica exclusivamente a empresas tecnológicas."
+ }} 
+correctAnswer="B"
+correctExplanation="La respuesta correcta es la B. La característica definitoria del informe SOC 2 es que evalúa y reporta sobre los controles de una organización relacionados con los **Trust Services Criteria** (Criterios de Servicios de Confianza), que incluyen seguridad, disponibilidad, procesamiento de la integridad, confidencialidad y privacidad de los sistemas de información."
+incorrectExplanation="Las opciones A, C y D son incorrectas porque presentan limitaciones geográficas, de obligatoriedad o de sector que no definen al informe SOC 2. El informe SOC 2 no está limitado a EE.UU. (opción A), no es obligatorio para todas las empresas públicas (opción C), y no se aplica exclusivamente a empresas tecnológicas (opción D).  Su característica principal es el enfoque en los criterios de servicios de confianza."
+/>

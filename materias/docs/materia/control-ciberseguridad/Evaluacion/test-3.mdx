@@ -1,0 +1,528 @@
+---
+sidebar_position: 3
+title: Preguntas Generadas
+---
+import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
+
+# Preguntas Generadas UD1
+
+{/* truncate */}
+<InteractiveQuiz  
+  question="1. ¿Cuál de las siguientes afirmaciones describe mejor la diferencia entre Common Criteria (CC) y la Certificación LINCE?"  
+  options={{  
+    A: "CC se aplica solo a hardware, mientras que LINCE cubre hardware y software.",  
+    B: "CC ofrece niveles de garantía internacionales, mientras que LINCE tiene alcance nacional y menor complejidad.",  
+    C: "LINCE es un estándar reconocido por 26 países, mientras que CC tiene validez solo en España.",  
+    D: "LINCE exige la evaluación de un laboratorio externo, mientras que CC se basa en la autoevaluación."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="CC es un estándar internacional con múltiples niveles de garantía (EAL). LINCE, por otro lado, es una certificación más ligera, reconocida en España, con costos y esfuerzos reducidos."  
+  incorrectExplanation="Las demás opciones confunden el alcance o el proceso de evaluación: CC sí exige laboratorios independientes y es internacional, mientras que LINCE es de carácter nacional y más sencillo."  
+/>  
+
+<InteractiveQuiz  
+  question="2. En Common Criteria, ¿qué representan los EAL (Evaluation Assurance Levels)?"  
+  options={{  
+    A: "Niveles de criticidad de un incidente de seguridad.",  
+    B: "Niveles de profundidad y rigor con los que se evalúa la seguridad de un producto.",  
+    C: "Niveles de madurez de una organización en ciberseguridad.",  
+    D: "Niveles de cumplimiento de la normativa PCI DSS."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="Los EAL establecen cuán profundamente se ha evaluado un producto. Un EAL más alto implica un análisis más riguroso."  
+  incorrectExplanation="Las otras opciones no describen de forma correcta el significado de EAL en Common Criteria."  
+/>  
+
+<InteractiveQuiz  
+  question="3. ¿Cuál es uno de los principales objetivos de la certificación PCI DSS?"  
+  options={{  
+    A: "Evaluar la gestión de incidencias en entornos cloud.",  
+    B: "Garantizar la seguridad de los datos de titulares de tarjetas de pago.",  
+    C: "Proporcionar niveles de confianza similares a EAL3.",  
+    D: "Regular la producción de software biométrico."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="PCI DSS está específicamente orientado a la protección de los datos de titulares de tarjetas de pago, imponiendo controles de seguridad física, lógica y administrativa."  
+  incorrectExplanation="Las otras respuestas se alejan de la finalidad central de PCI DSS, que es asegurar los datos de tarjetas de crédito y débito."  
+/>  
+
+<InteractiveQuiz  
+  question="4. ¿Por qué la certificación LINCE se considera más adecuada para pymes en comparación con Common Criteria?"  
+  options={{  
+    A: "Por su reconocimiento internacional y mayor rigor técnico.",  
+    B: "Por su reducido coste, menor complejidad y alcance más orientado a amenazas bajas.",  
+    C: "Porque requiere obligatoriamente EAL7 para su obtención.",  
+    D: "Porque elimina la necesidad de publicar documentación exhaustiva de seguridad."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="LINCE es más ligero y económico, con un alcance centrado en amenazas de nivel moderado-bajo, lo que lo hace más accesible para pymes."  
+  incorrectExplanation="Las otras opciones no son correctas: LINCE no tiene el mismo nivel de internacionalización, no requiere EAL7 ni elimina la necesidad de documentación esencial."  
+/>  
+
+<InteractiveQuiz  
+  question="5. ¿Cuál de los siguientes estándares se enfoca en la protección de datos de titular de tarjeta y datos confidenciales de autenticación?"  
+  options={{  
+    A: "LINCE",  
+    B: "Common Criteria",  
+    C: "PCI DSS",  
+    D: "SOC 2"  
+  }}  
+  correctAnswer="C"  
+  correctExplanation="PCI DSS se centra en la protección de datos de titulares de tarjetas de pago y en la implementación de controles específicos para ello."  
+  incorrectExplanation="Ni Common Criteria ni LINCE están orientados específicamente a la protección de datos de tarjetas de pago. SOC 2 se centra en aspectos de seguridad, disponibilidad, confidencialidad, etc., pero no exclusivamente en datos de tarjetas."  
+/>  
+
+<InteractiveQuiz  
+  question="6. ¿Qué tipo de información abordan principalmente los informes SOC (Service Organization Control)?"  
+  options={{  
+    A: "Solo controles relacionados con TI interna.",  
+    B: "Controles de seguridad, confidencialidad, disponibilidad y privacidad de datos en servicios de terceros.",  
+    C: "Exclusivamente la protección de datos de tarjetas de pago.",  
+    D: "Únicamente auditorías financieras sin relación con la ciberseguridad."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="Los informes SOC (en particular SOC 2) se centran en controles de seguridad, disponibilidad, confidencialidad, integridad de procesos y privacidad en servicios de terceros."  
+  incorrectExplanation="El alcance de SOC no se limita ni a la TI interna ni a aspectos puramente financieros o de tarjetas de pago."  
+/>  
+
+<InteractiveQuiz  
+  question="7. ¿Cuál es la principal ventaja de los estándares FIDO en el ámbito de la autenticación en línea?"  
+  options={{  
+    A: "Sustituyen las contraseñas por métodos de pago con tarjetas de crédito.",  
+    B: "Permiten un enfoque biométrico y criptográfico, reduciendo la dependencia de contraseñas estáticas.",  
+    C: "Obligan a usar contraseñas largas y complejas para mayor seguridad.",  
+    D: "Son estándares que solo se aplican en bancos internacionales."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="FIDO promueve la autenticación biométrica y el uso de criptografía de clave pública, mitigando el uso excesivo de contraseñas estáticas."  
+  incorrectExplanation="Las demás opciones no reflejan el propósito principal de FIDO, que es simplificar y fortalecer la autenticación reduciendo el uso de contraseñas."  
+/>  
+
+<InteractiveQuiz  
+  question="8. ¿En qué se diferencian SOC 1 y SOC 2 principalmente?"  
+  options={{  
+    A: "SOC 1 se dirige a la información financiera, mientras que SOC 2 aborda la seguridad, disponibilidad y confidencialidad, entre otros aspectos.",  
+    B: "SOC 1 evalúa datos de tarjetas de pago, SOC 2 evalúa accesos biométricos.",  
+    C: "SOC 2 es exclusivamente para bancos, SOC 1 para pymes.",  
+    D: "SOC 1 y SOC 2 son equivalentes, solo varía la nomenclatura."  
+  }}  
+  correctAnswer="A"  
+  correctExplanation="SOC 1 se enfoca en controles relevantes para los estados financieros, mientras que SOC 2 evalúa aspectos de seguridad, disponibilidad, confidencialidad, integridad y privacidad."  
+  incorrectExplanation="Las otras opciones no describen correctamente la distinción fundamental entre SOC 1 y SOC 2."  
+/>  
+
+<InteractiveQuiz  
+  question="9. ¿Cuál de las siguientes opciones describe mejor el objetivo principal de los estándares FIDO?"  
+  options={{  
+    A: "Promover la recolección de evidencias digitales para fines judiciales.",  
+    B: "Unificar los requisitos de seguridad para la protección de datos financieros.",  
+    C: "Permitir autenticación segura sin uso de contraseñas estáticas, facilitando el uso de biometría y criptografía.",  
+    D: "Certificar el cumplimiento de los niveles EAL en dispositivos móviles."  
+  }}  
+  correctAnswer="C"  
+  correctExplanation="FIDO busca reducir el uso de contraseñas estáticas y fomentar métodos de autenticación seguros (biometría, criptografía de clave pública, etc.)."  
+  incorrectExplanation="Las otras respuestas no se alinean con la misión principal de FIDO en la autenticación online."  
+/>  
+
+<InteractiveQuiz  
+  question="10. Desde el punto de vista de negocio, ¿por qué las empresas buscan certificaciones como Common Criteria o PCI DSS?"  
+  options={{  
+    A: "Porque son obligatorias en todos los países y sectores sin excepción.",  
+    B: "Para reducir el riesgo y demostrar un alto nivel de seguridad y confianza a clientes y reguladores.",  
+    C: "Para poder ofrecer servicios financieros sin necesidad de auditorías adicionales.",  
+    D: "Para eliminar la necesidad de un seguro de responsabilidad civil."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="Estas certificaciones demuestran la eficacia de los controles y aportan confianza al mercado y a los reguladores, reduciendo así el riesgo reputacional y legal."  
+  incorrectExplanation="No son obligatorias en todos los países y sectores, ni sustituyen otras responsabilidades legales o seguros."  
+/>  
+
+<InteractiveQuiz  
+  question="11. Según COSO, ¿cuál es el objetivo principal de un sistema de control interno?"  
+  options={{  
+    A: "Garantizar el 100% de seguridad en todos los procesos de la organización.",  
+    B: "Proporcionar una seguridad razonable para la consecución de los objetivos de eficacia, fiabilidad de la información y cumplimiento legal.",  
+    C: "Eliminar la necesidad de un gobierno corporativo.",  
+    D: "Aumentar de forma ilimitada el gasto en herramientas de ciberseguridad."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="COSO establece que el control interno debe brindar seguridad razonable para lograr los objetivos de eficiencia operativa, confiabilidad de la información y cumplimiento regulatorio."  
+  incorrectExplanation="No garantiza el 100% de seguridad ni elimina la necesidad de gobierno corporativo."  
+/>  
+
+<InteractiveQuiz  
+  question="12. ¿Qué diferencia sustancial existe entre COSO Control Interno y COSO ERM (Enterprise Risk Management)?"  
+  options={{  
+    A: "COSO ERM reemplaza por completo la necesidad de control interno.",  
+    B: "COSO Control Interno se centra en la gestión de fraudes, mientras que COSO ERM en la gestión de proyectos.",  
+    C: "COSO ERM ofrece una visión estratégica de los riesgos a nivel empresarial, mientras que COSO Control Interno se enfoca en la fiabilidad de la información y el cumplimiento.",  
+    D: "No existe diferencia, ambos son sinónimos."  
+  }}  
+  correctAnswer="C"  
+  correctExplanation="COSO ERM amplía el foco a la visión estratégica y la gestión de riesgos empresariales en general, mientras que COSO Control Interno hace hincapié en la eficiencia operativa, la fiabilidad informativa y el cumplimiento normativo."  
+  incorrectExplanation="No son sinónimos ni tienen un foco reducido exclusivamente al fraude o a proyectos."  
+/>  
+
+<InteractiveQuiz  
+  question="13. En la metodología COSO, ¿cuál de los siguientes factores no forma parte explícita de los cinco componentes del control interno?"  
+  options={{  
+    A: "Ambiente de Control",  
+    B: "Evaluación de Riesgos",  
+    C: "Segregación de Funciones",  
+    D: "Actividades de Control"  
+  }}  
+  correctAnswer="C"  
+  correctExplanation="Los cinco componentes son: Ambiente de Control, Evaluación de Riesgos, Actividades de Control, Información y Comunicación, y Supervisión. 'Segregación de Funciones' es una práctica dentro de las 'Actividades de Control', pero no se considera un componente independiente."  
+  incorrectExplanation="Las otras opciones sí corresponden a componentes o áreas explícitas de COSO."  
+/>  
+
+<InteractiveQuiz  
+  question="14. ¿Qué define el concepto de 'appetite for risk' (apetito de riesgo) en COSO ERM?"  
+  options={{  
+    A: "La tolerancia cero a cualquier riesgo en la organización.",  
+    B: "La cantidad de inversión máxima en seguridad.",  
+    C: "El nivel de riesgo que una organización está dispuesta a asumir para alcanzar sus objetivos.",  
+    D: "La probabilidad de ocurrencia de eventos catastróficos."  
+  }}  
+  correctAnswer="C"  
+  correctExplanation="El apetito de riesgo es el nivel de riesgo aceptable que la empresa está dispuesta a tolerar para alcanzar sus metas estratégicas."  
+  incorrectExplanation="No implica tolerancia cero ni determina la inversión, sino el umbral de riesgo asumido."  
+/>  
+
+<InteractiveQuiz  
+  question="15. Según COBIT, ¿cuál de las siguientes afirmaciones describe mejor la diferencia entre Gobierno y Gestión de TI?"  
+  options={{  
+    A: "La gestión de TI se encarga de emitir directrices estratégicas, mientras que el gobierno solo se limita a tareas operativas.",  
+    B: "El gobierno de TI se centra en evaluar, dirigir y monitorizar, mientras la gestión planifica, implementa y opera conforme a las directivas del gobierno.",  
+    C: "No hay ninguna diferencia, ambos se refieren a lo mismo.",  
+    D: "La gestión decide la estrategia tecnológica y el gobierno implementa las herramientas."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="COBIT diferencia claramente entre gobierno (EDM: Evaluar, Dirigir y Monitorear) y gestión (APO, BAI, DSS, MEA) en la administración de TI."  
+  incorrectExplanation="Las demás respuestas confunden o invierten los roles de gobierno y gestión en COBIT."  
+/>  
+
+<InteractiveQuiz  
+  question="16. ¿Cuál es uno de los objetivos del dominio 'EDM' (Evaluate, Direct, Monitor) en COBIT?"  
+  options={{  
+    A: "Garantizar la ejecución de parches de seguridad en sistemas operativos.",  
+    B: "Alinear la estrategia de TI con las necesidades y el valor para las partes interesadas.",  
+    C: "Controlar la calidad del servicio al cliente en un contact center.",  
+    D: "Diseñar aplicaciones móviles para la organización."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="El dominio EDM en COBIT se encarga de evaluar las necesidades de las partes interesadas, dirigir la estrategia y monitorizar el logro de los objetivos de TI en relación con el valor aportado al negocio."  
+  incorrectExplanation="Las otras opciones son tareas operativas o tácticas, no propias de EDM."  
+/>  
+
+<InteractiveQuiz  
+  question="17. De acuerdo con COBIT, ¿cuál de los siguientes dominios corresponde a las funciones de 'Gestión' (Management)?"  
+  options={{  
+    A: "EDM (Evaluate, Direct and Monitor)",  
+    B: "MEA (Monitor, Evaluate and Assess), APO (Align, Plan and Organize), BAI (Build, Acquire and Implement), DSS (Deliver, Service and Support)",  
+    C: "APO únicamente",  
+    D: "Todos los dominios se consideran parte del Gobierno."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="COBIT separa el Gobierno (EDM) de la Gestión (APO, BAI, DSS, MEA). Estos cuatro dominios pertenecen a las funciones de la gestión."  
+  incorrectExplanation="El dominio EDM es el único de gobierno; no todos los dominios pertenecen al gobierno."  
+/>  
+
+<InteractiveQuiz  
+  question="18. ¿Por qué el Gobierno Empresarial de TI (GEIT) es clave para el éxito de una organización, según COBIT?"  
+  options={{  
+    A: "Reduce la complejidad de las iniciativas de TI sin alinear la tecnología con el negocio.",  
+    B: "Garantiza el cumplimiento regulatorio y la alineación estratégica, maximizando el valor de las inversiones en TI.",  
+    C: "Elimina el papel de la alta dirección en las decisiones tecnológicas.",  
+    D: "Se centra únicamente en la reducción de costes operativos de TI."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="El gobierno de TI garantiza que las inversiones tecnológicas estén alineadas con la estrategia organizacional, cumplan la normativa y agreguen valor."  
+  incorrectExplanation="No busca eliminar la alta dirección ni reducir exclusivamente costes, sino generar valor y asegurar el cumplimiento."  
+/>  
+
+<InteractiveQuiz  
+  question="19. ¿Qué busca el principio 'Cubrir la empresa de extremo a extremo' de COBIT 5?"  
+  options={{  
+    A: "Incluir exclusivamente las áreas de TI en la gestión de riesgos.",  
+    B: "Abarcar la información y tecnologías en toda la organización, no solo en el departamento de TI.",  
+    C: "Limitar el alcance de la implementación a un proceso específico.",  
+    D: "Basarse en la delegación total de responsabilidades a proveedores externos."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="Este principio indica que COBIT 5 considera todos los procesos y funciones de la empresa, implicando que la gestión de TI no se limite al área de tecnología sino que impacte y coordine con toda la organización."  
+  incorrectExplanation="No restringe el alcance, ni delega todo a proveedores, ni se limita a TI."  
+/>  
+
+<InteractiveQuiz  
+  question="20. ¿Qué aporte fundamental tiene COBIT en relación con otros marcos como ITIL o ISO 27001?"  
+  options={{  
+    A: "COBIT reemplaza a ITIL y a ISO 27001 de forma obligatoria.",  
+    B: "COBIT es un marco de gobierno corporativo centrado en TI, permitiendo la integración de prácticas de diferentes estándares.",  
+    C: "COBIT se dedica exclusivamente a la gestión de incidentes en redes.",  
+    D: "COBIT exige el uso de PCI DSS en todo entorno regulado."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="COBIT funciona como un marco de gobierno y gestión de TI, integrando y alineando prácticas de ITIL, ISO 27001 y otros para lograr un enfoque holístico."  
+  incorrectExplanation="No reemplaza de forma obligatoria a otros estándares ni se limita exclusivamente a incidentes de red."  
+/>  
+
+<InteractiveQuiz  
+  question="21. ¿Cuál es la finalidad principal de la Auditoría Pericial Forense en ciberseguridad?"  
+  options={{  
+    A: "Desarrollar nuevas aplicaciones de seguridad biométrica.",  
+    B: "Aplicar técnicas y metodologías para identificar, preservar, analizar y presentar evidencias digitales con validez legal.",  
+    C: "Realizar pruebas de rendimiento de sistemas en un entorno de testing.",  
+    D: "Probar que un software cumple con los niveles EAL6 y EAL7."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="La auditoría pericial forense consiste en la obtención y análisis de evidencias digitales de forma metódica y con validez jurídica."  
+  incorrectExplanation="No se centra en pruebas de rendimiento ni en la certificación EAL ni en aplicaciones biométricas exclusivamente."  
+/>  
+
+<InteractiveQuiz  
+  question="22. Según la metodología forense, ¿cuál es la secuencia lógica de fases principales?"  
+  options={{  
+    A: "Análisis - Presentación - Respuesta Inicial - Adquisición",  
+    B: "Adquisición - Respuesta Inicial - Análisis - Documentación",  
+    C: "Respuesta Inicial - Adquisición - Análisis - Documentación/Defensa",  
+    D: "Documentación - Adquisición - Respuesta Inicial - Análisis"  
+  }}  
+  correctAnswer="C"  
+  correctExplanation="La secuencia típica es: Respuesta Inicial (asegurar escena) → Adquisición y recuperación de evidencias → Análisis → Documentación y defensa de conclusiones."  
+  incorrectExplanation="Las otras respuestas alteran el orden generalmente aceptado en la metodología forense."  
+/>  
+
+<InteractiveQuiz  
+  question="23. ¿Por qué es fundamental documentar la 'fecha y hora del sistema' durante la fase de Respuesta Inicial?"  
+  options={{  
+    A: "Para desconfigurar la BIOS del equipo y evitar arranques no autorizados.",  
+    B: "Porque este registro no tiene relevancia forense, pero es un requisito burocrático.",  
+    C: "Para correlacionar eventos y actividades entre distintos sistemas y usuarios, garantizando precisión temporal.",  
+    D: "Para descartar la evidencia obtenida con posterioridad."  
+  }}  
+  correctAnswer="C"  
+  correctExplanation="La consistencia horaria es crucial para correlacionar logs, accesos y modificaciones de ficheros, lo que permite reconstruir la secuencia de eventos con fiabilidad."  
+  incorrectExplanation="No es un mero requisito burocrático ni busca desconfigurar la BIOS o descartar evidencias posteriores."  
+/>  
+
+<InteractiveQuiz  
+  question="24. En la etapa de adquisición forense, ¿por qué se realiza un hash MD5 o SHA1 de las imágenes obtenidas?"  
+  options={{  
+    A: "Para mejorar la velocidad de lectura en medios de almacenamiento.",  
+    B: "Para garantizar la integridad de la evidencia y poder probar que no ha sido alterada.",  
+    C: "Para reemplazar por completo el original.",  
+    D: "Para cumplir requisitos mínimos de Common Criteria."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="El hash asegura la integridad de la imagen, permitiendo demostrar que no ha sido modificada desde su adquisición."  
+  incorrectExplanation="No se hace para mejorar velocidad, ni se usa para reemplazar el original, ni es un requerimiento exclusivo de Common Criteria."  
+/>  
+
+<InteractiveQuiz  
+  question="25. ¿Qué se entiende por 'Análisis físico' en la auditoría forense de un dispositivo?"  
+  options={{  
+    A: "Utilizar gestores de ficheros del sistema operativo para navegar la estructura de directorios.",  
+    B: "Inspeccionar byte a byte la información en bruto (binaria), sin basarse en la estructura lógica del sistema de ficheros.",  
+    C: "Formatear el disco para su posterior examinación.",  
+    D: "Validar que los usuarios del equipo tuvieran permisos adecuados."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="El análisis físico implica leer los datos crudos, usando herramientas como editores hexadecimales, sin apoyarse en la lógica de ficheros."  
+  incorrectExplanation="Las otras opciones describen acciones distintas o irrelevantes para el 'análisis físico'."  
+/>  
+
+<InteractiveQuiz  
+  question="26. ¿Para qué se construye una 'línea temporal' (timeline) en el análisis forense?"  
+  options={{  
+    A: "Para identificar qué archivos han quedado dañados físicamente.",  
+    B: "Para reconstruir cronológicamente los eventos e interacciones con el sistema, correlacionando modificaciones, accesos y cambios.",  
+    C: "Para clasificar la información por relevancia jurídica.",  
+    D: "Para medir el ancho de banda consumido durante el incidente."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="Una línea de tiempo recopila y ordena los eventos (creación, modificación, acceso) para facilitar la reconstrucción de lo ocurrido."  
+  incorrectExplanation="No se usa para medir ancho de banda ni exclusivamente para relevancia jurídica."  
+/>  
+
+<InteractiveQuiz  
+  question="27. Durante la documentación (fase final de la metodología forense), ¿qué sugiere la norma UNE 71506?"  
+  options={{  
+    A: "Mantener un sistema de gestión documental que registre desde la recepción de evidencias hasta su análisis y devolución.",  
+    B: "Solo es necesario anotar la fecha de la primera intervención.",  
+    C: "No es necesario registrar la cadena de custodia si hay testigos presentes.",  
+    D: "Una vez se consigue la imagen forense, se destruyen los originales para ahorrar espacio."  
+  }}  
+  correctAnswer="A"  
+  correctExplanation="La norma UNE 71506 enfatiza en la necesidad de un completo sistema de gestión documental que cubra toda la trazabilidad de la evidencia."  
+  incorrectExplanation="No se debe destruir el original, ni basta solo con anotar la primera fecha. La cadena de custodia es obligatoria."  
+/>  
+
+<InteractiveQuiz  
+  question="28. ¿Qué papel desempeña el perito forense en un procedimiento judicial?"  
+  options={{  
+    A: "Su testimonio no puede ser cuestionado por la parte contraria.",  
+    B: "Debe exponer y defender técnicamente sus hallazgos, explicándolos en un lenguaje claro ante el tribunal y respondiendo objeciones.",  
+    C: "Se limita a entregar un informe sin posibilidad de ser interrogado.",  
+    D: "Sustituye al juez en la toma de decisiones sobre la culpabilidad."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="El perito forense expone su dictamen, responde preguntas y aclaraciones, y debe hacerlo de forma entendible para el tribunal y las partes."  
+  incorrectExplanation="La labor del perito no sustituye al juez y sí puede ser cuestionada por la parte contraria."  
+/>  
+
+<InteractiveQuiz  
+  question="29. ¿Por qué el seguimiento posterior a la emisión de un informe forense puede ser relevante según NIST 800-86?"  
+  options={{  
+    A: "Porque el informe forense siempre contiene errores a subsanar.",  
+    B: "Para corregir los metadatos que no fueran registrados.",  
+    C: "Para revisar el proceso forense, detectar deficiencias y actualizar procedimientos ante nuevos retos tecnológicos.",  
+    D: "Para bloquear futuras auditorías internas y externas."  
+  }}  
+  correctAnswer="C"  
+  correctExplanation="El NIST 800-86 sugiere revisar los procesos usados para mejorar la calidad y adaptarse a cambios en tecnología y legislación."  
+  incorrectExplanation="No asume que el informe siempre contenga errores ni busca bloquear auditorías."  
+/>  
+
+<InteractiveQuiz  
+  question="30. ¿Qué describe mejor el concepto de 'cadena de custodia' en un análisis forense?"  
+  options={{  
+    A: "La relación contractual entre la empresa y sus proveedores de ciberseguridad.",  
+    B: "El sistema de trazabilidad que documenta cada manipulación y posesión de la evidencia, garantizando su integridad.",  
+    C: "Una lista de usuarios con permisos administrativos.",  
+    D: "La política corporativa de almacenamiento en la nube."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="La cadena de custodia asegura la trazabilidad de la evidencia desde su hallazgo hasta su análisis y presentación legal, manteniendo su autenticidad e integridad."  
+  incorrectExplanation="No se limita a relaciones contractuales ni a listados de usuarios o políticas de nube."  
+/>  
+
+<InteractiveQuiz  
+  question="31. ¿Qué especifica la norma UNE 71506 sobre el 'Informe Pericial' en su Anexo A?"  
+  options={{  
+    A: "Debe ser redactado en inglés para su validez.",  
+    B: "Debe estructurarse indicando asunto, evidencias recibidas, procesos de análisis, conclusiones y anexos.",  
+    C: "No se requiere detallar el proceso de clonado de datos.",  
+    D: "El informe no puede incluir conclusiones sobre el estado de seguridad del sistema analizado."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="El Anexo A propone un modelo de informe con secciones para el asunto, descripción de evidencias, metodología seguida, conclusiones y anexos."  
+  incorrectExplanation="La norma no exige el idioma inglés, ni se omite el proceso de clonado."  
+/>  
+
+<InteractiveQuiz  
+  question="32. ¿Qué abarca principalmente la norma UNE 71505-2 sobre Sistemas de Gestión de Evidencias Electrónicas (SGEE)?"  
+  options={{  
+    A: "Un manual para el diseño de hardware especializado en análisis forense.",  
+    B: "Buenas prácticas para establecer políticas y procedimientos que garanticen la confiabilidad e integridad de las evidencias electrónicas.",  
+    C: "Exige la destrucción de evidencias tras la emisión del informe.",  
+    D: "Define EALs específicos para la gestión de evidencias en entornos nacionales."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="UNE 71505-2 se centra en cómo establecer y mantener un sistema de gestión de evidencias electrónicas que preserve su autenticidad y confiabilidad."  
+  incorrectExplanation="No habla de destruir evidencias ni de diseñar hardware, ni define EALs."  
+/>  
+
+<InteractiveQuiz  
+  question="33. En ISO/IEC 27037, ¿qué rol desempeña el DEFR (Digital Evidence First Responder)?"  
+  options={{  
+    A: "Generar contraseñas para el cifrado de medios.",  
+    B: "Ser la primera persona en responder ante un incidente e iniciar los procesos de manejo de evidencia digital.",  
+    C: "Reemplazar el trabajo del perito forense en el juicio.",  
+    D: "Monitorizar la red corporativa en tiempo real."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="El DEFR es quien llega primero al incidente, identifica y asegura la evidencia digital, aplicando las pautas de la norma para su correcta recolección y preservación."  
+  incorrectExplanation="No se limita a generar contraseñas ni sustituye al perito en juicios."  
+/>  
+
+<InteractiveQuiz  
+  question="34. Según ISO/IEC 27042, ¿qué diferencia existe entre 'repetibilidad' y 'reproducibilidad' en el contexto del análisis forense?"  
+  options={{  
+    A: "Son sinónimos que no se distinguen.",  
+    B: "Repetibilidad significa obtener los mismos resultados en idénticas condiciones; reproducibilidad, en condiciones diferentes (equipos, personal, entorno).",  
+    C: "Repetibilidad aplica solo a sistemas operativos Windows, mientras que reproducibilidad es para Linux.",  
+    D: "Repetibilidad se refiere a la consistencia de informes periciales, mientras que reproducibilidad indica la validez legal."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="La norma distingue entre repetir la prueba en idénticas condiciones (repetibilidad) y reproducirla en circunstancias distintas (reproducibilidad), manteniendo resultados consistentes."  
+  incorrectExplanation="No se limita a un sistema operativo específico ni se refiere únicamente a validez legal."  
+/>  
+
+<InteractiveQuiz  
+  question="35. ¿Cuál es la importancia de la 'Auditabilidad' en el proceso de manejo de evidencia digital según ISO/IEC 27037?"  
+  options={{  
+    A: "Permitir que un proceso forense sea verificado externamente para confirmar su corrección y trazabilidad.",  
+    B: "Excluir la participación de las autoridades en la revisión.",  
+    C: "Ocultar información sensible del proceso forense.",  
+    D: "Impedir la creación de logs de verificación."  
+  }}  
+  correctAnswer="A"  
+  correctExplanation="La auditabilidad significa que los pasos y la trazabilidad pueden ser inspeccionados y validados por terceros, garantizando la integridad y validez del proceso."  
+  incorrectExplanation="No implica exclusión de autoridades ni ocultamiento de información."  
+/>  
+
+<InteractiveQuiz  
+  question="36. Según NIST SP 800-86, ¿por qué es crítico integrar las técnicas forenses en la respuesta a incidentes?"  
+  options={{  
+    A: "Porque la forensia reemplaza la necesidad de un plan de respuesta a incidentes.",  
+    B: "Para recopilar y analizar datos de forma metódica, facilitando la contención del incidente y permitiendo evidencias válidas en posibles acciones legales.",  
+    C: "Para poder aplicar EAL7 a la infraestructura.",  
+    D: "Porque las normativas de PCI DSS lo exigen de forma directa."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="La integración forense asegura que los datos relevantes se capturen y analicen correctamente, contribuyendo a la contención y potencial procesamiento legal."  
+  incorrectExplanation="No sustituye un plan de respuesta ni se limita a PCI DSS."  
+/>  
+
+<InteractiveQuiz  
+  question="37. ¿Qué establece RFC 3227 sobre el 'orden de volatilidad' en la recolección de evidencia digital?"  
+  options={{  
+    A: "Recolectar primero los discos duros y luego la memoria RAM.",  
+    B: "Proceder de los datos más volátiles (registros, cache, memoria) a los menos volátiles (disco, backups).",  
+    C: "No existen pautas sobre la volatilidad de la información.",  
+    D: "Invertir el proceso, primero se guardan logs remotos y al final la memoria."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="La directriz principal de RFC 3227 es comenzar la recolección con aquellos datos que se pierden más rápido (RAM, tablas de enrutamiento, etc.) antes de pasar a medios más estables."  
+  incorrectExplanation="No indica recolectar primero el disco duro ni ignora la volatilidad."  
+/>  
+
+<InteractiveQuiz  
+  question="38. ¿Por qué la 'transparencia' es un principio relevante en la recolección y archivado de evidencia digital según RFC 3227?"  
+  options={{  
+    A: "Para mantener en secreto el proceso ante la defensa legal.",  
+    B: "Para permitir que cualquier alteración de la evidencia sea indetectable.",  
+    C: "Para asegurar que todo el proceso sea verificable y comprensible, reforzando la confianza en la validez de la evidencia.",  
+    D: "Porque evita la generación de logs de cadena de custodia."  
+  }}  
+  correctAnswer="C"  
+  correctExplanation="La transparencia refuerza la credibilidad de la evidencia, permitiendo a terceros revisar y verificar la metodología de recolección y archivado."  
+  incorrectExplanation="No busca ocultar el proceso ni eliminar registros."  
+/>  
+
+<InteractiveQuiz  
+  question="39. De acuerdo con las directrices forenses, ¿qué se recomienda respecto a la manipulación de sistemas encendidos?"  
+  options={{  
+    A: "Desconectarlos inmediatamente sin evaluar riesgos.",  
+    B: "Realizar un volcado de memoria volátil y procesos antes de proceder con otros pasos.",  
+    C: "Esperar a un mandato judicial para realizar cualquier acción.",  
+    D: "Formatear el disco para evitar contaminación de la evidencia."  
+  }}  
+  correctAnswer="B"  
+  correctExplanation="Si un sistema está encendido, se recomienda capturar la memoria y procesos activos que podrían desaparecer al apagarlo."  
+  incorrectExplanation="No se formatea ni se desconecta sin evaluación previa."  
+/>  
+
+<InteractiveQuiz  
+  question="40. ¿Cuál de las siguientes opciones no corresponde a una recomendación típica de los estándares forenses (UNE, ISO, NIST, RFC)?"  
+  options={{  
+    A: "Mantener la cadena de custodia y la integridad de la evidencia.",  
+    B: "Utilizar metodologías validadas y replicables.",  
+    C: "Finalizar el proceso destruyendo el material original para evitar filtraciones.",  
+    D: "Documentar detalladamente cada paso y realizar informes periciales claros."  
+  }}  
+  correctAnswer="C"  
+  correctExplanation="Los estándares forenses en ningún caso recomiendan destruir la evidencia original, pues es fundamental conservarla en caso de auditorías o revisiones."  
+  incorrectExplanation="Las demás recomendaciones son buenas prácticas forenses (integridad, replicabil"
+/>  
