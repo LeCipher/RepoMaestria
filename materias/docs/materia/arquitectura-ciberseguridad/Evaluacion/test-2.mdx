@@ -1,0 +1,140 @@
+---
+sidebar_position: 2
+title: Evaluación UD2
+---
+import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
+
+# Evaluación UD2
+
+Cuestionario de evaluación UD2
+{/* truncate */}
+
+<InteractiveQuiz
+  question="¿Qué herramienta nos facilita la búsqueda de datos específicos?"
+  options={{
+    A: "Nmap",
+    B: "Google Dorks",
+    C: "Metasploit",
+    D: "Wireshark"
+  }}
+  correctAnswer="B"
+  correctExplanation="Google Dorks permite utilizar operadores de búsqueda avanzados para filtrar resultados específicos en motores de búsqueda como Google, facilitando la localización de información sensible o datos ocultos."
+  incorrectExplanation="Nmap (escaneo de redes), Metasploit (pentesting) y Wireshark (análisis de tráfico) no están diseñados para búsquedas específicas de datos públicos."
+/>
+
+<InteractiveQuiz
+  question="¿Qué se recomienda no utilizar para evitar ser geolocalizados?"
+  options={{
+    A: "Máquinas virtuales",
+    B: "Conectividad a través de 4G/5G",
+    C: "La cuenta de correo del trabajo",
+    D: "VPNs"
+  }}
+  correctAnswer="C"
+  correctExplanation="Usar la cuenta de correo del trabajo puede vincular la actividad a una identidad real o ubicación corporativa, aumentando el riesgo de geolocalización."
+  incorrectExplanation="Máquinas virtuales, conexiones 4G/5G y VPNs son métodos para preservar el anonimato y evitar la geolocalización."
+/>
+
+<InteractiveQuiz
+  question="¿Qué es OSINT?"
+  options={{
+    A: "Información de dominio público utilizada con fines de inteligencia",
+    B: "Información obtenida mediante espionaje",
+    C: "Información clasificada de inteligencia",
+    D: "Información interna de una organización"
+  }}
+  correctAnswer="A"
+  correctExplanation="OSINT (Open Source Intelligence) se refiere al uso de información pública (redes sociales, foros, registros) para análisis de inteligencia sin métodos ilegales."
+  incorrectExplanation="El espionaje, la información clasificada o interna no forman parte de OSINT, que se basa exclusivamente en fuentes abiertas."
+/>
+
+<InteractiveQuiz
+  question="¿Qué se debe hacer para mantener las cuentas de investigación activas?"
+  options={{
+    A: "No interactuar con otros usuarios",
+    B: "Acceder de vez en cuando",
+    C: "Cambiar las contraseñas regularmente",
+    D: "Utilizar siempre la misma IP"
+  }}
+  correctAnswer="B"
+  correctExplanation="Acceder periódicamente evita que las plataformas inactiven las cuentas por falta de uso, manteniendo su credibilidad."
+  incorrectExplanation="Cambiar contraseñas o usar la misma IP pueden generar sospechas, mientras que no interactuar no garantiza actividad."
+/>
+
+<InteractiveQuiz
+  question="¿Qué se recomienda hacer con las fotos utilizadas en perfiles de investigación?"
+  options={{
+    A: "Usar solo fotos de la cara",
+    B: "No usar fotos en absoluto",
+    C: "Usar fotos de internet sin retocar",
+    D: "Pedir una foto a la IA y retocarla"
+  }}
+  correctAnswer="D"
+  correctExplanation="Las fotos generadas por IA y retocadas evitan el reconocimiento inverso y no están vinculadas a personas reales."
+  incorrectExplanation="Usar fotos reales o de internet sin modificar aumenta el riesgo de identificación, y no incluir fotos reduce la autenticidad."
+/>
+
+<InteractiveQuiz
+  question="¿Qué se investiga comúnmente en un contexto CTI?"
+  options={{
+    A: "Redes sociales personales",
+    B: "Datos financieros",
+    C: "Información meteorológica",
+    D: "Infraestructura del adversario"
+  }}
+  correctAnswer="D"
+  correctExplanation="CTI (Cyber Threat Intelligence) se enfoca en analizar infraestructuras, tácticas y herramientas de actores maliciosos para anticipar amenazas."
+  incorrectExplanation="Las opciones restantes no están directamente relacionadas con los objetivos principales del CTI."
+/>
+
+<InteractiveQuiz
+  question="¿Qué tipo de herramientas se utilizan para investigar archivos y URLs?"
+  options={{
+    A: "Herramientas gratuitas con módulos avanzados de pago",
+    B: "Herramientas de hacking",
+    C: "Herramientas de análisis de redes",
+    D: "Herramientas de pago exclusivamente"
+  }}
+  correctAnswer="A"
+  correctExplanation="Muchas herramientas de análisis de archivos/URLs (ej: VirusTotal, Hybrid Analysis) ofrecen versiones gratuitas con funcionalidades premium."
+  incorrectExplanation="Herramientas de hacking o análisis de redes no están especializadas en este fin, y las de pago exclusivo limitan el acceso."
+/>
+
+<InteractiveQuiz
+  question="¿Qué herramienta utilizaríamos para gestionar contraseñas?"
+  options={{
+    A: "1Password",
+    B: "KeepAss",
+    C: "LastPass",
+    D: "Todas las anteriores"
+  }}
+  correctAnswer="D"
+  correctExplanation="1Password, KeePass y LastPass son gestores de contraseñas ampliamente utilizados para almacenar credenciales de forma segura."
+  incorrectExplanation="Todas las opciones son válidas; ninguna está excluida de esta categoría."
+/>
+
+<InteractiveQuiz
+  question="¿Qué técnica se utiliza para la elaboración de perfiles ejecutivos?"
+  options={{
+    A: "IMINT",
+    B: "OSINT",
+    C: "SIGINT",
+    D: "HUMINT"
+  }}
+  correctAnswer="B"
+  correctExplanation="OSINT permite recopilar información pública (LinkedIn, artículos, eventos) para crear perfiles detallados de ejecutivos."
+  incorrectExplanation="IMINT (imágenes), SIGINT (señales) y HUMINT (humanos) no son métodos primarios para este fin."
+/>
+
+<InteractiveQuiz
+  question="¿Qué se debe evitar al crear una nueva identidad para OSINT?"
+  options={{
+    A: "Usar la cuenta personal de redes sociales",
+    B: "Utilizar un administrador de contraseñas",
+    C: "Crear un alias",
+    D: "Navegar con un nuevo teléfono"
+  }}
+  correctAnswer="A"
+  correctExplanation="Usar cuentas personales mezcla la identidad real con la ficticia, comprometiendo el anonimato y la seguridad."
+  incorrectExplanation="Un alias, gestor de contraseñas y dispositivo dedicado son buenas prácticas para mantener la separación de identidades."
+/>

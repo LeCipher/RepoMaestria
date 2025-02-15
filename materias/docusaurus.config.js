@@ -134,8 +134,33 @@ const config = {
               },
               {
                 type: "docSidebar",
+                sidebarId: "MarcoNormativo",
+                label: "Marco Normativo",
+              },
+              {
+                type: "docSidebar",
+                sidebarId: "Privacidad",
+                label: "Privacidad",
+              },
+              {
+                type: "docSidebar",
+                sidebarId: "SeguridadEnProcesos",
+                label: "Seguridad en Procesos de Tecnología",
+              },
+              {
+                type: "docSidebar",
+                sidebarId: "ArquitecturaCiberseguridad",
+                label: "Arquitecturas de ciberseguridad",
+              },
+              {
+                type: "docSidebar",
                 sidebarId: "CriptografiaGICA",
-                label: "Criptografia - GICA",
+                label: "Criptografía y gestión de identidades",
+              },
+              {
+                type: "docSidebar",
+                sidebarId: "CadenaDeSuministro",
+                label: "Seguridad en la cadena de suministro",
               },
             ],
           },

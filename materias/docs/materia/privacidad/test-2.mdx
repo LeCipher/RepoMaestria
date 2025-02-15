@@ -1,0 +1,269 @@
+---
+sidebar_position: 2
+title: Preguntas Generadas
+---
+import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
+
+# Preguntas Generadas
+
+{/* truncate */}
+
+<InteractiveQuiz  
+ question="¿Cuál de los siguientes NO es un principio del RGPD?"  
+ options={{
+    A: "Minimización de datos",
+    B: "Limitación de la finalidad",
+    C: "Almacenamiento indefinido",
+    D: "Integridad y confidencialidad"
+  }}  
+ correctAnswer="C"  
+ correctExplanation="El RGPD exige que los datos se conserven solo el tiempo necesario (no indefinidamente). Los principios incluyen minimización, finalidad específica, y seguridad (A, B, D)."  
+ incorrectExplanation="Las opciones A, B y D son principios del RGPD. La C contradice el principio de limitación del plazo de conservación."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué entidad supervisa el cumplimiento del RGPD en España?"  
+ options={{
+    A: "El Ministerio de Justicia",
+    B: "La Agencia Española de Protección de Datos (AEPD)",
+    C: "La Comisión Europea",
+    D: "El Instituto Nacional de Ciberseguridad (INCIBE)"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="La AEPD es la autoridad nacional designada para vigilar el cumplimiento del RGPD en España."  
+ incorrectExplanation="La Comisión Europea (C) supervisa a nivel general, pero no aplica sanciones directamente. El INCIBE (D) se enfoca en ciberseguridad, no en protección de datos."
+/>
+
+<InteractiveQuiz  
+ question="¿En qué caso NO es obligatorio realizar una Evaluación de Impacto (EIPD) según el RGPD?"  
+ options={{
+    A: "Tratamiento de datos biométricos",
+    B: "Evaluación sistemática de aspectos personales",
+    C: "Uso de datos para facturas electrónicas",
+    D: "Vigilancia a gran escala de áreas públicas"
+  }}  
+ correctAnswer="C"  
+ correctExplanation="Las facturas electrónicas suelen implicar tratamientos de bajo riesgo. Las opciones A, B y D son escenarios de alto riesgo que requieren EIPD."  
+ incorrectExplanation="A, B y D son actividades de alto riesgo según el Art. 35 RGPD. La C no justifica una EIPD obligatoria."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué sanción máxima puede imponer el RGPD por infracciones graves?"  
+ options={{
+    A: "Hasta 10 millones de euros",
+    B: "Hasta 20 millones de euros",
+    C: "4% del volumen de negocio global anual",
+    D: "Tanto B como C"
+  }}  
+ correctAnswer="D"  
+ correctExplanation="Las sanciones graves pueden ser hasta 20 millones de euros o el 4% del volumen de negocio global anual, lo que sea mayor."  
+ incorrectExplanation="La A corresponde a infracciones leves. La B y C son correctas, pero la respuesta completa es D."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué requisito debe cumplir una transferencia internacional de datos a un país no perteneciente a la UE?"  
+ options={{
+    A: "El país debe tener un acuerdo de extradición con la UE",
+    B: "Debe existir una decisión de adecuación de la Comisión Europea",
+    C: "El receptor debe ser una empresa pública",
+    D: "No se permiten transferencias fuera de la UE"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="Las transferencias requieren una decisión de adecuación que certifique que el país garantiza un nivel de protección equivalente al RGPD."  
+ incorrectExplanation="La D es falsa: se permiten transferencias con garantías. La A y C son irrelevantes para este requisito."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué implica el 'derecho a la portabilidad' según el RGPD?"  
+ options={{
+    A: "Recibir los datos en formato físico",
+    B: "Obtener los datos en un formato estructurado y de uso común",
+    C: "Transferir datos a cualquier empresa sin restricciones",
+    D: "Eliminar datos de redes sociales"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="El derecho a la portabilidad permite obtener y transferir datos en formatos interoperables (ej. CSV). No aplica a todos los tratamientos (solo basados en consentimiento o contrato)."  
+ incorrectExplanation="La A no especifica el formato requerido. La C y D corresponden a otros derechos (supresión y oposición)."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué es un 'dato anonimizado' según el RGPD?"  
+ options={{
+    A: "Datos sin nombre asociado",
+    B: "Datos que no permiten identificar a una persona ni con medios razonables",
+    C: "Datos cifrados con contraseña",
+    D: "Datos compartidos en redes sociales"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="La anonimización implica que los datos no puedan vincularse a una persona identificable, incluso con tecnología avanzada."  
+ incorrectExplanation="La A y C describen seudonimización, no anonimización. La D no tiene relación."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué debe incluirse obligatoriamente en el registro de actividades de tratamiento?"  
+ options={{
+    A: "Nombres de todos los empleados",
+    B: "Categorías de datos tratados y finalidades",
+    C: "Presupuesto anual de la empresa",
+    D: "Historial de ventas de los últimos cinco años"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="El registro debe detallar categorías de datos, finalidades, destinatarios, y medidas de seguridad, entre otros aspectos (Art. 30 RGPD)."  
+ incorrectExplanation="La A, C y D son información irrelevante para el registro de actividades de tratamiento."
+/>
+
+<InteractiveQuiz  
+ question="¿Cuál es el plazo máximo para responder a una solicitud de acceso a datos personales?"  
+ options={{
+    A: "7 días",
+    B: "1 mes",
+    C: "3 meses",
+    D: "6 meses"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="El RGPD establece un plazo máximo de 1 mes, prorrogable a 2 meses en casos complejos."  
+ incorrectExplanation="Los plazos de 7 días (A) o superiores a 1 mes (C, D) no están contemplados en la normativa."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué es un 'Encargado del Tratamiento' según el RGPD?"  
+ options={{
+    A: "La persona que recoge los datos en un formulario",
+    B: "Una entidad que procesa datos bajo instrucciones del Responsable",
+    C: "El empleado que gestiona la base de datos",
+    D: "La autoridad de control designada"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="El Encargado actúa bajo las instrucciones del Responsable del Tratamiento, sin tomar decisiones sobre los fines del tratamiento."  
+ incorrectExplanation="La A y C describen roles operativos. La D corresponde a entidades como la AEPD."
+/>
+
+<InteractiveQuiz  
+ question="¿En qué caso se puede denegar una solicitud de supresión ('derecho al olvido')?"  
+ options={{
+    A: "Cuando el dato es necesario para ejercer la libertad de expresión",
+    B: "Si el interesado retira su consentimiento",
+    C: "Cuando el dato fue obtenido ilegalmente",
+    D: "Nunca se puede denegar"
+  }}  
+ correctAnswer="A"  
+ correctExplanation="El derecho al olvido no aplica si los datos son necesarios para libertades fundamentales (ej. información periodística de interés público)."  
+ incorrectExplanation="La B y C son situaciones donde sí debe aplicarse la supresión. La D es falsa, ya que existen excepciones."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué implica el principio de 'Privacy by Design'?"  
+ options={{
+    A: "Incluir políticas de privacidad en el sitio web",
+    B: "Integrar la protección de datos desde la fase de diseño de un sistema",
+    C: "Contratar un abogado especializado en privacidad",
+    D: "Realizar auditorías anuales"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="El Privacy by Design exige incorporar medidas de protección de datos desde el inicio del desarrollo de productos o servicios."  
+ incorrectExplanation="Las opciones A, C y D son acciones complementarias, pero no definen el concepto central de Privacy by Design."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué tipo de dato NO se considera 'categoría especial' según el RGPD?"  
+ options={{
+    A: "Orientación sexual",
+    B: "Historial de compras en línea",
+    C: "Creencias religiosas",
+    D: "Datos genéticos"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="El historial de compras no es categoría especial. Las opciones A, C y D sí están protegidas como datos sensibles."  
+ incorrectExplanation="El RGPD clasifica como sensibles datos de salud, creencias, orientación sexual, etc. El historial comercial no entra en esta categoría."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué debe hacer una empresa si sufre una brecha de seguridad que afecta a datos personales?"  
+ options={{
+    A: "Notificar siempre a los afectados en 72 horas",
+    B: "Notificar a la autoridad de control solo si hay riesgo para los derechos",
+    C: "Ocultar el incidente para evitar daños reputacionales",
+    D: "Notificar únicamente a los clientes premium"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="La notificación a la autoridad es obligatoria solo si la brecha implica un riesgo para los derechos de las personas. No siempre se requiere informar a los afectados."  
+ incorrectExplanation="La A es incorrecta: la comunicación a los interesados solo es necesaria si el riesgo es alto. La C y D violan el RGPD."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué es una 'Evaluación de Impacto Relativa a la Protección de Datos (EIPD)'?"  
+ options={{
+    A: "Un análisis de rentabilidad de un proyecto",
+    B: "Un proceso para identificar y mitigar riesgos en tratamientos de datos",
+    C: "Una auditoría financiera anual",
+    D: "Un informe de satisfacción de clientes"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="La EIPD evalúa riesgos para la privacidad y establece medidas para reducir impactos negativos, según el Art. 35 RGPD."  
+ incorrectExplanation="Las opciones A, C y D no están relacionadas con la protección de datos ni con el propósito de una EIPD."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué norma regula específicamente el uso de cookies en la UE?"  
+ options={{
+    A: "Directiva ePrivacy (2002/58/CE)",
+    B: "RGPD",
+    C: "Ley Europea de IA",
+    D: "Convenio 108 del Consejo de Europa"
+  }}  
+ correctAnswer="A"  
+ correctExplanation="La Directiva ePrivacy, conocida como 'Ley de Cookies', regula el uso de cookies y tecnologías similares. El RGPD (B) complementa pero no sustituye esta norma."  
+ incorrectExplanation="El RGPD (B) se aplica a datos personales en general, pero no específicamente a cookies. La C y D no abordan este tema."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué significa 'consentimiento granular' según el RGPD?"  
+ options={{
+    A: "Consentimiento obtenido por menores de edad",
+    B: "Consentimiento específico para cada finalidad del tratamiento",
+    C: "Consentimiento verbal en lugar de escrito",
+    D: "Consentimiento revocado automáticamente después de 6 meses"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="El consentimiento granular exige que los usuarios acepten cada propósito del tratamiento por separado, evitando opciones genéricas."  
+ incorrectExplanation="La A se refiere al consentimiento de menores. La C y D no están relacionadas con el concepto de granularidad."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué organización puede certificar códigos de conducta según el RGPD?"  
+ options={{
+    A: "Cualquier empresa consultora",
+    B: "Una autoridad de control competente",
+    C: "El departamento de marketing de la empresa",
+    D: "Una entidad de certificación acreditada"
+  }}  
+ correctAnswer="D"  
+ correctExplanation="Los códigos de conducta deben ser aprobados por autoridades de control, pero las entidades de certificación acreditadas pueden emitir sellos conforme al Art. 42 RGPD."  
+ incorrectExplanation="La B supervisa, pero no certifica directamente. La A y C carecen de autoridad para ello."
+/>
+
+<InteractiveQuiz  
+ question="¿Qué se entiende por 'dato genético' según el RGPD?"  
+ options={{
+    A: "Información sobre el historial familiar",
+    B: "Datos relativos a características heredadas o adquiridas de un individuo, obtenidos de análisis de muestras biológicas",
+    C: "Resultados de pruebas de ADN forenses",
+    D: "Información médica general"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="Los datos genéticos son aquellos derivados del análisis de muestras biológicas que revelan información única sobre una persona (Art. 4 RGPD)."  
+ incorrectExplanation="La A y C son ejemplos específicos, pero no definiciones completas. La D corresponde a datos de salud en general."
+/>
+
+<InteractiveQuiz  
+ question="¿Cuál es el objetivo principal del 'Reglamento de Gobernanza de Datos' de la UE?"  
+ options={{
+    A: "Regular el uso de criptomonedas",
+    B: "Facilitar el intercambio seguro de datos entre empresas y sectores",
+    C: "Prohibir la transferencia de datos fuera de la UE",
+    D: "Establecer impuestos a las redes sociales"
+  }}  
+ correctAnswer="B"  
+ correctExplanation="Este reglamento busca promover el intercambio de datos con garantías, fomentando la innovación y la competencia leal."  
+ incorrectExplanation="Las opciones A, C y D son ajenas al propósito del Reglamento de Gobernanza de Datos."
+/>
