@@ -169,6 +169,11 @@ const config = {
             sidebarId: "Horarios",
             label: "Horario - Examenes",
           },
+          {
+            type: "docSidebar",
+            sidebarId: "LibroCompTIA",
+            label: "CompTIA Security+",
+          },
         ],
       },
       footer: {
