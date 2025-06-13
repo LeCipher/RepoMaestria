@@ -1,0 +1,1302 @@
+---
+sidebar_position: 0
+title: Preguntas de Seguridad en Sistemas Operativos y Bases de Datos
+---
+import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
+
+<InteractiveQuiz
+  question="¿Qué distribución de Linux está orientada a la ciberseguridad?"
+  options={{
+    A: "Kali Linux",
+    B: "Ubuntu",
+    C: "Debian",
+    D: "CentOS"
+  }}
+  correctAnswer="A"
+  correctExplanation="Kali Linux es una distribución de Linux específicamente diseñada y orientada a la ciberseguridad y el hacking ético [1, 2]."
+  incorrectExplanation="Ubuntu, Debian y CentOS son distribuciones de Linux de propósito general y no están diseñadas principalmente para la ciberseguridad [1]."
+/>
+<InteractiveQuiz
+  question="En un servidor crítico para el negocio un parche de seguridad se tiene que instalar:"
+  options={{
+    A: "Nunca.",
+    B: "Cuanto antes.",
+    C: "Lo antes posible tras hacer pruebas.",
+    D: "En un plazo de 30 días desde su publicación."
+  }}
+  correctAnswer="C"
+  correctExplanation="En entornos críticos para el negocio, los parches de seguridad deben instalarse lo antes posible, pero solo después de haber realizado las pruebas adecuadas para asegurar la estabilidad y compatibilidad del sistema [3, 4]."
+  incorrectExplanation="Instalar sin pruebas (Cuanto antes) puede causar problemas operativos, mientras que retrasar la instalación (Nunca o 30 días) deja el sistema vulnerable por más tiempo [3, 4]."
+/>
+<InteractiveQuiz
+  question="La pieza central de un sistema operativo se llama"
+  options={{
+    A: "Sistema de archivos.",
+    B: "Shell.",
+    C: "Núcleo (Kernel).",
+    D: "Driver."
+  }}
+  correctAnswer="C"
+  correctExplanation="El núcleo o Kernel es la pieza central de un sistema operativo, ya que gestiona directamente el hardware y proporciona los servicios esenciales para que el sistema funcione [5-7]."
+  incorrectExplanation="Un sistema de archivos organiza los datos, un shell es una interfaz de usuario y un driver permite la comunicación con periféricos, pero no son la parte central del sistema operativo [3]."
+/>
+<InteractiveQuiz
+  question="¿Cuál es una ventaja de los hipervisores tipo 1 frente a los de tipo 2?"
+  options={{
+    A: "Mejor compatibilidad con aplicaciones antiguas",
+    B: "Mayor rendimiento y acceso directo al hardware",
+    C: "Soporte exclusivo para Windows",
+    D: "Facilidad de instalación en equipos de usuario"
+  }}
+  correctAnswer="B"
+  correctExplanation="Los hipervisores tipo 1 (bare-metal) se ejecutan directamente sobre el hardware físico, lo que les permite ofrecer un mayor rendimiento y un acceso más directo y eficiente al hardware en comparación con los de tipo 2 [5]."
+  incorrectExplanation="Las otras opciones no representan ventajas principales de los hipervisores tipo 1; por ejemplo, el soporte no es exclusivo de Windows y la facilidad de instalación suele ser menor en comparación con los de tipo 2 [5]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de los siguientes sistemas operativos utiliza el kernel XNU?"
+  options={{
+    A: "Linux",
+    B: "Windows",
+    C: "macOS",
+    D: "Android"
+  }}
+  correctAnswer="C"
+  correctExplanation="macOS, el sistema operativo de Apple, utiliza el kernel XNU, que es un kernel híbrido basado en el microkernel Mach y componentes de BSD [8, 9]."
+  incorrectExplanation="Linux usa el kernel Linux, Windows usa el kernel NT, y Android está basado en el kernel Linux [8, 9]."
+/>
+<InteractiveQuiz
+  question="¿Cuál NO es una función del sistema operativo?"
+  options={{
+    A: "Edición de textos.",
+    B: "Gestión de procesos.",
+    C: "Manejo del hardware.",
+    D: "Gestión de memoria."
+  }}
+  correctAnswer="A"
+  correctExplanation="La edición de textos es una función de una aplicación de usuario (como un procesador de texto), no una función central inherente al sistema operativo mismo [8]."
+  incorrectExplanation="La gestión de procesos, el manejo del hardware y la gestión de memoria son funciones fundamentales del sistema operativo [8]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de los siguientes sistemas operativos es propietario y de código cerrado?"
+  options={{
+    A: "FreeBSD",
+    B: "Ubuntu",
+    C: "Windows",
+    D: "Linux"
+  }}
+  correctAnswer="C"
+  correctExplanation="Windows es un sistema operativo desarrollado y comercializado por Microsoft, lo que lo convierte en propietario y de código cerrado [8, 10]."
+  incorrectExplanation="FreeBSD, Ubuntu y Linux son sistemas operativos de código abierto y, en el caso de Ubuntu y Linux, generalmente libres [8, 10]."
+/>
+<InteractiveQuiz
+  question="¿Qué es un sistema operativo?"
+  options={{
+    A: "Un conjunto de drivers para gestionar periféricos",
+    B: "Un software que actúa como intermediario entre el hardware y los programas",
+    C: "Un programa de usuario que ejecuta aplicaciones",
+    D: "Un lenguaje de programación"
+  }}
+  correctAnswer="B"
+  correctExplanation="Un sistema operativo es un software fundamental que actúa como una capa de abstracción, permitiendo la comunicación y gestión eficiente entre el hardware de un equipo y las aplicaciones o programas que se ejecutan sobre él [11, 12]."
+  incorrectExplanation="Las otras opciones describen componentes específicos (drivers), tipos de programas (usuario) o conceptos diferentes (lenguaje de programación), no la definición completa de un sistema operativo [11, 12]."
+/>
+<InteractiveQuiz
+  question="¿Qué componente del sistema operativo gestiona directamente el hardware?"
+  options={{
+    A: "Shell",
+    B: "Pila de comunicaciones",
+    C: "Kernel",
+    D: "Sistema de archivos"
+  }}
+  correctAnswer="C"
+  correctExplanation="El Kernel (o Núcleo) es el componente esencial del sistema operativo encargado de la gestión directa del hardware, la memoria, los procesos y el sistema de archivos [6, 7]."
+  incorrectExplanation="El Shell es una interfaz de comandos, la pila de comunicaciones gestiona la red y el sistema de archivos organiza los datos, pero ninguno gestiona el hardware directamente como el Kernel [6, 7]."
+/>
+<InteractiveQuiz
+  question="¿Qué sistema operativo móvil está basado en BSD?"
+  options={{
+    A: "Ubuntu Touch",
+    B: "Chrome OS",
+    C: "iOS",
+    D: "Android"
+  }}
+  correctAnswer="C"
+  correctExplanation="iOS, el sistema operativo móvil de Apple, está basado en Darwin, que a su vez incluye un kernel XNU con componentes derivados de BSD [4, 6]."
+  incorrectExplanation="Ubuntu Touch, Chrome OS y Android son sistemas operativos móviles o basados en la nube que utilizan el kernel Linux [4, 6]."
+/>
+<InteractiveQuiz
+  question="El proceso de bastionado implica:"
+  options={{
+    A: "Eliminar información confidencial de los usuarios.",
+    B: "Ninguna de las otras.",
+    C: "Cerrar servicios que no sean necesarios.",
+    D: "Eliminar información innecesaria del disco duro."
+  }}
+  correctAnswer="C"
+  correctExplanation="El bastionado, o endurecimiento de sistemas, es el proceso de configuración de un sistema operativo o aplicación para hacerla más segura, principalmente cerrando o deshabilitando servicios, puertos y funciones que no son estrictamente necesarios [13, 14]."
+  incorrectExplanation="Si bien la seguridad puede implicar la gestión de información confidencial o el uso del disco duro, la acción principal del bastionado es minimizar la superficie de ataque al deshabilitar lo innecesario [13, 14]."
+/>
+<InteractiveQuiz
+  question="¿Qué solución permite ejecutar aplicaciones de Windows en Linux?"
+  options={{
+    A: "Xen",
+    B: "Wine",
+    C: "Hyper-V",
+    D: "WSL"
+  }}
+  correctAnswer="B"
+  correctExplanation="Wine (Wine Is Not an Emulator) es una capa de compatibilidad que permite ejecutar aplicaciones de Microsoft Windows en sistemas operativos tipo Unix como Linux [4, 13]."
+  incorrectExplanation="Xen e Hyper-V son hipervisores para virtualización. WSL (Windows Subsystem for Linux) permite ejecutar aplicaciones de Linux en Windows, no al revés [4, 13]."
+/>
+<InteractiveQuiz
+  question="¿Qué herramienta permite ejecutar aplicaciones de Linux en Windows de forma nativa?"
+  options={{
+    A: "Wine",
+    B: "Docker",
+    C: "Cygwin",
+    D: "Windows Subsystem for Linux (WSL)"
+  }}
+  correctAnswer="D"
+  correctExplanation="Windows Subsystem for Linux (WSL) es una característica de Windows que permite ejecutar un entorno Linux y sus herramientas y aplicaciones de forma nativa directamente en Windows [9, 12]."
+  incorrectExplanation="Wine se usa para ejecutar aplicaciones de Windows en Linux. Docker es una plataforma de contenedores. Cygwin proporciona un entorno tipo Unix, pero WSL ofrece una integración más nativa para las aplicaciones de Linux en Windows [9, 12, 15]."
+/>
+<InteractiveQuiz
+  question="¿Cuál es un ejemplo de sistema operativo basado en UNIX?"
+  options={{
+    A: "Windows",
+    B: "AmigaOS",
+    C: "MS-DOS",
+    D: "Linux"
+  }}
+  correctAnswer="D"
+  correctExplanation="Linux es un sistema operativo tipo Unix (Unix-like), ya que su diseño sigue los principios y estándares de Unix, aunque no es una versión oficial de Unix [16]."
+  incorrectExplanation="Windows, AmigaOS y MS-DOS son sistemas operativos con arquitecturas y orígenes distintos, no basados en UNIX [16]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de las siguientes NO es una función del sistema operativo?"
+  options={{
+    A: "Gestión de procesos",
+    B: "Desarrollo de aplicaciones",
+    C: "Manejo del hardware",
+    D: "Gestión de la memoria"
+  }}
+  correctAnswer="B"
+  correctExplanation="El desarrollo de aplicaciones es una actividad que realizan los programadores utilizando herramientas y lenguajes de programación, y no una función intrínseca del sistema operativo en sí mismo [16]."
+  incorrectExplanation="La gestión de procesos, el manejo del hardware y la gestión de la memoria son responsabilidades fundamentales de cualquier sistema operativo [16]."
+/>
+<InteractiveQuiz
+  question="¿Qué tipo de kernel se caracteriza por tener solo las funciones esenciales en modo núcleo?"
+  options={{
+    A: "Microkernel",
+    B: "Kernel monolítico",
+    C: "Kernel modular",
+    D: "Kernel híbrido"
+  }}
+  correctAnswer="A"
+  correctExplanation="Un microkernel se caracteriza por incluir en el modo núcleo solo las funciones más esenciales del sistema operativo, como la gestión de la memoria, la comunicación entre procesos (IPC) y la gestión básica de interrupciones [17]."
+  incorrectExplanation="Los kernels monolíticos contienen la mayoría de los servicios del sistema en el modo núcleo. Los kernels modulares e híbridos combinan aspectos de diferentes arquitecturas, pero no se limitan solo a las funciones esenciales en el modo núcleo [17]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de los siguientes NO es un beneficio de la virtualización?"
+  options={{
+    A: "Optimización de recursos",
+    B: "Aislamiento de entornos",
+    C: "Escalabilidad",
+    D: "Reducción del consumo de memoria"
+  }}
+  correctAnswer="D"
+  correctExplanation="La virtualización generalmente no reduce el consumo de memoria; de hecho, puede aumentarlo debido a la necesidad de recursos para el hipervisor y los múltiples sistemas operativos invitados que se ejecutan simultáneamente [17]."
+  incorrectExplanation="La virtualización sí ofrece beneficios como la optimización del uso de recursos de hardware, el aislamiento de entornos (máquinas virtuales) y la mejora de la escalabilidad [17]."
+/>
+<InteractiveQuiz
+  question="¿Qué problema de seguridad puede surgir en entornos virtualizados?"
+  options={{
+    A: "Dependencia de software de código abierto",
+    B: "Mayor consumo energético",
+    C: "Escape de la máquina virtual",
+    D: "Incompatibilidad con sistemas operativos propietarios"
+  }}
+  correctAnswer="C"
+  correctExplanation="El escape de la máquina virtual es un grave problema de seguridad en entornos virtualizados, donde un atacante logra salir de una máquina virtual comprometida para acceder al hipervisor o a otras máquinas virtuales en el mismo host [10, 18]."
+  incorrectExplanation="Aunque pueden presentarse otros desafíos como el consumo energético, la compatibilidad o la dependencia del software, el 'escape de la máquina virtual' es una amenaza de seguridad directa y crítica específica de la virtualización [10, 18]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de los siguientes NO es un sistema operativo basado en Linux?"
+  options={{
+    A: "Windows Server",
+    B: "Ubuntu",
+    C: "Android",
+    D: "Debian"
+  }}
+  correctAnswer="A"
+  correctExplanation="Windows Server es un sistema operativo propietario desarrollado por Microsoft, y no está basado en el kernel Linux [7, 18]."
+  incorrectExplanation="Ubuntu, Android y Debian son todos sistemas operativos o distribuciones que están basados en el kernel Linux [7, 18]."
+/>
+<InteractiveQuiz
+  question="¿Qué opción es más recomendable para la autorización de acceso a recursos en un dominio de Windows?"
+  options={{
+    A: "NTLMv3.",
+    B: "NTLMv2.",
+    C: "Kerberos.",
+    D: "NTLMv1."
+  }}
+  correctAnswer="C"
+  correctExplanation="Kerberos es el protocolo de autenticación y autorización estándar y más seguro en entornos de dominio de Windows (Active Directory) debido a su robusta criptografía y su capacidad de ofrecer single sign-on [19, 20]."
+  incorrectExplanation="Las versiones de NTLM (v1, v2, v3) son protocolos más antiguos y menos seguros que Kerberos, con vulnerabilidades conocidas y menor escalabilidad en entornos de dominio [19, 20]."
+/>
+<InteractiveQuiz
+  question="¿Qué función de seguridad usa Microsoft Purview en entornos empresariales?"
+  options={{
+    A: "Prevención de fuga de datos (DLP)",
+    B: "Autenticación multifactor",
+    C: "Firewall avanzado",
+    D: "Análisis de tráfico de red"
+  }}
+  correctAnswer="A"
+  correctExplanation="Microsoft Purview es un conjunto de soluciones que incluye capacidades de gobernanza de datos, protección de datos y gestión de riesgos. Una de sus funciones clave en entornos empresariales es la Prevención de fuga de datos (DLP), que ayuda a evitar que la información sensible salga de la organización [19]."
+  incorrectExplanation="Aunque la autenticación multifactor, los firewalls avanzados y el análisis de tráfico de red son importantes para la seguridad, no son la función principal asociada a Microsoft Purview [19]."
+/>
+<InteractiveQuiz
+  question="¿Qué protocolo es más seguro?:"
+  options={{
+    A: "NTLM v1",
+    B: "Kerberos",
+    C: "LAN Manager",
+    D: "NTLM v2"
+  }}
+  correctAnswer="B"
+  correctExplanation="Kerberos es el protocolo de autenticación más seguro de los listados, siendo el estándar para la autenticación en dominios de Windows debido a sus características criptográficas avanzadas y su resistencia a ataques de retransmisión [19, 20]."
+  incorrectExplanation="LAN Manager, NTLM v1 y NTLM v2 son protocolos de autenticación más antiguos y se consideran menos seguros que Kerberos [19, 20]."
+/>
+<InteractiveQuiz
+  question="Qué elemento se utiliza para determinar los eventos que se registrarán en los logs de Windows?"
+  options={{
+    A: "GPOs",
+    B: "DACLs",
+    C: "SACLs",
+    D: "SIDs"
+  }}
+  correctAnswer="C"
+  correctExplanation="Las SACLs (System Access Control Lists) se utilizan en Windows para especificar qué tipos de intentos de acceso (éxitos o fallos) a un objeto deben ser registrados en el registro de seguridad del sistema [20]."
+  incorrectExplanation="Las GPOs gestionan configuraciones generales, las DACLs definen permisos de acceso a objetos, y los SIDs identifican usuarios y grupos. Ninguno de estos define directamente los eventos de auditoría como lo hacen las SACLs [20]."
+/>
+<InteractiveQuiz
+  question="En el fichero SAM de Windows la contraseña actualmente se almacena:"
+  options={{
+    A: "En texto claro.",
+    B: "Hasheada y cifrada.",
+    C: "Solo cifrada.",
+    D: "Solo hasheada."
+  }}
+  correctAnswer="B"
+  correctExplanation="Para mejorar la seguridad, las contraseñas en el fichero SAM (Security Accounts Manager) de Windows no se almacenan en texto claro. En su lugar, se guardan hasheadas y, además, cifradas [20]."
+  incorrectExplanation="Almacenar contraseñas en texto claro o solo cifradas o hasheadas sería menos seguro. El uso combinado de hashing y cifrado proporciona una capa adicional de protección [20]."
+/>
+<InteractiveQuiz
+  question="El Security Access Token (SAT) NO contiene:"
+  options={{
+    A: "Los privilegios del usuario.",
+    B: "El hash de la contraseña.",
+    C: "El SID del usuario.",
+    D: "Los SIDs de los grupos a los que pertenece el usuario."
+  }}
+  correctAnswer="B"
+  correctExplanation="El Security Access Token (SAT) contiene información sobre la identidad y los privilegios de un usuario para una sesión específica, incluyendo el SID del usuario y los SIDs de los grupos a los que pertenece, así como sus privilegios, pero no almacena el hash de la contraseña del usuario [21-23]."
+  incorrectExplanation="El SAT está diseñado para transportar la información necesaria para las decisiones de autorización y privilegios, pero el hash de la contraseña se almacena de forma segura en otro lugar, como la base de datos SAM o Active Directory [21-23]."
+/>
+<InteractiveQuiz
+  question="En Windows la diferencia entre permisos y privilegios es:"
+  options={{
+    A: "Todos los usuarios tienen los mismos privilegios, salvo los administradores.",
+    B: "Los permisos son para usuarios y los privilegios son para administradores.",
+    C: "Los permisos afectan a un objeto y los privilegios son de carácter general.",
+    D: "Son lo mismo."
+  }}
+  correctAnswer="C"
+  correctExplanation="En Windows, los permisos controlan el acceso a recursos específicos (como archivos, carpetas o claves de registro), mientras que los privilegios son derechos o capacidades generales concedidos a una cuenta de usuario, como 'apagar el sistema' o 'hacer copias de seguridad de archivos' [24]."
+  incorrectExplanation="Permisos y privilegios son conceptos distintos en la seguridad de Windows y no son lo mismo ni están distribuidos de forma tan simplista entre usuarios y administradores [24]."
+/>
+<InteractiveQuiz
+  question="¿Qué protocolo permite establecer VPNs cifradas en Windows?"
+  options={{
+    A: "FTP",
+    B: "SMB",
+    C: "HTTPs",
+    D: "IPSec"
+  }}
+  correctAnswer="D"
+  correctExplanation="IPSec (Internet Protocol Security) es un conjunto de protocolos utilizado para proteger las comunicaciones de Internet Protocol, y es comúnmente empleado para establecer conexiones VPN cifradas en entornos Windows [24]."
+  incorrectExplanation="FTP es para transferencia de archivos, SMB para compartición de recursos en red, y HTTPs para navegación web segura; ninguno de ellos se utiliza para establecer VPNs [24]."
+/>
+<InteractiveQuiz
+  question="El registro de Windows:"
+  options={{
+    A: "Sólo es accesible para los usuarios administradores.",
+    B: "Contiene casi todas las configuraciones del sistema.",
+    C: "Se descarga siempre desde el servidor del dominio.",
+    D: "Sólo es accesible desde el sistema local."
+  }}
+  correctAnswer="B"
+  correctExplanation="El registro de Windows es una base de datos jerárquica que almacena una gran cantidad de configuraciones del sistema operativo, las aplicaciones y el hardware, siendo el repositorio central para la mayoría de los ajustes [25]."
+  incorrectExplanation="El registro no está restringido solo a administradores ni solo al sistema local, y no se descarga siempre de un servidor de dominio [25]."
+/>
+<InteractiveQuiz
+  question="Las GPOs NO se actualizan:"
+  options={{
+    A: "Al desconectarse el usuario.",
+    B: "A las horas en punto.",
+    C: "En periodos entre 90 y 120 minutos.",
+    D: "Al arrancar el ordenador."
+  }}
+  correctAnswer="B"
+  correctExplanation="Las GPOs (Group Policy Objects) se actualizan en varios momentos, como al iniciar el ordenador, al iniciar o cerrar sesión un usuario, y periódicamente en intervalos definidos (típicamente cada 90-120 minutos con un desplazamiento aleatorio), pero no específicamente 'a las horas en punto' [25]."
+  incorrectExplanation="Las GPOs sí se actualizan al desconectarse el usuario, en periodos de 90 a 120 minutos y al arrancar el ordenador [25]."
+/>
+<InteractiveQuiz
+  question="¿Qué herramienta permite administrar permisos de archivos y carpetas en Windows mediante línea de comandos?"
+  options={{
+    A: "netstat",
+    B: "tasklist",
+    C: "gpedit",
+    D: "icacls"
+  }}
+  correctAnswer="D"
+  correctExplanation="El comando `icacls` en Windows es una utilidad de línea de comandos que permite mostrar, establecer o modificar las DACLs (Discretionary Access Control Lists) de archivos y carpetas, lo que se traduce en la administración de sus permisos [26]."
+  incorrectExplanation="`netstat` se usa para ver conexiones de red, `tasklist` para ver procesos en ejecución, y `gpedit` es una herramienta gráfica para la edición de políticas de grupo locales [26]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de los siguientes no es un sistema de ficheros de Microsoft Windows?"
+  options={{
+    A: "HPFS",
+    B: "NTFS",
+    C: "FAT32",
+    D: "FAT16"
+  }}
+  correctAnswer="A"
+  correctExplanation="HPFS (High Performance File System) fue desarrollado principalmente para OS/2 por IBM y Microsoft, pero no es un sistema de archivos nativo o primario de las versiones modernas de Microsoft Windows, a diferencia de FAT16, FAT32 y NTFS [22, 23, 26]."
+  incorrectExplanation="FAT16, FAT32 y NTFS son todos sistemas de ficheros ampliamente utilizados o desarrollados por Microsoft para sus sistemas operativos Windows [22, 23, 26]."
+/>
+<InteractiveQuiz
+  question="¿Qué función tiene Shadow Copy en Windows?"
+  options={{
+    A: "Restringir la ejecución de scripts no firmados",
+    B: "Mantener versiones anteriores de archivos",
+    C: "Cifrar archivos con EFS",
+    D: "Hacer una copia completa del sistema"
+  }}
+  correctAnswer="B"
+  correctExplanation="Shadow Copy (Servicio de instantáneas de volumen) en Windows permite crear y mantener versiones anteriores de archivos y carpetas, facilitando la recuperación de datos en caso de cambios no deseados o corrupción [27]."
+  incorrectExplanation="Restringir la ejecución de scripts, cifrar archivos con EFS o hacer copias completas del sistema son funciones realizadas por otras características de seguridad o herramientas de respaldo de Windows [27]."
+/>
+<InteractiveQuiz
+  question="¿Qué elemento identifica unívocamente a un usuario de Windows 10?"
+  options={{
+    A: "sID.",
+    B: "SACL.",
+    C: "DACL.",
+    D: "SAT."
+  }}
+  correctAnswer="A"
+  correctExplanation="Un sID (Security Identifier) es un valor único y de longitud variable que se utiliza en Windows para identificar de manera unívoca a una entidad de seguridad, como un usuario, grupo o equipo [27]."
+  incorrectExplanation="SACLs y DACLs son listas de control de acceso para auditoría y permisos respectivamente. Un SAT (Security Access Token) es una representación de la seguridad de un usuario durante una sesión, pero el SID es el identificador persistente de la cuenta [27]."
+/>
+<InteractiveQuiz
+  question="¿Qué característica principal tiene un dominio que lo diferencia de un grupo de trabajo en Windows?"
+  options={{
+    A: "Administración centralizada de usuarios y permisos",
+    B: "No proporciona single sign-on",
+    C: "Cada equipo requiere un usuario local para acceder",
+    D: "No se requiere un servidor de dominio"
+  }}
+  correctAnswer="A"
+  correctExplanation="La característica distintiva de un dominio de Windows (como los gestionados por Active Directory) es la administración centralizada de usuarios, equipos, grupos y políticas de seguridad, lo que facilita la gestión a gran escala [28]."
+  incorrectExplanation="Un dominio sí proporciona single sign-on, permite el acceso sin necesidad de un usuario local por equipo y requiere de un servidor de dominio (controlador de dominio) [28]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de los siguientes servicios permite gestionar actualizaciones en entornos corporativos?"
+  options={{
+    A: "Windows Defender",
+    B: "NTFS",
+    C: "Windows Server Update Services (WSUS)",
+    D: "BitLocker"
+  }}
+  correctAnswer="C"
+  correctExplanation="Windows Server Update Services (WSUS) es un servicio de Microsoft que permite a los administradores de TI gestionar y distribuir las actualizaciones de productos de Microsoft a los equipos de su red corporativa de manera centralizada [28-30]."
+  incorrectExplanation="Windows Defender es un antivirus, NTFS es un sistema de archivos y BitLocker es para el cifrado de disco; ninguno de ellos gestiona actualizaciones corporativas [28-30]."
+/>
+<InteractiveQuiz
+  question="¿Qué técnica usa Attack Surface Reduction (ASR) para proteger Windows?"
+  options={{
+    A: "Aislamiento de procesos mediante sandbox",
+    B: "Cifrado de disco",
+    C: "Bloqueo de macros maliciosas en Office",
+    D: "Análisis de tráfico de red"
+  }}
+  correctAnswer="C"
+  correctExplanation="Las reglas de Attack Surface Reduction (ASR) en Windows Defender Exploit Guard están diseñadas para reducir la superficie de ataque del sistema operativo, por ejemplo, bloqueando macros potencialmente maliciosas en documentos de Office [31]."
+  incorrectExplanation="El aislamiento con sandbox, el cifrado de disco y el análisis de tráfico de red son otras medidas de seguridad, pero no son la técnica principal de ASR enfocada en reducir la superficie de ataque de comportamientos comunes de malware [31]."
+/>
+<InteractiveQuiz
+  question="La medida incorporada a Windows para luchar contra el ransomware es"
+  options={{
+    A: "Bitlocker.",
+    B: "Data backup.",
+    C: "User Account Control (UAC).",
+    D: "Controlled Folder Access (CFA)."
+  }}
+  correctAnswer="D"
+  correctExplanation="Controlled Folder Access (CFA), una característica de Windows Defender Exploit Guard, es una medida específica incorporada en Windows para proteger carpetas designadas de cambios no autorizados por aplicaciones maliciosas, como el ransomware [31]."
+  incorrectExplanation="BitLocker cifra el disco, el respaldo de datos es una estrategia de recuperación general y UAC gestiona los permisos de usuario; si bien todos contribuyen a la seguridad, CFA es la medida directa para combatir el ransomware [31]."
+/>
+<InteractiveQuiz
+  question="¿Qué comando permite ver los tickets Kerberos en una sesión activa?"
+  options={{
+    A: "klist",
+    B: "netstat",
+    C: "whoami",
+    D: "gpresult"
+  }}
+  correctAnswer="A"
+  correctExplanation="El comando `klist` se utiliza en Windows y Linux para mostrar los tickets Kerberos que están almacenados en la caché de credenciales de la sesión activa del usuario [32]."
+  incorrectExplanation="`netstat` muestra conexiones de red, `whoami` muestra información del usuario actual, y `gpresult` muestra las políticas de grupo aplicadas [32]."
+/>
+<InteractiveQuiz
+  question="¿Qué herramienta de seguridad NO está disponible de forma nativa en Windows 10?"
+  options={{
+    A: "Firewall.",
+    B: "Antivirus.",
+    C: "IDS/IPS.",
+    D: "Whitelisting de aplicaciones."
+  }}
+  correctAnswer="C"
+  correctExplanation="Aunque Windows 10 incluye un firewall integrado (Windows Defender Firewall) y un antivirus (Windows Defender Antivirus), y soporta el whitelisting de aplicaciones (ej. AppLocker), no incluye de forma nativa un sistema de detección/prevención de intrusiones (IDS/IPS) completo [32]."
+  incorrectExplanation="Firewall, antivirus y whitelisting de aplicaciones son características nativas de seguridad en Windows 10 [32]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de estas herramientas permite aislar procesos maliciosos en Windows?"
+  options={{
+    A: "Sysmon",
+    B: "Windows Defender Firewall",
+    C: "AppLocker",
+    D: "Windows Sandbox"
+  }}
+  correctAnswer="D"
+  correctExplanation="Windows Sandbox es un entorno de escritorio temporal y ligero que permite ejecutar aplicaciones no confiables de forma aislada, sin afectar al sistema operativo principal [33]."
+  incorrectExplanation="Sysmon monitoriza la actividad del sistema, Windows Defender Firewall controla el tráfico de red y AppLocker gestiona la ejecución de aplicaciones; ninguno de ellos proporciona el mismo nivel de aislamiento temporal para procesos maliciosos que Windows Sandbox [33]."
+/>
+<InteractiveQuiz
+  question="¿Qué mecanismo de autenticación de Windows almacena credenciales en un entorno virtualizado?"
+  options={{
+    A: "BitLocker",
+    B: "Windows Hello",
+    C: "NTLM",
+    D: "Microsoft Defender Credential Guard"
+  }}
+  correctAnswer="D"
+  correctExplanation="Microsoft Defender Credential Guard utiliza la seguridad basada en virtualización para aislar los secretos (como los hashes de contraseñas de NTLM y los tickets de Kerberos) en un entorno protegido, haciéndolos inaccesibles para el resto del sistema operativo [33]."
+  incorrectExplanation="BitLocker es para el cifrado de disco, Windows Hello para autenticación biométrica y NTLM es un protocolo de autenticación, pero no un mecanismo que almacene credenciales en un entorno virtualizado para protección como Credential Guard [33]."
+/>
+<InteractiveQuiz
+  question="¿Qué herramienta preferirías para configurar la seguridad de un parque de 100 ordenadores con Windows?"
+  options={{
+    A: "Registro remoto.",
+    B: "Grupos de trabajo.",
+    C: "Group Policy Objects (GPOs).",
+    D: "Plantillas de seguridad."
+  }}
+  correctAnswer="C"
+  correctExplanation="Para la gestión centralizada de la seguridad en un gran número de ordenadores Windows en un dominio, las Group Policy Objects (GPOs) son la herramienta más eficiente y escalable [34]."
+  incorrectExplanation="La edición remota del registro es poco práctica para muchos equipos, los grupos de trabajo carecen de gestión centralizada y las plantillas de seguridad son componentes que se aplican a través de GPOs, no la herramienta principal de gestión [34]."
+/>
+<InteractiveQuiz
+  question="Windows tiene ediciones:"
+  options={{
+    A: "Para sistemas empotrados.",
+    B: "Para servidores.",
+    C: "Todas son correctas.",
+    D: "Para usuarios."
+  }}
+  correctAnswer="C"
+  correctExplanation="Microsoft ofrece ediciones de Windows diseñadas para diversas plataformas y usos, incluyendo sistemas empotrados (como Windows IoT), servidores (Windows Server) y usuarios finales (versiones de escritorio como Windows 10/11) [34]."
+  incorrectExplanation="Las opciones A, B y D son correctas individualmente, lo que significa que la opción 'Todas son correctas' es la respuesta completa y precisa [34]."
+/>
+<InteractiveQuiz
+  question="El WSUS permite"
+  options={{
+    A: "Gestionar las configuraciones de seguridad de Windows.",
+    B: "Desplegar las actualizaciones de Windows.",
+    C: "Ninguna de las otras.",
+    D: "Controlar la ejecución de los servicios de seguridad."
+  }}
+  correctAnswer="B"
+  correctExplanation="WSUS (Windows Server Update Services) es una herramienta de Microsoft cuyo propósito principal es desplegar y gestionar la distribución de actualizaciones de Windows y otros productos de Microsoft dentro de una red corporativa [29, 30]."
+  incorrectExplanation="WSUS está específicamente diseñado para actualizaciones; aunque las actualizaciones contribuyen a la seguridad, su función no es gestionar configuraciones generales de seguridad ni controlar la ejecución de servicios de seguridad [29, 30]."
+/>
+<InteractiveQuiz
+  question="¿Qué método de cifrado usa BitLocker por defecto en sistemas modernos?"
+  options={{
+    A: "DES",
+    B: "MD5",
+    C: "SHA-256",
+    D: "AES"
+  }}
+  correctAnswer="D"
+  correctExplanation="BitLocker, la característica de cifrado de disco completo de Windows, utiliza el algoritmo AES (Advanced Encryption Standard) como su método de cifrado predeterminado en sistemas modernos, debido a su robustez y eficiencia [29]."
+  incorrectExplanation="DES es un algoritmo de cifrado obsoleto, y MD5 y SHA-256 son algoritmos de hashing, no de cifrado, por lo que no son utilizados por BitLocker para cifrar datos [29]."
+/>
+<InteractiveQuiz
+  question="El protocolo Kerberos se utiliza para:"
+  options={{
+    A: "Transmitir información a Internet.",
+    B: "Transmitir de forma segura los SIDs del dominio.",
+    C: "Autorizar el acceso a servicios del servicio por parte de los usuarios.",
+    D: "Proteger el golden ticket del dominio."
+  }}
+  correctAnswer="C"
+  correctExplanation="El protocolo Kerberos se utiliza para autenticar usuarios y autorizar su acceso a servicios en una red. Permite que los usuarios demuestren su identidad de forma segura y obtengan tickets para acceder a recursos específicos [35]."
+  incorrectExplanation="Aunque Kerberos es seguro, su función principal no es la transmisión general de información por Internet ni solo la protección de un 'golden ticket' (que es un concepto de ataque), sino facilitar el acceso autorizado a servicios [35]."
+/>
+<InteractiveQuiz
+  question="¿Qué herramienta de Microsoft es un SIEM basado en la nube?"
+  options={{
+    A: "Microsoft Sentinel",
+    B: "Windows Defender Application Control",
+    C: "Windows Defender Firewall",
+    D: "Windows Hello"
+  }}
+  correctAnswer="A"
+  correctExplanation="Microsoft Sentinel es una solución SIEM (Security Information and Event Management) basada en la nube, que proporciona análisis de seguridad inteligente y detección de amenazas para toda la empresa [35]."
+  incorrectExplanation="Windows Defender Application Control y Firewall son para control de aplicaciones y filtrado de red, respectivamente. Windows Hello es para autenticación biométrica. Ninguna de estas últimas es una solución SIEM [35]."
+/>
+<InteractiveQuiz
+  question="Bitlocker sirve para:"
+  options={{
+    A: "Evitar la ejecución de malware.",
+    B: "Controlar las conexiones entrantes al sistema.",
+    C: "Cifrar el sistema de archivos.",
+    D: "Detectar intrusiones en el Windows."
+  }}
+  correctAnswer="C"
+  correctExplanation="BitLocker es una característica de cifrado de volumen completo de Microsoft Windows, diseñada para proteger los datos cifrando el disco duro completo donde se encuentra el sistema operativo y otros datos [36]."
+  incorrectExplanation="Evitar la ejecución de malware, controlar conexiones entrantes y detectar intrusiones son funciones de antivirus, firewalls e IDS/IPS, respectivamente, no de BitLocker [36]."
+/>
+<InteractiveQuiz
+  question="Una edición de Windows se considera obsoleta:"
+  options={{
+    A: "Cuando ya no recibe soporte ni actualizaciones.",
+    B: "A los dos años desde su publicación.",
+    C: "Cuando se publica la siguiente edición.",
+    D: "Depende del hardware en el que esté instalada."
+  }}
+  correctAnswer="A"
+  correctExplanation="Una edición de Windows se considera obsoleta cuando Microsoft finaliza su ciclo de vida de soporte, lo que significa que ya no recibe actualizaciones de seguridad ni soporte técnico [37]."
+  incorrectExplanation="La obsolescencia de una edición no se define por un plazo fijo desde su publicación, la aparición de una nueva edición o el hardware, sino por el fin de su soporte oficial [37]."
+/>
+<InteractiveQuiz
+  question="¿Qué característica de seguridad permite cifrar archivos en NTFS?"
+  options={{
+    A: "SMB Signing",
+    B: "Controlled Folder Access",
+    C: "BitLocker",
+    D: "EFS (Encrypting File System)"
+  }}
+  correctAnswer="D"
+  correctExplanation="EFS (Encrypting File System) es una característica integrada en el sistema de archivos NTFS de Windows que permite cifrar archivos y carpetas individuales a nivel de usuario [37]."
+  incorrectExplanation="SMB Signing se relaciona con la seguridad de red, Controlled Folder Access es una protección contra ransomware y BitLocker cifra volúmenes completos, no archivos individuales en NTFS [37]."
+/>
+<InteractiveQuiz
+  question="SELinux es..."
+  options={{
+    A: "Un módulo del kernel que permite implantar un modelo de autorización obligatorio (MAC).",
+    B: "Ninguna de las otras opciones es válida.",
+    C: "Un módulo de Windows que permite ejecutar programas Linux.",
+    D: "Una distribución de Linux."
+  }}
+  correctAnswer="A"
+  correctExplanation="SELinux (Security-Enhanced Linux) es un módulo de seguridad del kernel de Linux que proporciona un mecanismo para reforzar las políticas de control de acceso, implementando principalmente un modelo de Control de Acceso Obligatorio (MAC) [38]."
+  incorrectExplanation="SELinux es un componente de seguridad específico de Linux, no de Windows, y no es una distribución de Linux en sí misma [38]."
+/>
+<InteractiveQuiz
+  question="PAM (Pluggable Authentication Modules)..."
+  options={{
+    A: "Permite configurar parámetros de autenticación, contraseñas, sesiones y cuentas.",
+    B: "Se configura en el fichero /etc/login.defs.",
+    C: "Permite configurar sólo parámetros de autenticación.",
+    D: "Se configura en el fichero /etc/pam.d."
+  }}
+  correctAnswer="A"
+  correctExplanation="PAM (Pluggable Authentication Modules) es una infraestructura flexible en sistemas Unix/Linux que permite configurar módulos para diferentes tipos de autenticación, así como la gestión de contraseñas, sesiones y cuentas de usuario [39]."
+  incorrectExplanation="PAM no se configura en `/etc/login.defs` (que es para configuraciones predeterminadas de cuentas) y no se limita solo a la autenticación [39]."
+/>
+<InteractiveQuiz
+  question="Un usuario con UID 0..."
+  options={{
+    A: "Está bloqueado.",
+    B: "Ninguna de las otras respuestas es válida.",
+    C: "Es el root.",
+    D: "Ningún usuario puede tener UID 0."
+  }}
+  correctAnswer="C"
+  correctExplanation="En sistemas Linux, el User ID (UID) 0 está reservado para el usuario 'root', que es el superusuario con los máximos privilegios administrativos en el sistema [15, 39, 40]."
+  incorrectExplanation="El UID 0 identifica específicamente al usuario root; no indica que un usuario esté bloqueado ni es un UID que ningún usuario pueda tener [15, 39, 40]."
+/>
+<InteractiveQuiz
+  question="¿Qué comando se usa para cambiar el propietario de un archivo en Linux?"
+  options={{
+    A: "chgrp",
+    B: "ls",
+    C: "chown",
+    D: "chmod"
+  }}
+  correctAnswer="C"
+  correctExplanation="El comando `chown` (change owner) en Linux se utiliza para cambiar el usuario propietario de un archivo o directorio [41]."
+  incorrectExplanation="`chgrp` cambia el grupo propietario, `ls` lista el contenido de directorios y `chmod` cambia los permisos de archivos [41]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de los siguientes no es un fichero de log en Linux?"
+  options={{
+    A: "/var/log/message",
+    B: "/var/log/lastlog",
+    C: "/etc/syslog.conf",
+    D: "/var/log/wtmp"
+  }}
+  correctAnswer="C"
+  correctExplanation="`/etc/syslog.conf` es un archivo de configuración para el demonio `syslog`, que define cómo se deben gestionar los logs del sistema, pero no es un archivo de log en sí mismo [41]."
+  incorrectExplanation="`/var/log/message`, `/var/log/lastlog` y `/var/log/wtmp` son todos archivos de log comunes en Linux que almacenan eventos del sistema, información de inicio de sesión y registros de actividad del usuario [41]."
+/>
+<InteractiveQuiz
+  question="¿Qué archivo contiene los registros de acceso al sistema en Linux?"
+  options={{
+    A: "/etc/secure",
+    B: "/var/log/boot.log",
+    C: "/var/log/auth.log",
+    D: "/var/log/syslog"
+  }}
+  correctAnswer="C"
+  correctExplanation="El archivo `/var/log/auth.log` (o en ocasiones `/var/log/secure` en otras distribuciones) contiene los registros relacionados con la autenticación y autorización de usuarios, incluyendo los intentos de inicio de sesión y el uso de comandos privilegiados [41]."
+  incorrectExplanation="`/var/log/boot.log` contiene mensajes de arranque y `/var/log/syslog` contiene mensajes generales del sistema. `/etc/secure` no es un archivo de log estándar [41]."
+/>
+<InteractiveQuiz
+  question="¿Qué utilidad permite automatizar la actualización de software en Linux?"
+  options={{
+    A: "unattended-upgrades",
+    B: "up2date",
+    C: "patchmanager",
+    D: "Windows Update"
+  }}
+  correctAnswer="A"
+  correctExplanation="`unattended-upgrades` es una utilidad común en distribuciones basadas en Debian/Ubuntu que permite la instalación automática de actualizaciones de seguridad en segundo plano [42]."
+  incorrectExplanation="`up2date` se usa en sistemas basados en Red Hat, `patchmanager` es un término genérico, y Windows Update es exclusivo de sistemas Windows [42]."
+/>
+<InteractiveQuiz
+  question="El fichero /etc/passwd especifica"
+  options={{
+    A: "El periodo de validez de la contraseña.",
+    B: "El UID del usuario.",
+    C: "El entorno de ventanas de usuario.",
+    D: "La contraseña hasheada."
+  }}
+  correctAnswer="B"
+  correctExplanation="El fichero `/etc/passwd` contiene información básica de las cuentas de usuario, incluyendo el User ID (UID) y la shell por defecto, aunque por razones de seguridad, las contraseñas hasheadas se almacenan en `/etc/shadow` [42, 43]."
+  incorrectExplanation="El periodo de validez de la contraseña y la contraseña hasheada se encuentran en `/etc/shadow`. El entorno de ventanas no se especifica directamente en `/etc/passwd` [42, 43]."
+/>
+<InteractiveQuiz
+  question="¿Qué comando permite cambiar la contraseña de un usuario en Linux?"
+  options={{
+    A: "usermod",
+    B: "pwchange",
+    C: "passwd usuario",
+    D: "useradd"
+  }}
+  correctAnswer="C"
+  correctExplanation="El comando `passwd` seguido del nombre de usuario es la herramienta estándar en Linux para cambiar la contraseña de un usuario [43]."
+  incorrectExplanation="`usermod` se utiliza para modificar atributos de la cuenta de usuario (no la contraseña), y `useradd` para crear nuevos usuarios. `pwchange` no es un comando estándar para este propósito [43]."
+/>
+<InteractiveQuiz
+  question="En Linux, se recomienda que las contraseñas se almacenen en el fichero:"
+  options={{
+    A: "SAM",
+    B: "/etc/pam.conf",
+    C: "/etc/shadow",
+    D: "/etc/passwd"
+  }}
+  correctAnswer="C"
+  correctExplanation="Para una mayor seguridad, en Linux se recomienda que los hashes de las contraseñas se almacenen en el fichero `/etc/shadow`, ya que este archivo solo es accesible por el usuario root, protegiéndolos de accesos no autorizados [43]."
+  incorrectExplanation="SAM es un archivo de Windows. `/etc/pam.conf` es para la configuración de PAM. Históricamente, las contraseñas hasheadas se guardaban en `/etc/passwd`, pero esta práctica es insegura y ya no se recomienda [43]."
+/>
+<InteractiveQuiz
+  question="¿Cuál es la función del bit Sticky en Linux?"
+  options={{
+    A: "Ejecutar archivos con permisos elevados",
+    B: "Permitir a cualquier usuario modificar archivos",
+    C: "Asignar permisos de grupo automáticament",
+    D: "Solo el propietario puede borrar un archivo"
+  }}
+  correctAnswer="D"
+  correctExplanation="Cuando el bit Sticky está activado en un directorio, solo el propietario del archivo, el propietario del directorio o el usuario root pueden eliminar o renombrar archivos dentro de ese directorio, incluso si otros usuarios tienen permisos de escritura sobre el directorio. Esto es común en directorios públicos como `/tmp` [44, 45]."
+  incorrectExplanation="El bit Sticky no tiene relación con la ejecución de archivos con permisos elevados (eso es SUID/SGID), ni con permitir la modificación general de archivos, ni con la asignación automática de permisos de grupo [44, 45]."
+/>
+<InteractiveQuiz
+  question="Los servicios en Linux se configuran..."
+  options={{
+    A: "En el Registro de Linux.",
+    B: "En el fichero /var/inetd.conf.",
+    C: "En diversos ficheros o carpetas en función de la distribución de Linux que tengamos.",
+    D: "En el fichero /etc/services."
+  }}
+  correctAnswer="C"
+  correctExplanation="La configuración de los servicios en Linux puede variar significativamente entre las diferentes distribuciones (por ejemplo, usando `systemd`, `Upstart` o `SysVinit`), por lo que no hay una única ubicación o archivo estándar para todos [46]."
+  incorrectExplanation="Linux no tiene un 'Registro' como Windows. Aunque archivos como `/etc/inetd.conf` o `/etc/services` pueden estar relacionados con algunos servicios de red, no son ubicaciones universales para toda la configuración de servicios [46]."
+/>
+<InteractiveQuiz
+  question="El fichero /etc/login.defs contiene..."
+  options={{
+    A: "La configuracion por defecto para el login de los usuarios que se copiará al fichero /etc/shadow.",
+    B: "la configuración para el login del root.",
+    C: "La configuración para el login de todos los usuarios.",
+    D: "El log con los accesos de los usuarios al sistema."
+  }}
+  correctAnswer="A"
+  correctExplanation="El fichero `/etc/login.defs` contiene la configuración por defecto para la creación de nuevas cuentas de usuario, incluyendo políticas de contraseña como la caducidad, que luego se aplican y se reflejan en el fichero `/etc/shadow` [46]."
+  incorrectExplanation="Este archivo define políticas predeterminadas, no la configuración específica para el login del root o de todos los usuarios ya existentes, ni es un archivo de log [46]."
+/>
+<InteractiveQuiz
+  question="Los logs de Linux..."
+  options={{
+    A: "Se almacenan siempre en /var/log/syslog.",
+    B: "Pueden ser de texto o binarios.",
+    C: "Siempre se pueden consultar con el comando cat.",
+    D: "Se instalan como un complemento (add-on) del sistema operativo."
+  }}
+  correctAnswer="B"
+  correctExplanation="Los logs en Linux pueden ser de diversos formatos; mientras que muchos son de texto plano (como los gestionados por `syslog`), otros sistemas de log (como `journald` en `systemd`) almacenan logs en formato binario [47]."
+  incorrectExplanation="No todos los logs se almacenan en `/var/log/syslog` ni todos pueden consultarse con `cat` (especialmente los binarios). Los logs son una parte integral del sistema operativo, no un complemento [47]."
+/>
+<InteractiveQuiz
+  question="Las contraseñas de Linux se almacenan:"
+  options={{
+    A: "Aplicando el algoritmo de hashing a la concatenación de la contraseña y el salt.",
+    B: "Aplicando el algoritmo de cifrado a la concatenación de la contraseña y el salt.",
+    C: "Aplicando el algoritmo de hashing a la contraseña.",
+    D: "Aplicando el algoritmo de cifrado a la contraseña y añadiendo después el salt."
+  }}
+  correctAnswer="A"
+  correctExplanation="En Linux, las contraseñas se almacenan de forma segura aplicando un algoritmo de hashing a una combinación de la contraseña del usuario y un valor aleatorio único llamado 'salt'. Este proceso genera un hash que se guarda, no la contraseña original, para proteger contra ataques de tablas arcoíris [48]."
+  incorrectExplanation="Las contraseñas se hashean, no se cifran, y el uso de un salt concatenado a la contraseña antes del hashing es una práctica de seguridad fundamental [48]."
+/>
+<InteractiveQuiz
+  question="¿Qué modelo de control de acceso se usa en SELinux?"
+  options={{
+    A: "ABAC",
+    B: "MAC",
+    C: "ACL",
+    D: "DAC"
+  }}
+  correctAnswer="B"
+  correctExplanation="SELinux (Security-Enhanced Linux) implementa un modelo de Control de Acceso Obligatorio (MAC), donde las decisiones de acceso son impuestas por una política de seguridad a nivel de sistema, independientemente de los permisos discrecionales del propietario del recurso [48]."
+  incorrectExplanation="ABAC es más granular, mientras que ACL (Listas de Control de Acceso) y DAC (Control de Acceso Discrecional) son modelos menos restrictivos. SELinux se enfoca en MAC [48]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de los siguientes es un firewall nativo de Linux?"
+  options={{
+    A: "Checkpoint",
+    B: "Norton Firewall",
+    C: "ZoneAlarm",
+    D: "iptables"
+  }}
+  correctAnswer="D"
+  correctExplanation="`iptables` es la utilidad de línea de comandos tradicional en Linux para configurar el firewall del kernel (netfilter), por lo que se considera un firewall nativo del sistema [49]."
+  incorrectExplanation="Checkpoint, Norton Firewall y ZoneAlarm son productos de firewall de terceros, no herramientas nativas de Linux [49]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de estos sistemas de archivos es más adecuado para SSD?"
+  options={{
+    A: "NTFS",
+    B: "F2FS",
+    C: "XFS",
+    D: "Ext3"
+  }}
+  correctAnswer="B"
+  correctExplanation="F2FS (Flash-Friendly File System) es un sistema de archivos diseñado específicamente por Samsung para dispositivos de almacenamiento flash como los SSD, optimizado para mejorar su rendimiento y vida útil [49]."
+  incorrectExplanation="NTFS es el sistema de archivos de Windows. XFS y Ext3 son sistemas de archivos generales de Linux, pero no están tan específicamente optimizados para SSDs como F2FS [49]."
+/>
+<InteractiveQuiz
+  question="Linux NO tiene una gran cuota de mercado en ..."
+  options={{
+    A: "Sistemas embebidos.",
+    B: "Móviles y tabletas.",
+    C: "Equipos de escritorio.",
+    D: "Servidores de Internet en la nube."
+  }}
+  correctAnswer="C"
+  correctExplanation="Aunque Linux tiene una cuota de mercado muy significativa en servidores, sistemas embebidos y dispositivos móviles (a través de Android), su adopción en equipos de escritorio sigue siendo relativamente baja en comparación con Windows o macOS [50]."
+  incorrectExplanation="Linux domina en servidores, dispositivos móviles (Android) y sistemas embebidos [50]."
+/>
+<InteractiveQuiz
+  question="¿Cuál es el algoritmo más seguro de los utilizados por los sistemas Linux para almacenar las contraseñas?"
+  options={{
+    A: "SHA-512",
+    B: "Blowfish",
+    C: "MD5",
+    D: "DES"
+  }}
+  correctAnswer="A"
+  correctExplanation="SHA-512 (Secure Hash Algorithm 512) es un algoritmo de hashing criptográfico robusto y es considerado el más seguro de los listados para el almacenamiento de contraseñas en sistemas Linux modernos, dada su resistencia a diversos ataques [50]."
+  incorrectExplanation="MD5 y DES son considerados algoritmos inseguros o débiles para el hashing de contraseñas. Blowfish es un cifrador, aunque también se utiliza en esquemas de hashing como bcrypt [50]."
+/>
+<InteractiveQuiz
+  question="¿Qué herramienta se usa para cifrar discos en Linux?"
+  options={{
+    A: "LUKS",
+    B: "Veracrypt",
+    C: "GPG",
+    D: "TrueCrypt"
+  }}
+  correctAnswer="A"
+  correctExplanation="LUKS (Linux Unified Key Setup) es el estándar de facto para el cifrado de discos y volúmenes completos en Linux, proporcionando una solución robusta y un formato de disco independiente de la plataforma [51]."
+  incorrectExplanation="Veracrypt y TrueCrypt son herramientas multiplataforma de cifrado de disco (TrueCrypt está descontinuado). GPG (GNU Privacy Guard) se utiliza para cifrar archivos y comunicaciones, no discos enteros [51]."
+/>
+<InteractiveQuiz
+  question="Los tres valores numéricos que representan los permisos de un fichero en Linux se corresponden con:"
+  options={{
+    A: "Todos los usuarios, el grupo y el propietario.",
+    B: "El propietario, el grupo y el resto de usuarios.",
+    C: "El grupo, el propietario y el resto de usuarios.",
+    D: "El propietario, el administrador y el grupo"
+  }}
+  correctAnswer="B"
+  correctExplanation="En Linux (y sistemas Unix-like), los permisos de un archivo o directorio se representan típicamente con tres conjuntos de valores (lectura, escritura, ejecución) que corresponden al propietario del archivo, el grupo al que pertenece el archivo y el resto de usuarios, en ese orden [52]."
+  incorrectExplanation="El orden correcto es siempre propietario, grupo y otros usuarios (resto de usuarios) [52]."
+/>
+<InteractiveQuiz
+  question="Kali Linux es..."
+  options={{
+    A: "La distribución de Linux para ciberseguridad basada en Fedora.",
+    B: "Una distribución de Linux orientada a la ciberseguridad y al hacking ético.",
+    C: "Un conjunto de módulos del Kernel para reforzar la seguridad.",
+    D: "La única distribución de Linux especialmente diseñada para expertos en ciberseguridad."
+  }}
+  correctAnswer="B"
+  correctExplanation="Kali Linux es una popular distribución de Linux basada en Debian, diseñada específicamente con herramientas y funcionalidades para pruebas de penetración, auditoría de seguridad y hacking ético [2]."
+  incorrectExplanation="Kali Linux se basa en Debian, no en Fedora. Es una distribución, no solo módulos del Kernel, y aunque es muy popular, no es la única distribución para ciberseguridad [2]."
+/>
+<InteractiveQuiz
+  question="El comando que pemite buscar cadenas dentro de un texto es:"
+  options={{
+    A: "more.",
+    B: "grep.",
+    C: "cat.",
+    D: "head."
+  }}
+  correctAnswer="B"
+  correctExplanation="El comando `grep` (Global Regular Expression Print) se utiliza en Linux para buscar líneas de texto que coincidan con un patrón o cadena de caracteres específicos dentro de uno o varios archivos [15]."
+  incorrectExplanation="`more`, `cat` y `head` son comandos para visualizar el contenido de archivos (paginar, concatenar o mostrar el inicio), no para buscar cadenas específicas dentro de ellos [15]."
+/>
+<InteractiveQuiz
+  question="Para usar aplicaciones Linux en Windows se puede usar"
+  options={{
+    A: "Powershell.",
+    B: "Wine.",
+    C: "Shell.",
+    D: "Cygwin."
+  }}
+  correctAnswer="D"
+  correctExplanation="Cygwin proporciona un entorno tipo Unix en Windows, permitiendo ejecutar muchas aplicaciones y herramientas de Linux directamente [15]."
+  incorrectExplanation="Powershell es una interfaz de línea de comandos de Windows. Wine es para ejecutar aplicaciones de Windows en Linux. 'Shell' es un término genérico. Aunque WSL es una alternativa más nativa hoy en día, Cygwin es una solución válida para este propósito [15]."
+/>
+<InteractiveQuiz
+  question="¿Dónde se configuran las opciones de montaje de particiones en Linux?"
+  options={{
+    A: "/etc/mount",
+    B: "/proc/mounts",
+    C: "/etc/fstab",
+    D: "/var/mnttab"
+  }}
+  correctAnswer="C"
+  correctExplanation="Las opciones de montaje de particiones en Linux se configuran en el archivo `/etc/fstab`, que contiene una lista estática de los sistemas de archivos y cómo deben montarse al inicio del sistema [23, 40]."
+  incorrectExplanation="`/proc/mounts` muestra los sistemas de archivos actualmente montados (información en tiempo de ejecución), mientras que `/etc/mount` y `/var/mnttab` no son archivos de configuración estándar para el montaje persistente de particiones [23, 40]."
+/>
+<InteractiveQuiz
+  question="¿Cuál es el propósito del archivo /etc/crontab?"
+  options={{
+    A: "Controlar sesiones de usuario",
+    B: "Programar tareas periódicas",
+    C: "Configurar el firewall",
+    D: "Definir permisos de usuarios"
+  }}
+  correctAnswer="B"
+  correctExplanation="El archivo `/etc/crontab` se utiliza para programar la ejecución automática de comandos o scripts a intervalos regulares en sistemas Linux, permitiendo la automatización de tareas periódicas [53]."
+  incorrectExplanation="El control de sesiones de usuario, la configuración del firewall y la definición de permisos de usuario se gestionan mediante otros archivos y herramientas del sistema Linux [53]."
+/>
+<InteractiveQuiz
+  question="Si una carpeta tiene permisos 1755..."
+  options={{
+    A: "Permite escritura a cualquier usuario del sistema.",
+    B: "Permite crear ficheros a los usuarios que pertenecen al mismo grupo que la carpeta.",
+    C: "Permite ejecutar programas con los permisos del dueño del fichero.",
+    D: "Tiene el sticky bit activado."
+  }}
+  correctAnswer="D"
+  correctExplanation="El '1' inicial en los permisos `1755` indica que el 'sticky bit' está activado. Cuando el sticky bit está en un directorio, solo el propietario del archivo o el usuario root pueden borrar o renombrar archivos dentro de ese directorio, incluso si otros usuarios tienen permisos de escritura [45]."
+  incorrectExplanation="Los permisos 755 por sí solos no permiten escritura a cualquier usuario. El sticky bit no está relacionado con la creación de ficheros por el grupo o la ejecución de programas con permisos elevados (eso sería SUID/SGID) [45]."
+/>
+<InteractiveQuiz
+  question="¿Qué utilidad de Linux se usa para bloquear direcciones IP con múltiples intentos de acceso fallidos?"
+  options={{
+    A: "iptables",
+    B: "Fail2ban",
+    C: "ufw",
+    D: "SELinux"
+  }}
+  correctAnswer="B"
+  correctExplanation="Fail2ban es una utilidad que monitorea los archivos de log en busca de intentos fallidos de acceso (como ataques de fuerza bruta) y automáticamente bloquea las direcciones IP ofensivas en el firewall del sistema (ej. usando iptables) [23]."
+  incorrectExplanation="`iptables` y `ufw` (Uncomplicated Firewall) son herramientas de firewall, pero no realizan el análisis de logs y el bloqueo automático por sí solas. SELinux es un sistema de control de acceso obligatorio, no una utilidad para bloquear IPs por intentos fallidos [23]."
+/>
+<InteractiveQuiz
+  question="La monitorización de las bases de datos..."
+  options={{
+    A: "Penaliza el rendimiento de la base de datos.",
+    B: "Ninguna de las otras.",
+    C: "Todas las indicadas.",
+    D: "Implica monitorizar tanto la actividad del administrador como de los usuarios."
+  }}
+  correctAnswer="C"
+  correctExplanation="La monitorización de bases de datos puede penalizar el rendimiento y, para ser efectiva, debe implicar el seguimiento de la actividad tanto de los administradores como de los usuarios para detectar anomalías [54, 55]."
+  incorrectExplanation="Dado que la monitorización conlleva una posible penalización de rendimiento y la necesidad de supervisar ambas actividades (administrador y usuarios), la opción que engloba ambas afirmaciones es la correcta [54, 55]."
+/>
+<InteractiveQuiz
+  question="Database hijacking implica..."
+  options={{
+    A: "Pérdida de confidencialidad porque el atacante ha podido descargar la información de la base de datos.",
+    B: "Ambas son verdaderas.",
+    C: "Ninguna es verdadera.",
+    D: "Pérdida de disponibilidad porque el atacante no permite el acceso de usuarios legítimos."
+  }}
+  correctAnswer="B"
+  correctExplanation="Database hijacking (secuestro de base de datos) es un ataque que puede resultar tanto en la pérdida de confidencialidad (mediante la descarga de información sensible por parte del atacante) como en la pérdida de disponibilidad (al impedir el acceso legítimo a la base de datos) [54]."
+  incorrectExplanation="Ambas consecuencias (pérdida de confidencialidad y disponibilidad) son resultados posibles del secuestro de una base de datos [54]."
+/>
+<InteractiveQuiz
+  question="Un DAM es..."
+  options={{
+    A: "Un servicio para hacer réplicas de la base de datos.",
+    B: "Un sistema que analiza la actividad de la base de datos para detectar anomalías.",
+    C: "Un sistema de cifrado de datos.",
+    D: "La interfaz de la base de datos con el usuario."
+  }}
+  correctAnswer="B"
+  correctExplanation="Un DAM (Database Activity Monitoring) es un sistema diseñado para capturar, analizar y registrar la actividad dentro de una base de datos, con el objetivo de detectar patrones anómalos o comportamientos sospechosos que puedan indicar una amenaza de seguridad [56, 57]."
+  incorrectExplanation="Un DAM no es un servicio de réplicas, ni un sistema de cifrado, ni la interfaz de usuario; su función principal es la monitorización de la actividad para la seguridad [56, 57]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de las siguientes opciones NO es un nivel de cifrado en bases de datos?"
+  options={{
+    A: "A nivel de sistema operativo (ficheros).",
+    B: "A nivel de hardware de red.",
+    C: "A nivel de base de datos (tablas o columnas).",
+    D: "A nivel de aplicación (datos)."
+  }}
+  correctAnswer="B"
+  correctExplanation="Los niveles comunes de cifrado en bases de datos incluyen el cifrado a nivel de sistema operativo (de los archivos de la base de datos), a nivel de la propia base de datos (tablas o columnas) y a nivel de aplicación (antes de que los datos lleguen a la base de datos). El cifrado a nivel de hardware de red es una capa de seguridad de comunicación, no un nivel directo de cifrado de datos dentro de la base de datos [58]."
+  incorrectExplanation="El cifrado a nivel de sistema operativo, a nivel de base de datos y a nivel de aplicación son formas válidas de cifrar datos en bases de datos [58]."
+/>
+<InteractiveQuiz
+  question="Las bases de datos suelen guardar la información de sus usuarios:"
+  options={{
+    A: "Siempre en tablas de la base de datos.",
+    B: "Algunas en el sistema operativo y otras en tablas de la propia base de datos.",
+    C: "Siempre en el sistema operativo.",
+    D: "En ficheros de configuración."
+  }}
+  correctAnswer="B"
+  correctExplanation="La información de los usuarios de una base de datos puede almacenarse y gestionarse de diferentes maneras: algunas bases de datos gestionan sus propias cuentas y credenciales en tablas internas, mientras que otras pueden integrarse con el sistema operativo para la autenticación [59]."
+  incorrectExplanation="No toda la información de usuario se guarda siempre en tablas de la base de datos o siempre en el sistema operativo; la combinación de ambas es común dependiendo de la arquitectura [59]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de las siguientes amenazas a bases de datos consiste en introducir comandos SQL no autorizados?"
+  options={{
+    A: "Robo de backups",
+    B: "Buffer overflow",
+    C: "Database hijacking",
+    D: "SQL injection"
+  }}
+  correctAnswer="D"
+  correctExplanation="SQL injection (inyección SQL) es una vulnerabilidad de seguridad en bases de datos que permite a un atacante insertar código SQL malicioso en las entradas de datos de una aplicación, lo que puede resultar en la ejecución de comandos no autorizados [59, 60]."
+  incorrectExplanation="El robo de backups, el buffer overflow y el database hijacking son otras amenazas a la seguridad de las bases de datos, pero no se refieren específicamente a la introducción de comandos SQL no autorizados a través de entradas de usuario [59, 60]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de las siguientes NO es un tipo de copia de seguridad en bases de datos?"
+  options={{
+    A: "Diferencial.",
+    B: "Redundante.",
+    C: "Completa.",
+    D: "Incremental."
+  }}
+  correctAnswer="B"
+  correctExplanation="Los tipos comunes de copias de seguridad en bases de datos son completa (full), diferencial e incremental. 'Redundante' no es un tipo de copia de seguridad, sino una propiedad de los datos o sistemas que indica que hay duplicados [61]."
+  incorrectExplanation="Diferencial, completa e incremental son métodos estándar para realizar copias de seguridad de bases de datos [61]."
+/>
+<InteractiveQuiz
+  question="¿Qué criterio se usa para clasificar la información en bases de datos?"
+  options={{
+    A: "Volumen de datos almacenado.",
+    B: "Número de usuarios con acceso.",
+    C: "Cantidad de transacciones por segundo.",
+    D: "Confidencialidad, Disponibilidad e Integridad."
+  }}
+  correctAnswer="D"
+  correctExplanation="La información en bases de datos se clasifica comúnmente utilizando los principios de la tríada CIA: Confidencialidad (proteger de acceso no autorizado), Integridad (garantizar la exactitud y completitud) y Disponibilidad (asegurar el acceso cuando sea necesario) [61]."
+  incorrectExplanation="El volumen de datos, el número de usuarios o la cantidad de transacciones por segundo son métricas de rendimiento o tamaño, no criterios de clasificación de seguridad de la información [61]."
+/>
+<InteractiveQuiz
+  question="¿Cuál es una medida de seguridad recomendada para el almacenamiento de datos sensibles?"
+  options={{
+    A: "Evitar hacer backups, para evitar que incorporen datos sensibles .",
+    B: "Utilizar criptografía irreversible.",
+    C: "Cifrar los datos sensibles en la base de datos.",
+    D: "Eliminar la cuenta de usuario del DBA."
+  }}
+  correctAnswer="C"
+  correctExplanation="Una medida fundamental para proteger datos sensibles en una base de datos es cifrarlos. Esto asegura que, incluso si la base de datos es accedida de forma no autorizada, los datos permanezcan ilegibles sin la clave de cifrado [62]."
+  incorrectExplanation="Evitar backups compromete la disponibilidad y recuperación. La criptografía irreversible (hashing) es para contraseñas, no para datos que necesitan ser recuperados. Eliminar la cuenta del DBA impediría la administración de la base de datos [62]."
+/>
+<InteractiveQuiz
+  question="La información de la base de datos puede cifrarse mientras está almacenada..."
+  options={{
+    A: "Sólo si la aplicación los cifra extremo a extremo.",
+    B: "Usando claves simétricas o asimétricas.",
+    C: "Sólo si el sistema operativo cifra el fichero.",
+    D: "Con las claves que proporcione el usuario."
+  }}
+  correctAnswer="B"
+  correctExplanation="La información almacenada en una base de datos puede ser cifrada utilizando diversos métodos criptográficos, incluyendo tanto algoritmos de clave simétrica como asimétrica, dependiendo de la implementación y las necesidades de seguridad [63]."
+  incorrectExplanation="El cifrado puede realizarse en diferentes niveles (aplicación, base de datos, sistema operativo) y no depende únicamente de la aplicación o del sistema operativo, ni siempre de claves proporcionadas por el usuario [63]."
+/>
+<InteractiveQuiz
+  question="¿Cuál es una práctica recomendada para proteger la comunicación con bases de datos?"
+  options={{
+    A: "Exigir siempre el acceso a través de VPN.",
+    B: "Ubicar la base de datos en una red aislada.",
+    C: "Utilizar el usuario DBA.",
+    D: "Utilizar cifrado en las comunicaciones."
+  }}
+  correctAnswer="D"
+  correctExplanation="Utilizar cifrado en las comunicaciones (por ejemplo, mediante SSL/TLS) es una práctica esencial para proteger la confidencialidad e integridad de los datos mientras se transmiten entre la aplicación y la base de datos [64]."
+  incorrectExplanation="Mientras que las VPNs y el aislamiento de red son importantes para la seguridad general, el cifrado de las comunicaciones es una medida directa y específica para proteger los datos en tránsito. El uso del usuario DBA debe ser restringido, no fomentado para el acceso general [64]."
+/>
+<InteractiveQuiz
+  question="¿Qué aspecto NO es una característica de la monitorización de bases de datos?"
+  options={{
+    A: "Análisis de logs en busca de operaciones rutinarias.",
+    B: "Protección de los logs generados.",
+    C: "Monitorización de tareas de administración.",
+    D: "Análisis de logs en busca de anomalías."
+  }}
+  correctAnswer="A"
+  correctExplanation="La monitorización de bases de datos se enfoca en la seguridad y el rendimiento, lo que incluye la protección de los logs, la monitorización de tareas administrativas y el análisis de logs en busca de anomalías. Sin embargo, el objetivo principal no es simplemente analizar las operaciones rutinarias por sí mismas, sino identificar desviaciones o problemas [64]."
+  incorrectExplanation="La protección de los logs, la monitorización de tareas de administración y el análisis de logs en busca de anomalías son características clave de la monitorización de bases de datos [64]."
+/>
+<InteractiveQuiz
+  question="El acceso a los datos de una base de datos se puede realizar..."
+  options={{
+    A: "A través del SGBD.",
+    B: "A través de una aplicación que acceda al gestor de base de datos.",
+    C: "Todas son válidas.",
+    D: "Accediendo directamente a los ficheros que almacenan los datos."
+  }}
+  correctAnswer="C"
+  correctExplanation="El acceso a los datos de una base de datos puede realizarse de varias maneras: directamente a través del Sistema Gestor de Bases de Datos (SGBD), mediante una aplicación que interactúa con el SGBD, e incluso, aunque no sea una práctica recomendada por seguridad y riesgo de corrupción, accediendo directamente a los archivos físicos de datos [65]."
+  incorrectExplanation="Todas las opciones representan formas posibles de acceder a los datos de una base de datos, aunque algunas son más seguras y recomendadas que otras [65]."
+/>
+<InteractiveQuiz
+  question="¿Qué método NO es una forma de autenticación en bases de datos?"
+  options={{
+    A: "A través del SGBD",
+    B: "A través de las aplicaciones",
+    C: "A través del sistema operativo",
+    D: "A través del navegador web"
+  }}
+  correctAnswer="D"
+  correctExplanation="La autenticación en bases de datos se realiza directamente a través del SGBD, mediante el uso de aplicaciones que gestionan las credenciales, o integrando la autenticación con el sistema operativo. Un navegador web es una interfaz para acceder a aplicaciones web, no un método directo de autenticación a la base de datos subyacente [66]."
+  incorrectExplanation="El SGBD, las aplicaciones y el sistema operativo son métodos comunes para autenticar usuarios en una base de datos [66, 67]."
+/>
+<InteractiveQuiz
+  question="El bastionado de la base de datos debe realizarse..."
+  options={{
+    A: "A petición del usuario.",
+    B: "Siempre debe seguir las recomendaciones del fabricante..",
+    C: "Sólo cuando la base de datos esta expuesta a Internet.",
+    D: "Siempre, con un nivel de exigencia dependiente de la criticidad de la información."
+  }}
+  correctAnswer="D"
+  correctExplanation="El bastionado de una base de datos es una práctica de seguridad esencial que debe realizarse siempre, y el nivel de rigor y las medidas aplicadas deben ser proporcionales a la criticidad y sensibilidad de la información que almacena [57]."
+  incorrectExplanation="El bastionado no es opcional ni solo para bases de datos expuestas a Internet, ni se limita únicamente a las recomendaciones del fabricante, ya que la criticidad de la información es el factor determinante principal [57]."
+/>
+<InteractiveQuiz
+  question="¿Qué desventaja puede tener la monitorización de bases de datos?"
+  options={{
+    A: "Puede haber información confidencial en los logs.",
+    B: "Requiere determinar las necesidades de trazabilidad.",
+    C: "Requiere la protección de los logs.",
+    D: "Penaliza el rendimiento y requiere capacidad de almacenamiento."
+  }}
+  correctAnswer="D"
+  correctExplanation="Una desventaja significativa de la monitorización de bases de datos es que puede introducir una penalización en el rendimiento del sistema y exige una considerable capacidad de almacenamiento para guardar los logs y datos de monitorización [55]."
+  incorrectExplanation="Las otras opciones (información confidencial en logs, necesidades de trazabilidad, protección de logs) son desafíos o requisitos de la monitorización, no desventajas inherentes en términos de recursos [55]."
+/>
+<InteractiveQuiz
+  question="El sistema de copias que asegura un menor retardo en la realización de operaciones es..."
+  options={{
+    A: "Replicación síncrona.",
+    B: "Replicación completa.",
+    C: "Replicación asíncrona.",
+    D: "El tipo de replicación no afecta a los retardos en la realización de transacciones."
+  }}
+  correctAnswer="C"
+  correctExplanation="La replicación asíncrona permite que las transacciones se confirmen en la base de datos principal sin esperar la confirmación de la réplica, lo que resulta en un menor retardo en la realización de las operaciones en el origen [68]."
+  incorrectExplanation="La replicación síncrona introduce un mayor retardo porque espera la confirmación de la réplica. La replicación completa no es un 'sistema de copias' en el sentido de alta disponibilidad para transacciones en tiempo real [68]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de las siguientes características NO forma parte de las propiedades ACID de las bases de datos?"
+  options={{
+    A: "Consistencia",
+    B: "Aislamiento",
+    C: "Atomicidad",
+    D: "Escalabilidad"
+  }}
+  correctAnswer="D"
+  correctExplanation="Las propiedades ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad/Persistencia) son un conjunto de características que garantizan que las transacciones de bases de datos se procesen de forma fiable. La escalabilidad es una característica relacionada con el rendimiento y la capacidad de crecimiento, no una propiedad ACID [68, 69]."
+  incorrectExplanation="Atomicidad, Consistencia y Aislamiento son tres de las cuatro propiedades fundamentales de ACID [68, 69]."
+/>
+<InteractiveQuiz
+  question="Para evitar un SQL injection..."
+  options={{
+    A: "Todas las demás.",
+    B: "Se pueden reforzar las contraseñas de los usuarios.",
+    C: "Se pueden cifrar las comunicaciones.",
+    D: "Se pueden parsear los datos de entrada de los formularios de la aplicación."
+  }}
+  correctAnswer="D"
+  correctExplanation="La medida más efectiva para evitar un SQL injection es validar, filtrar y 'parsear' correctamente los datos de entrada de los formularios de la aplicación (utilizando, por ejemplo, sentencias preparadas o consultas parametrizadas), para que el código SQL malicioso no sea interpretado como parte de la consulta [60]."
+  incorrectExplanation="Aunque reforzar contraseñas y cifrar comunicaciones son buenas prácticas de seguridad general, no abordan directamente la vulnerabilidad de inyección SQL, que se centra en el manejo inadecuado de las entradas de datos [60]."
+/>
+<InteractiveQuiz
+  question="Los logs de la base de datos..."
+  options={{
+    A: "Deben contener toda la información de las consultas realizadas.",
+    B: "Permiten recuperar la información de la base de datos en caso de problemas.",
+    C: "No necesitan una protección especial, porque no incluyen información relevante.",
+    D: "No deben contener información sensible."
+  }}
+  correctAnswer="D"
+  correctExplanation="Aunque los logs son cruciales para auditorías y recuperación, una buena práctica de seguridad es que no contengan directamente información sensible o confidencial, ya que los logs mismos pueden convertirse en un objetivo de ataque [70]."
+  incorrectExplanation="Los logs deben contener información relevante para auditorías y recuperación, y sí necesitan protección especial. Si bien pueden usarse para recuperar información, la directriz de seguridad es evitar la información sensible en ellos [70]."
+/>
+<InteractiveQuiz
+  question="¿Qué afirmación es correcta respecto a la ubicación segura de bases de datos en una red?"
+  options={{
+    A: "La ubicación en la red no afecta al nivel de seguridad.",
+    B: "Deberían ubicarse en zonas internas y protegidas de la red.",
+    C: "Deberían ubicarse en lugares accesibles, como la DMZ.",
+    D: "Deben estar simpre en el mismo segmento de red que las aplicaciones que acceden a ellas."
+  }}
+  correctAnswer="B"
+  correctExplanation="Para una ubicación segura, las bases de datos deben situarse en segmentos de red internos y bien protegidos, segregados de las zonas de acceso público (como la DMZ) para minimizar la exposición a ataques externos [71]."
+  incorrectExplanation="La ubicación en la red afecta significativamente la seguridad. Las bases de datos sensibles no deben estar en la DMZ. Aunque las aplicaciones acceden a ellas, no siempre deben estar en el mismo segmento de red por motivos de seguridad por capas [71]."
+/>
+<InteractiveQuiz
+  question="El el contexto de bases de datos, ACID es..."
+  options={{
+    A: "Ninguna de las otras.",
+    B: "Atomicidad, Integridad, Aislamiento, Persistencia.",
+    C: "Autenticidad, Confidencialidad, Integridad, Disponibilidad.",
+    D: "Un paradigma de base de datos centrado en la velocidad de las transacciones."
+  }}
+  correctAnswer="B"
+  correctExplanation="En el contexto de bases de datos, ACID es un acrónimo que representa cuatro propiedades fundamentales que garantizan la fiabilidad de las transacciones: Atomicidad, Consistencia, Aislamiento e Integridad (a veces llamada Durabilidad o Persistencia) [69]."
+  incorrectExplanation="La opción C describe la tríada de seguridad (Confidencialidad, Integridad, Disponibilidad). La opción D se refiere a un enfoque de rendimiento, no a las propiedades ACID. La A es incorrecta porque la B es la definición correcta [69]."
+/>
+<InteractiveQuiz
+  question="¿Qué afirmación es correcta sobre el rol del DBA (Database Administrator)?"
+  options={{
+    A: "Puede acceder libremente a todos los datos de la base de datos.",
+    B: "Tiene acceso privilegiado a la base de datos para labores de administración y mantenimiento.",
+    C: "No tiene permisos para modificar la estructura de la base de datos.",
+    D: "No requiere medidas adicionales de seguridad en su autenticación."
+  }}
+  correctAnswer="B"
+  correctExplanation="El rol del DBA (Administrador de Bases de Datos) implica tener acceso privilegiado para realizar tareas de administración, mantenimiento y garantizar el funcionamiento óptimo de la base de datos [72]."
+  incorrectExplanation="Aunque un DBA tiene amplios permisos, el acceso 'libre' sin control no es una práctica segura. Los DBAs sí tienen permisos para modificar la estructura de la base de datos, y debido a su acceso privilegiado, requieren fuertes medidas de seguridad en su autenticación [72]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de las siguientes afirmaciones define mejor una base de datos?"
+  options={{
+    A: "Sistema que permite el almacenamiento ordenado y sistemático de información.",
+    B: "Aplicación que gestiona archivos en un sistema operativo.",
+    C: "Proceso para organizar datos manualmente.",
+    D: "Hardware especializado para almacenar grandes volúmenes de datos."
+  }}
+  correctAnswer="A"
+  correctExplanation="Una base de datos se define mejor como un sistema diseñado para el almacenamiento, organización y gestión eficiente y sistemática de grandes volúmenes de información, permitiendo su acceso y recuperación de forma estructurada [73]."
+  incorrectExplanation="Una base de datos es más que una simple gestión de archivos; es un sistema, no un proceso manual, y es principalmente un componente de software, no hardware especializado [73]."
+/>
+<InteractiveQuiz
+  question="El backup diferencial..."
+  options={{
+    A: "Incluye todos los cambios desde la última copia completa.",
+    B: "Se realiza de manera continua.",
+    C: "Incluye toda la información de la base de datos.",
+    D: "Incluye todos los cambios desde el último backup."
+  }}
+  correctAnswer="A"
+  correctExplanation="Un backup diferencial consiste en copiar todos los datos que han cambiado desde la última copia de seguridad completa. Esto significa que cada backup diferencial incluye todos los cambios acumulados desde el último backup completo [73]."
+  incorrectExplanation="No se realiza de manera continua (eso sería un tipo de replicación o log shipping). No incluye toda la información (eso es un backup completo). 'Desde el último backup' sería un backup incremental [73]."
+/>
+<InteractiveQuiz
+  question="¿Qué medida de seguridad es recomendable para proteger el acceso remoto a una base de datos?"
+  options={{
+    A: "Ubicar la base de datos en la DMZ.",
+    B: "Filtrar las comunicaciones con un firewall.",
+    C: "Permitir conexiones sin cifrado para mejorar el rendimiento.",
+    D: "Dar acceso remoto a todos los usuarios sin restricciones."
+  }}
+  correctAnswer="B"
+  correctExplanation="Filtrar las comunicaciones con un firewall es una medida de seguridad esencial para proteger el acceso remoto a una base de datos, permitiendo solo las conexiones necesarias desde direcciones IP autorizadas [67]."
+  incorrectExplanation="Ubicar la base de datos en la DMZ (Zona Desmilitarizada) la expone a mayores riesgos. Permitir conexiones sin cifrado o dar acceso sin restricciones compromete gravemente la seguridad [67]."
+/>
+<InteractiveQuiz
+  question="¿Quién puede autenticar a los usuarios de una base de datos?"
+  options={{
+    A: "Ambas son verdaderas.",
+    B: "El sistema operativo.",
+    C: "El sistema gestor de base de datos.",
+    D: "Ninguna es verdadera."
+  }}
+  correctAnswer="A"
+  correctExplanation="Los usuarios de una base de datos pueden ser autenticados directamente por el Sistema Gestor de Bases de Datos (SGBD) utilizando sus propias cuentas y contraseñas, o a través del sistema operativo mediante autenticación integrada (como Active Directory en Windows) [74]."
+  incorrectExplanation="Tanto el sistema operativo como el SGBD son métodos válidos para la autenticación de usuarios de bases de datos [74]."
+/>
+<InteractiveQuiz
+  question="Cuando una aplicación se autentica ante una base de datos..."
+  options={{
+    A: "Ninguna de las otras es válida.",
+    B: "Debe utilizar una contraseña de aplicación necesariamente.",
+    C: "Puede usar una de las dos opciones en función del diseño empleado.",
+    D: "Siempre se conecta con las credenciales del usuario final."
+  }}
+  correctAnswer="C"
+  correctExplanation="Una aplicación puede autenticarse ante una base de datos de varias maneras, incluyendo el uso de credenciales específicas de la aplicación o pasando las credenciales del usuario final, dependiendo del diseño de seguridad y las necesidades de auditoría [74]."
+  incorrectExplanation="No hay una única forma de autenticación; la elección depende del diseño de la arquitectura de la aplicación y la base de datos [74]."
+/>
+<InteractiveQuiz
+  question="¿Cuál de las siguientes NO es una técnica de alta disponibilidad en bases de datos?"
+  options={{
+    A: "Registro de transacciones (journal).",
+    B: "Database Activity Monitoring.",
+    C: "Copia de datos síncrona.",
+    D: "Copia de datos asíncrona."
+  }}
+  correctAnswer="B"
+  correctExplanation="Database Activity Monitoring (DAM) es una herramienta de seguridad que monitorea y audita la actividad de la base de datos para detectar amenazas, pero no es una técnica diseñada para garantizar la alta disponibilidad de la base de datos [75]."
+  incorrectExplanation="El registro de transacciones, la copia de datos síncrona y la copia de datos asíncrona son todas técnicas utilizadas para la alta disponibilidad y la recuperación de desastres en bases de datos [75]."
+/>

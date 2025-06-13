@@ -165,6 +165,28 @@ const config = {
           //   ],
           // },
 
+          // {
+          //   type: "dropdown",
+          //   label: "Materias del Master",
+          //   position: "left", // o 'right'
+          //   items: [
+          //     {
+          //       type: "docSidebar",
+          //       sidebarId: "SeguridadNube",
+          //       label: "Seguridad en la Nube",
+          //     },
+          //     {
+          //       type: "docSidebar",
+          //       sidebarId: "HackingEtico",
+          //       label: "Hacking Ético",
+          //     },
+          //     {
+          //       type: "docSidebar",
+          //       sidebarId: "MonitorizacionRespuesta",
+          //       label: "Monitorización y Respuesta",
+          //     },
+          //   ],
+          // },
           {
             type: "dropdown",
             label: "Materias del Master",
@@ -172,18 +194,18 @@ const config = {
             items: [
               {
                 type: "docSidebar",
-                sidebarId: "SeguridadNube",
-                label: "Seguridad en la Nube",
+                sidebarId: "SeguridadEnRedesDeComunicaciones",
+                label: "Seguridad en Redes",
               },
               {
                 type: "docSidebar",
-                sidebarId: "HackingEtico",
-                label: "Hacking Ético",
+                sidebarId: "SeguridadEnSOyBdd",
+                label: "Seguridad SO y BDD",
               },
               {
                 type: "docSidebar",
-                sidebarId: "MonitorizacionRespuesta",
-                label: "Monitorización y Respuesta",
+                sidebarId: "SeguridadEnSistemasInalambricos",
+                label: "Seguridad en Sistemas Inalámbricos",
               },
             ],
           },
