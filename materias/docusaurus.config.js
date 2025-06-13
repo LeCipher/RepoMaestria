@@ -112,6 +112,59 @@ const config = {
           //   position: 'left',
           //   label: 'Inteligencia de Amenzas',
           // },
+          // {
+          //   type: "dropdown",
+          //   label: "Materias del Master",
+          //   position: "left", // o 'right'
+          //   items: [
+          //     {
+          //       type: "docSidebar",
+          //       sidebarId: "InteligenciaDeAmenazasSidebar",
+          //       label: "Inteligencia de Amenazas",
+          //     },
+          //     {
+          //       type: "docSidebar",
+          //       sidebarId: "analisisDeRiesgosSidebar",
+          //       label: "Análisis de Riesgos",
+          //     },
+          //     {
+          //       type: "docSidebar",
+          //       sidebarId: "ControlDelRiesgoCiberseguridad",
+          //       label: "Control del Riesgo de Ciberseguridad	",
+          //     },
+          //     {
+          //       type: "docSidebar",
+          //       sidebarId: "MarcoNormativo",
+          //       label: "Marco Normativo",
+          //     },
+          //     {
+          //       type: "docSidebar",
+          //       sidebarId: "Privacidad",
+          //       label: "Privacidad",
+          //     },
+          //     {
+          //       type: "docSidebar",
+          //       sidebarId: "SeguridadEnProcesos",
+          //       label: "Seguridad en Procesos de Tecnología",
+          //     },
+          //     {
+          //       type: "docSidebar",
+          //       sidebarId: "ArquitecturaCiberseguridad",
+          //       label: "Arquitecturas de ciberseguridad",
+          //     },
+          //     {
+          //       type: "docSidebar",
+          //       sidebarId: "CriptografiaGICA",
+          //       label: "Criptografía y gestión de identidades",
+          //     },
+          //     {
+          //       type: "docSidebar",
+          //       sidebarId: "CadenaDeSuministro",
+          //       label: "Seguridad en la cadena de suministro",
+          //     },
+          //   ],
+          // },
+
           {
             type: "dropdown",
             label: "Materias del Master",
@@ -119,51 +172,16 @@ const config = {
             items: [
               {
                 type: "docSidebar",
-                sidebarId: "InteligenciaDeAmenazasSidebar",
-                label: "Inteligencia de Amenazas",
-              },
-              {
-                type: "docSidebar",
-                sidebarId: "analisisDeRiesgosSidebar",
-                label: "Análisis de Riesgos",
-              },
-              {
-                type: "docSidebar",
-                sidebarId: "ControlDelRiesgoCiberseguridad",
-                label: "Control del Riesgo de Ciberseguridad	",
-              },
-              {
-                type: "docSidebar",
-                sidebarId: "MarcoNormativo",
-                label: "Marco Normativo",
-              },
-              {
-                type: "docSidebar",
-                sidebarId: "Privacidad",
-                label: "Privacidad",
-              },
-              {
-                type: "docSidebar",
-                sidebarId: "SeguridadEnProcesos",
-                label: "Seguridad en Procesos de Tecnología",
-              },
-              {
-                type: "docSidebar",
-                sidebarId: "ArquitecturaCiberseguridad",
-                label: "Arquitecturas de ciberseguridad",
-              },
-              {
-                type: "docSidebar",
-                sidebarId: "CriptografiaGICA",
-                label: "Criptografía y gestión de identidades",
-              },
-              {
-                type: "docSidebar",
-                sidebarId: "CadenaDeSuministro",
-                label: "Seguridad en la cadena de suministro",
+                sidebarId: "SeguridadNube",
+                label: "Seguridad en la Nube",
               },
             ],
           },
+
+
+
+
+
           {
             type: "docSidebar",
             sidebarId: "Horarios",
