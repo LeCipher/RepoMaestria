@@ -1,0 +1,726 @@
+---
+sidebar_position: 0
+title: Preguntas Generadas por IA
+---
+import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
+
+<InteractiveQuiz
+question="En el modelo de responsabilidad compartida para IaaS, ¿quién es responsable de la seguridad de la red física?"
+options={{
+A: "El cliente",
+B: "El proveedor de la nube",
+C: "Ambos",
+D: "El proveedor de internet"
+}}
+correctAnswer="B"
+correctExplanation="El proveedor de la nube es responsable de la seguridad 'de' la nube, lo que incluye la infraestructura física como los centros de datos, servidores y la red que los conecta."
+incorrectExplanation="El cliente es responsable de la seguridad 'en' la nube, como la configuración de sus VPCs y reglas de firewall. El proveedor de internet gestiona la conectividad, pero no la seguridad física del datacenter de la nube."
+/>
+<InteractiveQuiz
+question="¿Qué servicio de AWS se utiliza para la detección inteligente y continua de amenazas?"
+options={{
+A: "AWS Shield",
+B: "AWS WAF",
+C: "Amazon GuardDuty",
+D: "Amazon Inspector"
+}}
+correctAnswer="C"
+correctExplanation="Amazon GuardDuty es un servicio de monitoreo de seguridad continuo que utiliza machine learning y detección de anomalías para identificar actividad maliciosa o no autorizada en una cuenta de AWS."
+incorrectExplanation="AWS Shield es para protección contra DDoS. AWS WAF es un firewall de aplicaciones web. Amazon Inspector es para la evaluación de vulnerabilidades en instancias EC2."
+/>
+<InteractiveQuiz
+question="¿Cuál es el propósito principal de los Network Access Control Lists (NACLs) en una VPC de AWS?"
+options={{
+A: "Actuar como un firewall a nivel de instancia",
+B: "Actuar como un firewall a nivel de subred",
+C: "Filtrar el tráfico HTTP/HTTPS",
+D: "Autenticar usuarios de la red"
+}}
+correctAnswer="B"
+correctExplanation="Las NACLs son un firewall sin estado que opera a nivel de subred, controlando el tráfico que entra y sale de una o más subredes. Evalúan las reglas en orden numérico."
+incorrectExplanation="El firewall a nivel de instancia es el Security Group. El filtrado específico de HTTP/HTTPS es más una función de un WAF. La autenticación de usuarios es manejada por IAM u otros servicios de identidad."
+/>
+<InteractiveQuiz
+question="¿Qué significa el término 'inmutabilidad' en el contexto de la infraestructura en la nube?"
+options={{
+A: "La infraestructura no se puede eliminar",
+B: "Los servidores nunca se actualizan; se reemplazan por nuevos",
+C: "Las claves de cifrado no se pueden rotar",
+D: "Los datos almacenados no se pueden modificar"
+}}
+correctAnswer="B"
+correctExplanation="La infraestructura inmutable es un principio en el que los servidores o componentes no se modifican después de su despliegue. Para realizar una actualización o cambio, se crea una nueva instancia con la configuración deseada y se reemplaza la antigua. Esto mejora la consistencia y reduce errores de configuración."
+incorrectExplanation="La infraestructura se puede y debe eliminar cuando ya no se necesita. Las claves de cifrado deben rotarse. Los datos pueden ser modificables a menos que se usen tecnologías específicas como WORM (Write Once, Read Many)."
+/>
+<InteractiveQuiz
+question="¿Qué es una API insegura en el contexto de la nube?"
+options={{
+A: "Una API que es lenta",
+B: "Una API que no tiene documentación",
+C: "Una API con autenticación débil, sin cifrado o expuesta a inyección de comandos",
+D: "Una API que solo devuelve datos en formato XML"
+}}
+correctAnswer="C"
+correctExplanation="Las APIs son la forma en que los servicios y usuarios interactúan con la nube. Una API insegura puede tener vulnerabilidades como falta de autenticación o autorización, exposición de datos sensibles, o permitir ataques de inyección, lo que la convierte en un punto de entrada para atacantes."
+incorrectExplanation="La lentitud es un problema de rendimiento, no de seguridad. La falta de documentación es un problema de usabilidad. El formato de los datos (XML vs JSON) no determina la seguridad de la API."
+/>
+<InteractiveQuiz
+question="¿Cuál es la función de un Cloud Workload Protection Platform (CWPP)?"
+options={{
+A: "Gestionar la postura de seguridad de toda la cuenta en la nube",
+B: "Proteger cargas de trabajo específicas como VMs, contenedores y funciones serverless",
+C: "Controlar el acceso a las aplicaciones en la nube",
+D: "Auditar los logs de la nube"
+}}
+correctAnswer="B"
+correctExplanation="Un CWPP está diseñado para proteger las cargas de trabajo individuales donde se ejecutan las aplicaciones. Ofrece funcionalidades como escaneo de vulnerabilidades, hardening, y detección de amenazas en tiempo de ejecución para servidores, contenedores y funciones sin servidor."
+incorrectExplanation="La gestión de la postura de seguridad es la función de un CSPM. El control de acceso a aplicaciones es función de un CASB o ZTNA. La auditoría de logs es una función de herramientas SIEM o de análisis de logs."
+/>
+<InteractiveQuiz
+question="¿Qué es el 'Principio de Cero Confianza' (Zero Trust)?"
+options={{
+A: "No confiar en ningún proveedor de la nube",
+B: "Nunca confiar, siempre verificar cada solicitud de acceso",
+C: "Bloquear todo el tráfico de internet por defecto",
+D: "Confiar únicamente en los usuarios dentro de la red corporativa"
+}}
+correctAnswer="B"
+correctExplanation="El modelo de Cero Confianza asume que no existe un perímetro de red seguro. Cada solicitud de acceso a un recurso debe ser autenticada y autorizada de forma estricta, independientemente de si proviene de dentro o fuera de la red corporativa. Se basa en el principio de 'nunca confiar, siempre verificar'."
+incorrectExplanation="No se trata de desconfiar de los proveedores, sino de no asumir confianza en ninguna solicitud. No se trata de bloquear todo, sino de verificar todo. El modelo de Cero Confianza elimina la idea de que la red interna es inherentemente confiable."
+/>
+<InteractiveQuiz
+question="¿Para qué se utiliza AWS Key Management Service (KMS)?"
+options={{
+A: "Para crear y gestionar usuarios y permisos",
+B: "Para crear y controlar claves de cifrado para proteger los datos",
+C: "Para almacenar secretos como contraseñas de bases de datos",
+D: "Para emitir certificados SSL/TLS"
+}}
+correctAnswer="B"
+correctExplanation="AWS KMS es un servicio administrado que facilita la creación y el control de las claves de cifrado utilizadas para cifrar los datos. Se integra con la mayoría de los servicios de AWS para simplificar el cifrado de datos en reposo."
+incorrectExplanation="La gestión de usuarios y permisos se hace con IAM. El almacenamiento de secretos se realiza con AWS Secrets Manager. La emisión de certificados SSL/TLS se hace con AWS Certificate Manager (ACM)."
+/>
+<InteractiveQuiz
+question="¿Qué tipo de ataque previene un Web Application Firewall (WAF)?"
+options={{
+A: "Ataques de denegación de servicio (DDoS) a nivel de red",
+B: "Inyección de SQL (SQLi) y Cross-Site Scripting (XSS)",
+C: "Malware en una instancia EC2",
+D: "Phishing a través de correo electrónico"
+}}
+correctAnswer="B"
+correctExplanation="Un WAF opera en la capa 7 (aplicación) y está diseñado para inspeccionar el tráfico HTTP/HTTPS. Su función es proteger las aplicaciones web de ataques comunes como SQLi, XSS, inclusión de ficheros y otras vulnerabilidades del Top 10 de OWASP."
+incorrectExplanation="La protección contra DDoS a nivel de red es manejada por servicios como AWS Shield. El malware en una EC2 es detectado por herramientas de endpoint o CWPP. El phishing es una amenaza a nivel de usuario/correo electrónico."
+/>
+<InteractiveQuiz
+question="En el contexto de la seguridad de contenedores, ¿qué es un escaneo de imágenes?"
+options={{
+A: "Escanear una foto para detectar contenido inapropiado",
+B: "Analizar una imagen de contenedor (ej. Docker) en busca de vulnerabilidades conocidas (CVEs)",
+C: "Verificar el tamaño de una imagen de máquina virtual (AMI)",
+D: "Crear una copia de seguridad de una imagen de contenedor"
+}}
+correctAnswer="B"
+correctExplanation="El escaneo de imágenes es un proceso de seguridad crítico que analiza las capas y paquetes de software dentro de una imagen de contenedor para identificar vulnerabilidades de seguridad conocidas (CVEs) antes de que el contenedor sea desplegado en producción."
+incorrectExplanation="Las otras opciones se refieren a conceptos diferentes. El análisis de contenido de fotos es una función de IA visual. El tamaño de una AMI es metadato. La copia de seguridad es una operación de respaldo."
+/>
+<InteractiveQuiz
+question="¿Cuál es la principal diferencia entre un Security Group y una NACL en AWS?"
+options={{
+A: "Security Group es con estado (stateful), NACL es sin estado (stateless)",
+B: "Security Group opera a nivel de subred, NACL a nivel de instancia",
+C: "Security Group solo permite reglas 'allow', NACL permite 'allow' y 'deny'",
+D: "A y C son correctas"
+}}
+correctAnswer="D"
+correctExplanation="Ambas afirmaciones son correctas. Los Security Groups son 'stateful', lo que significa que si se permite el tráfico de entrada, el de salida correspondiente se permite automáticamente. Además, solo se pueden definir reglas de 'permitir' (todo lo demás se niega por defecto). Las NACLs son 'stateless' (se deben definir reglas para entrada y salida) y permiten crear reglas explícitas de 'permitir' y 'negar'."
+incorrectExplanation="La opción B invierte los roles; los Security Groups operan a nivel de instancia y las NACLs a nivel de subred."
+/>
+<InteractiveQuiz
+question="¿Qué es el 'shadow IT' en el contexto de la nube?"
+options={{
+A: "Un equipo de seguridad que trabaja en secreto",
+B: "El uso de servicios en la nube por parte de los empleados sin la aprobación o conocimiento del departamento de TI",
+C: "Una copia de seguridad oculta de la infraestructura",
+D: "Servicios en la nube que solo funcionan en modo oscuro"
+}}
+correctAnswer="B"
+correctExplanation="El 'Shadow IT' se refiere al uso de sistemas, software, o servicios (incluidos los servicios en la nube como Dropbox o Slack) dentro de una organización sin la aprobación explícita del departamento de TI. Esto crea riesgos de seguridad y cumplimiento porque los datos y el uso están fuera del control y la visibilidad de la empresa."
+incorrectExplanation="Las otras opciones son interpretaciones incorrectas del término. No se refiere a equipos secretos, copias de seguridad ocultas o temas de interfaz de usuario."
+/>
+<InteractiveQuiz
+question="¿Qué servicio de Azure es análogo a AWS CloudTrail?"
+options={{
+A: "Azure Sentinel",
+B: "Azure Monitor",
+C: "Azure Security Center",
+D: "Azure Activity Log"
+}}
+correctAnswer="D"
+correctExplanation="Azure Activity Log (anteriormente Audit Log) registra todos los eventos a nivel de suscripción en Azure, como la creación de recursos o modificaciones. Es el equivalente directo de AWS CloudTrail, que registra todas las llamadas a la API en una cuenta de AWS."
+incorrectExplanation="Azure Sentinel es un SIEM. Azure Monitor recopila métricas y logs para análisis de rendimiento y salud. Azure Security Center (ahora parte de Microsoft Defender for Cloud) es para la gestión de la postura de seguridad y protección contra amenazas."
+/>
+<InteractiveQuiz
+question="¿Qué es una política de bucket en Amazon S3?"
+options={{
+A: "Una política de precios para el almacenamiento",
+B: "Una política de respaldo para el contenido del bucket",
+C: "Un documento JSON que define quién puede acceder al bucket y qué acciones puede realizar",
+D: "Un límite en el tamaño total del bucket"
+}}
+correctAnswer="C"
+correctExplanation="Una política de bucket es un tipo de política de IAM basada en recursos que se adjunta directamente a un bucket de S3. Utiliza formato JSON para especificar con gran detalle los permisos, como permitir el acceso público de lectura o restringir el acceso a ciertas direcciones IP."
+incorrectExplanation="Los precios, respaldos y límites de tamaño se gestionan a través de otras configuraciones, no a través de la política de bucket, cuyo único propósito es el control de acceso."
+/>
+<InteractiveQuiz
+question="¿Cuál de las siguientes opciones es un riesgo de seguridad en entornos sin servidor (serverless)?"
+options={{
+A: "Falta de parches en el sistema operativo del servidor",
+B: "Permisos excesivos en las funciones (ej. Lambda)",
+C: "Ataques de red a la subred de la función",
+D: "Fallas de hardware en el servidor subyacente"
+}}
+correctAnswer="B"
+correctExplanation="En un modelo sin servidor, el proveedor gestiona el SO y el hardware, por lo que el cliente no se preocupa por eso. Sin embargo, el cliente es responsable de la seguridad de su código y la configuración de los permisos de la función. Un riesgo común es otorgar a una función más permisos de los que necesita (ej. acceso a toda una base de datos cuando solo necesita una tabla), violando el principio de mínimo privilegio."
+incorrectExplanation="El parcheo del SO, la seguridad de la red a nivel de subred y las fallas de hardware son responsabilidad del proveedor de la nube en un entorno sin servidor."
+/>
+<InteractiveQuiz
+question="¿Qué es DevSecOps?"
+options={{
+A: "Un equipo de seguridad que también desarrolla software",
+B: "La práctica de integrar la seguridad en cada fase del ciclo de vida de desarrollo de software (CI/CD)",
+C: "El uso de herramientas de seguridad de código abierto",
+D: "Una certificación de seguridad para desarrolladores"
+}}
+correctAnswer="B"
+correctExplanation="DevSecOps (Desarrollo, Seguridad y Operaciones) es una filosofía y práctica cultural que automatiza e integra la seguridad en todo el proceso de DevOps. El objetivo es construir aplicaciones seguras desde el principio ('shift-left security'), en lugar de tratar la seguridad como una ocurrencia tardía."
+incorrectExplanation="Aunque los equipos pueden ser multifuncionales, DevSecOps es una práctica, no una definición de equipo. El uso de herramientas de código abierto puede ser parte de ello, pero no lo define. No es una certificación específica."
+/>
+<InteractiveQuiz
+question="¿Qué ayuda a prevenir el 'data exfiltration' o fuga de datos?"
+options={{
+A: "Auto Scaling",
+B: "Políticas de Data Loss Prevention (DLP)",
+C: "Alta disponibilidad",
+D: "Balanceo de carga"
+}}
+correctAnswer="B"
+correctExplanation="Las soluciones de Prevención de Pérdida de Datos (DLP) están diseñadas para detectar y prevenir que datos sensibles, confidenciales o críticos salgan de la red o del entorno controlado de la empresa. Inspeccionan el contenido en busca de patrones (ej. números de tarjeta de crédito) para bloquear transferencias no autorizadas."
+incorrectExplanation="Auto Scaling, alta disponibilidad y balanceo de carga son conceptos de arquitectura para la resiliencia y el rendimiento, no para la seguridad de los datos."
+/>
+<InteractiveQuiz
+question="¿Qué es una Golden AMI o Golden Image?"
+options={{
+A: "Una imagen de máquina virtual muy costosa",
+B: "Una imagen de máquina virtual que ha sido pre-configurada y reforzada (hardened) con todas las políticas de seguridad y software necesarios",
+C: "La primera imagen de máquina virtual creada en una cuenta",
+D: "Una imagen de máquina virtual con una interfaz gráfica dorada"
+}}
+correctAnswer="B"
+correctExplanation="Una 'Golden AMI' (Amazon Machine Image) es una imagen base que ha sido estandarizada, parcheada, reforzada y probada por el equipo de seguridad y operaciones. Sirve como una plantilla confiable para crear nuevas instancias, asegurando que todas comiencen desde un estado seguro y compatible."
+incorrectExplanation="El costo, el orden de creación o la apariencia no tienen nada que ver con el concepto. El valor de una 'Golden Image' reside en su seguridad y estandarización pre-aprobadas."
+/>
+<InteractiveQuiz
+question="¿Cuál es el objetivo de un 'Vulnerability Assessment' (Análisis de Vulnerabilidades)?"
+options={{
+A: "Explotar activamente las debilidades de un sistema para demostrar el impacto",
+B: "Identificar, cuantificar y priorizar las vulnerabilidades en un sistema",
+C: "Responder a un incidente de seguridad en curso",
+D: "Entrenar a los usuarios para que no caigan en trampas de phishing"
+}}
+correctAnswer="B"
+correctExplanation="Un análisis de vulnerabilidades es un proceso sistemático para identificar debilidades de seguridad (como software sin parches o configuraciones inseguras) en los sistemas. El resultado es un informe que clasifica las vulnerabilidades encontradas, generalmente por su nivel de severidad, para que puedan ser remediadas."
+incorrectExplanation="La explotación activa es característica de una prueba de penetración (Penetration Test). La respuesta a incidentes y el entrenamiento de usuarios son disciplinas de seguridad diferentes."
+/>
+<InteractiveQuiz
+question="¿Qué servicio de Google Cloud Platform (GCP) es el equivalente a Amazon S3?"
+options={{
+A: "Google Compute Engine",
+B: "Google Cloud SQL",
+C: "Google Cloud Storage",
+D: "Google Kubernetes Engine"
+}}
+correctAnswer="C"
+correctExplanation="Google Cloud Storage es el servicio de almacenamiento de objetos de GCP. Al igual que Amazon S3, permite almacenar y recuperar cualquier cantidad de datos en cualquier momento, organizados en 'buckets'."
+incorrectExplanation="Compute Engine es para VMs (equivalente a EC2). Cloud SQL es para bases de datos relacionales administradas (equivalente a RDS). Kubernetes Engine es para orquestación de contenedores (equivalente a EKS)."
+/>
+<InteractiveQuiz
+question="¿Por qué es importante la rotación de claves de acceso (access keys) y secretos?"
+options={{
+A: "Para mejorar el rendimiento del cifrado",
+B: "Porque las claves expiran después de 24 horas",
+C: "Para reducir el riesgo en caso de que una clave sea comprometida",
+D: "Para cumplir con los requisitos de nombre de las claves"
+}}
+correctAnswer="C"
+correctExplanation="Rotar las credenciales (claves, contraseñas, secretos) de forma regular es una práctica de seguridad fundamental. Limita la ventana de oportunidad para un atacante que haya robado una credencial. Si una clave se filtra, su validez será limitada si se rota periódicamente."
+incorrectExplanation="La rotación no mejora el rendimiento. Las claves no expiran automáticamente a menos que se configure una política para ello. Los nombres de las claves no están relacionados con la necesidad de rotación."
+/>
+<InteractiveQuiz
+question="¿Qué es la 'superficie de ataque' en la nube?"
+options={{
+A: "El tamaño total de almacenamiento utilizado en la nube",
+B: "El número total de usuarios en una cuenta",
+C: "La suma de todos los posibles puntos (vectores de ataque) donde un atacante puede intentar entrar o extraer datos de un entorno",
+D: "El rendimiento de la red de la nube"
+}}
+correctAnswer="C"
+correctExplanation="La superficie de ataque representa todas las formas en que un sistema puede ser atacado. En la nube, esto incluye puntos de acceso a la red, APIs expuestas, identidades de usuario, buckets de almacenamiento mal configurados, etc. Un objetivo clave de la seguridad es reducir esta superficie tanto como sea posible."
+incorrectExplanation="El almacenamiento, el número de usuarios o el rendimiento de la red son métricas, pero no definen la superficie de ataque, que es un concepto de riesgo de seguridad."
+/>
+<InteractiveQuiz
+question="¿Qué información proporciona AWS Trusted Advisor en su pilar de seguridad?"
+options={{
+A: "Recomendaciones para reducir costos",
+B: "Sugerencias para mejorar el rendimiento de las instancias",
+C: "Alertas sobre configuraciones de seguridad que no siguen las mejores prácticas de AWS",
+D: "Un listado de todas las llamadas a la API"
+}}
+correctAnswer="C"
+correctExplanation="El pilar de seguridad de AWS Trusted Advisor revisa el entorno de AWS y proporciona recomendaciones sobre brechas de seguridad comunes, como buckets de S3 con acceso público, grupos de seguridad sin restricciones, o falta de MFA en la cuenta raíz."
+incorrectExplanation="La reducción de costos y la mejora del rendimiento son otros pilares de Trusted Advisor, no el de seguridad. El listado de llamadas a la API es proporcionado por CloudTrail."
+/>
+<InteractiveQuiz
+question="¿Qué es una 'honeypot' en seguridad?"
+options={{
+A: "Una base de datos de contraseñas robadas",
+B: "Un sistema señuelo diseñado para atraer y detectar atacantes",
+C: "Un método de cifrado muy fuerte",
+D: "Un informe de seguridad para ejecutivos"
+}}
+correctAnswer="B"
+correctExplanation="Una 'honeypot' (tarro de miel) es un recurso informático señuelo, intencionalmente vulnerable, que se despliega para ser un objetivo atractivo para los atacantes. Su propósito es distraer a los atacantes de los sistemas reales y permitir a los defensores estudiar sus métodos y herramientas."
+incorrectExplanation="Las otras opciones describen conceptos diferentes. Las bases de datos de contraseñas son 'password dumps', el cifrado es 'encryption', y un informe es un 'security report'."
+/>
+<InteractiveQuiz
+question="En el modelo de responsabilidad compartida para SaaS (Software as a Service), ¿de qué es responsable el cliente?"
+options={{
+A: "La seguridad de la red y la infraestructura",
+B: "El parcheo del sistema operativo de la aplicación",
+C: "La gestión de los datos y el acceso de los usuarios a la aplicación",
+D: "La seguridad física de los servidores"
+}}
+correctAnswer="C"
+correctExplanation="En el modelo SaaS, el proveedor gestiona casi todo: la aplicación, los datos, el tiempo de ejecución, el middleware, el SO, la virtualización, los servidores, el almacenamiento y la red. La responsabilidad del cliente se reduce principalmente a gestionar sus propios datos (clasificación, etc.) y controlar quién tiene acceso a la aplicación y con qué permisos."
+incorrectExplanation="Todas las otras responsabilidades (red, infraestructura, parcheo, seguridad física) recaen sobre el proveedor del servicio SaaS."
+/>
+<InteractiveQuiz
+question="¿Cuál es la función principal de AWS Config?"
+options={{
+A: "Ejecutar código en respuesta a eventos",
+B: "Evaluar, auditar y registrar continuamente las configuraciones de los recursos de AWS",
+C: "Proporcionar un firewall para aplicaciones web",
+D: "Conectar redes on-premise con la nube"
+}}
+correctAnswer="B"
+correctExplanation="AWS Config es un servicio que permite evaluar y auditar las configuraciones de los recursos de AWS. Mantiene un historial de los cambios de configuración y puede verificar si estos cambios cumplen con las políticas y directrices de la organización mediante reglas de Config."
+incorrectExplanation="Ejecutar código es función de Lambda. El firewall de aplicaciones es WAF. La conexión on-premise se hace con Direct Connect o VPN."
+/>
+<InteractiveQuiz
+question="¿Qué es un ataque de denegación de servicio distribuido (DDoS)?"
+options={{
+A: "Un ataque que roba datos de múltiples servidores",
+B: "Un intento de hacer que un servicio en línea no esté disponible inundándolo con tráfico de múltiples fuentes",
+C: "Un ataque que adivina contraseñas de múltiples cuentas",
+D: "Un ataque que distribuye malware a través de la red"
+}}
+correctAnswer="B"
+correctExplanation="En un ataque DDoS, un atacante utiliza una red de máquinas comprometidas (botnet) para enviar una cantidad masiva de tráfico o solicitudes a un objetivo. El objetivo, al ser incapaz de manejar tal volumen, se sobrecarga y deja de estar disponible para los usuarios legítimos."
+incorrectExplanation="Las otras opciones describen diferentes tipos de ataques: robo de datos (data breach), ataque de fuerza bruta a contraseñas (password spraying) y distribución de malware."
+/>
+<InteractiveQuiz
+question="¿Para qué sirve un VPC Endpoint en AWS?"
+options={{
+A: "Para conectar dos VPCs entre sí",
+B: "Para permitir que los recursos de una VPC se comuniquen con servicios de AWS sin pasar por el internet público",
+C: "Para asignar una dirección IP pública a una instancia EC2",
+D: "Para establecer una conexión VPN"
+}}
+correctAnswer="B"
+correctExplanation="Un VPC Endpoint permite crear una conexión privada entre tu VPC y servicios de AWS soportados (como S3 o DynamoDB) sin necesidad de una puerta de enlace a internet (Internet Gateway) o una conexión NAT. El tráfico entre la VPC y el servicio de AWS no abandona la red de Amazon, mejorando la seguridad y la fiabilidad."
+incorrectExplanation="Para conectar dos VPCs se usa VPC Peering o Transit Gateway. Para asignar una IP pública se usa una Elastic IP. La conexión VPN se establece con una Virtual Private Gateway."
+/>
+<InteractiveQuiz
+question="¿Qué es el 'credential stuffing'?"
+options={{
+A: "Almacenar credenciales en texto plano",
+B: "El acto de llenar un formulario con credenciales falsas",
+C: "Un ataque automatizado que utiliza listas de credenciales robadas (usuario/contraseña) para intentar iniciar sesión en otros servicios",
+D: "Añadir muchas capas de autenticación"
+}}
+correctAnswer="C"
+correctExplanation="El 'credential stuffing' se basa en la suposición de que los usuarios reutilizan las mismas contraseñas en múltiples sitios. Los atacantes toman listas de credenciales filtradas de una brecha de datos y usan bots para probarlas en otros sitios web (como banca, redes sociales o servicios en la nube) para ver si funcionan."
+incorrectExplanation="Las otras opciones describen malas prácticas o conceptos diferentes."
+/>
+<InteractiveQuiz
+question="¿Cuál es el propósito de la microsegmentación en la seguridad de la red?"
+options={{
+A: "Dividir la red en segmentos muy grandes para simplificar la gestión",
+B: "Dividir la red en zonas de seguridad granulares, hasta el nivel de la carga de trabajo individual, para aislar el tráfico",
+C: "Encriptar todo el tráfico de la red",
+D: "Aumentar el ancho de banda de la red"
+}}
+correctAnswer="B"
+correctExplanation="La microsegmentación es una técnica de seguridad que permite crear zonas seguras en centros de datos y entornos de nube para aislar las cargas de trabajo entre sí y protegerlas individualmente. Si un atacante compromete una carga de trabajo, la microsegmentación limita su capacidad de moverse lateralmente a otras partes de la red."
+incorrectExplanation="La microsegmentación crea segmentos pequeños, no grandes. Aunque el cifrado es importante, no es la definición de microsegmentación. No está directamente relacionada con el aumento del ancho de banda."
+/>
+<InteractiveQuiz
+question="¿Qué es una 'amenaza interna' (insider threat)?"
+options={{
+A: "Una vulnerabilidad en el firewall interno",
+B: "Una amenaza a la seguridad que proviene de personas dentro de la organización, como empleados, ex-empleados o contratistas",
+C: "Un ataque que se origina desde dentro de la red corporativa",
+D: "Un virus que solo afecta a la red interna"
+}}
+correctAnswer="B"
+correctExplanation="Una amenaza interna se refiere al riesgo de seguridad que un individuo con acceso autorizado (un 'insider') representa para una organización. Puede ser maliciosa (un empleado descontento que roba datos) o accidental (un empleado que cae en una trampa de phishing y compromete sus credenciales)."
+incorrectExplanation="Aunque el ataque pueda originarse 'desde adentro' de la red, el término se refiere al actor (la persona), no solo a la ubicación de red. Las otras opciones son demasiado específicas o incorrectas."
+/>
+<InteractiveQuiz
+question="¿Qué tipo de información se debería evitar almacenar en logs por razones de seguridad?"
+options={{
+A: "Marcas de tiempo (timestamps)",
+B: "Identificadores de transacción",
+C: "Datos sensibles como contraseñas, claves de API o números de tarjeta de crédito",
+D: "Mensajes de error"
+}}
+correctAnswer="C"
+correctExplanation="Los logs son cruciales para la auditoría y la depuración, pero también pueden ser un objetivo para los atacantes. Es una práctica de seguridad fundamental asegurarse de que nunca se registren datos altamente sensibles (a menudo llamados PII - Información de Identificación Personal) en texto plano en los logs, ya que esto podría llevar a una brecha de datos si los logs se ven comprometidos."
+incorrectExplanation="Las marcas de tiempo, los identificadores de transacción y los mensajes de error son información útil y generalmente segura para incluir en los logs."
+/>
+<InteractiveQuiz
+question="¿Qué es la 'geofencing' en el control de acceso?"
+options={{
+A: "Crear una valla física alrededor de un centro de datos",
+B: "Restringir el acceso a servicios o datos basándose en la ubicación geográfica del usuario",
+C: "Una técnica para encontrar la ubicación de un atacante",
+D: "Un mapa de todos los activos en la nube"
+}}
+correctAnswer="B"
+correctExplanation="El geofencing (o geocercado) es una política de seguridad que utiliza la ubicación geográfica del usuario, a menudo determinada por la dirección IP, como un factor en la decisión de control de acceso. Por ejemplo, una empresa podría permitir el acceso a un sistema solo desde ciertos países y bloquear a todos los demás."
+incorrectExplanation="Las otras opciones son interpretaciones literales o incorrectas del término."
+/>
+<InteractiveQuiz
+question="¿Qué es un 'bastion host' o 'jump server'?"
+options={{
+A: "El servidor más potente de la red",
+B: "Un servidor dedicado, reforzado y monitoreado que actúa como único punto de entrada a la red privada desde una red externa",
+C: "Un servidor que aloja una copia de seguridad de todos los demás servidores",
+D: "Un servidor que balancea la carga entre otros servidores"
+}}
+correctAnswer="B"
+correctExplanation="Un bastion host está específicamente diseñado para resistir ataques. Se ubica en la red pública y actúa como un proxy o puerta de enlace a través del cual los administradores pueden conectarse de forma segura (por ejemplo, usando SSH) a los servidores en la red privada, sin exponer esos servidores directamente a internet."
+incorrectExplanation="Su propósito no es la potencia, el respaldo o el balanceo de carga, sino ser un punto de acceso seguro y controlado."
+/>
+<InteractiveQuiz
+question="¿Qué significa 'hardening' o 'refuerzo' de un sistema?"
+options={{
+A: "Aumentar la capacidad de cómputo del sistema",
+B: "Hacer una copia física del sistema",
+C: "El proceso de reducir la superficie de ataque de un sistema eliminando software innecesario, deshabilitando puertos y aplicando configuraciones seguras",
+D: "Mover el sistema a un centro de datos más seguro"
+}}
+correctAnswer="C"
+correctExplanation="El hardening consiste en asegurar un sistema mediante la reducción de sus vulnerabilidades. Esto se logra siguiendo guías de configuración segura, eliminando cualquier cuenta, aplicación o servicio que no sea esencial, y aplicando parches para cerrar agujeros de seguridad conocidos."
+incorrectExplanation="Las otras opciones describen acciones diferentes: escalar (scaling), hacer una copia (backup) o migrar físicamente (migration)."
+/>
+<InteractiveQuiz
+question="¿Cuál es la función de una política de retención de datos?"
+options={{
+A: "Definir cuántos datos puede almacenar un usuario",
+B: "Definir durante cuánto tiempo se deben conservar los datos y cuándo deben ser eliminados de forma segura",
+C: "Definir quién puede acceder a los datos",
+D: "Definir el formato en que se deben almacenar los datos"
+}}
+correctAnswer="B"
+correctExplanation="Una política de retención de datos es una directriz organizacional que estipula por cuánto tiempo deben mantenerse los diferentes tipos de datos (por ejemplo, para cumplir con regulaciones legales o de la industria) y el procedimiento para su destrucción segura una vez que ese período ha expirado. Ayuda a minimizar los riesgos de seguridad y los costos de almacenamiento."
+incorrectExplanation="El control sobre la cantidad de almacenamiento se llama cuota (quota). El control de acceso se define en políticas de acceso (IAM). El formato de almacenamiento es una decisión de arquitectura de datos."
+/>
+<InteractiveQuiz
+question="¿Qué es la ofuscación de datos?"
+options={{
+A: "Eliminar datos por completo",
+B: "El proceso de hacer que los datos sean incomprensibles o ambiguos para proteger la información sensible",
+C: "Ordenar los datos alfabéticamente",
+D: "Hacer una copia de los datos en otra región"
+}}
+correctAnswer="B"
+correctExplanation="La ofuscación (o enmascaramiento) de datos es una técnica utilizada para proteger datos sensibles reemplazándolos con datos ficticios pero realistas. Se usa comúnmente en entornos de no producción (como desarrollo o pruebas) para que los desarrolladores puedan trabajar con datos que se parecen a los reales sin exponer la información sensible original."
+incorrectExplanation="La eliminación es 'deletion'. El ordenamiento es 'sorting'. La copia en otra región es 'replication' o 'backup'."
+/>
+<InteractiveQuiz
+question="¿Qué es un ataque 'Man-in-the-Middle' (MitM)?"
+options={{
+A: "Un ataque donde el atacante está físicamente en medio de dos servidores",
+B: "Un ataque donde un tercero intercepta y retransmite secretamente la comunicación entre dos partes que creen que se están comunicando directamente",
+C: "Un ataque que ocurre a la mitad del día",
+D: "Un tipo de ataque de phishing"
+}}
+correctAnswer="B"
+correctExplanation="En un ataque MitM, el atacante se posiciona entre el usuario y el servidor (o entre dos servidores) e intercepta el tráfico. Puede simplemente observar la comunicación o alterarla activamente. El uso de cifrado como TLS/SSL es la principal defensa contra este tipo de ataques."
+incorrectExplanation="Las otras opciones son incorrectas. Aunque puede usarse para facilitar el phishing, el MitM es una categoría de ataque por sí misma."
+/>
+<InteractiveQuiz
+question="¿Por qué es riesgoso usar la cuenta raíz (root) de AWS para tareas diarias?"
+options={{
+A: "Es más lenta que las cuentas IAM",
+B: "Tiene un costo adicional por uso",
+C: "Tiene acceso ilimitado y completo a todos los recursos y configuraciones, y si se compromete, el daño puede ser catastrófico",
+D: "No se puede usar para acceder a la consola de AWS"
+}}
+correctAnswer="C"
+correctExplanation="La cuenta raíz es la identidad más privilegiada en una cuenta de AWS. Tiene permisos para hacer absolutamente todo, incluyendo cerrar la cuenta. Por seguridad, la mejor práctica es no usarla para ninguna tarea que no la requiera explícitamente, habilitarle MFA y usar usuarios IAM con permisos limitados para el trabajo diario."
+incorrectExplanation="No es más lenta ni tiene un costo adicional. Sí se puede y debe usar para acceder a la consola, pero solo para tareas específicas de gestión de cuenta."
+/>
+<InteractiveQuiz
+question="¿Qué es 'Infrastructure as Code' (IaC)?"
+options={{
+A: "Escribir código directamente en el hardware de la infraestructura",
+B: "El proceso de gestionar y aprovisionar infraestructura de TI a través de ficheros de configuración legibles por máquina, en lugar de configuración manual",
+C: "Un lenguaje de programación diseñado para la nube",
+D: "Un plan de recuperación de desastres para la infraestructura"
+}}
+correctAnswer="B"
+correctExplanation="IaC, utilizando herramientas como Terraform, AWS CloudFormation o Azure Resource Manager, permite definir la infraestructura (servidores, redes, bases de datos) en código. Esto permite automatizar, versionar y replicar entornos de manera consistente y fiable, reduciendo el riesgo de error humano y la deriva de configuración ('configuration drift')."
+incorrectExplanation="Las otras opciones son definiciones incorrectas del concepto."
+/>
+<InteractiveQuiz
+question="¿Qué es la 'deriva de configuración' (configuration drift)?"
+options={{
+A: "Cuando la configuración de la red se vuelve más lenta con el tiempo",
+B: "Cuando la configuración de un sistema se desvía de su línea base segura o estado deseado debido a cambios manuales no registrados",
+C: "La diferencia de configuración entre dos regiones de la nube",
+D: "Un cambio planeado en la configuración"
+}}
+correctAnswer="B"
+correctExplanation="La deriva de configuración ocurre cuando los cambios ad-hoc y manuales se acumulan en un sistema a lo largo del tiempo, haciendo que su estado real ya no coincida con la configuración original documentada o definida en el código (IaC). Esto puede introducir vulnerabilidades de seguridad o problemas de estabilidad. Herramientas como AWS Config ayudan a detectar esta deriva."
+incorrectExplanation="No está relacionado con la velocidad ni con las diferencias entre regiones. Se refiere específicamente a cambios no planeados o no gestionados en un sistema."
+/>
+<InteractiveQuiz
+question="¿Cuál es la función principal de AWS Secrets Manager?"
+options={{
+A: "Gestionar las claves de cifrado de S3",
+B: "Almacenar, rotar y gestionar de forma segura secretos como credenciales de bases de datos, claves de API y tokens",
+C: "Ocultar la identidad de los usuarios de IAM",
+D: "Analizar el código en busca de secretos hardcodeados"
+}}
+correctAnswer="B"
+correctExplanation="AWS Secrets Manager está diseñado para reemplazar la necesidad de incrustar ('hardcoding') información sensible en el código de la aplicación. Permite almacenar estos secretos de forma centralizada y segura, controlar el acceso a ellos y, fundamentalmente, automatizar la rotación de credenciales para mejorar la postura de seguridad."
+incorrectExplanation="La gestión de claves de cifrado es de KMS. La identidad de usuarios es de IAM. El análisis de código es una función de herramientas de SAST (Static Application Security Testing)."
+/>
+<InteractiveQuiz
+question="¿Qué es un 'air gap' en seguridad?"
+options={{
+A: "El espacio físico entre racks de servidores para la ventilación",
+B: "Una medida de seguridad que consiste en aislar una red o un ordenador de cualquier otra red, especialmente de internet",
+C: "Un retraso intencional en la replicación de datos",
+D: "Una vulnerabilidad en redes inalámbricas"
+}}
+correctAnswer="B"
+correctExplanation="Un entorno 'air-gapped' es uno que está físicamente aislado y no tiene conexiones a redes inseguras como internet. Es una de las medidas de seguridad más estrictas, utilizada para proteger sistemas críticos. En la nube, este concepto es más difícil de aplicar, pero se buscan arquitecturas de aislamiento equivalentes."
+incorrectExplanation="Las otras opciones son incorrectas. La ventilación, el retraso en la replicación y las vulnerabilidades Wi-Fi son conceptos diferentes."
+/>
+<InteractiveQuiz
+question="¿Qué es el 'password spraying'?"
+options={{
+A: "Intentar muchas contraseñas diferentes para una sola cuenta de usuario",
+B: "Probar una o unas pocas contraseñas comunes contra muchas cuentas de usuario diferentes",
+C: "Enviar contraseñas por correo electrónico en texto plano",
+D: "Usar una contraseña muy larga y compleja"
+}}
+correctAnswer="B"
+correctExplanation="A diferencia de un ataque de fuerza bruta tradicional que se enfoca en una cuenta, el 'password spraying' es un ataque de 'bajo y lento'. El atacante elige contraseñas débiles y comunes (ej. 'Invierno2024', 'Contraseña1') y las prueba contra una larga lista de nombres de usuario. Esto evita el bloqueo de cuentas individuales y es más difícil de detectar."
+incorrectExplanation="La opción A describe un ataque de fuerza bruta clásico. Las opciones C y D describen una mala práctica y una buena práctica, respectivamente, no un tipo de ataque."
+/>
+<InteractiveQuiz
+question="¿Qué servicio de AWS se usa para crear una red de entrega de contenidos (CDN)?"
+options={{
+A: "Amazon Route 53",
+B: "Amazon CloudFront",
+C: "AWS Global Accelerator",
+D: "Amazon API Gateway"
+}}
+correctAnswer="B"
+correctExplanation="Amazon CloudFront es el servicio de CDN de AWS. Mejora el rendimiento y la velocidad de entrega de contenido (como videos, sitios web y APIs) al distribuirlo y almacenarlo en caché en una red global de ubicaciones de borde ('edge locations') cercanas a los usuarios finales."
+incorrectExplanation="Route 53 es un servicio de DNS. Global Accelerator mejora la disponibilidad y el rendimiento del tráfico usando la red global de AWS, pero no es una CDN. API Gateway es para crear y gestionar APIs."
+/>
+<InteractiveQuiz
+question="¿Qué es la 'tokenización' en el contexto de la seguridad de datos?"
+options={{
+A: "Requerir un token de hardware para la autenticación",
+B: "El proceso de reemplazar un dato sensible con un equivalente no sensible, llamado 'token', que no tiene valor extrínseco o explotable",
+C: "Asignar un token de sesión a un usuario después de iniciar sesión",
+D: "Contar el número de palabras (tokens) en un texto"
+}}
+correctAnswer="B"
+correctExplanation="La tokenización reemplaza datos sensibles (como un número de tarjeta de crédito) con un identificador único y aleatorio (el token). El dato original se almacena de forma segura en una bóveda central. El token puede ser utilizado en sistemas internos sin exponer el dato real, reduciendo drásticamente el riesgo en caso de una brecha de datos. Es diferente del cifrado."
+incorrectExplanation="La opción A es autenticación de hardware. La opción C es gestión de sesiones. La opción D es procesamiento de lenguaje natural."
+/>
+<InteractiveQuiz
+question="¿Cuál es una de las funciones de un SIEM (Security Information and Event Management)?"
+options={{
+A: "Parchear vulnerabilidades en los servidores",
+B: "Agregar, correlacionar y analizar datos de logs de múltiples fuentes para detectar amenazas y facilitar la investigación de incidentes",
+C: "Bloquear ataques de inyección de SQL en tiempo real",
+D: "Gestionar los permisos de los usuarios"
+}}
+correctAnswer="B"
+correctExplanation="Un sistema SIEM es un centro neurálgico para la seguridad. Recopila datos de eventos de firewalls, servidores, aplicaciones y otros sistemas, los normaliza y los correlaciona en tiempo real para identificar patrones de ataque, generar alertas y proporcionar herramientas para el análisis forense."
+incorrectExplanation="El parcheo es una función de gestión de vulnerabilidades. El bloqueo de SQLi es una función de un WAF. La gestión de permisos es una función de IAM."
+/>
+<InteractiveQuiz
+question="¿Qué es el 'sandboxing'?"
+options={{
+A: "Almacenar datos en una playa",
+B: "Un entorno de prueba aislado y seguro donde se puede ejecutar código o abrir archivos sospechosos sin afectar el sistema anfitrión o la red",
+C: "Crear una caja física alrededor de un servidor",
+D: "Una técnica de enfriamiento para centros de datos"
+}}
+correctAnswer="B"
+correctExplanation="El sandboxing (caja de arena) proporciona un entorno de ejecución estrictamente controlado. Las soluciones de seguridad utilizan sandboxes para detonar archivos adjuntos o enlaces sospechosos y observar su comportamiento en busca de actividad maliciosa. Si el archivo es malicioso, el daño queda contenido dentro del sandbox."
+incorrectExplanation="Las otras opciones son interpretaciones literales o incorrectas del término."
+/>
+<InteractiveQuiz
+question="¿Cuál es un control de seguridad clave para las claves de acceso de IAM (Access Key ID y Secret Access Key)?"
+options={{
+A: "Compartirlas con todo el equipo de desarrollo",
+B: "Incrustarlas directamente en el código fuente y subirlo a un repositorio público",
+C: "No rotarlas nunca para evitar romper las aplicaciones",
+D: "Evitar su uso y preferir roles de IAM para instancias EC2 y servicios de AWS siempre que sea posible"
+}}
+correctAnswer="D"
+correctExplanation="Las claves de acceso de larga duración son un riesgo de seguridad si se exponen. La mejor práctica es usar credenciales temporales y automáticas a través de roles de IAM. Cuando una instancia EC2 asume un rol, obtiene permisos temporales sin necesidad de almacenar claves de acceso en la instancia, lo cual es mucho más seguro."
+incorrectExplanation="Las opciones A, B y C son ejemplos de malas prácticas de seguridad extremadamente peligrosas."
+/>
+<InteractiveQuiz
+question="¿Qué es una VPC Flow Log?"
+options={{
+A: "Un log de todos los archivos que fluyen dentro de la VPC",
+B: "Una característica que permite capturar información sobre el tráfico IP que entra y sale de las interfaces de red en una VPC",
+C: "Un log del rendimiento de la VPC",
+D: "Un log de los cambios de configuración de la VPC"
+}}
+correctAnswer="B"
+correctExplanation="Los VPC Flow Logs proporcionan metadatos sobre el tráfico de red, como la IP de origen y destino, los puertos, el protocolo y si el tráfico fue aceptado o rechazado por los Security Groups o NACLs. Son una fuente de datos invaluable para el monitoreo de seguridad, la resolución de problemas de conectividad y la detección de anomalías."
+incorrectExplanation="No registra archivos ni rendimiento. Los cambios de configuración son registrados por AWS Config o CloudTrail."
+/>
+<InteractiveQuiz
+question="En criptografía, ¿qué es un 'salt' (sal)?"
+options={{
+A: "Un tipo de algoritmo de cifrado",
+B: "Datos aleatorios que se utilizan como una entrada adicional a una función de hash de contraseñas para crear hashes únicos",
+C: "La clave secreta utilizada para descifrar datos",
+D: "Un condimento para mejorar el sabor de los datos"
+}}
+correctAnswer="B"
+correctExplanation="Cuando se almacenan contraseñas, no se deben hashear directamente. Se debe generar un 'salt' aleatorio único para cada usuario y combinarlo con la contraseña antes de aplicar la función de hash. Esto asegura que dos usuarios con la misma contraseña tengan hashes diferentes, frustrando los ataques de tablas precalculadas (rainbow tables)."
+incorrectExplanation="No es un algoritmo ni una clave secreta. La opción D es una broma."
+/>
+<InteractiveQuiz
+question="¿Qué es una 'race condition' en el contexto de la seguridad de aplicaciones?"
+options={{
+A: "Cuando dos usuarios compiten para acceder a un recurso más rápido",
+B: "Una vulnerabilidad que ocurre cuando el comportamiento de un sistema depende de la secuencia o el tiempo de eventos incontrolables",
+C: "Un problema de rendimiento de la red",
+D: "Una condición que solo afecta a las aplicaciones de carreras de autos"
+}}
+correctAnswer="B"
+correctExplanation="Una condición de carrera ocurre cuando múltiples procesos o hilos acceden y manipulan los mismos datos concurrentemente, y el resultado de la ejecución depende del orden particular en que se realizan las operaciones. Los atacantes pueden explotar esto para eludir controles de seguridad o corromper datos, por ejemplo, realizando una comprobación de seguridad y una acción en momentos diferentes (TOCTOU - Time-of-check to time-of-use)."
+incorrectExplanation="Las otras opciones son incorrectas o demasiado literales."
+/>
+<InteractiveQuiz
+question="¿Qué es el 'security through obscurity' (seguridad por oscuridad)?"
+options={{
+A: "Un principio de seguridad muy robusto",
+B: "La práctica de proteger un sistema manteniendo en secreto su diseño o implementación interna",
+C: "Usar algoritmos de cifrado de código abierto",
+D: "Apagar las luces del centro de datos"
+}}
+correctAnswer="B"
+correctExplanation="La seguridad por oscuridad es la creencia de que se puede lograr la seguridad ocultando el funcionamiento interno de un sistema. Generalmente se considera una mala práctica y una falacia, ya que no proporciona una protección real. Un sistema seguro debe seguir siéndolo incluso si un atacante conoce todos los detalles de su diseño (Principio de Kerckhoffs)."
+incorrectExplanation="No es un principio robusto. El uso de algoritmos de código abierto y auditados es, de hecho, lo contrario y una buena práctica. La opción D es irrelevante."
+/>
+<InteractiveQuiz
+question="¿Cuál es la diferencia entre autenticación y autorización?"
+options={{
+A: "Son lo mismo",
+B: "La autenticación es verificar quién eres; la autorización es verificar qué tienes permitido hacer",
+C: "La autorización es verificar quién eres; la autenticación es verificar qué tienes permitido hacer",
+D: "La autenticación es para usuarios; la autorización es para sistemas"
+}}
+correctAnswer="B"
+correctExplanation="La autenticación es el proceso de verificar la identidad de un usuario o sistema (ej. con una contraseña y un token MFA). Una vez autenticado, la autorización es el proceso de determinar si esa identidad tiene los permisos necesarios para acceder a un recurso o realizar una acción específica."
+incorrectExplanation="No son lo mismo. La opción C invierte los términos. Ambos procesos se aplican tanto a usuarios como a sistemas."
+/>
+<InteractiveQuiz
+question="¿Qué significa el término 'blue/green deployment'?"
+options={{
+A: "Un despliegue que ahorra energía",
+B: "Una estrategia de despliegue donde se mantienen dos entornos de producción idénticos ('blue' y 'green')",
+C: "Un despliegue que usa los colores azul y verde en la interfaz",
+D: "Desplegar solo en servidores pintados de azul o verde"
+}}
+correctAnswer="B"
+correctExplanation="En un despliegue azul/verde, el tráfico en vivo va al entorno 'azul'. La nueva versión de la aplicación se despliega en el entorno 'verde'. Después de las pruebas, el tráfico se conmuta del azul al verde. Si algo sale mal, se puede volver al entorno azul de forma casi instantánea. Mejora la disponibilidad y reduce el riesgo del despliegue."
+incorrectExplanation="Las otras opciones son incorrectas. Es una estrategia de alta disponibilidad, no de ahorro de energía o estética."
+/>
+<InteractiveQuiz
+question="¿Qué es un 'canary release' (lanzamiento canario)?"
+options={{
+A: "Lanzar una nueva versión solo a los empleados que tienen un canario",
+B: "Lanzar una nueva versión a toda la base de usuarios a la vez",
+C: "Una técnica para exponer una nueva versión de software a un pequeño subconjunto de usuarios antes de lanzarla a todo el mundo",
+D: "Una versión del software que canta cuando hay un error"
+}}
+correctAnswer="C"
+correctExplanation="El nombre proviene de la práctica de usar canarios en las minas de carbón para detectar gases tóxicos. En software, un lanzamiento canario expone la nueva versión a un pequeño porcentaje del tráfico de usuarios. Se monitorea de cerca para detectar errores o problemas de rendimiento. Si todo va bien, se aumenta gradualmente el tráfico hasta que el 100% de los usuarios esté en la nueva versión."
+incorrectExplanation="Las otras opciones son incorrectas. Es una estrategia de despliegue gradual para mitigar riesgos."
+/>
+<InteractiveQuiz
+question="¿Cuál es una ventaja de seguridad de usar contenedores?"
+options={{
+A: "Los contenedores no pueden ser atacados",
+B: "Proporcionan aislamiento de procesos, lo que puede limitar el impacto de una brecha en una aplicación contenida",
+C: "No necesitan actualizaciones de seguridad",
+D: "Son más rápidos, por lo tanto más seguros"
+}}
+correctAnswer="B"
+correctExplanation="Los contenedores (como Docker) utilizan características del kernel de Linux (como namespaces y cgroups) para aislar los procesos de una aplicación del sistema anfitrión y de otros contenedores. Si un atacante compromete una aplicación dentro de un contenedor, este aislamiento dificulta (aunque no imposibilita) que afecte a otros servicios."
+incorrectExplanation="Los contenedores sí pueden ser atacados y tienen sus propias vulnerabilidades. Las imágenes de los contenedores y el software dentro de ellos necesitan ser actualizados. La velocidad no implica seguridad."
+/>
+<InteractiveQuiz
+question="¿Qué es una 'sidecar proxy' en una arquitectura de microservicios?"
+options={{
+A: "Un proxy que se ejecuta en una motocicleta al lado del centro de datos",
+B: "Un proxy que se adjunta a cada servicio o aplicación para manejar funcionalidades comunes como el enrutamiento, el monitoreo y la seguridad",
+C: "Una copia de seguridad del proxy principal",
+D: "Un proxy que solo funciona con tráfico lateral"
+}}
+correctAnswer="B"
+correctExplanation="El patrón 'sidecar' despliega componentes auxiliares junto a la aplicación principal. Un 'sidecar proxy' (común en las mallas de servicios o 'service mesh' como Istio) intercepta todo el tráfico de red hacia y desde el servicio. Esto permite implementar de forma centralizada funcionalidades como la autenticación mutua (mTLS), el reintento de conexiones, y la recolección de métricas, sin tener que modificar el código de la aplicación."
+incorrectExplanation="Las otras opciones son incorrectas. Es un patrón de diseño de software para desacoplar funcionalidades."
+/>
+<InteractiveQuiz
+question="¿Qué es el 'Principio de Kerckhoffs' en criptografía?"
+options={{
+A: "El algoritmo de cifrado más seguro es el más complejo",
+B: "Un sistema criptográfico debe ser seguro incluso si todo sobre el sistema, excepto la clave, es de dominio público",
+C: "Las claves secretas deben ser muy cortas para ser fáciles de recordar",
+D: "La seguridad del sistema depende de mantener en secreto el algoritmo"
+}}
+correctAnswer="B"
+correctExplanation="El Principio de Kerckhoffs, formulado en el siglo XIX, establece que la seguridad de un criptosistema debe depender únicamente del secreto de la clave, y no del secreto del algoritmo o su diseño. Este es un principio fundamental del diseño criptográfico moderno, que favorece los algoritmos públicos y bien auditados."
+incorrectExplanation="La complejidad no implica seguridad. Las claves deben ser largas. La opción D es lo opuesto al principio y representa la 'seguridad por oscuridad'."
+/>
+<InteractiveQuiz
+question="¿Qué es un 'dead-man's switch' en seguridad operativa?"
+options={{
+A: "Un interruptor que apaga un sistema si un operador muere",
+B: "Un mecanismo diseñado para activarse o desactivarse si el operador humano falla en realizar una acción periódica",
+C: "Un interruptor físico para cortar la energía en una emergencia",
+D: "Un interruptor que solo puede ser operado por una persona fallecida"
+}}
+correctAnswer="B"
+correctExplanation="Un 'interruptor del hombre muerto' es un sistema de seguridad que requiere una señal periódica del operador para confirmar que sigue funcionando. Si la señal no se recibe en el tiempo esperado (por ejemplo, si el operador queda incapacitado o un script automatizado falla), el sistema ejecuta una acción predeterminada, como revertir un cambio, enviar una alerta o bloquear un sistema. Se usa para prevenir fallos catastróficos por inacción."
+incorrectExplanation="Aunque la opción A es el origen literal, la B es la definición funcional moderna y más amplia. La opción C es un interruptor de emergencia. La D es imposible."
+/>

@@ -1,0 +1,738 @@
+---
+sidebar_position: 1
+title: Preguntas Generadas por IA
+---
+import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
+
+<InteractiveQuiz
+  question="¿Cuál es el objetivo principal del Hacking Ético?"
+  options={{
+    A: "Robar información para venderla a la competencia.",
+    B: "Identificar y corregir vulnerabilidades en un sistema de forma autorizada.",
+    C: "Causar una denegación de servicio para probar la resistencia del servidor.",
+    D: "Obtener acceso no autorizado para demostrar habilidades."
+  }}
+  correctAnswer="B"
+  correctExplanation="El hacking ético es una práctica autorizada que busca mejorar la seguridad de un sistema encontrando sus debilidades antes de que un atacante malicioso lo haga."
+  incorrectExplanation="Las otras opciones describen actividades ilegales o maliciosas (Black Hat Hacking) que van en contra de los principios del hacking ético. El objetivo nunca es causar daño o robar información."
+/>
+<InteractiveQuiz
+  question="En el contexto de las pruebas de penetración, ¿qué significa 'caja gris' (Grey Box)?"
+  options={{
+    A: "El auditor no tiene ningún conocimiento previo sobre el sistema.",
+    B: "El auditor tiene conocimiento completo de la infraestructura y el código fuente.",
+    C: "El auditor tiene un conocimiento parcial del sistema, como credenciales de usuario de bajo nivel.",
+    D: "La prueba se realiza exclusivamente sobre sistemas operativos antiguos."
+  }}
+  correctAnswer="C"
+  correctExplanation="Una prueba de caja gris simula un ataque desde la perspectiva de un usuario interno o un atacante que ha obtenido acceso inicial limitado. El auditor tiene algo de información, pero no toda."
+  incorrectExplanation="La caja negra implica cero conocimiento previo. La caja blanca implica conocimiento total. El tipo de sistema operativo no define el modelo de la prueba."
+/>
+<InteractiveQuiz
+  question="¿Qué fase del hacking ético implica la recopilación de información pasiva sin interactuar directamente con el objetivo?"
+  options={{
+    A: "Escaneo (Scanning)",
+    B: "Explotación (Gaining Access)",
+    C: "Reconocimiento (Reconnaissance) o Footprinting",
+    D: "Enumeración"
+  }}
+  correctAnswer="C"
+  correctExplanation="El reconocimiento pasivo o footprinting se centra en recoger información de fuentes públicas (OSINT) como DNS, redes sociales y motores de búsqueda, sin enviar paquetes al objetivo."
+  incorrectExplanation="El escaneo y la enumeración son fases de reconocimiento activo, ya que implican interactuar directamente con el objetivo para obtener información sobre puertos, servicios y usuarios. La explotación es la fase de ataque."
+/>
+<InteractiveQuiz
+  question="La herramienta Nmap se utiliza principalmente para:"
+  options={{
+    A: "Crackear contraseñas.",
+    B: "Descubrimiento de redes y escaneo de puertos.",
+    C: "Crear malware.",
+    D: "Interceptar y analizar tráfico web (proxy)."
+  }}
+  correctAnswer="B"
+  correctExplanation="Nmap (Network Mapper) es la herramienta por excelencia para el descubrimiento de hosts en una red, escaneo de puertos, detección de servicios y sistemas operativos."
+  incorrectExplanation="Para crackear contraseñas se usan herramientas como John the Ripper o Hashcat. Para interceptar tráfico web se usa Burp Suite o ZAP. Nmap no está diseñada para crear malware."
+/>
+<InteractiveQuiz
+  question="Un ataque de 'Phishing' es una forma de:"
+  options={{
+    A: "Ataque de Denegación de Servicio.",
+    B: "Ingeniería Social.",
+    C: "Inyección de código.",
+    D: "Ataque de fuerza bruta."
+  }}
+  correctAnswer="B"
+  correctExplanation="El phishing se basa en engañar y manipular a las personas para que revelen información sensible (como contraseñas o datos bancarios), lo cual es la definición de ingeniería social."
+  incorrectExplanation="No busca agotar los recursos de un sistema (DoS), ni inyectar código en una aplicación, ni probar miles de contraseñas. Su vector de ataque es la psicología humana."
+/>
+<InteractiveQuiz
+  question="¿Cuál de las siguientes es una vulnerabilidad de inyección del lado del servidor?"
+  options={{
+    A: "Cross-Site Scripting (XSS) Reflejado",
+    B: "SQL Injection (SQLi)",
+    C: "Cross-Site Request Forgery (CSRF)",
+    D: "Clickjacking"
+  }}
+  correctAnswer="B"
+  correctExplanation="La Inyección SQL ocurre cuando un atacante puede ejecutar consultas SQL maliciosas en la base de datos del servidor a través de la entrada de usuario no validada."
+  incorrectExplanation="XSS, CSRF y Clickjacking son vulnerabilidades que se explotan en el navegador de la víctima (lado del cliente), no directamente en el servidor."
+/>
+<InteractiveQuiz
+  question="El proceso de convertir una contraseña en una cadena de texto de longitud fija e irreversible se llama:"
+  options={{
+    A: "Cifrado (Encryption)",
+    B: "Hashing",
+    C: "Codificación (Encoding)",
+    D: "Esteganografía"
+  }}
+  correctAnswer="B"
+  correctExplanation="El hashing genera una representación única (hash) de un dato. Es un proceso de un solo sentido (irreversible), ideal para almacenar contraseñas de forma segura."
+  incorrectExplanation="El cifrado es un proceso de dos vías (reversible). La codificación transforma datos para su uso en diferentes sistemas (ej. Base64) y es reversible. La esteganografía oculta datos dentro de otros ficheros."
+/>
+<InteractiveQuiz
+  question="¿Qué es un 'Zero-Day Exploit'?"
+  options={{
+    A: "Un exploit que funciona solo el primer día de cada mes.",
+    B: "Un ataque contra una vulnerabilidad que es desconocida para el fabricante y para la que no existe un parche.",
+    C: "Un exploit que garantiza el acceso en menos de 24 horas.",
+    D: "Un tipo de malware que se elimina a sí mismo después de un día."
+  }}
+  correctAnswer="B"
+  correctExplanation="Un ataque de 'día cero' aprovecha una vulnerabilidad recién descubierta, antes de que el proveedor del software haya tenido tiempo de crear y distribuir un parche, lo que lo hace especialmente peligroso."
+  incorrectExplanation="Las otras opciones son interpretaciones literales o incorrectas del término. No tiene relación con fechas específicas ni con la velocidad del ataque."
+/>
+<InteractiveQuiz
+  question="El framework Metasploit es conocido por ser una herramienta para:"
+  options={{
+    A: "Análisis de malware.",
+    B: "Desarrollo y ejecución de exploits.",
+    C: "Monitorización de redes (SIEM).",
+    D: "Diseño de arquitecturas de seguridad."
+  }}
+  correctAnswer="B"
+  correctExplanation="Metasploit es una de las plataformas más famosas para pruebas de penetración, proporcionando una vasta colección de exploits, payloads y herramientas auxiliares para automatizar y facilitar el proceso de explotación."
+  incorrectExplanation="Aunque puede usarse para entregar payloads de análisis, su función principal no es el análisis de malware. Tampoco es un SIEM ni una herramienta de diseño."
+/>
+<InteractiveQuiz
+  question="¿Qué describe mejor un ataque de 'Man-in-the-Middle' (MitM)?"
+  options={{
+    A: "Un atacante que se encuentra físicamente entre dos servidores.",
+    B: "Un atacante que intercepta y posiblemente altera la comunicación entre dos partes sin que estas lo sepan.",
+    C: "Un software que se ejecuta en medio de la pila de red.",
+    D: "Una técnica de ingeniería social donde el atacante actúa como mediador."
+  }}
+  correctAnswer="B"
+  correctExplanation="En un ataque MitM, el atacante se posiciona secretamente en el canal de comunicación entre dos sistemas (ej. un usuario y un servidor web) para escuchar, capturar y/o modificar el tráfico."
+  incorrectExplanation="La ubicación física no es relevante. No se trata de un tipo de software específico, y aunque puede involucrar engaño, es fundamentalmente un ataque técnico de interceptación de red."
+/>
+<InteractiveQuiz
+  question="La tríada de la CIA en seguridad de la información se refiere a:"
+  options={{
+    A: "Central Intelligence Agency.",
+    B: "Confidencialidad, Integridad y Disponibilidad (Availability).",
+    C: "Control, Inspección y Auditoría.",
+    D: "Cifrado, Identificación y Autenticación."
+  }}
+  correctAnswer="B"
+  correctExplanation="La tríada de la CIA es el modelo base de la seguridad de la información, que establece sus tres objetivos principales: Confidencialidad (que la información no sea revelada a no autorizados), Integridad (que no sea modificada) y Disponibilidad (que sea accesible cuando se necesite)."
+  incorrectExplanation="Aunque la Agencia Central de Inteligencia es una organización real, no es el significado en este contexto. Las otras opciones son conceptos de seguridad importantes, pero no representan la tríada fundamental."
+/>
+<InteractiveQuiz
+  question="¿Cuál de estas herramientas se usaría para realizar un ataque de fuerza bruta a un servicio de autenticación web?"
+  options={{
+    A: "Wireshark",
+    B: "Nmap",
+    C: "Hydra",
+    D: "Maltego"
+  }}
+  correctAnswer="C"
+  correctExplanation="Hydra es una herramienta muy popular y rápida para realizar ataques de fuerza bruta o de diccionario contra una gran variedad de protocolos y servicios que requieren autenticación, incluyendo formularios web."
+  incorrectExplanation="Wireshark es un analizador de protocolos de red. Nmap es un escáner de puertos. Maltego es para OSINT. Ninguno está diseñado para ejecutar ataques de fuerza bruta."
+/>
+<InteractiveQuiz
+  question="¿Qué es un 'rootkit'?"
+  options={{
+    A: "Un kit de herramientas para obtener acceso 'root' en sistemas Linux.",
+    B: "Un tipo de malware diseñado para obtener acceso de alto nivel a un sistema y ocultar su presencia y la de otro software malicioso.",
+    C: "La primera cuenta de usuario creada en un sistema Unix.",
+    D: "Un dispositivo hardware para resetear contraseñas."
+  }}
+  correctAnswer="B"
+  correctExplanation="La característica definitoria de un rootkit es su capacidad de sigilo. Modifica el sistema operativo desde un nivel bajo (kernel o user-land) para ocultarse a sí mismo y a otras actividades maliciosas."
+  incorrectExplanation="Aunque el nombre deriva de 'root kit', su función principal es el sigilo, no solo la obtención de privilegios. No es una cuenta de usuario ni un dispositivo hardware."
+/>
+<InteractiveQuiz
+  question="El 'Banner Grabbing' es una técnica usada para:"
+  options={{
+    A: "Capturar el banner de inicio de sesión de una página web.",
+    B: "Identificar la versión de un servicio que se ejecuta en un puerto abierto.",
+    C: "Crear un banner publicitario falso.",
+    D: "Robar la identidad visual de una marca."
+  }}
+  correctAnswer="B"
+  correctExplanation="Muchos servicios de red (FTP, SSH, HTTP) envían un 'banner' o cabecera cuando se establece una conexión, que a menudo revela el nombre del software y su número de versión. Esta información es muy valiosa para un atacante que busca exploits conocidos."
+  incorrectExplanation="El término no se refiere a banners gráficos o publicitarios, sino a la información textual de cabecera de los servicios de red."
+/>
+<InteractiveQuiz
+  question="Un ataque 'Cross-Site Scripting (XSS) Almacenado' ocurre cuando:"
+  options={{
+    A: "El script malicioso se refleja desde una petición web y se ejecuta inmediatamente.",
+    B: "El script malicioso se almacena de forma permanente en el servidor (ej. en una base de datos) y se ejecuta cada vez que otro usuario visita la página afectada.",
+    C: "El script se almacena en el navegador de la víctima.",
+    D: "El script solo afecta al propio atacante."
+  }}
+  correctAnswer="B"
+  correctExplanation="En el XSS Almacenado (o Persistente), el payload malicioso se guarda en el servidor. Esto lo hace muy peligroso, ya que puede afectar a todos los usuarios que visiten la página comprometida, sin necesidad de que hagan clic en un enlace malicioso."
+  incorrectExplanation="La opción A describe el XSS Reflejado. El script no se almacena en el navegador de la víctima, sino que se ejecuta en él tras ser servido por el servidor."
+/>
+<InteractiveQuiz
+  question="¿Para qué se utiliza la técnica de 'salting' en el hashing de contraseñas?"
+  options={{
+    A: "Para hacer el hash más largo.",
+    B: "Para añadir un dato aleatorio único a cada contraseña antes de aplicar el hash, evitando que contraseñas idénticas tengan el mismo hash.",
+    C: "Para acelerar el proceso de hashing.",
+    D: "Para cifrar el hash después de haber sido creado."
+  }}
+  correctAnswer="B"
+  correctExplanation="El 'salt' mitiga los ataques de tablas precalculadas como las 'rainbow tables'. Al añadir un valor aleatorio único ('salt') a cada contraseña, dos usuarios con la misma contraseña tendrán hashes almacenados diferentes, haciendo inútiles las tablas genéricas."
+  incorrectExplanation="No afecta directamente a la longitud ni a la velocidad. Tampoco es una capa de cifrado; es parte integral del proceso de hashing."
+/>
+<InteractiveQuiz
+  question="¿Qué protocolo de seguridad Wi-Fi es considerado completamente inseguro y fácil de crackear?"
+  options={{
+    A: "WPA3",
+    B: "WPA2-PSK",
+    C: "WEP",
+    D: "WPA"
+  }}
+  correctAnswer="C"
+  correctExplanation="WEP (Wired Equivalent Privacy) tiene fallos criptográficos fundamentales en su implementación del algoritmo RC4 que permiten a un atacante recuperar la clave en cuestión de minutos con herramientas modernas."
+  incorrectExplanation="WPA, y especialmente WPA2 y WPA3, son significativamente más seguros. Aunque WPA2 puede ser vulnerable a ataques de fuerza bruta si la contraseña es débil, no tiene las fallas criptográficas inherentes de WEP."
+/>
+<InteractiveQuiz
+  question="La herramienta Burp Suite funciona principalmente como:"
+  options={{
+    A: "Un escáner de vulnerabilidades de red.",
+    B: "Un sistema de detección de intrusos (IDS).",
+    C: "Un proxy de interceptación para analizar y manipular el tráfico web.",
+    D: "Un gestor de contraseñas seguro."
+  }}
+  correctAnswer="C"
+  correctExplanation="Burp Suite se coloca entre el navegador del auditor y el servidor web, permitiendo interceptar, inspeccionar y modificar cada petición y respuesta HTTP/S. Es una herramienta indispensable para el pentesting de aplicaciones web."
+  incorrectExplanation="Aunque tiene un escáner, su función principal es el proxy. No es un IDS ni un gestor de contraseñas."
+/>
+<InteractiveQuiz
+  question="¿Qué es la 'Enumeración' en el contexto del hacking?"
+  options={{
+    A: "Contar el número de vulnerabilidades encontradas.",
+    B: "Crear una lista de posibles contraseñas.",
+    C: "Un proceso activo para obtener información detallada como nombres de usuario, recursos de red y servicios de un sistema.",
+    D: "El proceso final de escribir el informe."
+  }}
+  correctAnswer="C"
+  correctExplanation="Después del escaneo inicial, la enumeración busca extraer información específica y detallada del objetivo, estableciendo una conexión activa. Ejemplos son la enumeración de usuarios a través de SMTP o NetBIOS."
+  incorrectExplanation="No se trata de contar vulnerabilidades ni de crear diccionarios, aunque la información obtenida puede usarse para ello. Es una fase de recolección de información activa."
+/>
+<InteractiveQuiz
+  question="Un ataque de 'Directory Traversal' o 'Path Traversal' tiene como objetivo:"
+  options={{
+    A: "Atravesar físicamente el directorio de una empresa.",
+    B: "Acceder a ficheros y directorios que están almacenados fuera del directorio raíz web.",
+    C: "Listar todos los directorios de un servidor.",
+    D: "Crear directorios en un sistema de ficheros remoto."
+  }}
+  correctAnswer="B"
+  correctExplanation="Esta vulnerabilidad permite a un atacante manipular variables que referencian ficheros con secuencias como '../' para navegar fuera del directorio web y acceder a ficheros sensibles del sistema operativo, como '/etc/passwd'."
+  incorrectExplanation="Es un ataque lógico contra el sistema de ficheros, no físico. Aunque puede usarse para listar directorios, su principal riesgo es el acceso a ficheros restringidos."
+/>
+<InteractiveQuiz
+  question="¿Cuál es la principal diferencia entre un gusano (worm) y un virus?"
+  options={{
+    A: "Los gusanos solo afectan a sistemas Windows.",
+    B: "Los virus son más peligrosos que los gusanos.",
+    C: "Un gusano puede propagarse por sí mismo a otros sistemas a través de la red, mientras que un virus necesita de la intervención humana (ej. ejecutar un fichero) para propagarse.",
+    D: "Los virus se escriben en C++ y los gusanos en Python."
+  }}
+  correctAnswer="C"
+  correctExplanation="La capacidad de autorreplicación y propagación autónoma a través de la red es la característica que define a un gusano. Un virus es un código que se adjunta a un programa legítimo y requiere que este se ejecute para poder propagarse."
+  incorrectExplanation="Ambos pueden afectar a cualquier sistema operativo y su peligrosidad depende del payload. El lenguaje de programación es irrelevante para su clasificación."
+/>
+<InteractiveQuiz
+  question="¿Qué describe un ataque de 'Denegación de Servicio Distribuido Reflejado' (DRDoS)?"
+  options={{
+    A: "El atacante inunda a la víctima con sus propios paquetes reflejados.",
+    B: "El atacante envía peticiones a servidores de terceros (reflectores) suplantando la IP de la víctima, haciendo que las respuestas de estos servidores inunden a la víctima.",
+    C: "Un ataque que se refleja en los espejos de los datacenters.",
+    D: "Un ataque donde múltiples atacantes se coordinan directamente contra la víctima."
+  }}
+  correctAnswer="B"
+  correctExplanation="En un ataque reflejado y amplificado, el atacante aprovecha servidores públicos mal configurados (como DNS o NTP). Envía pequeñas peticiones a estos servidores con la IP de origen falsificada (la de la víctima). Los servidores responden con respuestas mucho más grandes, inundando a la víctima."
+  incorrectExplanation="La opción D describe un DDoS directo, no reflejado. Las otras opciones son incorrectas."
+/>
+<InteractiveQuiz
+  question="OSINT son las siglas de:"
+  options={{
+    A: "Operating System Intelligence",
+    B: "Open-Source Intelligence",
+    C: "Official Security Intelligence",
+    D: "Online System Interaction"
+  }}
+  correctAnswer="B"
+  correctExplanation="Open-Source Intelligence (Inteligencia de Fuentes Abiertas) se refiere a la recopilación y análisis de información obtenida de fuentes públicas y de libre acceso. Es una parte clave de la fase de reconocimiento."
+  incorrectExplanation="Las demás opciones no corresponden a la definición de OSINT."
+/>
+<InteractiveQuiz
+  question="¿Qué es una 'shell inversa' (reverse shell)?"
+  options={{
+    A: "Una consola de comandos que funciona al revés.",
+    B: "Una sesión de shell donde la máquina víctima inicia la conexión hacia la máquina del atacante.",
+    C: "Una sesión de shell donde la máquina del atacante se conecta a un puerto a la escucha en la víctima.",
+    D: "Una interfaz gráfica para controlar un sistema."
+  }}
+  correctAnswer="B"
+  correctExplanation="Una shell inversa es muy útil para saltarse firewalls. En lugar de que el atacante se conecte a la víctima (lo que podría estar bloqueado), el payload en la víctima hace que esta se conecte a un puerto que el atacante tiene a la escucha, estableciendo la sesión de control."
+  incorrectExplanation="La opción C describe una 'bind shell'. No es una interfaz gráfica, es una línea de comandos."
+/>
+<InteractiveQuiz
+  question="En criptografía, ¿qué es la 'criptografía asimétrica'?"
+  options={{
+    A: "Un método de cifrado que utiliza la misma clave para cifrar y descifrar.",
+    B: "Un método de cifrado que utiliza un par de claves: una clave pública para cifrar y una clave privada para descifrar.",
+    C: "Un cifrado que es desigual y poco fiable.",
+    D: "Un método para ocultar mensajes en imágenes."
+  }}
+  correctAnswer="B"
+  correctExplanation="La criptografía asimétrica o de clave pública utiliza un par de claves matemáticamente relacionadas. Lo que se cifra con la clave pública solo puede ser descifrado con la clave privada, y viceversa. Es la base de SSL/TLS y las firmas digitales."
+  incorrectExplanation="La opción A describe la criptografía simétrica. La D describe la esteganografía."
+/>
+<InteractiveQuiz
+  question="¿Cuál es el propósito de la herramienta 'John the Ripper'?"
+  options={{
+    A: "Realizar OSINT.",
+    B: "Analizar el tráfico de red.",
+    C: "Crackear contraseñas.",
+    D: "Explotar vulnerabilidades web."
+  }}
+  correctAnswer="C"
+  correctExplanation="John the Ripper (JtR) es una de las herramientas de cracking de contraseñas más conocidas. Puede detectar automáticamente el tipo de hash y aplicar varios métodos de ataque, como diccionario, fuerza bruta e incremental."
+  incorrectExplanation="No está diseñada para OSINT, análisis de red o explotación web. Su única función es descubrir contraseñas a partir de sus hashes."
+/>
+<InteractiveQuiz
+  question="Un ataque 'ARP Poisoning' o 'ARP Spoofing' permite a un atacante:"
+  options={{
+    A: "Envenenar el agua de una oficina.",
+    B: "Asociar su propia dirección MAC con la dirección IP de otro dispositivo en la red local.",
+    C: "Bloquear todo el tráfico ARP.",
+    D: "Enviar paquetes ARP falsos a través de internet."
+  }}
+  correctAnswer="B"
+  correctExplanation="Al enviar respuestas ARP falsificadas a la red local, un atacante puede hacer que el tráfico destinado a un dispositivo (como el router) sea enviado a su máquina, permitiéndole realizar ataques de Man-in-the-Middle."
+  incorrectExplanation="Es un ataque que solo funciona en redes locales (LAN) y su objetivo es redirigir el tráfico, no bloquearlo."
+/>
+<InteractiveQuiz
+  question="¿Qué es un 'Canary Token'?"
+  options={{
+    A: "Un token de acceso utilizado en las Islas Canarias.",
+    B: "Un tipo de honeypot. Un recurso (fichero, URL, credencial) que, si es accedido, genera una alerta indicando una posible brecha de seguridad.",
+    C: "Un token físico para la autenticación de dos factores.",
+    D: "Una criptomoneda utilizada por hackers."
+  }}
+  correctAnswer="B"
+  correctExplanation="Los 'canary tokens' (llamados así por los canarios en las minas de carbón) son señuelos. Se dejan en lugares estratégicos y, si un atacante los utiliza o accede a ellos, el propietario recibe una notificación inmediata de que su sistema ha sido comprometido."
+  incorrectExplanation="No tiene relación con geografía, tokens físicos o criptomonedas. Es un concepto de ciberengaño y detección de intrusiones."
+/>
+<InteractiveQuiz
+  question="La vulnerabilidad 'Heartbleed' fue un fallo grave en:"
+  options={{
+    A: "El protocolo de red TCP/IP.",
+    B: "El sistema operativo Windows XP.",
+    C: "La librería criptográfica OpenSSL.",
+    D: "El navegador web Internet Explorer 6."
+  }}
+  correctAnswer="C"
+  correctExplanation="Heartbleed fue una vulnerabilidad en la implementación de la extensión 'Heartbeat' de TLS/DTLS en OpenSSL. Permitía a un atacante leer porciones de la memoria del servidor, pudiendo exponer claves privadas, contraseñas y otros datos sensibles."
+  incorrectExplanation="No afectaba al protocolo TCP/IP en sí, ni era específica de Windows o Internet Explorer, sino de la popular librería OpenSSL usada por millones de servidores web."
+/>
+<InteractiveQuiz
+  question="¿Qué es un 'Honeypot'?"
+  options={{
+    A: "Un tarro de miel digital para atraer insectos.",
+    B: "Un sistema informático señuelo, configurado para atraer y detectar atacantes.",
+    C: "Una técnica para hacer que las contraseñas parezcan más dulces.",
+    D: "Un repositorio de vulnerabilidades."
+  }}
+  correctAnswer="B"
+  correctExplanation="Un honeypot es un sistema trampa que simula ser un objetivo legítimo y valioso. Su propósito es atraer a los atacantes, estudiar sus métodos y herramientas, y desviar su atención de los sistemas reales, todo ello mientras se generan alertas."
+  incorrectExplanation="Las demás opciones son incorrectas. Es una herramienta de defensa proactiva y de investigación."
+/>
+<InteractiveQuiz
+  question="¿Qué tipo de información NO se obtendría típicamente durante una fase de 'Footprinting' pasivo?"
+  options={{
+    A: "Direcciones IP y rangos de red de la organización.",
+    B: "Nombres de empleados y sus direcciones de correo electrónico.",
+    C: "Versiones exactas de los servicios corriendo en los puertos abiertos.",
+    D: "Tecnologías web utilizadas por la empresa (ej. a través de ofertas de trabajo)."
+  }}
+  correctAnswer="C"
+  correctExplanation="Obtener las versiones exactas de los servicios requiere una interacción directa con los puertos del objetivo, lo cual es una técnica de escaneo activo (como el banner grabbing), no de footprinting pasivo."
+  incorrectExplanation="Las IPs, nombres de empleados y tecnologías usadas a menudo se pueden encontrar en fuentes públicas como registros de DNS, LinkedIn, o portales de empleo, por lo que forman parte del reconocimiento pasivo."
+/>
+<InteractiveQuiz
+  question="Un 'Firewall' opera principalmente en qué capas del modelo OSI?"
+  options={{
+    A: "Capa 1 (Física) y Capa 2 (Enlace de Datos).",
+    B: "Capa 7 (Aplicación).",
+    C: "Principalmente en la Capa 3 (Red) y Capa 4 (Transporte), aunque los modernos (NGFW) pueden operar hasta la Capa 7.",
+    D: "Solo en la Capa 5 (Sesión)."
+  }}
+  correctAnswer="C"
+  correctExplanation="Los firewalls tradicionales filtran el tráfico basándose en direcciones IP (Capa 3) y puertos TCP/UDP (Capa 4). Los Firewalls de Nueva Generación (NGFW) añaden inspección a nivel de aplicación (Capa 7) para tomar decisiones más inteligentes."
+  incorrectExplanation="No operan en las capas físicas o de enlace. Limitar su operación a solo la capa de aplicación o sesión es incorrecto, ya que su base está en las capas de red y transporte."
+/>
+<InteractiveQuiz
+  question="¿Qué es 'Steganography'?"
+  options={{
+    A: "Una forma de cifrado muy antigua.",
+    B: "El estudio de la escritura en estelas de piedra.",
+    C: "La práctica de ocultar un mensaje, fichero o imagen dentro de otro mensaje, fichero o imagen.",
+    D: "Un algoritmo de hashing."
+  }}
+  correctAnswer="C"
+  correctExplanation="A diferencia de la criptografía, que oculta el contenido de un mensaje, la esteganografía oculta la existencia misma del mensaje. Un ejemplo clásico es ocultar un texto dentro de los píxeles menos significativos de una imagen."
+  incorrectExplanation="No es un método de cifrado, sino de ocultación. Las otras opciones son incorrectas."
+/>
+<InteractiveQuiz
+  question="El comando `whois` se utiliza para:"
+  options={{
+    A: "Saber quién está conectado a un sistema.",
+    B: "Obtener información de registro sobre un dominio de internet, como el propietario y los servidores de nombres.",
+    C: "Listar los procesos de un usuario.",
+    D: "Descubrir el sistema operativo de un host."
+  }}
+  correctAnswer="B"
+  correctExplanation="El protocolo `whois` permite consultar las bases de datos públicas de los registradores de dominios para obtener información administrativa y de contacto sobre la propiedad de un dominio o una dirección IP."
+  incorrectExplanation="Para saber quién está conectado se usa `who` o `w`. Para listar procesos `ps`. Para descubrir el SO se usa Nmap u otras herramientas de fingerprinting."
+/>
+<InteractiveQuiz
+  question="En un ataque a una aplicación web, ¿qué significa 'IDOR'?"
+  options={{
+    A: "Insecure Direct Object Reference",
+    B: "Internal Denial of Resources",
+    C: "Intrusion Detection on Routers",
+    D: "Identified and Open Registry"
+  }}
+  correctAnswer="A"
+  correctExplanation="IDOR es una vulnerabilidad de control de acceso que ocurre cuando una aplicación expone una referencia a un objeto interno (como un fichero o una entrada de base de datos) y no verifica si el usuario que realiza la petición tiene permiso para acceder a ese objeto específico."
+  incorrectExplanation="Las demás opciones son acrónimos inventados o incorrectos en este contexto."
+/>
+<InteractiveQuiz
+  question="¿Cuál de las siguientes acciones es un ejemplo de 'hardening' de un sistema?"
+  options={{
+    A: "Instalar más aplicaciones de software.",
+    B: "Deshabilitar servicios innecesarios, cambiar contraseñas por defecto y aplicar parches de seguridad.",
+    C: "Aumentar la memoria RAM y el procesador.",
+    D: "Conectar el sistema a más redes."
+  }}
+  correctAnswer="B"
+  correctExplanation="El 'hardening' o 'bastionado' es el proceso de reducir la superficie de ataque de un sistema. Esto se logra eliminando software y servicios no esenciales, configurando permisos restrictivos, cambiando credenciales débiles y manteniendo el sistema actualizado."
+  incorrectExplanation="Las otras acciones, en general, aumentan la complejidad y la superficie de ataque, lo contrario al hardening."
+/>
+<InteractiveQuiz
+  question="La herramienta 'Wireshark' es un:"
+  options={{
+    A: "Analizador de protocolos de red (sniffer).",
+    B: "Framework de explotación.",
+    C: "Escáner de puertos.",
+    D: "Sistema de prevención de intrusiones (IPS)."
+  }}
+  correctAnswer="A"
+  correctExplanation="Wireshark es la herramienta estándar para capturar y analizar el tráfico de una red en detalle. Permite ver cada paquete individualmente, desglosado por protocolos, lo que es invaluable para la depuración y el análisis de seguridad."
+  incorrectExplanation="No es una herramienta de ataque (explotación o escaneo) ni de defensa activa (IPS). Su función es la observación y el análisis pasivo."
+/>
+<InteractiveQuiz
+  question="¿Qué es una 'botnet'?"
+  options={{
+    A: "Una red social para robots.",
+    B: "Una red de ordenadores privados infectados con malware (bots) y controlados como un grupo por un atacante (botmaster).",
+    C: "El departamento de robótica de una empresa.",
+    D: "Una red neuronal para la inteligencia artificial."
+  }}
+  correctAnswer="B"
+  correctExplanation="Las botnets son ejércitos de ordenadores 'zombis' que pueden ser utilizados para realizar ataques a gran escala, como los ataques DDoS, enviar spam masivo o realizar campañas de phishing."
+  incorrectExplanation="Las demás opciones son incorrectas."
+/>
+<InteractiveQuiz
+  question="¿Qué tipo de ataque intenta evitar el 'Double-Submit Cookie Pattern'?"
+  options={{
+    A: "Inyección SQL",
+    B: "Cross-Site Scripting (XSS)",
+    C: "Cross-Site Request Forgery (CSRF)",
+    D: "Denegación de Servicio (DoS)"
+  }}
+  correctAnswer="C"
+  correctExplanation="El patrón 'Double-Submit Cookie' es una técnica para prevenir ataques CSRF. Consiste en enviar el mismo valor de token aleatorio tanto en una cookie como en un parámetro de la petición. El servidor verifica que ambos valores coincidan, algo que un atacante no puede lograr fácilmente."
+  incorrectExplanation="Este patrón es específico para mitigar CSRF y no es efectivo contra XSS, SQLi o DoS."
+/>
+<InteractiveQuiz
+  question="En el contexto de Active Directory, ¿qué es un ataque de 'Kerberoasting'?"
+  options={{
+    A: "Asar un perro de tres cabezas.",
+    B: "Un ataque para obtener los hashes de las contraseñas de las cuentas de servicio de Kerberos.",
+    C: "Un ataque para denegar el servicio del Key Distribution Center (KDC).",
+    D: "Un método para crear tickets de Kerberos falsos (Golden Tickets)."
+  }}
+  correctAnswer="B"
+  correctExplanation="El Kerberoasting aprovecha que cualquier usuario autenticado puede solicitar un ticket de servicio (TGS) para cualquier servicio. Si una cuenta de servicio tiene un SPN configurado, se puede solicitar un ticket para ella. Parte de este ticket está cifrado con el hash de la contraseña de la cuenta de servicio, que puede ser extraído y crackeado offline."
+  incorrectExplanation="El ataque de Golden Ticket es diferente y más potente. No es un ataque de DoS. La opción A es una broma."
+/>
+<InteractiveQuiz
+  question="¿Qué es un 'Canary' en el contexto de la explotación de 'Buffer Overflows'?"
+  options={{
+    A: "Un pájaro que canta cuando el exploit tiene éxito.",
+    B: "Un valor conocido que se coloca en la pila (stack) justo antes de la dirección de retorno. Si este valor ha cambiado al retornar de la función, indica que ha ocurrido un desbordamiento.",
+    C: "Una sección de código que se ejecuta en un entorno aislado.",
+    D: "Un tipo especial de payload."
+  }}
+  correctAnswer="B"
+  correctExplanation="Los 'stack canaries' son una medida de protección contra desbordamientos de buffer. Al verificar la integridad del canario antes de usar la dirección de retorno, el programa puede detectar que la pila ha sido corrompida y abortar, evitando la ejecución de código malicioso."
+  incorrectExplanation="No es un payload ni un entorno aislado. Es una medida de protección específica contra este tipo de ataques."
+/>
+<InteractiveQuiz
+  question="La política de seguridad 'Same-Origin Policy' (SOP) en los navegadores web está diseñada para:"
+  options={{
+    A: "Asegurar que todas las páginas web provengan del mismo país.",
+    B: "Impedir que un script de un origen (dominio, protocolo, puerto) pueda acceder a los datos de otro origen.",
+    C: "Forzar a que todas las imágenes de una web se carguen desde el mismo servidor.",
+    D: "Bloquear la ejecución de todo el código JavaScript."
+  }}
+  correctAnswer="B"
+  correctExplanation="La SOP es una de las piedras angulares de la seguridad web. Restringe cómo un documento o script cargado desde un origen puede interactuar con un recurso de otro origen. Es fundamental para aislar el contenido y prevenir el robo de información entre sitios."
+  incorrectExplanation="No tiene que ver con la geografía ni bloquea todo el JavaScript. Permite cargar recursos de otros orígenes (imágenes, CSS), pero restringe el acceso de lectura a ellos mediante scripts."
+/>
+<InteractiveQuiz
+  question="Un 'Evil Twin' es un tipo de ataque contra:"
+  options={{
+    A: "Redes Wi-Fi.",
+    B: "Bases de datos SQL.",
+    C: "Sistemas de ficheros.",
+    D: "Protocolos de correo electrónico."
+  }}
+  correctAnswer="A"
+  correctExplanation="Un ataque de 'gemelo malvado' (Evil Twin) consiste en crear un punto de acceso Wi-Fi falso con el mismo nombre (SSID) que una red legítima cercana. El objetivo es que los usuarios se conecten al punto de acceso del atacante, permitiéndole realizar ataques de Man-in-the-Middle."
+  incorrectExplanation="Es un ataque específico del ámbito inalámbrico (Wi-Fi) y no se aplica a los otros contextos."
+/>
+<InteractiveQuiz
+  question="¿Qué es 'Shodan'?"
+  options={{
+    A: "Un personaje de un videojuego.",
+    B: "Un motor de búsqueda para dispositivos conectados a Internet (IoT).",
+    C: "Un nuevo protocolo de cifrado.",
+    D: "Una distribución de Linux para pentesting."
+  }}
+  correctAnswer="B"
+  correctExplanation="Shodan es a menudo llamado 'el motor de búsqueda para hackers'. En lugar de indexar contenido web, escanea internet en busca de dispositivos (routers, servidores, webcams, sistemas de control industrial, etc.) y recopila sus banners y metadatos, permitiendo encontrar sistemas potencialmente vulnerables."
+  incorrectExplanation="Aunque SHODAN es el nombre de la IA antagonista en el juego System Shock, en el contexto de ciberseguridad, es un motor de búsqueda. No es un protocolo ni una distribución de Linux."
+/>
+<InteractiveQuiz
+  question="El 'Common Vulnerability Scoring System' (CVSS) se utiliza para:"
+  options={{
+    A: "Asignar un identificador único a cada vulnerabilidad (CVE).",
+    B: "Evaluar el impacto potencial de un ataque.",
+    C: "Proporcionar una puntuación numérica que representa la severidad de una vulnerabilidad de seguridad.",
+    D: "Clasificar los diferentes tipos de hackers."
+  }}
+  correctAnswer="C"
+  correctExplanation="El CVSS es un estándar abierto que proporciona una forma de capturar las principales características de una vulnerabilidad y producir una puntuación numérica (de 0.0 a 10.0) que refleja su gravedad, ayudando a las organizaciones a priorizar su remediación."
+  incorrectExplanation="El identificador único es el CVE (Common Vulnerabilities and Exposures). El CVSS no evalúa el impacto en un contexto de negocio específico, sino la severidad inherente de la vulnerabilidad."
+/>
+<InteractiveQuiz
+  question="¿Qué vulnerabilidad explota la herramienta 'sqlmap'?"
+  options={{
+    A: "Cross-Site Scripting (XSS)",
+    B: "Inyección SQL (SQLi)",
+    C: "Buffer Overflows",
+    D: "Configuraciones incorrectas de Wi-Fi"
+  }}
+  correctAnswer="B"
+  correctExplanation="sqlmap es una herramienta de código abierto que automatiza el proceso de detección y explotación de vulnerabilidades de inyección SQL. Puede identificar la base de datos, extraer datos, y en algunos casos, obtener una shell en el sistema."
+  incorrectExplanation="Es una herramienta altamente especializada en SQLi y no está diseñada para explotar otras clases de vulnerabilidades."
+/>
+<InteractiveQuiz
+  question="¿Cuál de estas opciones NO es una fase del modelo 'Cyber Kill Chain'?"
+  options={{
+    A: "Weaponization (Preparación)",
+    B: "Delivery (Entrega)",
+    C: "Remediation (Remediación)",
+    D: "Command & Control (C2)"
+  }}
+  correctAnswer="C"
+  correctExplanation="La Cyber Kill Chain es un modelo que describe las fases de un ciberataque desde la perspectiva del atacante. La remediación es una acción defensiva que realiza la organización víctima, por lo que no forma parte de este modelo."
+  incorrectExplanation="Weaponization, Delivery y C2 son fases canónicas del modelo Cyber Kill Chain de Lockheed Martin."
+/>
+<InteractiveQuiz
+  question="El término 'Threat Actor' se refiere a:"
+  options={{
+    A: "Un software que simula amenazas.",
+    B: "Una persona o grupo que representa una amenaza, es decir, que puede realizar un ciberataque.",
+    C: "Un actor de cine especializado en películas de hackers.",
+    D: "El vector por el cual se produce un ataque."
+  }}
+  correctAnswer="B"
+  correctExplanation="Un 'actor de amenaza' (Threat Actor o Threat Agent) es la entidad responsable de un incidente de seguridad. Pueden ser ciberdelincuentes, hacktivistas, estados-nación, o incluso insiders maliciosos."
+  incorrectExplanation="No es un software ni un vector de ataque. Es la persona o grupo que origina la amenaza."
+/>
+<InteractiveQuiz
+  question="En hacking web, ¿qué es 'Local File Inclusion' (LFI)?"
+  options={{
+    A: "Una vulnerabilidad que permite a un atacante incluir y ejecutar ficheros de un servidor remoto.",
+    B: "Una vulnerabilidad que permite a un atacante incluir y mostrar el contenido de ficheros locales del servidor.",
+    C: "La capacidad de subir ficheros a un servidor.",
+    D: "Incluir librerías JavaScript de forma local."
+  }}
+  correctAnswer="B"
+  correctExplanation="LFI ocurre cuando una aplicación web utiliza la entrada del usuario para incluir ficheros locales sin una validación adecuada. Esto puede permitir a un atacante leer ficheros sensibles del sistema, como ficheros de configuración o código fuente."
+  incorrectExplanation="La opción A describe Remote File Inclusion (RFI). La subida de ficheros es una funcionalidad, no una vulnerabilidad LFI. No se refiere a JavaScript."
+/>
+<InteractiveQuiz
+  question="¿Qué es el 'dumping' del proceso LSASS en Windows?"
+  options={{
+    A: "Borrar el proceso LSASS.exe para bloquear el sistema.",
+    B: "Realizar un volcado de la memoria del proceso LSASS.exe para extraer credenciales (hashes y contraseñas en claro).",
+    C: "Reiniciar el servicio de LSASS.",
+    D: "Hacer una copia de seguridad del ejecutable LSASS.exe."
+  }}
+  correctAnswer="B"
+  correctExplanation="El proceso LSASS (Local Security Authority Subsystem Service) almacena en su memoria las credenciales de los usuarios que han iniciado sesión. Herramientas como Mimikatz pueden volcar la memoria de este proceso a un fichero para luego extraer de él contraseñas en texto plano, hashes NTLM y tickets Kerberos."
+  incorrectExplanation="Borrar o reiniciar el proceso causaría un cuelgue o reinicio del sistema. El objetivo es leer su memoria, no manipular el fichero ejecutable."
+/>
+<InteractiveQuiz
+  question="Un 'IDS' (Intrusion Detection System) se diferencia de un 'IPS' (Intrusion Prevention System) en que:"
+  options={{
+    A: "El IDS es más moderno que el IPS.",
+    B: "El IDS solo detecta y alerta sobre tráfico malicioso, mientras que el IPS puede además bloquearlo activamente.",
+    C: "El IDS se instala en los routers y el IPS en los servidores.",
+    D: "No hay ninguna diferencia, son sinónimos."
+  }}
+  correctAnswer="B"
+  correctExplanation="La diferencia clave es la acción. Un IDS opera de forma pasiva (fuera de banda), analizando una copia del tráfico y generando alertas. Un IPS se coloca en línea (in-band) y puede tomar acciones directas sobre el tráfico, como descartar paquetes maliciosos."
+  incorrectExplanation="No son sinónimos. Su ubicación no es lo que los define, sino su modo de operación (pasivo vs. activo)."
+/>
+<InteractiveQuiz
+  question="¿Qué es un ataque de 'Pass the Hash' (PtH)?"
+  options={{
+    A: "Pasar un hash por un algoritmo de cifrado.",
+    B: "Un ataque donde un atacante captura el hash de la contraseña de un usuario y lo utiliza para autenticarse en otros sistemas como si fuera ese usuario, sin necesidad de conocer la contraseña en texto claro.",
+    C: "Vender hashes de contraseñas en la dark web.",
+    D: "Un método para crackear hashes más rápido."
+  }}
+  correctAnswer="B"
+  correctExplanation="En entornos Windows, el protocolo de autenticación NTLM permite en algunos casos el uso directo del hash de la contraseña en lugar de la contraseña misma. Un atacante que ha comprometido un sistema y extraído un hash NTLM puede usarlo para moverse lateralmente por la red."
+  incorrectExplanation="No es una técnica de cracking ni de cifrado. Es una técnica de movimiento lateral post-explotación."
+/>
+<InteractiveQuiz
+  question="¿Cuál de las siguientes es una buena práctica para defenderse contra ataques de fuerza bruta en un formulario de login?"
+  options={{
+    A: "No usar contraseñas.",
+    B: "Mostrar un mensaje de error detallado que indique si el usuario o la contraseña es incorrecto.",
+    C: "Implementar un mecanismo de bloqueo de cuentas tras varios intentos fallidos y/o un CAPTCHA.",
+    D: "Limitar la longitud de la contraseña a 6 caracteres."
+  }}
+  correctAnswer="C"
+  correctExplanation="El bloqueo de cuentas y los CAPTCHA son defensas eficaces porque limitan drásticamente la velocidad a la que un atacante puede probar contraseñas, haciendo que un ataque de fuerza bruta sea inviable en la práctica."
+  incorrectExplanation="Los mensajes de error detallados ayudan al atacante (permiten la enumeración de usuarios). Limitar la longitud de la contraseña la debilita enormemente."
+/>
+<InteractiveQuiz
+  question="El 'DNS Spoofing' o 'DNS Cache Poisoning' es un ataque que:"
+  options={{
+    A: "Envenena la comida del administrador de DNS.",
+    B: "Inunda un servidor DNS con peticiones.",
+    C: "Introduce datos falsos en la caché de un servidor DNS, haciendo que devuelva una dirección IP incorrecta para un dominio.",
+    D: "Oculta el propio servidor DNS."
+  }}
+  correctAnswer="C"
+  correctExplanation="El objetivo de este ataque es redirigir a los usuarios a un servidor malicioso. Al corromper la caché de un servidor DNS, el atacante puede hacer que cuando un usuario pida 'www.banco.com', el DNS le devuelva la IP del servidor del atacante en lugar de la legítima."
+  incorrectExplanation="No es un ataque de denegación de servicio (inundación), sino de redirección y suplantación."
+/>
+<InteractiveQuiz
+  question="¿Qué es el 'Principio de Mínimo Privilegio'?"
+  options={{
+    A: "Dar a todos los usuarios los mínimos privilegios posibles, es decir, solo cuentas de invitado.",
+    B: "Un principio legal que indica que los hackers tienen pocos privilegios.",
+    C: "Una política de seguridad que establece que un usuario o proceso solo debe tener los permisos estrictamente necesarios para realizar su función, y nada más.",
+    D: "Dar privilegios de administrador solo a la persona con el sueldo más bajo."
+  }}
+  correctAnswer="C"
+  correctExplanation="Este es un concepto fundamental de la defensa en profundidad. Al limitar los permisos de cada cuenta y proceso al mínimo indispensable, se reduce el impacto potencial de una brecha de seguridad. Si una cuenta es comprometida, el daño que puede hacer el atacante es limitado."
+  incorrectExplanation="No significa dar a todos los privilegios más bajos, sino los justos y necesarios para cada rol. Las otras opciones son incorrectas."
+/>
+<InteractiveQuiz
+  question="¿Qué es un 'Vulnerability Scan' a diferencia de un 'Penetration Test'?"
+  options={{
+    A: "Son exactamente lo mismo.",
+    B: "Un escaneo de vulnerabilidades es un proceso mayormente automatizado que busca fallos conocidos, mientras que un pentest implica una explotación manual y activa para evaluar el impacto real.",
+    C: "Un pentest es siempre más barato que un escaneo.",
+    D: "Solo los hackers de sombrero negro hacen pentesting."
+  }}
+  correctAnswer="B"
+  correctExplanation="Un escaneo de vulnerabilidades es como buscar puertas abiertas; genera una lista de posibles debilidades. Un pentest es como intentar abrir esas puertas y ver qué hay dentro. Es más profundo, manual y busca demostrar el riesgo real."
+  incorrectExplanation="No son lo mismo. Un pentest suele ser más costoso debido a la implicación de expertos. El hacking ético (sombrero blanco) se dedica al pentesting."
+/>
+<InteractiveQuiz
+  question="¿Qué es un 'typosquatting'?"
+  options={{
+    A: "Ocupar una casa que tiene un error tipográfico en la dirección.",
+    B: "Registrar nombres de dominio muy similares a marcas conocidas, pero con pequeños errores tipográficos, para capturar el tráfico de usuarios que se equivocan al escribir.",
+    C: "Un tipo de fuente de letra difícil de leer.",
+    D: "Un ataque que explota errores tipográficos en el código fuente."
+  }}
+  correctAnswer="B"
+  correctExplanation="También conocido como secuestro de URL, el typosquatting se basa en los errores comunes que cometen los usuarios al teclear una dirección web (ej. 'gogle.com' en vez de 'google.com'). Estos dominios falsos suelen usarse para phishing o distribución de malware."
+  incorrectExplanation="Las demás opciones son incorrectas."
+/>
+<InteractiveQuiz
+  question="La 'defensa en profundidad' (Defense in Depth) es una estrategia de seguridad que consiste en:"
+  options={{
+    A: "Poner un firewall muy potente.",
+    B: "Utilizar múltiples capas de controles de seguridad, de modo que si una capa falla, otra pueda detener el ataque.",
+    C: "Cifrar todos los datos muy profundamente.",
+    D: "Enterrar los servidores bajo tierra."
+  }}
+  correctAnswer="B"
+  correctExplanation="Es una analogía con un castillo medieval: no solo tiene una muralla, sino también un foso, torres, guardias, etc. En ciberseguridad, significa combinar controles técnicos, administrativos y físicos (firewalls, IDS, políticas, formación, etc.) para crear una defensa robusta y resiliente."
+  incorrectExplanation="No se trata de un único control, por muy potente que sea, sino de la superposición de múltiples controles diferentes."
+/>
+<InteractiveQuiz
+  question="¿Qué técnica se utiliza para evadir un antivirus basado en firmas?"
+  options={{
+    A: "Polimorfismo y metamorfismo del código malicioso.",
+    B: "Apagar el antivirus.",
+    C: "Sobornar al desarrollador del antivirus.",
+    D: "Usar un sistema operativo diferente."
+  }}
+  correctAnswer="A"
+  correctExplanation="Los antivirus basados en firmas buscan patrones (hashes) de malware conocido. El malware polimórfico y metamórfico modifica su propio código en cada infección para generar una firma diferente cada vez, haciendo que la detección por firma sea ineficaz."
+  incorrectExplanation="Apagar el antivirus es la forma más simple de evasión, pero no es una técnica sofisticada. Las otras opciones no son técnicas de evasión de malware."
+/>
+<InteractiveQuiz
+  question="¿Qué es el 'Credential Stuffing'?"
+  options={{
+    A: "Rellenar un formulario con credenciales falsas.",
+    B: "Un ataque automatizado que utiliza listas de credenciales (usuario/contraseña) robadas de una brecha de datos para intentar iniciar sesión en muchos otros servicios.",
+    C: "Almacenar credenciales en un fichero de texto.",
+    D: "El acto de robar credenciales físicas."
+  }}
+  correctAnswer="B"
+  correctExplanation="Este ataque se aprovecha de la reutilización de contraseñas por parte de los usuarios. Si un atacante roba credenciales de un sitio poco seguro, las probará masivamente en sitios más valiosos como bancos, redes sociales o correos electrónicos, esperando que el usuario haya usado la misma contraseña."
+  incorrectExplanation="No se trata de credenciales falsas, sino de credenciales reales robadas de otros sitios. Es un tipo de ataque de fuerza bruta, pero con un diccionario muy específico."
+/>
+<InteractiveQuiz
+  question="¿Cuál es el puerto estándar para el protocolo HTTPS?"
+  options={{
+    A: "80",
+    B: "22",
+    C: "443",
+    D: "8080"
+  }}
+  correctAnswer="C"
+  correctExplanation="El puerto 443/TCP es el puerto universalmente asignado para las comunicaciones HTTP seguras, es decir, HTTP sobre TLS/SSL (HTTPS)."
+  incorrectExplanation="El puerto 80 es para HTTP (no seguro). El 22 es para SSH. El 8080 es un puerto alternativo común para HTTP, pero no el estándar."
+/>

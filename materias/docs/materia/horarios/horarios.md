@@ -7,7 +7,7 @@ sidebar_position: 1
 
 | Asignatura                                                                              | Fecha          | ES        | EC        |
 | --------------------------------------------------------------------------------------- | -------------- | --------- | --------- |
-| [~~Inteligencia de amenazas~~](../inteligencia-amenazas/intro.mdx)                      | ~~14/02/2025~~ | ~~14:00~~ | ~~08:00~~ |
+| [~~Inteligencia de amenazas~~](../inteligencia-amenazas/intro.mdx)                      | ~~13/06/2025~~ | ~~09:00~~ | ~~08:00~~ |
 | [~~Análisis de riesgos~~](../analisis-de-riesgo/intro.mdx)                              | ~~14/02/2025~~ | ~~16:00~~ | ~~10:00~~ |
 | [~~Control del riesgo de ciberseguridad~~](../control-ciberseguridad/intro.mdx)         | ~~14/02/2025~~ | ~~17:30~~ | ~~11:30~~ |
 | [~~Gobernanza de la ciberseguridad~~](../gobernanza-ciberseguridad/intro.mdx)           | ~~14/02/2025~~ | ~~19:00~~ | ~~13:00~~ |

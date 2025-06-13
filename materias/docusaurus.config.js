@@ -180,6 +180,11 @@ const config = {
                 sidebarId: "HackingEtico",
                 label: "Hacking Ético",
               },
+              {
+                type: "docSidebar",
+                sidebarId: "MonitorizacionRespuesta",
+                label: "Monitorización y Respuesta",
+              },
             ],
           },
 
