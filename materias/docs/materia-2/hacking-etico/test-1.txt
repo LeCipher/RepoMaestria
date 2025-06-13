@@ -1,0 +1,848 @@
+---
+sidebar_position: 0
+title: Preguntas de Seguridad en la Nube
+---
+import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
+
+<InteractiveQuiz
+  question="La ingeniería inversa es"
+  options={{
+    A: "Una técnica para averiguar cómo funciona por dentro una aplicación o dispositivo",
+    B: "Una forma de desarrollar un código malicioso",
+    C: "La técnica de programación de un malware",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Dentro de la ingeniería social basada en personas encontramos"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Llamadas suplantando la identidad",
+    C: "El Dumpster surfing",
+    D: "El Shoulder diving"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Si consigo un usuario administrador en windows, siempre voy a poder ejecutar comandos con privilegios, incluso desde una linea de comandos básica. No hay mas mecanismos de protección"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Que un ataque de 'password spray'"
+  options={{
+    A: "Es un ataque de suplantación en el que buscamos contraseñas almacenadas en medio no informáticos, como papeles o tarjetas",
+    B: "Un ataque de fuerza bruta en el que probamos miles de contraseñas contra un mismo usuario",
+    C: "Ninguna de las anteriores",
+    D: "Es un ataque que permite utilizar un HASH en vez de una contraseña para autenticarnos"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Puedo utilizar el hash Net NTLM en ataques de PTH (Pass the Hash)"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Dentro de los ataques no web hablados en la unidad 3 encontramos:"
+  options={{
+    A: "El spoofing",
+    B: "La denegación de servicios",
+    C: "Todos son correctos",
+    D: "El buffer overflow"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="El Reversing de Malware"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Es el estudio del código malicioso para ver sus vectores de ataque",
+    C: "Permite lanzar ese malware dentro de una organización",
+    D: "Permite lanzar el malware contra su creador"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Es posible copiar el registro SAM de un sistema windows sin problema, con la maquina arrancada"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Para usar Bloodhound (el ingestor) no es necesario tener credenciales válidas"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Un aspecto importante para la ingeniería inversa es"
+  options={{
+    A: "Conocer técnicas de desarrollo incremental de software",
+    B: "Ser capaz de desmontar un servidor y volver a conectarlo",
+    C: "Conocer cómo funciona un dispositivo Arduino por dentro",
+    D: "Conocer múltiples lenguajes de programación"
+  }}
+  correctAnswer="D"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Los ataques de escalada de privilegios pueden ser"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Ejecutados en sistemas windows",
+    C: "Ejecutados en cualquier sistema",
+    D: "Ejecutados en sistemas linux"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Puedo utilizar el hash LM en ataques de PTH (Pass the Hash)"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Como ejemplo de ataques en autenticación en windows podemos encontrar"
+  options={{
+    A: "Todas son correctas",
+    B: "PTH",
+    C: "Rainbow Tables",
+    D: "NTLM Relay"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Los mecanismos de explotación pueden ser"
+  options={{
+    A: "Sólo automáticos",
+    B: "Manuales o automáticos",
+    C: "Sólo manuales",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Puedo utilizar el hash NT en ataques de PTH (Pass the Hash)"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Los movimientos laterales consisten en"
+  options={{
+    A: "Realizar ataques de barridos de IPs",
+    B: "Realizar técnicas de ataques para poder propagarse a otros sistemas de la red",
+    C: "Simular ataques de malware para atacar por otra zona",
+    D: "Todas son correctas"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Uno de los aspectos clave para evitar la escalada de privilegios es"
+  options={{
+    A: "Instalar un SIEM",
+    B: "Tener y cumplir políticas de contraseñas sólidas, evitar la reutilización",
+    C: "Ninguna de las anteriores",
+    D: "Renovar el antivirus cada 14 días"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Que proceso de windows se encarga de la autenticación de los usuarios, tanto locales como en red"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "El proceso LSASS.exe",
+    C: "Se encarga un fichero directamente",
+    D: "El proceso NT.exe"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="En la autenticación Net-NTLM un usuario en el equipo A puede intentar acceder al equipo B, es decir, la autenticación o parte de ella viaja por la red. Y en el caso concreto de este tipo de autenticación:"
+  options={{
+    A: "El resultado de la autenticación se puede utilizar para técnicas de PTH",
+    B: "TODOS los mensajes van cifrados, por lo que no se puede obtener información con un sniffer",
+    C: "El resultado de la autenticación es un ticket firmado con la clave privada del KDC",
+    D: "Todas son incorrectas"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Un payload es"
+  options={{
+    A: "Un tipo de troyano",
+    B: "Una parte del código de un exploit que ejecuta una acción maliciosa",
+    C: "Un ataque basado en pings",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Los hashes en windows se almacenan en"
+  options={{
+    A: "El fichero SAM, protegido por una clave en el fichero SYSTEM",
+    B: "Ninguna de las anteriores",
+    C: "En el proceso lsass.bin",
+    D: "El fichero /etc/shadow, protegido por la contraseña de /etc/passwd"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Un tipo de ataque a contraseñas es el"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Ataque basado en Google",
+    C: "Ataque por fuerza bruta",
+    D: "Ataque basado en ontologías"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="¿Qué es el UAC?"
+  options={{
+    A: "Es una técnica utilizada para autenticarse en windows usando el hash en vez de la contraseña",
+    B: "Es un dispositivo no tripulado para ataques aéreos",
+    C: "Es un mecanismo de seguridad de windows que evita ejecutar tareas como administrador en casos concretos",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="La escalada de privilegios intenta"
+  options={{
+    A: "A y B son correctas",
+    B: "Acceder al sistema de gestión de datos directamente",
+    C: "Ninguna de las anteriores",
+    D: "Conseguir privilegios superiores a los actuales"
+  }}
+  correctAnswer="D"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="En el Domain Controller, el fichero que almacena los hashes de todos los usuarios y equipos del dominio se llama:"
+  options={{
+    A: "SYSTEM.dit",
+    B: "SAM.dit",
+    C: "NTDS.dit",
+    D: "LSSAS.dit"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Un hash LM que termina en aad3b435b51404ee tiene muchas posibilidades de"
+  options={{
+    A: "Ser un hash correspondiente a la contraseña 'vacia'",
+    B: "Ser un hash correspondiente a la contraseña por defecto de windows",
+    C: "Ninguna de las anteriores",
+    D: "Ser un hash válido"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="La ingeniería social es"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Un método no técnico de uso de confianza para irrumpir en un sistema o red",
+    C: "Un método técnico de uso de confianza para irrumpir en un sistema o red",
+    D: "A y B son correctas"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="La autenticación Net-NTLM en windows..."
+  options={{
+    A: "Genera un hash al que se le pueden aplicar técnicas de cracking offline",
+    B: "Todas son correctas",
+    C: "Es uno de los sistemas de autenticación válidos actualmente",
+    D: "Es una autenticación basada en challenges y responses"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="La diferencia fundamental entre el hash LM y el NT es"
+  options={{
+    A: "El hash NT esta vacío en sistemas modernos",
+    B: "El hash NT no tiene SALT",
+    C: "El hash LM esta vacío en sistemas modernos",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="¿Qué herramienta podemos utilizar para analizar la memoria de windows y buscar hashes y credenciales?"
+  options={{
+    A: "pypykatz",
+    B: "hashcat",
+    C: "responder.py",
+    D: "Todas son validas"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Es posible copiar el fichero SAM y SYSTEM en windows, simplemente haciendo click derecho en el fichero de un sistema corriendo actualmente"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="El framework MITRE ATT&CK es"
+  options={{
+    A: "La última fase del Cyber Kill Chain",
+    B: "Una plataforma que organiza y categoriza los distintos tipos de ataques, amenazas y procedimientos realizados por los distintos atacantes.",
+    C: "Un plan de gestión de incidentes",
+    D: "Una aplicación de Kali para hacer pentesting"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Un Ataque de Denegación de Servicio (DOS) consiste en"
+  options={{
+    A: "Inserta código malicioso en un servidor utilizando el lenguaje de consulta del servidor (SQL).",
+    B: "Ninguna de las anteriores.",
+    C: "Lleva a cabo el envenenamiento de la caché del DNS para capturar las credenciales de usuario a través de una página de inicio de sesión falsa.",
+    D: "Inundar sistemas, servidores y/o redes con tráfico para sobrecargar recursos y ancho de banda."
+  }}
+  correctAnswer="D"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="En las pruebas de caja negra"
+  options={{
+    A: "El atacante no tiene ninguna información sobre la empresa",
+    B: "Ninguna de las anteriores",
+    C: "El atacante tiene información de la empresa pero es poca",
+    D: "El atacante conoce toda la información de la empresa como mapa de red, medidas de seguridad, etc."
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="En la etapa de distribución de la Cyber Kill Chain"
+  options={{
+    A: "Se produce la transmisión del ataque",
+    B: "Ninguna de las anteriores, el envío del malware o exploit",
+    C: "Se utiliza el análisis para vulnerar un sistema",
+    D: "Se genera una puerta trasera para acceder posteriormente"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Las pruebas de seguridad pueden ser"
+  options={{
+    A: "De caja blanca y caja negra",
+    B: "De caja blanca y de vulnerabilidad",
+    C: "Ninguna de las anteriores",
+    D: "De caja blanca, caja negra o caja gris"
+  }}
+  correctAnswer="D"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="El equipo Red Team es el equipo"
+  options={{
+    A: "De seguridad ofensiva",
+    B: "A y B con correctas",
+    C: "Ninguna de las anteriores",
+    D: "De seguridad defensiva"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Uno de los elementos esenciales de seguridad de la información es"
+  options={{
+    A: "Las copias de seguridad",
+    B: "El rendimiento",
+    C: "Ninguna de las anteriores",
+    D: "La confidencialidad"
+  }}
+  correctAnswer="D"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Un ataque informático es"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Un tipo de ataque militar, centrado en los servidores informáticos",
+    C: "Un invento de la sociedad",
+    D: "Cualquier maniobra ofensiva de explotación deliberada que tiene como objetivo de tomar el control, desestabilizar o dañar un sistema informático"
+  }}
+  correctAnswer="D"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Un Pentest es"
+  options={{
+    A: "Una prueba de intrusión",
+    B: "Un escáner de vulnerabilidades",
+    C: "Un framework de análisis de seguridad",
+    D: "Un tipo de virus"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Una de las funciones del Purple Team es"
+  options={{
+    A: "Gestionar la seguridad de todos los activos de una organización",
+    B: "Realizar pruebas de seguridad para comprobar la eficacia de los procedimientos",
+    C: "Todas son correctas",
+    D: "Definir controles de seguridad"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Dentro de las fases del Hacking Ético la primera es"
+  options={{
+    A: "La recopilación de información",
+    B: "El acuerdo o contrato de auditoría",
+    C: "La explotación de vulnerabilidades",
+    D: "El análisis de vulnerabilidades"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="En las pruebas de caja blanca"
+  options={{
+    A: "El atacante no tiene ninguna información sobre la empresa",
+    B: "El atacante conoce toda la información de la empresa como mapa de red, medidas de seguridad, etc.",
+    C: "Ninguna de las anteriores",
+    D: "El atacante tiene información de la empresa pero es poca"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Command and Control es una etapa del"
+  options={{
+    A: "Proceso de BlueTeam",
+    B: "Cyber Kill Chain",
+    C: "Proceso de RedTeam",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Un Rootkit es"
+  options={{
+    A: "Inundar sistemas, servidores y/o redes con tráfico para sobrecargar recursos y ancho de banda.",
+    B: "Ninguna de las anteriores.",
+    C: "Un paquete de software diseñado para permanecer oculto en su equipo mientras proporciona acceso y control remotos.",
+    D: "Inserta código malicioso en un servidor utilizando el lenguaje de consulta del servidor (SQL)."
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Una de las funciones del Blue Team es"
+  options={{
+    A: "La vigilancia constante de la seguridad informática",
+    B: "El hacking ético",
+    C: "La compra y pruebas de software de seguridad",
+    D: "La preparación de ataques simulados"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Los equipos de seguridad informática los podemos clasificar en"
+  options={{
+    A: "Red Team, Blue Team y Gray Team",
+    B: "Ninguna de las anteriores",
+    C: "Red Team y Pentesting",
+    D: "Red Team, Blue Team y Purple Team"
+  }}
+  correctAnswer="D"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Un ejemplo de ataque de suplantación de identidad o phishing es"
+  options={{
+    A: "El email phishing",
+    B: "El 0-day phising",
+    C: "Ninguna de las anteriores",
+    D: "El malware phishing"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="La seguridad por oscuridad nunca es una buena práctica. Es mucho más seguro que todos los documentos sean públicos, incluidos código fuente, esquemas de red, estructura interna de una organización, etc."
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="El pentesting tiene como beneficio"
+  options={{
+    A: "Se practica con Kali Linux",
+    B: "Se conoce la infraestructura de red de la empresa",
+    C: "Se descubren fragilidades en el sistema de seguridad informática, antes de que lo haga un ciberdelincuente",
+    D: "Se aprende a vulnerar sistemas"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Algunas de las 7 fases de la Cyber Kill Chain son"
+  options={{
+    A: "Reconocimiento, preparación y explotación",
+    B: "Footprinting, fingerprinting y explotación",
+    C: "Reconocimiento, explotación y supervisión",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Una vulnerabilidad en ciberseguridad es"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Lo que está en juego para su organización en términos de activos económicos",
+    C: "Es la posibilidad de que un agente, interno o externo, explote accidentalmente o a propósito una vulnerabilidad",
+    D: "Un error o fallo en un sistema que puede ser explotado para comprometer la seguridad del mismo."
+  }}
+  correctAnswer="D"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="¿Qué es un JWT?"
+  options={{
+    A: "Es un token que se utiliza para autenticarse en las aplicaciones web. Autenticación autocontenida",
+    B: "Suele estar codificado en Base52",
+    C: "Es imposible de crackear o de conseguir la clave de cifrado de forma offline",
+    D: "Es un token que se utiliza para autenticarse en las aplicaciones web. Se conoce también como cookie de sesión"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="NMAP permite realizar escaneos de puertos y saber si el puerto concreto se encuentra en estado ABIERTO, CERRADO o FILTRADO. Si NMAP hace un escaneo UDP y el servidor al que estamos atacando NO responde, entonces..."
+  options={{
+    A: "No podemos saber si el puerto esta filtrado o cerrado",
+    B: "No podemos saber si el puerto esta abierto o filtrado",
+    C: "El puerto esta cerrado",
+    D: "El puerto se encuentra abierto"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="XSS o Cross Site Scripting permite tener un control total del navegador de la víctima en el contexto de la web vulnerable"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="El footprinting es"
+  options={{
+    A: "La explotación de vulnerabilidades desde fuera del sistema",
+    B: "La explotación de vulnerabilidades desde dentro del sistema",
+    C: "El reconocimiento pasivo de la información del sistema",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="En footprinting intentamos obtener información tal como"
+  options={{
+    A: "Información en repositorios de código como GitHub",
+    B: "Todas son correctas",
+    C: "Información sobre puertos abiertos descubiertos por otras herramientas como shodan o censys",
+    D: "Información sobre dominios y subdominios"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="HTTP es..."
+  options={{
+    A: "Un protocolo basado en cliente servidor para transmitir datos en la web",
+    B: "Un protocolo que permite la comunicación entre dos sistemas, puede ser TCP o UDP",
+    C: "Un tipo de fichero de texto que se recibe al acceder a una página web",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Aplicando Google hacking podemos obtener"
+  options={{
+    A: "Ficheros con contraseñas de acceso a una base de datos interna",
+    B: "Ficheros de backup expuestos a internet",
+    C: "Todas son correctas",
+    D: "Ficheros de configuración de VPNs con credenciales incluidas"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Una amenaza en ciberseguridad es"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Lo que deja a la estructura de la empresa desprotegida",
+    C: "Es la posibilidad de que un agente, interno o externo, explote accidentalmente o a propósito una vulnerabilidad",
+    D: "Lo que está en juego para su organización en términos de activos económicos"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="El OS fingerprinting puede ser"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Activo o Pasivo",
+    C: "Pasivo siempre",
+    D: "Activo siempre"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Maltego es"
+  options={{
+    A: "Una aplicación open de google dork",
+    B: "Ninguna de las anteriores",
+    C: "Una aplicación open para hacer OSINT",
+    D: "Una aplicación de pago para hacer explotación de vulnerabilidades"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="XSS o Cross Site Scripting permite acceder a información almacenada en el navegador de la víctima"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="A"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="Google hacking es"
+  options={{
+    A: "Un error CVE de Google",
+    B: "Una técnica de reconocimiento pasivo",
+    C: "Una técnica de reconocimiento activo",
+    D: "Un tipo de ataque"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="HTTP es un protocolo binario, es decir, las comunicaciones se realizan en un formato propietario que no puede leerse de forma sencilla por un humano."
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="¿Qué fase de despliegue de un C&C implica la instalación de un agente en el sistema infectado mediante phishing, una vulnerabilidad o credenciales robadas?"
+  options={{
+    A: "Enfriamiento",
+    B: "Infiltración",
+    C: "Persistencia",
+    D: "Comunicaciones"
+  }}
+  correctAnswer="B"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="¿Qué tipo de comunicación de C&C es el más común y sencillo de desplegar, donde un solo servidor controla todos los agentes y los operadores se conectan al mismo servidor?"
+  options={{
+    A: "P2P",
+    B: "Cloaked",
+    C: "Centralizado",
+    D: "Híbrido"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="En Metasploit, ¿qué tipo de módulo se utiliza para explotar vulnerabilidades y manejar sesiones como rev_shell y meterpreter?"
+  options={{
+    A: "Auxiliary",
+    B: "Post",
+    C: "Exploit",
+    D: "Payload"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="¿Qué tipo de ataque DoS implica que el ataque se realiza desde muchos equipos atacantes, como en el caso de las BotNets?"
+  options={{
+    A: "Reflejado",
+    B: "Asimétricos",
+    C: "Distribuidos",
+    D: "Directo"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="¿Qué tipo de auditoría de seguridad se utiliza para simular las técnicas y metodologías de un atacante real, donde solo un pequeño grupo de personas dentro de la empresa está al tanto?"
+  options={{
+    A: "Pentest",
+    B: "Análisis de vulnerabilidades",
+    C: "Ejercicio Red Team",
+    D: "Auditoría de caja blanca"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="¿Cuál de las siguientes vulnerabilidades es considerada principalmente de tipo 'Cliente'?"
+  options={{
+    A: "Inyección SQL",
+    B: "Fuerza bruta",
+    C: "CSRF",
+    D: "Inyección LDAP"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>
+<InteractiveQuiz
+  question="¿Cuál es el uso más común del concepto criptográfico 'HASH'?"
+  options={{
+    A: "Proteger información",
+    B: "Transmitir información",
+    C: "Almacenar contraseñas",
+    D: "Generar claves de cifrado"
+  }}
+  correctAnswer="C"
+  correctExplanation=""
+  incorrectExplanation=""
+/>

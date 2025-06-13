@@ -1,0 +1,848 @@
+---
+sidebar_position: 0
+title: Preguntas de Hacking Ético
+---
+import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
+
+<InteractiveQuiz
+  question="La ingeniería inversa es"
+  options={{
+    A: "Una técnica para averiguar cómo funciona por dentro una aplicación o dispositivo",
+    B: "Una forma de desarrollar un código malicioso",
+    C: "La técnica de programación de un malware",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="A"
+  correctExplanation="La ingeniería inversa es precisamente el proceso de analizar un producto, dispositivo o sistema para entender su diseño, componentes y funcionamiento interno, a menudo con el fin de replicarlo, mejorarlo o encontrar vulnerabilidades."
+  incorrectExplanation="Aunque puede ser utilizada por atacantes para encontrar fallos, su propósito no es inherentemente desarrollar código malicioso. Tampoco es la técnica para programar malware, sino más bien una técnica para analizarlo una vez que ya existe."
+/>
+<InteractiveQuiz
+  question="Dentro de la ingeniería social basada en personas encontramos"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Llamadas suplantando la identidad",
+    C: "El Dumpster surfing",
+    D: "El Shoulder diving"
+  }}
+  correctAnswer="B"
+  correctExplanation="Las llamadas suplantando la identidad (vishing) son un claro ejemplo de ingeniería social basada en la interacción directa con personas, donde se utiliza la manipulación psicológica a través de la voz para engañar a la víctima."
+  incorrectExplanation="El 'Dumpster surfing' (rebuscar en la basura) y el 'Shoulder diving' (mirar por encima del hombro) son técnicas de obtención de información más físicas y de observación, no se basan principalmente en la interacción y manipulación directa de una persona a través de una conversación."
+/>
+<InteractiveQuiz
+  question="Si consigo un usuario administrador en windows, siempre voy a poder ejecutar comandos con privilegios, incluso desde una linea de comandos básica. No hay mas mecanismos de protección"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation="Es falso. Windows implementa el Control de Cuentas de Usuario (UAC), que actúa como una capa de seguridad adicional. Incluso si un usuario es administrador, el UAC solicitará una confirmación explícita antes de permitir la ejecución de tareas con privilegios elevados, evitando así ejecuciones no deseadas."
+  incorrectExplanation="La afirmación es incorrecta porque ignora mecanismos de protección como el UAC. Ser administrador no concede la capacidad de ejecutar cualquier comando con privilegios de forma automática y silenciosa; se requiere una autorización adicional para proteger el sistema."
+/>
+<InteractiveQuiz
+  question="Que un ataque de 'password spray'"
+  options={{
+    A: "Es un ataque de suplantación en el que buscamos contraseñas almacenadas en medio no informáticos, como papeles o tarjetas",
+    B: "Un ataque de fuerza bruta en el que probamos miles de contraseñas contra un mismo usuario",
+    C: "Ninguna de las anteriores",
+    D: "Es un ataque que permite utilizar un HASH en vez de una contraseña para autenticarnos"
+  }}
+  correctAnswer="B"
+  correctExplanation="Un ataque de 'password spraying' es una variante de los ataques de fuerza bruta. A diferencia del método clásico (muchas contraseñas para un usuario), el 'password spraying' utiliza una o pocas contraseñas comunes contra una lista de múltiples usuarios. Se enmarca dentro de la categoría general de ataques de fuerza bruta, aunque la opción B describe el método clásico."
+  incorrectExplanation="La opción A describe una búsqueda física de información, no un ataque en línea. La opción D se refiere a un ataque 'Pass-the-Hash', que es una técnica diferente. La opción 'Ninguna de las anteriores' sería técnicamente más precisa, ya que la descripción de B corresponde al ataque de fuerza bruta tradicional y no al 'password spraying' específicamente."
+/>
+<InteractiveQuiz
+  question="Puedo utilizar el hash Net NTLM en ataques de PTH (Pass the Hash)"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation="Es falso. El ataque Pass the Hash (PTH) requiere específicamente el hash NTLM de la contraseña del usuario. El hash Net-NTLM es un hash de desafío-respuesta que se genera durante la autenticación en red y no puede ser 'pasado' directamente para autenticarse en otros servicios."
+  incorrectExplanation="La afirmación es incorrecta porque confunde dos tipos de hashes. Aunque ambos se usan en la autenticación de Windows, son criptográficamente distintos. El hash Net-NTLM se puede capturar para intentar crackearlo offline, pero no sirve para un ataque PTH directo."
+/>
+<InteractiveQuiz
+  question="Dentro de los ataques no web hablados en la unidad 3 encontramos:"
+  options={{
+    A: "El spoofing",
+    B: "La denegación de servicios",
+    C: "Todos son correctos",
+    D: "El buffer overflow"
+  }}
+  correctAnswer="C"
+  correctExplanation="Todos los ataques mencionados (spoofing, denegación de servicios y buffer overflow) son técnicas de ataque fundamentales que pueden ocurrir en diversos entornos, no exclusivamente en aplicaciones web. Afectan a redes, sistemas operativos y software en general."
+  incorrectExplanation="Las otras opciones son incorrectas porque solo nombran uno de los posibles ataques, mientras que 'Todos son correctos' engloba adecuadamente todas las opciones presentadas como ataques no web válidos."
+/>
+<InteractiveQuiz
+  question="El Reversing de Malware"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Es el estudio del código malicioso para ver sus vectores de ataque",
+    C: "Permite lanzar ese malware dentro de una organización",
+    D: "Permite lanzar el malware contra su creador"
+  }}
+  correctAnswer="B"
+  correctExplanation="El reversing o ingeniería inversa de malware es el proceso de analizar una muestra de malware para comprender su comportamiento, capacidades, indicadores de compromiso y vectores de ataque. Este análisis es clave para crear defensas y vacunas."
+  incorrectExplanation="El objetivo del reversing no es lanzar el malware, ni dentro de una organización ni contra su creador, lo cual sería ilegal y peligroso. El propósito es puramente analítico y defensivo."
+/>
+<InteractiveQuiz
+  question="Es posible copiar el registro SAM de un sistema windows sin problema, con la maquina arrancada"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation="Es falso. El fichero SAM (Security Account Manager) está bloqueado por el sistema operativo mientras Windows está en ejecución, impidiendo su copia directa. Para acceder a él, se requieren técnicas especiales como el uso de Volume Shadow Copies o la extracción de hashes directamente desde la memoria (proceso LSASS)."
+  incorrectExplanation="La afirmación es incorrecta porque el sistema operativo protege activamente sus archivos críticos. No se puede simplemente copiar y pegar el fichero SAM como si fuera un documento cualquiera."
+/>
+<InteractiveQuiz
+  question="Para usar Bloodhound (el ingestor) no es necesario tener credenciales válidas"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation="Es falso. BloodHound necesita realizar consultas al Directorio Activo para recopilar la información sobre usuarios, grupos, equipos y relaciones. Para ello, el ingestor (como SharpHound) debe ejecutarse con las credenciales de un usuario de dominio, aunque este no necesite tener privilegios elevados."
+  incorrectExplanation="La afirmación es incorrecta. Sin credenciales válidas, el ingestor no puede autenticarse en el dominio y, por lo tanto, no puede realizar las consultas LDAP necesarias para recopilar los datos que BloodHound necesita para visualizar las rutas de ataque."
+/>
+<InteractiveQuiz
+  question="Un aspecto importante para la ingeniería inversa es"
+  options={{
+    A: "Conocer técnicas de desarrollo incremental de software",
+    B: "Ser capaz de desmontar un servidor y volver a conectarlo",
+    C: "Conocer cómo funciona un dispositivo Arduino por dentro",
+    D: "Conocer múltiples lenguajes de programación"
+  }}
+  correctAnswer="D"
+  correctExplanation="Conocer múltiples lenguajes de programación, especialmente lenguajes de bajo nivel como Ensamblador y C, es fundamental para la ingeniería inversa de software, ya que permite comprender el código desensamblado o decompilado."
+  incorrectExplanation="Aunque el conocimiento de hardware (servidores, Arduino) o de metodologías de desarrollo puede ser útil en contextos específicos, el conocimiento profundo de lenguajes de programación es el pilar fundamental para analizar y entender el funcionamiento interno del software."
+/>
+<InteractiveQuiz
+  question="Los ataques de escalada de privilegios pueden ser"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Ejecutados en sistemas windows",
+    C: "Ejecutados en cualquier sistema",
+    D: "Ejecutados en sistemas linux"
+  }}
+  correctAnswer="C"
+  correctExplanation="La escalada de privilegios es un concepto universal en seguridad informática. Cualquier sistema operativo o aplicación que tenga un modelo de permisos (usuarios, administradores, etc.) es susceptible de sufrir un ataque de este tipo, ya sea Windows, Linux, macOS, Android, etc."
+  incorrectExplanation="Limitar la escalada de privilegios solo a Windows o solo a Linux es incorrecto, ya que es una amenaza presente en prácticamente todos los sistemas informáticos que gestionan diferentes niveles de acceso."
+/>
+<InteractiveQuiz
+  question="Puedo utilizar el hash LM en ataques de PTH (Pass the Hash)"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation="Es falso. El ataque Pass the Hash (PTH) moderno se basa en el uso del hash NTLM. El hash LM (LAN Manager) es un formato de hash antiguo y muy inseguro que ya no se utiliza en los sistemas Windows modernos y no es el que se emplea en las técnicas de PTH."
+  incorrectExplanation="La afirmación es incorrecta. Aunque el hash LM es una credencial histórica de Windows, las herramientas y técnicas de PTH están diseñadas para utilizar el hash NTLM, que es el que el sistema operativo usa para la autenticación local."
+/>
+<InteractiveQuiz
+  question="Como ejemplo de ataques en autenticación en windows podemos encontrar"
+  options={{
+    A: "Todas son correctas",
+    B: "PTH",
+    C: "Rainbow Tables",
+    D: "NTLM Relay"
+  }}
+  correctAnswer="A"
+  correctExplanation="Todas las opciones mencionadas son ataques válidos relacionados con la autenticación en Windows. PTH (Pass-the-Hash) y NTLM Relay son ataques activos, mientras que el uso de Rainbow Tables es una técnica para crackear offline los hashes de contraseñas previamente robados."
+  incorrectExplanation="Las otras opciones son incorrectas porque solo presentan una parte de la respuesta. PTH, Rainbow Tables y NTLM Relay son ejemplos correctos, por lo que la opción que los engloba a todos es la más completa."
+/>
+<InteractiveQuiz
+  question="Los mecanismos de explotación pueden ser"
+  options={{
+    A: "Sólo automáticos",
+    B: "Manuales o automáticos",
+    C: "Sólo manuales",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="B"
+  correctExplanation="La explotación de una vulnerabilidad puede realizarse de forma manual, donde un atacante introduce comandos y adapta su técnica en tiempo real, o de forma automática, utilizando herramientas como Metasploit que ejecutan un exploit preprogramado."
+  incorrectExplanation="Limitar los mecanismos de explotación a solo manuales o solo automáticos es incorrecto. La elección entre uno u otro depende del escenario, la habilidad del atacante y las herramientas disponibles."
+/>
+<InteractiveQuiz
+  question="Puedo utilizar el hash NT en ataques de PTH (Pass the Hash)"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="A"
+  correctExplanation="Es verdadero. El hash NT (o NTLM, son sinónimos en este contexto) es precisamente el hash que se utiliza en un ataque Pass-the-Hash (PTH). Un atacante que obtiene este hash puede utilizarlo para autenticarse en otros sistemas de la red sin necesidad de conocer la contraseña en texto plano."
+  incorrectExplanation="La afirmación contraria es falsa. El fundamento del ataque PTH es el uso del hash NT para la suplantación de identidad en el proceso de autenticación de Windows."
+/>
+<InteractiveQuiz
+  question="Los movimientos laterales consisten en"
+  options={{
+    A: "Realizar ataques de barridos de IPs",
+    B: "Realizar técnicas de ataques para poder propagarse a otros sistemas de la red",
+    C: "Simular ataques de malware para atacar por otra zona",
+    D: "Todas son correctas"
+  }}
+  correctAnswer="B"
+  correctExplanation="El movimiento lateral es la técnica que utilizan los atacantes, una vez que han comprometido un sistema en la red, para pivotar y propagarse a otros equipos dentro del mismo perímetro de red, buscando activos de mayor valor."
+  incorrectExplanation="El barrido de IPs es una técnica de reconocimiento para descubrir hosts activos, pero no es el movimiento lateral en sí. Simular ataques tampoco define el concepto. El movimiento lateral es específicamente la propagación interna post-explotación."
+/>
+<InteractiveQuiz
+  question="Uno de los aspectos clave para evitar la escalada de privilegios es"
+  options={{
+    A: "Instalar un SIEM",
+    B: "Tener y cumplir políticas de contraseñas sólidas, evitar la reutilización",
+    C: "Ninguna de las anteriores",
+    D: "Renovar el antivirus cada 14 días"
+  }}
+  correctAnswer="B"
+  correctExplanation="Unas contraseñas robustas y, sobre todo, no reutilizadas, son una defensa fundamental. Si un atacante compromete una cuenta de bajo privilegio, una buena política de contraseñas dificulta que pueda adivinar o usar la misma contraseña para acceder a cuentas de mayor privilegio."
+  incorrectExplanation="Un SIEM ayuda a detectar la escalada, pero no la evita directamente. Renovar un antivirus es una buena práctica, pero no previene específicamente este tipo de ataques, que a menudo explotan configuraciones débiles o vulnerabilidades, no malware."
+/>
+<InteractiveQuiz
+  question="Que proceso de windows se encarga de la autenticación de los usuarios, tanto locales como en red"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "El proceso LSASS.exe",
+    C: "Se encarga un fichero directamente",
+    D: "El proceso NT.exe"
+  }}
+  correctAnswer="B"
+  correctExplanation="El proceso LSASS.exe (Local Security Authority Subsystem Service) es el corazón de la seguridad en Windows. Se encarga de gestionar las políticas de seguridad, la autenticación de usuarios, la creación de tokens de acceso y el almacenamiento de credenciales en memoria."
+  incorrectExplanation="Ningún fichero se encarga directamente de un proceso tan dinámico como la autenticación. El proceso NT.exe no existe; el núcleo de Windows se llama ntoskrnl.exe."
+/>
+<InteractiveQuiz
+  question="En la autenticación Net-NTLM un usuario en el equipo A puede intentar acceder al equipo B, es decir, la autenticación o parte de ella viaja por la red. Y en el caso concreto de este tipo de autenticación:"
+  options={{
+    A: "El resultado de la autenticación se puede utilizar para técnicas de PTH",
+    B: "TODOS los mensajes van cifrados, por lo que no se puede obtener información con un sniffer",
+    C: "El resultado de la autenticación es un ticket firmado con la clave privada del KDC",
+    D: "Todas son incorrectas"
+  }}
+  correctAnswer="A"
+  correctExplanation="El hash Net-NTLM que se captura en la red no se puede usar directamente en un ataque PTH. Sin embargo, este hash puede ser crackeado offline para obtener el hash NTLM original. Una vez obtenido ese hash NTLM, sí se puede utilizar para un ataque PTH. Por lo tanto, la captura del hash Net-NTLM es un paso que puede conducir a técnicas de PTH."
+  incorrectExplanation="La opción B es falsa, ya que los intercambios se pueden capturar con un sniffer. La opción C describe la autenticación Kerberos (tickets y KDC), no Net-NTLM. Dado que la opción A describe una posible cadena de ataque derivada, es la respuesta más plausible entre las opciones."
+/>
+<InteractiveQuiz
+  question="Un payload es"
+  options={{
+    A: "Un tipo de troyano",
+    B: "Una parte del código de un exploit que ejecuta una acción maliciosa",
+    C: "Un ataque basado en pings",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="B"
+  correctExplanation="En el contexto de la ciberseguridad, el payload es la carga útil, es decir, el código que se ejecuta después de que una vulnerabilidad ha sido explotada con éxito. Su acción puede ser abrir una shell, descargar más malware, robar datos, etc."
+  incorrectExplanation="No es un tipo de troyano, sino una parte que un troyano (o cualquier otro malware) puede llevar. Tampoco es un ataque basado en pings. Es el componente que realiza la acción final deseada por el atacante."
+/>
+<InteractiveQuiz
+  question="Los hashes en windows se almacenan en"
+  options={{
+    A: "El fichero SAM, protegido por una clave en el fichero SYSTEM",
+    B: "Ninguna de las anteriores",
+    C: "En el proceso lsass.bin",
+    D: "El fichero /etc/shadow, protegido por la contraseña de /etc/passwd"
+  }}
+  correctAnswer="A"
+  correctExplanation="En los sistemas Windows que no son controladores de dominio, los hashes de las contraseñas de los usuarios locales se almacenan en el fichero SAM (Security Account Manager). Este fichero está cifrado y la clave para descifrarlo se encuentra en el fichero SYSTEM."
+  incorrectExplanation="El proceso es lsass.exe, no .bin. El fichero /etc/shadow es donde se guardan los hashes en sistemas Linux, no en Windows."
+/>
+<InteractiveQuiz
+  question="Un tipo de ataque a contraseñas es el"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Ataque basado en Google",
+    C: "Ataque por fuerza bruta",
+    D: "Ataque basado en ontologías"
+  }}
+  correctAnswer="C"
+  correctExplanation="El ataque por fuerza bruta es una de las técnicas más conocidas para atacar contraseñas. Consiste en probar sistemáticamente todas las combinaciones posibles de caracteres hasta encontrar la correcta."
+  incorrectExplanation="Los ataques basados en Google (Google Hacking) buscan información sensible indexada, no atacan contraseñas directamente. Los ataques basados en ontologías no son una categoría estándar de ataque a contraseñas."
+/>
+<InteractiveQuiz
+  question="¿Qué es el UAC?"
+  options={{
+    A: "Es una técnica utilizada para autenticarse en windows usando el hash en vez de la contraseña",
+    B: "Es un dispositivo no tripulado para ataques aéreos",
+    C: "Es un mecanismo de seguridad de windows que evita ejecutar tareas como administrador en casos concretos",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="C"
+  correctExplanation="UAC son las siglas de User Account Control (Control de Cuentas de Usuario). Es una característica de seguridad de Windows que ayuda a prevenir cambios no autorizados en el sistema solicitando permiso o una contraseña de administrador antes de ejecutar tareas que podrían afectar al sistema."
+  incorrectExplanation="La opción A describe Pass-the-Hash, no UAC. La opción B confunde las siglas con UAV (Unmanned Aerial Vehicle). Por tanto, la definición correcta es la que lo describe como un mecanismo de seguridad de Windows."
+/>
+<InteractiveQuiz
+  question="La escalada de privilegios intenta"
+  options={{
+    A: "A y B son correctas",
+    B: "Acceder al sistema de gestión de datos directamente",
+    C: "Ninguna de las anteriores",
+    D: "Conseguir privilegios superiores a los actuales"
+  }}
+  correctAnswer="D"
+  correctExplanation="El objetivo fundamental de un ataque de escalada de privilegios es obtener un nivel de acceso o permisos más elevado que el que se tiene actualmente. Por ejemplo, pasar de ser un usuario estándar a ser administrador (escalada vertical) o acceder a los recursos de otro usuario con los mismos permisos (escalada horizontal)."
+  incorrectExplanation="Acceder a una base de datos puede ser un objetivo final, pero no es la definición de la técnica en sí. La técnica es el acto de 'conseguir privilegios superiores'."
+/>
+<InteractiveQuiz
+  question="En el Domain Controller, el fichero que almacena los hashes de todos los usuarios y equipos del dominio se llama:"
+  options={{
+    A: "SYSTEM.dit",
+    B: "SAM.dit",
+    C: "NTDS.dit",
+    D: "LSSAS.dit"
+  }}
+  correctAnswer="C"
+  correctExplanation="El fichero NTDS.dit es la base de datos de Active Directory. En un Domain Controller, este fichero contiene toda la información del directorio, incluyendo los hashes de las contraseñas de todos los usuarios, equipos y servicios del dominio."
+  incorrectExplanation="El fichero SAM contiene los usuarios locales, pero en un DC, la base de datos centralizada es NTDS.dit. SYSTEM es un fichero del registro y LSSAS.dit no existe, el proceso se llama LSASS.exe."
+/>
+<InteractiveQuiz
+  question="Un hash LM que termina en aad3b435b51404ee tiene muchas posibilidades de"
+  options={{
+    A: "Ser un hash correspondiente a la contraseña 'vacia'",
+    B: "Ser un hash correspondiente a la contraseña por defecto de windows",
+    C: "Ninguna de las anteriores",
+    D: "Ser un hash válido"
+  }}
+  correctAnswer="A"
+  correctExplanation="El valor AAD3B435B51404EE es la representación constante del hash LM para una cadena de contraseña vacía. Si un atacante encuentra este valor, sabe inmediatamente que la cuenta correspondiente no tiene contraseña."
+  incorrectExplanation="No corresponde a una contraseña por defecto de Windows, sino específicamente a una contraseña en blanco. Aunque técnicamente es un hash 'válido' en el sentido de que está bien formado, su significado específico es que la contraseña está vacía."
+/>
+<InteractiveQuiz
+  question="La ingeniería social es"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Un método no técnico de uso de confianza para irrumpir en un sistema o red",
+    C: "Un método técnico de uso de confianza para irrumpir en un sistema o red",
+    D: "A y B son correctas"
+  }}
+  correctAnswer="B"
+  correctExplanation="La ingeniería social se basa en la psicología y la manipulación para engañar a las personas y hacer que revelen información confidencial o realicen acciones que comprometan la seguridad. Por su naturaleza, es un método no técnico."
+  incorrectExplanation="Calificarla como un método 'técnico' es incorrecto, ya que su fundamento no es la explotación de fallos de software o hardware, sino la explotación de la confianza y los sesgos cognitivos humanos."
+/>
+<InteractiveQuiz
+  question="La autenticación Net-NTLM en windows..."
+  options={{
+    A: "Genera un hash al que se le pueden aplicar técnicas de cracking offline",
+    B: "Todas son correctas",
+    C: "Es uno de los sistemas de autenticación válidos actualmente",
+    D: "Es una autenticación basada en challenges y responses"
+  }}
+  correctAnswer="B"
+  correctExplanation="Todas las afirmaciones son correctas. Net-NTLM es un protocolo de autenticación de desafío-respuesta (challenge-response) que todavía es válido en sistemas Windows (aunque Kerberos es preferible). El hash generado en la respuesta puede ser capturado y sometido a ataques de cracking offline para intentar averiguar la contraseña original."
+  incorrectExplanation="Las otras opciones son incorrectas porque solo describen una de las características del protocolo Net-NTLM. La opción 'Todas son correctas' es la única que abarca todas las verdades presentadas."
+/>
+<InteractiveQuiz
+  question="La diferencia fundamental entre el hash LM y el NT es"
+  options={{
+    A: "El hash NT esta vacío en sistemas modernos",
+    B: "El hash NT no tiene SALT",
+    C: "El hash LM esta vacío en sistemas modernos",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="C"
+  correctExplanation="Por razones de seguridad, a partir de Windows Vista, el sistema operativo ya no genera ni almacena el hash LM (LAN Manager) por defecto. Por lo tanto, en los sistemas modernos, este campo suele estar vacío, dejando solo el hash NT, que es mucho más robusto."
+  incorrectExplanation="El hash NT no está vacío, es el que se usa actualmente. Ni el hash LM ni el NT usan SALT, lo que es una de sus debilidades, pero la diferencia fundamental citada es la obsolescencia del LM."
+/>
+<InteractiveQuiz
+  question="¿Qué herramienta podemos utilizar para analizar la memoria de windows y buscar hashes y credenciales?"
+  options={{
+    A: "pypykatz",
+    B: "hashcat",
+    C: "responder.py",
+    D: "Todas son validas"
+  }}
+  correctAnswer="A"
+  correctExplanation="pypykatz, al igual que su inspiración Mimikatz, es una herramienta diseñada específicamente para interactuar con el proceso LSASS en la memoria de Windows y extraer credenciales en texto plano, hashes NTLM y tickets de Kerberos."
+  incorrectExplanation="Hashcat es una herramienta para crackear hashes, no para extraerlos de la memoria. Responder.py es una herramienta para realizar ataques de envenenamiento LLMNR/NBT-NS y capturar hashes en la red. Por lo tanto, solo pypykatz sirve para el propósito descrito."
+/>
+<InteractiveQuiz
+  question="Es posible copiar el fichero SAM y SYSTEM en windows, simplemente haciendo click derecho en el fichero de un sistema corriendo actualmente"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation="Es falso. El sistema operativo Windows bloquea el acceso directo a estos ficheros críticos mientras está en ejecución para protegerlos. Intentar copiarlos de esta manera resultará en un error de 'acceso denegado' o 'fichero en uso'."
+  incorrectExplanation="Esta afirmación es incorrecta y describe una acción que es imposible de realizar debido a los mecanismos de protección del propio sistema operativo. Se requieren técnicas avanzadas para poder acceder a estos ficheros."
+/>
+<InteractiveQuiz
+  question="El framework MITRE ATT&CK es"
+  options={{
+    A: "La última fase del Cyber Kill Chain",
+    B: "Una plataforma que organiza y categoriza los distintos tipos de ataques, amenazas y procedimientos realizados por los distintos atacantes.",
+    C: "Un plan de gestión de incidentes",
+    D: "Una aplicación de Kali para hacer pentesting"
+  }}
+  correctAnswer="B"
+  correctExplanation="MITRE ATT&CK es una base de conocimiento de acceso público que representa tácticas y técnicas de adversarios basadas en observaciones del mundo real. Se utiliza para describir y clasificar comportamientos de atacantes y mejorar las defensas."
+  incorrectExplanation="No es una fase del Cyber Kill Chain, ni un plan de gestión, ni una aplicación. Es un modelo o marco de referencia para entender las acciones de los adversarios."
+/>
+<InteractiveQuiz
+  question="Un Ataque de Denegación de Servicio (DOS) consiste en"
+  options={{
+    A: "Inserta código malicioso en un servidor utilizando el lenguaje de consulta del servidor (SQL).",
+    B: "Ninguna de las anteriores.",
+    C: "Lleva a cabo el envenenamiento de la caché del DNS para capturar las credenciales de usuario a través de una página de inicio de sesión falsa.",
+    D: "Inundar sistemas, servidores y/o redes con tráfico para sobrecargar recursos y ancho de banda."
+  }}
+  correctAnswer="D"
+  correctExplanation="La definición de un ataque DoS (Denial of Service) es precisamente hacer que un servicio o recurso sea inaccesible para sus usuarios legítimos, generalmente inundando el objetivo con una cantidad masiva de tráfico o peticiones para agotar sus recursos."
+  incorrectExplanation="La opción A describe una inyección SQL. La opción C describe un ataque de envenenamiento de caché DNS o 'pharming'. Ambas son técnicas de ataque diferentes con objetivos distintos."
+/>
+<InteractiveQuiz
+  question="En las pruebas de caja negra"
+  options={{
+    A: "El atacante no tiene ninguna información sobre la empresa",
+    B: "Ninguna de las anteriores",
+    C: "El atacante tiene información de la empresa pero es poca",
+    D: "El atacante conoce toda la información de la empresa como mapa de red, medidas de seguridad, etc."
+  }}
+  correctAnswer="A"
+  correctExplanation="En un pentest de caja negra (black box), el auditor no recibe ninguna información previa sobre el sistema o la red objetivo. El objetivo es simular un ataque desde la perspectiva de un atacante externo que no tiene conocimientos internos."
+  incorrectExplanation="La opción D describe una prueba de caja blanca (white box). La opción C describe una prueba de caja gris (grey box). Por lo tanto, la falta total de información es la característica que define a la caja negra."
+/>
+<InteractiveQuiz
+  question="En la etapa de distribución de la Cyber Kill Chain"
+  options={{
+    A: "Se produce la transmisión del ataque",
+    B: "Ninguna de las anteriores, el envío del malware o exploit",
+    C: "Se utiliza el análisis para vulnerar un sistema",
+    D: "Se genera una puerta trasera para acceder posteriormente"
+  }}
+  correctAnswer="B"
+  correctExplanation="La etapa de 'Delivery' (Distribución o Entrega) de la Cyber Kill Chain se refiere al método utilizado para transmitir el arma (payload) al objetivo. Ejemplos comunes incluyen adjuntos de correo maliciosos, enlaces en emails de phishing o unidades USB infectadas."
+  incorrectExplanation="La transmisión del ataque es una descripción muy genérica. El análisis para vulnerar y la creación de puertas traseras corresponden a otras fases (Explotación e Instalación, respectivamente). La opción B, aunque redactada de forma extraña, es la que mejor describe la fase de entrega del exploit."
+/>
+<InteractiveQuiz
+  question="Las pruebas de seguridad pueden ser"
+  options={{
+    A: "De caja blanca y caja negra",
+    B: "De caja blanca y de vulnerabilidad",
+    C: "Ninguna de las anteriores",
+    D: "De caja blanca, caja negra o caja gris"
+  }}
+  correctAnswer="D"
+  correctExplanation="Estos tres son los modelos principales de pruebas de intrusión (pentesting), clasificados según el nivel de conocimiento previo que tiene el auditor sobre el sistema objetivo: caja blanca (conocimiento total), caja negra (ningún conocimiento) y caja gris (conocimiento parcial)."
+  incorrectExplanation="Limitar las opciones a solo caja blanca y negra es incompleto, ya que omite el modelo intermedio de caja gris, que es muy común en la práctica."
+/>
+<InteractiveQuiz
+  question="El equipo Red Team es el equipo"
+  options={{
+    A: "De seguridad ofensiva",
+    B: "A y B con correctas",
+    C: "Ninguna de las anteriores",
+    D: "De seguridad defensiva"
+  }}
+  correctAnswer="A"
+  correctExplanation="El Red Team es el equipo encargado de emular a los atacantes y realizar pruebas de seguridad ofensivas. Su objetivo es desafiar las defensas de la organización para identificar debilidades de forma proactiva."
+  incorrectExplanation="El equipo de seguridad defensiva es el Blue Team. Por lo tanto, la única definición correcta es la de seguridad ofensiva."
+/>
+<InteractiveQuiz
+  question="Uno de los elementos esenciales de seguridad de la información es"
+  options={{
+    A: "Las copias de seguridad",
+    B: "El rendimiento",
+    C: "Ninguna de las anteriores",
+    D: "La confidencialidad"
+  }}
+  correctAnswer="D"
+  correctExplanation="La confidencialidad es uno de los tres pilares de la tríada de la CIA (Confidencialidad, Integridad y Disponibilidad), que son los principios fundamentales de la seguridad de la información. Se refiere a la protección de la información contra la divulgación no autorizada."
+  incorrectExplanation="Las copias de seguridad son un control de seguridad muy importante (relacionado con la disponibilidad), y el rendimiento es un atributo de calidad del sistema, pero la confidencialidad es un pilar conceptual de la seguridad en sí misma."
+/>
+<InteractiveQuiz
+  question="Un ataque informático es"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Un tipo de ataque militar, centrado en los servidores informáticos",
+    C: "Un invento de la sociedad",
+    D: "Cualquier maniobra ofensiva de explotación deliberada que tiene como objetivo de tomar el control, desestabilizar o dañar un sistema informático"
+  }}
+  correctAnswer="D"
+  correctExplanation="Esta es la definición más precisa y completa. Abarca la intencionalidad (maniobra deliberada), la acción (explotación) y los posibles objetivos (control, desestabilización, daño) de un ataque contra un sistema informático."
+  incorrectExplanation="Las otras opciones son incorrectas, demasiado específicas (militar) o directamente falsas. La opción D ofrece una definición técnica y acertada."
+/>
+<InteractiveQuiz
+  question="Un Pentest es"
+  options={{
+    A: "Una prueba de intrusión",
+    B: "Un escáner de vulnerabilidades",
+    C: "Un framework de análisis de seguridad",
+    D: "Un tipo de virus"
+  }}
+  correctAnswer="A"
+  correctExplanation="'Pentest' es la abreviatura de 'Penetration Test', que se traduce como prueba de intrusión. Es un ataque simulado y autorizado a un sistema informático para evaluar su seguridad."
+  incorrectExplanation="Un escáner de vulnerabilidades es una herramienta que busca fallos conocidos, pero no los explota. Un pentest va más allá, intentando explotar activamente las debilidades encontradas. No es un framework ni un virus."
+/>
+<InteractiveQuiz
+  question="Una de las funciones del Purple Team es"
+  options={{
+    A: "Gestionar la seguridad de todos los activos de una organización",
+    B: "Realizar pruebas de seguridad para comprobar la eficacia de los procedimientos",
+    C: "Todas son correctas",
+    D: "Definir controles de seguridad"
+  }}
+  correctAnswer="C"
+  correctExplanation="El Purple Team no es necesariamente un equipo separado, sino una función que busca maximizar la eficacia de los equipos Red y Blue. Fomenta la colaboración, asegurando que las pruebas ofensivas (Red Team) sirvan para mejorar las defensas (Blue Team). Esto implica definir controles, probar su eficacia y gestionar la seguridad de forma integrada."
+  incorrectExplanation="Las otras opciones son correctas pero incompletas. La función del Purple Team es holística e integra todas estas tareas para mejorar el ciclo de defensa y ataque."
+/>
+<InteractiveQuiz
+  question="Dentro de las fases del Hacking Ético la primera es"
+  options={{
+    A: "La recopilación de información",
+    B: "El acuerdo o contrato de auditoría",
+    C: "La explotación de vulnerabilidades",
+    D: "El análisis de vulnerabilidades"
+  }}
+  correctAnswer="B"
+  correctExplanation="Antes de realizar cualquier actividad técnica, la primera fase y la más importante en un proceso de hacking ético profesional es la formalización de un acuerdo. Este contrato define el alcance, los límites, las responsabilidades y da la autorización legal para realizar las pruebas."
+  incorrectExplanation="La recopilación de información es la primera fase *técnica*, pero siempre debe estar precedida por un acuerdo legal y contractual. Las otras fases (análisis y explotación) ocurren después."
+/>
+<InteractiveQuiz
+  question="En las pruebas de caja blanca"
+  options={{
+    A: "El atacante no tiene ninguna información sobre la empresa",
+    B: "El atacante conoce toda la información de la empresa como mapa de red, medidas de seguridad, etc.",
+    C: "Ninguna de las anteriores",
+    D: "El atacante tiene información de la empresa pero es poca"
+  }}
+  correctAnswer="B"
+  correctExplanation="En un pentest de caja blanca (white box), el auditor recibe información completa y detallada sobre los sistemas objetivo. Esto puede incluir código fuente, diagramas de arquitectura, credenciales, etc. El objetivo es realizar una evaluación de seguridad lo más exhaustiva posible."
+  incorrectExplanation="La opción A describe una prueba de caja negra. La opción D describe una prueba de caja gris. El conocimiento total es la característica que define a la caja blanca."
+/>
+<InteractiveQuiz
+  question="Command and Control es una etapa del"
+  options={{
+    A: "Proceso de BlueTeam",
+    B: "Cyber Kill Chain",
+    C: "Proceso de RedTeam",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="B"
+  correctExplanation="Command and Control (C2 o C&C) es una de las fases clave del modelo Cyber Kill Chain. Describe la etapa en la que el malware implantado en un sistema víctima establece un canal de comunicación con el servidor del atacante para recibir órdenes y exfiltrar datos."
+  incorrectExplanation="No es una etapa de los procesos de Red Team o Blue Team en sí mismos, aunque el Red Team emulará esta fase y el Blue Team intentará detectarla. Es una fase del modelo de ataque adversario descrito por la Cyber Kill Chain."
+/>
+<InteractiveQuiz
+  question="Un Rootkit es"
+  options={{
+    A: "Inundar sistemas, servidores y/o redes con tráfico para sobrecargar recursos y ancho de banda.",
+    B: "Ninguna de las anteriores.",
+    C: "Un paquete de software diseñado para permanecer oculto en su equipo mientras proporciona acceso y control remotos.",
+    D: "Inserta código malicioso en un servidor utilizando el lenguaje de consulta del servidor (SQL)."
+  }}
+  correctAnswer="C"
+  correctExplanation="La característica principal de un rootkit es su capacidad para ocultar su propia presencia y la de otro software malicioso en el sistema. A menudo modifica partes del sistema operativo para lograr este sigilo, mientras proporciona control remoto al atacante."
+  incorrectExplanation="La opción A describe un ataque de Denegación de Servicio (DoS). La opción D describe una Inyección SQL. Ambas son incorrectas."
+/>
+<InteractiveQuiz
+  question="Una de las funciones del Blue Team es"
+  options={{
+    A: "La vigilancia constante de la seguridad informática",
+    B: "El hacking ético",
+    C: "La compra y pruebas de software de seguridad",
+    D: "La preparación de ataques simulados"
+  }}
+  correctAnswer="A"
+  correctExplanation="El Blue Team es el equipo de defensa. Su función principal es mantener la seguridad de la organización a través de la monitorización continua de los sistemas, la detección de incidentes y la respuesta a los mismos para minimizar el daño."
+  incorrectExplanation="El hacking ético y la preparación de ataques simulados son funciones del Red Team (el equipo ofensivo). La compra de software puede ser una tarea, pero la vigilancia constante es su función esencial."
+/>
+<InteractiveQuiz
+  question="Los equipos de seguridad informática los podemos clasificar en"
+  options={{
+    A: "Red Team, Blue Team y Gray Team",
+    B: "Ninguna de las anteriores",
+    C: "Red Team y Pentesting",
+    D: "Red Team, Blue Team y Purple Team"
+  }}
+  correctAnswer="D"
+  correctExplanation="La clasificación más común y moderna de los equipos de seguridad operativa es: Red Team (ofensivo), Blue Team (defensivo) y Purple Team (función de integración y colaboración entre ambos)."
+  incorrectExplanation="El término 'Gray Team' no es un estándar en la industria. 'Pentesting' es una actividad, no un tipo de equipo. Por lo tanto, la clasificación Red, Blue y Purple es la correcta."
+/>
+<InteractiveQuiz
+  question="Un ejemplo de ataque de suplantación de identidad o phishing es"
+  options={{
+    A: "El email phishing",
+    B: "El 0-day phising",
+    C: "Ninguna de las anteriores",
+    D: "El malware phishing"
+  }}
+  correctAnswer="A"
+  correctExplanation="El phishing por correo electrónico (email phishing) es la forma más clásica y extendida de este tipo de ataque, donde se envían correos fraudulentos que aparentan ser de fuentes legítimas para engañar a los usuarios y robar sus credenciales o datos personales."
+  incorrectExplanation="Los términos '0-day phishing' o 'malware phishing' no son categorías estándar. El phishing puede usar un exploit 0-day o entregar malware, pero el vector más común y el ejemplo por excelencia es el correo electrónico."
+/>
+<InteractiveQuiz
+  question="La seguridad por oscuridad nunca es una buena práctica. Es mucho más seguro que todos los documentos sean públicos, incluidos código fuente, esquemas de red, estructura interna de una organización, etc."
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation="Es falso. Si bien la seguridad por oscuridad no debe ser la única capa de defensa, es un principio válido de la defensa en profundidad. Ocultar información como versiones de software, arquitecturas de red o código fuente dificulta la labor de un atacante. Hacer pública toda la información sensible aumentaría drásticamente la superficie de ataque."
+  incorrectExplanation="La afirmación es incorrecta porque presenta una visión extremista. La transparencia total en aspectos de seguridad es contraproducente. La práctica correcta es un equilibrio: sistemas robustos y auditables, pero sin exponer innecesariamente información que facilite un ataque."
+/>
+<InteractiveQuiz
+  question="El pentesting tiene como beneficio"
+  options={{
+    A: "Se practica con Kali Linux",
+    B: "Se conoce la infraestructura de red de la empresa",
+    C: "Se descubren fragilidades en el sistema de seguridad informática, antes de que lo haga un ciberdelincuente",
+    D: "Se aprende a vulnerar sistemas"
+  }}
+  correctAnswer="C"
+  correctExplanation="El principal beneficio y objetivo de un pentest es evaluar de forma proactiva la seguridad de un sistema, identificando y documentando vulnerabilidades para que puedan ser corregidas antes de que un atacante real las descubra y las explote."
+  incorrectExplanation="Aunque se pueda usar Kali Linux o se aprenda sobre vulnerabilidades y redes, estos son medios para un fin. El verdadero beneficio para la organización es el descubrimiento proactivo de sus debilidades de seguridad."
+/>
+<InteractiveQuiz
+  question="Algunas de las 7 fases de la Cyber Kill Chain son"
+  options={{
+    A: "Reconocimiento, preparación y explotación",
+    B: "Footprinting, fingerprinting y explotación",
+    C: "Reconocimiento, explotación y supervisión",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="A"
+  correctExplanation="El modelo Cyber Kill Chain incluye las fases de Reconocimiento, Preparación (Weaponization), Entrega (Delivery), Explotación, Instalación, Comando y Control (C2) y Acciones sobre los Objetivos. La opción A nombra correctamente varias de estas fases en su orden lógico."
+  incorrectExplanation="Footprinting y fingerprinting son técnicas de la fase de Reconocimiento. Supervisión no es una fase del modelo. Por tanto, la opción A es la que presenta una secuencia correcta de fases del modelo."
+/>
+<InteractiveQuiz
+  question="Una vulnerabilidad en ciberseguridad es"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Lo que está en juego para su organización en términos de activos económicos",
+    C: "Es la posibilidad de que un agente, interno o externo, explote accidentalmente o a propósito una vulnerabilidad",
+    D: "Un error o fallo en un sistema que puede ser explotado para comprometer la seguridad del mismo."
+  }}
+  correctAnswer="D"
+  correctExplanation="Una vulnerabilidad es, por definición, una debilidad, un fallo de diseño, un error de implementación o una configuración inadecuada en un sistema o proceso que podría ser explotado por una amenaza para causar un daño."
+  incorrectExplanation="La opción B define el 'riesgo' o 'impacto'. La opción C define la 'amenaza'. La definición precisa de vulnerabilidad es la debilidad o el fallo en sí mismo."
+/>
+<InteractiveQuiz
+  question="¿Qué es un JWT?"
+  options={{
+    A: "Es un token que se utiliza para autenticarse en las aplicaciones web. Autenticación autocontenida",
+    B: "Suele estar codificado en Base52",
+    C: "Es imposible de crackear o de conseguir la clave de cifrado de forma offline",
+    D: "Es un token que se utiliza para autenticarse en las aplicaciones web. Se conoce también como cookie de sesión"
+  }}
+  correctAnswer="A"
+  correctExplanation="Un JWT (JSON Web Token) es un estándar para crear tokens de acceso autocontenidos. 'Autocontenido' significa que el propio token lleva la información del usuario (claims) y su firma, permitiendo que un servicio verifique la autenticidad sin tener que consultar a una base de datos de sesiones."
+  incorrectExplanation="Un JWT se codifica en Base64Url, no Base52. Si la clave secreta es débil, un JWT firmado puede ser crackeado offline. Aunque puede almacenarse en una cookie, no es sinónimo de cookie de sesión, que suele ser solo un identificador opaco."
+/>
+<InteractiveQuiz
+  question="NMAP permite realizar escaneos de puertos y saber si el puerto concreto se encuentra en estado ABIERTO, CERRADO o FILTRADO. Si NMAP hace un escaneo UDP y el servidor al que estamos atacando NO responde, entonces..."
+  options={{
+    A: "No podemos saber si el puerto esta filtrado o cerrado",
+    B: "No podemos saber si el puerto esta abierto o filtrado",
+    C: "El puerto esta cerrado",
+    D: "El puerto se encuentra abierto"
+  }}
+  correctAnswer="B"
+  correctExplanation="En un escaneo UDP, la falta de respuesta es ambigua. Podría significar que el puerto está abierto y el servicio simplemente no respondió, o que un firewall bloqueó el paquete (filtrado). Nmap no puede distinguir entre estos dos estados, por lo que lo reporta como 'open|filtered'."
+  incorrectExplanation="Si el puerto estuviera cerrado, el sistema operativo del objetivo debería responder con un mensaje ICMP 'Port Unreachable', lo que permitiría a Nmap marcarlo como 'cerrado'. La ausencia de respuesta es lo que crea la ambigüedad entre 'abierto' y 'filtrado'."
+/>
+<InteractiveQuiz
+  question="XSS o Cross Site Scripting permite tener un control total del navegador de la víctima en el contexto de la web vulnerable"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="A"
+  correctExplanation="Es verdadero. Con un ataque XSS exitoso, un atacante puede ejecutar código JavaScript arbitrario en el navegador de la víctima. Esto le otorga un control casi total sobre la sesión del usuario en esa página web: puede robar cookies y tokens de sesión, registrar pulsaciones de teclas, modificar el contenido de la página y realizar acciones en nombre del usuario."
+  incorrectExplanation="La afirmación contraria es falsa. El poder de XSS radica precisamente en que el código malicioso se ejecuta con los mismos permisos que el código legítimo de la página, heredando la confianza del usuario en ese sitio."
+/>
+<InteractiveQuiz
+  question="El footprinting es"
+  options={{
+    A: "La explotación de vulnerabilidades desde fuera del sistema",
+    B: "La explotación de vulnerabilidades desde dentro del sistema",
+    C: "El reconocimiento pasivo de la información del sistema",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="C"
+  correctExplanation="El footprinting (o huella digital) es la primera etapa del reconocimiento y consiste en recopilar información sobre un objetivo de forma pasiva, es decir, utilizando fuentes públicas y sin interactuar directamente con los sistemas del objetivo para no ser detectado."
+  incorrectExplanation="La explotación de vulnerabilidades es una fase posterior y activa. El footprinting es exclusivamente recolección de información pasiva."
+/>
+<InteractiveQuiz
+  question="En footprinting intentamos obtener información tal como"
+  options={{
+    A: "Información en repositorios de código como GitHub",
+    B: "Todas son correctas",
+    C: "Información sobre puertos abiertos descubiertos por otras herramientas como shodan o censys",
+    D: "Información sobre dominios y subdominios"
+  }}
+  correctAnswer="B"
+  correctExplanation="Durante la fase de footprinting, el objetivo es recopilar la mayor cantidad posible de información pública sobre el objetivo. Esto incluye buscar dominios, subdominios, información expuesta en buscadores, repositorios de código como GitHub, y datos de plataformas de inteligencia de amenazas como Shodan o Censys."
+  incorrectExplanation="Las otras opciones son correctas, pero incompletas. La respuesta 'Todas son correctas' es la más adecuada, ya que todas las opciones listadas son ejemplos válidos de información que se busca durante el footprinting."
+/>
+<InteractiveQuiz
+  question="HTTP es..."
+  options={{
+    A: "Un protocolo basado en cliente servidor para transmitir datos en la web",
+    B: "Un protocolo que permite la comunicación entre dos sistemas, puede ser TCP o UDP",
+    C: "Un tipo de fichero de texto que se recibe al acceder a una página web",
+    D: "Ninguna de las anteriores"
+  }}
+  correctAnswer="A"
+  correctExplanation="HTTP (Hypertext Transfer Protocol) es el protocolo fundamental de la World Wide Web. Funciona bajo un modelo cliente-servidor, donde un cliente (como un navegador web) realiza peticiones a un servidor, que responde con los recursos solicitados (como páginas HTML, imágenes, etc.)."
+  incorrectExplanation="Aunque HTTP normalmente utiliza TCP como protocolo de transporte, no es TCP o UDP en sí mismo. Tampoco es un tipo de fichero, sino el protocolo que se usa para transferir esos ficheros."
+/>
+<InteractiveQuiz
+  question="Aplicando Google hacking podemos obtener"
+  options={{
+    A: "Ficheros con contraseñas de acceso a una base de datos interna",
+    B: "Ficheros de backup expuestos a internet",
+    C: "Todas son correctas",
+    D: "Ficheros de configuración de VPNs con credenciales incluidas"
+  }}
+  correctAnswer="C"
+  correctExplanation="Google Hacking, o el uso de operadores de búsqueda avanzados (dorks), permite encontrar información sensible que ha sido indexada accidentalmente por Google. Esto puede incluir ficheros de configuración, copias de seguridad, documentos internos y, en el peor de los casos, ficheros con credenciales expuestas."
+  incorrectExplanation="Las otras opciones son ejemplos específicos de lo que se puede encontrar, por lo que 'Todas son correctas' es la respuesta más completa, ya que todos son hallazgos posibles a través de esta técnica."
+/>
+<InteractiveQuiz
+  question="Una amenaza en ciberseguridad es"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Lo que deja a la estructura de la empresa desprotegida",
+    C: "Es la posibilidad de que un agente, interno o externo, explote accidentalmente o a propósito una vulnerabilidad",
+    D: "Lo que está en juego para su organización en términos de activos económicos"
+  }}
+  correctAnswer="C"
+  correctExplanation="Una amenaza es cualquier circunstancia o evento con el potencial de causar daño a un sistema o a una organización. En ciberseguridad, se refiere específicamente al potencial de que una vulnerabilidad sea explotada por un actor de amenaza."
+  incorrectExplanation="La opción B describe una vulnerabilidad. La opción D describe el riesgo o el impacto. La definición correcta de amenaza es el agente o la posibilidad de que se explote un fallo."
+/>
+<InteractiveQuiz
+  question="El OS fingerprinting puede ser"
+  options={{
+    A: "Ninguna de las anteriores",
+    B: "Activo o Pasivo",
+    C: "Pasivo siempre",
+    D: "Activo siempre"
+  }}
+  correctAnswer="B"
+  correctExplanation="La identificación del sistema operativo (OS fingerprinting) puede ser activa, enviando paquetes diseñados para provocar respuestas específicas del SO (como hace Nmap), o pasiva, analizando tráfico de red existente (como los valores de TTL o el tamaño de ventana TCP) sin generar paquetes nuevos."
+  incorrectExplanation="Limitar la técnica a solo activa o solo pasiva es incorrecto, ya que existen métodos válidos para ambas aproximaciones."
+/>
+<InteractiveQuiz
+  question="Maltego es"
+  options={{
+    A: "Una aplicación open de google dork",
+    B: "Ninguna de las anteriores",
+    C: "Una aplicación open para hacer OSINT",
+    D: "Una aplicación de pago para hacer explotación de vulnerabilidades"
+  }}
+  correctAnswer="C"
+  correctExplanation="Maltego es una plataforma de software utilizada para la inteligencia de fuentes abiertas (OSINT) y el análisis forense. Permite visualizar gráficamente las relaciones entre diferentes piezas de información, como dominios, personas, direcciones de correo, etc."
+  incorrectExplanation="No es una herramienta para Google Dorking, aunque puede integrar transformadas que lo usen. No es para explotación de vulnerabilidades. Es una herramienta de OSINT, disponible en una versión comunitaria (open) y versiones comerciales (de pago)."
+/>
+<InteractiveQuiz
+  question="XSS o Cross Site Scripting permite acceder a información almacenada en el navegador de la víctima"
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="A"
+  correctExplanation="Es verdadero. Un ataque XSS permite al atacante ejecutar scripts en el navegador de la víctima en el contexto del sitio vulnerable. Esto le da acceso a información almacenada para ese sitio, como cookies de sesión, datos de localStorage o sessionStorage, lo que puede llevar al secuestro de la sesión del usuario."
+  incorrectExplanation="La afirmación contraria es falsa. El robo de información del lado del cliente, especialmente las cookies de sesión, es uno de los principales objetivos y riesgos de los ataques XSS."
+/>
+<InteractiveQuiz
+  question="Google hacking es"
+  options={{
+    A: "Un error CVE de Google",
+    B: "Una técnica de reconocimiento pasivo",
+    C: "Una técnica de reconocimiento activo",
+    D: "Un tipo de ataque"
+  }}
+  correctAnswer="B"
+  correctExplanation="Google Hacking es una técnica de reconocimiento pasivo. Se considera pasiva porque la interacción se realiza con los servidores de Google para buscar información ya indexada, no directamente con los sistemas del objetivo. Esto hace que la actividad sea muy difícil de detectar por parte de la organización objetivo."
+  incorrectExplanation="No es un CVE ni un ataque directo, sino una técnica de recolección de información. No es activa porque no se envían paquetes a los servidores de la víctima."
+/>
+<InteractiveQuiz
+  question="HTTP es un protocolo binario, es decir, las comunicaciones se realizan en un formato propietario que no puede leerse de forma sencilla por un humano."
+  options={{
+    A: "Verdadero",
+    B: "Falso"
+  }}
+  correctAnswer="B"
+  correctExplanation="Es falso. La versión más extendida de HTTP (HTTP/1.1) es un protocolo basado en texto. Sus peticiones (GET, POST, etc.) y respuestas son legibles por humanos, lo que facilita su depuración y análisis. Versiones más modernas como HTTP/2 y HTTP/3 sí utilizan un formato binario para mejorar la eficiencia."
+  incorrectExplanation="La afirmación es incorrecta porque describe las características de protocolos binarios, mientras que HTTP/1.1, el estándar de facto durante décadas, es de texto plano."
+/>
+<InteractiveQuiz
+  question="¿Qué fase de despliegue de un C&C implica la instalación de un agente en el sistema infectado mediante phishing, una vulnerabilidad o credenciales robadas?"
+  options={{
+    A: "Enfriamiento",
+    B: "Infiltración",
+    C: "Persistencia",
+    D: "Comunicaciones"
+  }}
+  correctAnswer="B"
+  correctExplanation="La infiltración es la fase inicial en la que el agente malicioso (el implante) se instala en el sistema objetivo. Este es el primer paso después de una explotación exitosa, ya sea a través de phishing, una vulnerabilidad de software o el uso de credenciales robadas."
+  incorrectExplanation="La persistencia es la fase posterior, donde el agente se asegura de sobrevivir a reinicios. Las comunicaciones se establecen una vez instalado, y el enfriamiento no es un término estándar para una fase de despliegue de C&C."
+/>
+<InteractiveQuiz
+  question="¿Qué tipo de comunicación de C&C es el más común y sencillo de desplegar, donde un solo servidor controla todos los agentes y los operadores se conectan al mismo servidor?"
+  options={{
+    A: "P2P",
+    B: "Cloaked",
+    C: "Centralizado",
+    D: "Híbrido"
+  }}
+  correctAnswer="C"
+  correctExplanation="El modelo centralizado es el más tradicional y simple. Todos los sistemas infectados (bots) se conectan a un único servidor de Comando y Control (C&C) para recibir órdenes. Su simplicidad también lo hace vulnerable, ya que deshabilitar ese servidor central desmantela toda la botnet."
+  incorrectExplanation="El modelo P2P (Peer-to-Peer) es descentralizado, donde los bots se comunican entre sí. Los modelos 'cloaked' o híbridos son más complejos y buscan ofuscar la comunicación o combinar diferentes arquitecturas."
+/>
+<InteractiveQuiz
+  question="En Metasploit, ¿qué tipo de módulo se utiliza para explotar vulnerabilidades y manejar sesiones como rev_shell y meterpreter?"
+  options={{
+    A: "Auxiliary",
+    B: "Post",
+    C: "Exploit",
+    D: "Payload"
+  }}
+  correctAnswer="C"
+  correctExplanation="Los módulos de tipo 'exploit' en Metasploit contienen el código que aprovecha una vulnerabilidad específica en un sistema, servicio o aplicación. Una vez que el exploit tiene éxito, normalmente entrega un 'payload' (como Meterpreter) para obtener control."
+  incorrectExplanation="Los módulos 'auxiliary' son para escaneo o reconocimiento. Los módulos 'post' se usan después de haber obtenido acceso. El 'payload' es lo que el 'exploit' entrega, pero no es el módulo de explotación en sí."
+/>
+<InteractiveQuiz
+  question="¿Qué tipo de ataque DoS implica que el ataque se realiza desde muchos equipos atacantes, como en el caso de las BotNets?"
+  options={{
+    A: "Reflejado",
+    B: "Asimétricos",
+    C: "Distribuidos",
+    D: "Directo"
+  }}
+  correctAnswer="C"
+  correctExplanation="Cuando un ataque de denegación de servicio se origina desde múltiples fuentes (a menudo miles de equipos comprometidos en una botnet), se le denomina Ataque de Denegación de Servicio Distribuido (DDoS). La naturaleza distribuida hace que sea mucho más difícil de mitigar."
+  incorrectExplanation="Un ataque directo (DoS) proviene de una única fuente. Un ataque reflejado utiliza a terceros para amplificar el ataque y ocultar el origen. 'Asimétricos' no es un tipo estándar de clasificación para ataques DoS."
+/>
+<InteractiveQuiz
+  question="¿Qué tipo de auditoría de seguridad se utiliza para simular las técnicas y metodologías de un atacante real, donde solo un pequeño grupo de personas dentro de la empresa está al tanto?"
+  options={{
+    A: "Pentest",
+    B: "Análisis de vulnerabilidades",
+    C: "Ejercicio Red Team",
+    D: "Auditoría de caja blanca"
+  }}
+  correctAnswer="C"
+  correctExplanation="Un ejercicio de Red Team es una simulación de ataque a gran escala, basada en objetivos y lo más realista posible. Su propósito no es solo encontrar vulnerabilidades, sino probar las capacidades de detección y respuesta (Blue Team) de la organización. Por su naturaleza, se mantiene en secreto para la mayoría de la empresa."
+  incorrectExplanation="Un pentest puede o no ser sigiloso, y suele tener un alcance más limitado. Un análisis de vulnerabilidades es mayormente automatizado y no simula un atacante. Una auditoría de caja blanca implica conocimiento total, no sigilo."
+/>
+<InteractiveQuiz
+  question="¿Cuál de las siguientes vulnerabilidades es considerada principalmente de tipo 'Cliente'?"
+  options={{
+    A: "Inyección SQL",
+    B: "Fuerza bruta",
+    C: "CSRF",
+    D: "Inyección LDAP"
+  }}
+  correctAnswer="C"
+  correctExplanation="Cross-Site Request Forgery (CSRF) es una vulnerabilidad del lado del cliente porque explota la confianza que un sitio web tiene en el navegador de un usuario autenticado. El ataque engaña al navegador de la víctima para que envíe una petición no deseada a la aplicación vulnerable."
+  incorrectExplanation="La inyección SQL, la inyección LDAP y la fuerza bruta son ataques que se dirigen y se procesan en el lado del servidor. Explotan la lógica y las debilidades del backend, no del cliente."
+/>
+<InteractiveQuiz
+  question="¿Cuál es el uso más común del concepto criptográfico 'HASH'?"
+  options={{
+    A: "Proteger información",
+    B: "Transmitir información",
+    C: "Almacenar contraseñas",
+    D: "Generar claves de cifrado"
+  }}
+  correctAnswer="C"
+  correctExplanation="El uso más extendido y fundamental de las funciones hash en seguridad es para el almacenamiento de contraseñas. En lugar de guardar la contraseña en texto claro, se almacena su hash. Cuando el usuario inicia sesión, se calcula el hash de la contraseña introducida y se compara con el hash almacenado, evitando exponer la contraseña original."
+  incorrectExplanation="Aunque un hash ayuda a verificar la integridad (una forma de proteger la información), su uso principal no es el cifrado o la protección general. Tampoco se usa para transmitir información ni para generar claves de cifrado directamente."
+/>

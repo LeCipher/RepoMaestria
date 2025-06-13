@@ -175,6 +175,11 @@ const config = {
                 sidebarId: "SeguridadNube",
                 label: "Seguridad en la Nube",
               },
+              {
+                type: "docSidebar",
+                sidebarId: "HackingEtico",
+                label: "Hacking Ético",
+              },
             ],
           },
 
