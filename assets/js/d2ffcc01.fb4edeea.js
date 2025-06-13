@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmaterias=self.webpackChunkmaterias||[]).push([[1554],{6820:a=>{a.exports=JSON.parse('{"tags":[{"label":"comptia","permalink":"/RepoMaestria/docs/tags/comptia","count":10},{"label":"SY700","permalink":"/RepoMaestria/docs/tags/sy-700","count":10},{"label":"Security+","permalink":"/RepoMaestria/docs/tags/security","count":10}]}')}}]);
