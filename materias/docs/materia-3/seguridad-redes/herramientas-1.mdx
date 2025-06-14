@@ -1,0 +1,656 @@
+---
+sidebar_position: 2
+title: Herramientas - 1
+---
+import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
+
+<InteractiveQuiz
+question="¿Cuál es la finalidad principal de Cowrie dentro de un laboratorio de ciberseguridad?"
+options={{
+A: "Servir como honeypot especializado en SSH para registrar intentos de intrusión.",
+B: "Actuar como proxy inverso para balancear tráfico web.",
+C: "Ejecutar reglas de cortafuegos basadas en iptables.",
+D: "Operar como motor de base de datos NoSQL."
+}}
+correctAnswer="A"
+correctExplanation="Cowrie emula un servidor SSH vulnerable y captura los comandos y archivos de los atacantes para análisis posterior."
+incorrectExplanation="Las demás opciones describen funciones de otros componentes y no la finalidad principal de Cowrie."
+/>
+
+<InteractiveQuiz
+question="¿Qué servicio emula principalmente Cowrie para atraer a los atacantes?"
+options={{
+A: "SSH",
+B: "HTTP",
+C: "DNS",
+D: "SMTP"
+}}
+correctAnswer="A"
+correctExplanation="Cowrie se enfoca en simular un servicio SSH para que los atacantes intenten autenticarse y ejecutar comandos."
+incorrectExplanation="Aunque puede registrar otras conexiones, su objetivo principal es el servicio SSH."
+/>
+
+<InteractiveQuiz
+question="¿Qué característica de Cowrie permite registrar la actividad exacta de un atacante durante la sesión?"
+options={{
+A: "Transcripción detallada de comandos y transferencias de archivos.",
+B: "Balanceo automático de cargas.",
+C: "Cifrado TLS entre honeypots.",
+D: "Filtrado de paquetes ICMP."
+}}
+correctAnswer="A"
+correctExplanation="Cowrie guarda cada comando y archivo transferido, facilitando el análisis forense."
+incorrectExplanation="Las demás opciones no corresponden a la funcionalidad de registro interactivo que ofrece Cowrie."
+/>
+
+<InteractiveQuiz
+question="Dionaea está diseñado principalmente para capturar malware que se propaga a través de protocolos como:"
+options={{
+A: "SMB, HTTP y FTP.",
+B: "BGP y OSPF.",
+C: "ICMP y IGMP.",
+D: "SNMP y NTP."
+}}
+correctAnswer="A"
+correctExplanation="Dionaea implementa múltiples servicios (SMB, HTTP, FTP, etc.) para recibir cargas maliciosas de diferentes familias de malware."
+incorrectExplanation="Los protocolos de las demás opciones no son el foco principal de Dionaea."
+/>
+
+<InteractiveQuiz
+question="¿Qué protocolo utiliza Dionaea para recibir archivos maliciosos provenientes de descargas directas?"
+options={{
+A: "HTTP",
+B: "RIP",
+C: "OSPF",
+D: "LDAP"
+}}
+correctAnswer="A"
+correctExplanation="Mucho malware se distribuye mediante descargas HTTP, por lo que Dionaea implementa este protocolo para capturarlo."
+incorrectExplanation="Los otros protocolos no suelen usarse para transferir malware a nivel de archivo de manera directa en Dionaea."
+/>
+
+<InteractiveQuiz
+question="¿Cuál es la diferencia funcional más destacada entre Cowrie y Dionaea?"
+options={{
+A: "Cowrie se centra en SSH, mientras que Dionaea soporta varios protocolos de red para capturar malware.",
+B: "Cowrie es un proxy inverso y Dionaea es un firewall.",
+C: "Dionaea captura tráfico DNS exclusivamente y Cowrie actúa como servidor web.",
+D: "Cowrie genera túneles VPN y Dionaea gestiona VLAN."
+}}
+correctAnswer="A"
+correctExplanation="Cowrie emula principalmente SSH; Dionaea expone numerosos servicios para recolectar muestras de malware."
+incorrectExplanation="Las demás descripciones no reflejan las funciones reales de ambos honeypots."
+/>
+
+<InteractiveQuiz
+question="Suricata se clasifica técnicamente como un(a):"
+options={{
+A: "Motor IDS/IPS de alto rendimiento.",
+B: "Proxy transparente para HTTP.",
+C: "Servidor DHCP.",
+D: "Router BGP."
+}}
+correctAnswer="A"
+correctExplanation="Suricata analiza tráfico en tiempo real y aplica firmas o inspección profunda para detección y prevención."
+incorrectExplanation="Las otras opciones describen componentes de red diferentes a un IDS/IPS."
+/>
+
+<InteractiveQuiz
+question="¿Qué ventaja clave ofrece la arquitectura multihilo de Suricata?"
+options={{
+A: "Procesar paquetes en paralelo y mejorar el rendimiento.",
+B: "Encriptar túneles VPN automáticamente.",
+C: "Servir páginas cacheadas a usuarios internos.",
+D: "Gestionar interfaces de red virtualizadas."
+}}
+correctAnswer="A"
+correctExplanation="El motor multihilo permite aprovechar múltiples núcleos para inspeccionar paquetes simultáneamente."
+incorrectExplanation="Las demás opciones no corresponden a la optimización de rendimiento propia del multihilo en Suricata."
+/>
+
+<InteractiveQuiz
+question="¿Cuál de los siguientes archivos de log NO es generado típicamente por Suricata?"
+options={{
+A: "fast.log",
+B: "eve.json",
+C: "dns.log",
+D: "httpd.conf"
+}}
+correctAnswer="D"
+correctExplanation="httpd.conf es un archivo de configuración de servidores web como Apache, no un log de Suricata."
+incorrectExplanation="Los otros archivos listados son salidas de Suricata para distintos niveles de detalle."
+/>
+
+<InteractiveQuiz
+question="Para visualizar métricas de Suricata en tiempo real, es habitual integrarlo con:"
+options={{
+A: "Grafana",
+B: "MySQL Workbench",
+C: "Photoshop",
+D: "vCenter"
+}}
+correctAnswer="A"
+correctExplanation="Grafana consume datos (p.ej., via Elasticsearch o InfluxDB) y presenta dashboards de Suricata."
+incorrectExplanation="Las demás herramientas no están diseñadas para crear paneles de vigilancia de Suricata."
+/>
+
+<InteractiveQuiz
+question="Kibana forma parte de:"
+options={{
+A: "Elastic Stack",
+B: "OpenSSH",
+C: "TCPDump",
+D: "Netfilter"
+}}
+correctAnswer="A"
+correctExplanation="Kibana se usa para explorar y visualizar datos almacenados en Elasticsearch dentro del Elastic Stack."
+incorrectExplanation="Las demás opciones describen proyectos diferentes que no incluyen a Kibana."
+/>
+
+<InteractiveQuiz
+question="Las dashboards de Suricata en Grafana suelen alimentarse principalmente de:"
+options={{
+A: "Elasticsearch o InfluxDB como fuentes de datos.",
+B: "Listas estáticas en /etc/hosts.",
+C: "Archivos de paginación del sistema.",
+D: "Registros de BIOS."
+}}
+correctAnswer="A"
+correctExplanation="Grafana se conecta a bases de datos de series temporales o búsqueda como Elasticsearch y InfluxDB."
+incorrectExplanation="Las demás opciones no son usualmente fuentes de datos para dashboards de seguridad."
+/>
+
+<InteractiveQuiz
+question="Un proxy inverso se ubica normalmente:"
+options={{
+A: "Frente a los servidores internos y recibe las peticiones de los clientes externos.",
+B: "Después del navegador del usuario, en su estación de trabajo.",
+C: "Exclusivamente en redes de gestión separadas.",
+D: "Al final de un túnel VPN punto a punto."
+}}
+correctAnswer="A"
+correctExplanation="El proxy inverso actúa como punto de entrada único y distribuye las peticiones a servidores backend."
+incorrectExplanation="Las demás ubicaciones no corresponden a la función habitual del proxy inverso."
+/>
+
+<InteractiveQuiz
+question="Una ventaja principal de implementar un proxy inverso es:"
+options={{
+A: "Añadir una capa de seguridad y balancear carga entre servidores internos.",
+B: "Incrementar la latencia de forma intencionada.",
+C: "Bloquear totalmente el tráfico HTTPS.",
+D: "Eliminar la necesidad de firewall perimetral."
+}}
+correctAnswer="A"
+correctExplanation="El proxy inverso oculta la infraestructura interna y puede distribuir las peticiones entre varios servidores."
+incorrectExplanation="Las demás afirmaciones no representan ventajas reales del proxy inverso."
+/>
+
+<InteractiveQuiz
+question="Un proxy transparente se caracteriza por:"
+options={{
+A: "No requerir configuración en el cliente para su uso.",
+B: "Exigir certificados manuales en cada equipo.",
+C: "Implementar exclusivamente túneles GRE.",
+D: "Operar únicamente con protocolos UDP."
+}}
+correctAnswer="A"
+correctExplanation="El interceptado ocurre en red o gateway, por lo que el usuario no nota el proxy ni lo configura."
+incorrectExplanation="Las demás opciones describen características que no corresponden a un proxy transparente típico."
+/>
+
+<InteractiveQuiz
+question="Los proveedores de servicios de Internet (ISP) emplean proxys transparentes principalmente para:"
+options={{
+A: "Cachear y filtrar tráfico HTTP/HTTPS sin interacción del usuario.",
+B: "Aumentar el TTL de los paquetes IP salientes.",
+C: "Configurar VLAN de backbone.",
+D: "Procesar consultas DNSSEC."
+}}
+correctAnswer="A"
+correctExplanation="El ISP reduce ancho de banda y mejora tiempos al servir contenido popular desde su caché proxy."
+incorrectExplanation="Las demás acciones no son la razón habitual del uso de proxys transparentes por un ISP."
+/>
+
+<InteractiveQuiz
+question="¿Cuál de los siguientes programas es un proxy caché popular en entornos Linux?"
+options={{
+A: "Squid",
+B: "Bind",
+C: "Postfix",
+D: "Aircrack-ng"
+}}
+correctAnswer="A"
+correctExplanation="Squid permite almacenamiento en caché y filtrado de tráfico web en organizaciones de todos los tamaños."
+incorrectExplanation="Los demás programas cumplen propósitos diferentes (DNS, correo, auditoría WiFi)."
+/>
+
+<InteractiveQuiz
+question="En una red corporativa, una ventaja clave de un proxy caché es:"
+options={{
+A: "Reducir el consumo de ancho de banda externo al servir contenido repetido desde almacenamiento local.",
+B: "Incrementar la latencia en toda navegación.",
+C: "Reemplazar completamente el cortafuegos perimetral.",
+D: "Desencriptar contraseñas de usuarios."
+}}
+correctAnswer="A"
+correctExplanation="Al evitar solicitudes redundantes a Internet, la organización ahorra ancho de banda y acelera la entrega."
+incorrectExplanation="Las demás afirmaciones no describen beneficios reales de un proxy caché."
+/>
+
+<InteractiveQuiz
+question="El acrónimo VPN significa:"
+options={{
+A: "Virtual Private Network",
+B: "Verified Public Node",
+C: "Variable Processing Number",
+D: "Virtual Proxy Namespace"
+}}
+correctAnswer="A"
+correctExplanation="Una VPN crea una red privada virtual sobre una infraestructura pública como Internet."
+incorrectExplanation="Las otras interpretaciones no corresponden al término usado en redes."
+/>
+
+<InteractiveQuiz
+question="La función principal de una VPN es:"
+options={{
+A: "Crear un túnel cifrado seguro entre dos puntos o redes.",
+B: "Deshabilitar la traducción de direcciones (NAT).",
+C: "Escanear puertos aleatorios en redes externas.",
+D: "Convertir sesiones SSH en tráfico HTTP."
+}}
+correctAnswer="A"
+correctExplanation="El cifrado y la autenticación permiten que datos sensibles viajen de forma segura por canales inseguros."
+incorrectExplanation="Las demás acciones no representan la finalidad central de una VPN."
+/>
+
+<InteractiveQuiz
+question="¿Qué protocolo de establecimiento se usa comúnmente con IPsec para formar una VPN?"
+options={{
+A: "IKEv2",
+B: "FTP",
+C: "SMTP",
+D: "SNMP"
+}}
+correctAnswer="A"
+correctExplanation="IKEv2 negocia claves y parámetros de seguridad para el túnel IPsec."
+incorrectExplanation="Los otros protocolos tienen propósitos distintos a la configuración de VPN."
+/>
+
+<InteractiveQuiz
+question="OpenVPN basa su seguridad principalmente en:"
+options={{
+A: "TLS/SSL",
+B: "RIP",
+C: "ICMP",
+D: "OSPF"
+}}
+correctAnswer="A"
+correctExplanation="OpenVPN encapsula tráfico en TLS/SSL permitiendo autenticación robusta y cifrado sólido."
+incorrectExplanation="Los demás protocolos no forman parte del esquema de cifrado de OpenVPN."
+/>
+
+<InteractiveQuiz
+question="WireGuard es conocido por:"
+options={{
+A: "Ser ligero y usar criptografía moderna.",
+B: "Implementar GRE e IPX.",
+C: "Integrar un protocolo BGP interno.",
+D: "Basarse en PPTP sin cifrado."
+}}
+correctAnswer="A"
+correctExplanation="WireGuard usa menos líneas de código y algoritmos como ChaCha20 y Poly1305 para mayor eficiencia."
+incorrectExplanation="Las demás afirmaciones no definen características reales de WireGuard."
+/>
+
+<InteractiveQuiz
+question="¿Qué comando de tcpdump capturará paquetes en la interfaz «eth0» mostrando datos en ASCII y hexadecimal?"
+options={{
+A: "tcpdump -i eth0 -vvX",
+B: "tcpdump -Xvv -i any",
+C: "tcpdump -f eth0",
+D: "tcpdump -q"
+}}
+correctAnswer="A"
+correctExplanation="La opción -X imprime el contenido del paquete en HEX y ASCII; -vv da máxima verbosidad."
+incorrectExplanation="Las otras combinaciones no muestran simultáneamente los datos en esos formatos sobre eth0."
+/>
+
+<InteractiveQuiz
+question="La opción «-w» de tcpdump sirve para:"
+options={{
+A: "Guardar la captura de paquetes en un archivo pcap.",
+B: "Filtrar tráfico web.",
+C: "Aumentar el ancho de banda disponible.",
+D: "Ejecutar consultas WHOIS."
+}}
+correctAnswer="A"
+correctExplanation="Con -w archivo.pcap se almacena la captura cruda para un análisis posterior."
+incorrectExplanation="Las demás acciones no describen el comportamiento de la opción -w."
+/>
+
+<InteractiveQuiz
+question="Para leer un archivo pcap previamente guardado con tcpdump, se utiliza la opción:"
+options={{
+A: "-r",
+B: "-x",
+C: "-n",
+D: "-f"
+}}
+correctAnswer="A"
+correctExplanation="«tcpdump -r archivo.pcap» reproduce los paquetes almacenados."
+incorrectExplanation="Las demás opciones tienen finalidades distintas (hex dump, no DNS, etc.)."
+/>
+
+<InteractiveQuiz
+question="El filtro de tcpdump 'src host 192.168.0.10 && dst port 80' capturará:"
+options={{
+A: "Paquetes provenientes de 192.168.0.10 cuyo destino sea el puerto 80.",
+B: "Todo el tráfico SSH.",
+C: "Solo paquetes ICMP.",
+D: "Tráfico destinado al puerto 22."
+}}
+correctAnswer="A"
+correctExplanation="Se conjugan dos condiciones: origen de host y destino de puerto 80 (HTTP)."
+incorrectExplanation="Las otras opciones describen escenarios distintos al filtro propuesto."
+/>
+
+<InteractiveQuiz
+question="La regla de iptables '-t nat -A POSTROUTING -o eth0 -j SNAT --to 10.0.0.1' realiza:"
+options={{
+A: "Source NAT, cambiando la IP origen a 10.0.0.1.",
+B: "Destination NAT sobre el puerto destino.",
+C: "Bloqueo de paquetes ICMP.",
+D: "Reinicio del servicio SSH."
+}}
+correctAnswer="A"
+correctExplanation="SNAT modifica la dirección origen de los paquetes antes de salir por eth0."
+incorrectExplanation="Las demás descripciones no corresponden al efecto de la regla SNAT."
+/>
+
+<InteractiveQuiz
+question="¿Para qué se emplea habitualmente la cadena PREROUTING en la tabla nat de iptables?"
+options={{
+A: "Aplicar reglas de DNAT.",
+B: "Registrar eventos con LOG.",
+C: "Implementar SNAT.",
+D: "Establecer la política ACCEPT."
+}}
+correctAnswer="A"
+correctExplanation="Las reglas DNAT ajustan la dirección destino antes de que el sistema rote el paquete."
+incorrectExplanation="SNAT se aplica en POSTROUTING; LOG y políticas se gestionan en otras cadenas."
+/>
+
+<InteractiveQuiz
+question="Cowrie registra intentos de autenticación fallidos principalmente con el propósito de:"
+options={{
+A: "Generar inteligencia de amenazas y análisis forense.",
+B: "Balancear carga entre servidores web.",
+C: "Actuar como proxy caché.",
+D: "Firmar certificados digitales."
+}}
+correctAnswer="A"
+correctExplanation="Los datos recogidos ayudan a estudiar patrones de ataque y credenciales empleadas."
+incorrectExplanation="Las demás funciones no corresponden al objetivo de un honeypot como Cowrie."
+/>
+
+<InteractiveQuiz
+question="¿Cuál de las siguientes herramientas es una alternativa popular a Suricata en el ámbito IDS/IPS?"
+options={{
+A: "Snort",
+B: "Grafana",
+C: "DHCPD",
+D: "Git"
+}}
+correctAnswer="A"
+correctExplanation="Snort y Suricata ofrecen funcionalidad IDS/IPS basada en firmas y reglas compatibles."
+incorrectExplanation="Las demás herramientas no cumplen la función IDS/IPS."
+/>
+
+<InteractiveQuiz
+question="Una ventaja de los honeypots como Cowrie en un entorno de seguridad es:"
+options={{
+A: "Permitir estudiar técnicas de ataque sin comprometer sistemas de producción.",
+B: "Aumentar deliberadamente la superficie de ataque sin supervisión.",
+C: "Desactivar las alertas de los IDS existentes.",
+D: "Reemplazar completamente el cortafuegos perimetral."
+}}
+correctAnswer="A"
+correctExplanation="Los honeypots aíslan la actividad maliciosa, proporcionando datos para mejorar defensas."
+incorrectExplanation="Las demás opciones contradicen fines de seguridad o describen riesgos no aceptables."
+/>
+
+<InteractiveQuiz
+question="Dionaea puede integrarse con la herramienta Xplico para:"
+options={{
+A: "Analizar muestras de malware capturadas y reconstruir sesiones.",
+B: "Gestionar VLAN en conmutadores.",
+C: "Configurar reglas de NAT dinámico.",
+D: "Crear túneles VPN L2TP."
+}}
+correctAnswer="A"
+correctExplanation="Xplico ayuda a interpretar datos y archivos obtenidos por Dionaea, facilitando análisis profundo."
+incorrectExplanation="Las demás acciones no se relacionan con la colaboración típica entre Dionaea y Xplico."
+/>
+
+<InteractiveQuiz
+question="¿Cuál de las siguientes NO es una herramienta de visualización de logs?"
+options={{
+A: "Kibana",
+B: "Grafana",
+C: "Elasticsearch",
+D: "Notepad"
+}}
+correctAnswer="D"
+correctExplanation="Notepad es un editor de texto simple, no una plataforma de dashboards o búsqueda."
+incorrectExplanation="Kibana, Grafana y Elasticsearch contribuyen a la ingesta y presentación de datos."
+/>
+
+<InteractiveQuiz
+question="Dentro de Elastic Stack, Logstash se encarga principalmente de:"
+options={{
+A: "Ingestar, transformar y enrutar datos de log.",
+B: "Crear dashboards interactivos.",
+C: "Actuar como cortafuegos de aplicaciones web.",
+D: "Compilar el kernel de Linux."
+}}
+correctAnswer="A"
+correctExplanation="Logstash recibe eventos, los procesa y los entrega a destinos como Elasticsearch."
+incorrectExplanation="Las demás funciones pertenecen a componentes distintos o no al Stack."
+/>
+
+<InteractiveQuiz
+question="Para centralizar logs de Suricata en Elastic Stack se suele emplear:"
+options={{
+A: "Filebeat",
+B: "Switchport trunk",
+C: "httpd",
+D: "nslookup"
+}}
+correctAnswer="A"
+correctExplanation="Filebeat envía de forma eficiente los archivos de log hacia Logstash o Elasticsearch."
+incorrectExplanation="Las otras opciones no cumplen la tarea de recolección de logs."
+/>
+
+<InteractiveQuiz
+question="Un proxy inverso ayuda a mitigar ciertos ataques principalmente porque:"
+options={{
+A: "Oculta la IP real de los servidores y distribuye la carga.",
+B: "Incrementa el TTL de cada paquete saliente.",
+C: "Implementa técnicas de fragmentación IP maliciosa.",
+D: "Deshabilita la traducción de direcciones (NAT)."
+}}
+correctAnswer="A"
+correctExplanation="Al actuar de intermediario, el proxy inverso puede filtrar tráfico y balancear peticiones."
+incorrectExplanation="Las demás funciones no describen ventajas directas de un proxy inverso."
+/>
+
+<InteractiveQuiz
+question="El proxy transparente suele combinarse con:"
+options={{
+A: "NAT en proveedores de servicios para optimizar tráfico.",
+B: "Configuraciones de túneles GRE para BGP.",
+C: "Comunidades BGP en campus.",
+D: "DHCP snooping avanzado."
+}}
+correctAnswer="A"
+correctExplanation="Al interceptar tráfico sin configuración del cliente, el proxy transparente se integra con NAT."
+incorrectExplanation="Las otras tecnologías no forman parte de la solución típica de proxy transparente + NAT."
+/>
+
+<InteractiveQuiz
+question="En iptables, «-P INPUT DROP» establece:"
+options={{
+A: "Política por defecto DROP para la cadena INPUT.",
+B: "Una regla DNAT de prerouting.",
+C: "Una regla SNAT de postrouting.",
+D: "Un registro de eventos con LOG."
+}}
+correctAnswer="A"
+correctExplanation="Se descartan por defecto los paquetes de entrada que no coincidan con reglas más específicas."
+incorrectExplanation="Las demás acciones requieren sintaxis y cadenas distintas."
+/>
+
+<InteractiveQuiz
+question="El comando «echo 1 > /proc/sys/net/ipv4/ip_forward» permite:"
+options={{
+A: "Activar el reenvío de paquetes IP en Linux.",
+B: "Deshabilitar el servicio SSH.",
+C: "Reiniciar el sistema operativo.",
+D: "Configurar un trunk VLAN."
+}}
+correctAnswer="A"
+correctExplanation="El valor 1 habilita el bit de forwarding, necesario para que el host actúe como router."
+incorrectExplanation="Las demás opciones no son efectos del cambio en ip_forward."
+/>
+
+<InteractiveQuiz
+question="¿Qué comando ejecuta Suricata en modo offline para analizar un archivo pcap?"
+options={{
+A: "suricata -r captura.pcap",
+B: "suricata-update",
+C: "suricata -T",
+D: "suricatasc -c 'shutdown'"
+}}
+correctAnswer="A"
+correctExplanation="El parámetro -r indica a Suricata que lea un archivo pcap en lugar de interfaz en vivo."
+incorrectExplanation="Los otros comandos sirven para actualizar reglas, probar configuración o interactuar vía socket."
+/>
+
+<InteractiveQuiz
+question="Cowrie está escrito principalmente en:"
+options={{
+A: "Python",
+B: "C++",
+C: "Java",
+D: "Go"
+}}
+correctAnswer="A"
+correctExplanation="El proyecto utiliza Python y Twisted para manejar conexiones y registro de sesiones."
+incorrectExplanation="Las demás opciones no representan el lenguaje principal de Cowrie."
+/>
+
+<InteractiveQuiz
+question="Para capturar malware ejecutable, Dionaea emplea la técnica de:"
+options={{
+A: "Emular protocolos y responder adecuadamente, recibiendo binarios maliciosos.",
+B: "Bypass de NAT mediante GRE.",
+C: "Balanceo Round Robin.",
+D: "Análisis estático directo con ClamAV únicamente."
+}}
+correctAnswer="A"
+correctExplanation="Dionaea interactúa activamente con los atacantes, solicitando payloads y guardándolos."
+incorrectExplanation="Las otras acciones no describen la metodología principal de Dionaea."
+/>
+
+<InteractiveQuiz
+question="Grafana se conecta a Elasticsearch mediante:"
+options={{
+A: "La fuente de datos (data source) de Elasticsearch incluida.",
+B: "Un plugin DHCP.",
+C: "Túnel PPTP dedicado.",
+D: "Script exclusivo para LDAP."
+}}
+correctAnswer="A"
+correctExplanation="La integración nativa permite consultar índices y crear dashboards en Grafana."
+incorrectExplanation="Las demás opciones no configuran la comunicación Grafana-Elasticsearch."
+/>
+
+<InteractiveQuiz
+question="En un entorno de seguridad web, un proxy inverso puede funcionar adicionalmente como:"
+options={{
+A: "WAF (Web Application Firewall) inspeccionando y filtrando peticiones.",
+B: "Relay DHCP.",
+C: "BGP Speaker externo.",
+D: "IDS pasivo sin firmas."
+}}
+correctAnswer="A"
+correctExplanation="Un WAF integrado al proxy inverso bloquea ataques a nivel de aplicación (SQLi, XSS, etc.)."
+incorrectExplanation="Las demás funcionalidades no son típicas de un proxy inverso configurado como WAF."
+/>
+
+<InteractiveQuiz
+question="Una VPN sitio-a-sitio se diferencia de una VPN de acceso remoto porque:"
+options={{
+A: "Conecta dos redes completas a través de un túnel cifrado.",
+B: "Solo permite la conexión de un usuario simultáneo.",
+C: "Utiliza exclusivamente HTTP como protocolo.",
+D: "Depende de la presencia de un proxy inverso."
+}}
+correctAnswer="A"
+correctExplanation="El objetivo es unir subredes enteras, no únicamente dispositivos individuales."
+incorrectExplanation="Las otras afirmaciones no reflejan la diferencia clave entre ambos tipos de VPN."
+/>
+
+<InteractiveQuiz
+question="Squid puede configurarse para operar como:"
+options={{
+A: "Proxy transparente o inverso según la necesidad.",
+B: "Servidor DNS autoritativo.",
+C: "IDS basado en firmas.",
+D: "Motor de base de datos relacional."
+}}
+correctAnswer="A"
+correctExplanation="La versatilidad de Squid permite interceptar tráfico sin configuración del cliente o actuar frontalmente."
+incorrectExplanation="Las demás funciones no son propias del proyecto Squid."
+/>
+
+<InteractiveQuiz
+question="Suricata ofrece decodificación de paquetes hasta la capa:"
+options={{
+A: "Aplicación, incluyendo protocolos como HTTP, TLS y SMB.",
+B: "Red únicamente (IP).",
+C: "Física (Ethernet) sin inspección superior.",
+D: "Ninguna capa, solo cuenta paquetes."
+}}
+correctAnswer="A"
+correctExplanation="Suricata analiza protocolos de aplicación para aplicar firmas y extraer metadatos."
+incorrectExplanation="Las demás afirmaciones minimizan la profundidad de análisis real de Suricata."
+/>
+
+<InteractiveQuiz
+question="Para actualizar las reglas de Suricata de forma automática se utiliza:"
+options={{
+A: "suricata-update",
+B: "iptables-restore",
+C: "tcpdump -s",
+D: "cowrie-git"
+}}
+correctAnswer="A"
+correctExplanation="suricata-update descarga y gestiona reglas de fuentes como Emerging Threats."
+incorrectExplanation="Las demás herramientas no administran reglas de Suricata."
+/>
+
+<InteractiveQuiz
+question="Un proxy NAT ofrece simultáneamente:"
+options={{
+A: "Traducción de direcciones y políticas de caché y filtrado en un único dispositivo.",
+B: "Cifrado IPsec completo.",
+C: "Balanceo dinámico de BGP.",
+D: "Actualización del firmware BIOS."
+}}
+correctAnswer="A"
+correctExplanation="El proxy NAT combina funciones de proxy con la de gateway NAT para proteger y optimizar la red."
+incorrectExplanation="Las demás opciones no describen la capacidad combinada de un proxy NAT."
+/>
+

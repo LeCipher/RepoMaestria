@@ -1,0 +1,678 @@
+---
+sidebar_position: 3
+title: Herramientas - 2
+---
+import InteractiveQuiz from '@site/src/components/InteractiveQuiz';
+
+<InteractiveQuiz
+question="¿Cuál es la función principal de una VPN (Virtual Private Network) en el contexto de la seguridad de redes?"
+options={{
+A: "Actuar como un firewall para filtrar paquetes maliciosos.",
+B: "Crear un canal de comunicación seguro sobre una red pública como Internet.",
+C: "Monitorizar el tráfico en busca de intrusiones y emitir alertas.",
+D: "Traducir direcciones IP privadas a públicas para conservar el espacio de direccionamiento."
+}}
+correctAnswer="B"
+correctExplanation="Una VPN se utiliza para establecer una conexión segura y cifrada a través de una red menos segura, como Internet, permitiendo comunicar sedes o usuarios remotos con la red corporativa de forma confidencial. [cite: 1101, 1103, 1104]"
+incorrectExplanation="Las otras opciones describen las funciones de un firewall, un IDS y NAT, respectivamente, no la de una VPN. [cite: 4, 26, 1067]"
+/>
+<InteractiveQuiz
+question="En un entorno de seguridad, ¿para qué se utilizaría principalmente la herramienta Cowrie?"
+options={{
+A: "Para detectar vulnerabilidades en aplicaciones web mediante inyección SQL.",
+B: "Como un honeypot de baja/media interacción para emular servicios SSH y registrar intentos de acceso.",
+C: "Para visualizar los logs de Suricata en un cuadro de mando interactivo.",
+D: "Para realizar ataques de denegación de servicio (DoS) de tipo SYN Flood."
+}}
+correctAnswer="B"
+correctExplanation="Cowrie es un honeypot diseñado específicamente para emular servicios SSH, capturando las interacciones de los atacantes, como los comandos que intentan ejecutar y las credenciales que usan. [cite: 974, 1026]"
+incorrectExplanation="La detección de inyecciones SQL es tarea de otras herramientas. La visualización es propia de herramientas como Grafana o Kibana, y los ataques DoS se realizan con otras utilidades. [cite: 1228, 1265]"
+/>
+<InteractiveQuiz
+question="¿Cuál de las siguientes afirmaciones describe mejor un proxy transparente?"
+options={{
+A: "Requiere que cada cliente configure manualmente la dirección del proxy en su navegador.",
+B: "Actúa en nombre de los servidores, ocultando su identidad y balanceando la carga.",
+C: "Intercepta las comunicaciones de los usuarios sin que ellos necesiten configurar nada, a menudo combinado con NAT. [cite: 324, 325]",
+D: "Se especializa en cachear y servir contenido estático para acelerar la entrega."
+}}
+correctAnswer="C"
+correctExplanation="Un proxy transparente (también llamado inline, intercepting o forced proxy) se interpone en el tráfico a nivel de red, por lo que los usuarios no son conscientes de su presencia y no requieren configuración en sus equipos. [cite: 324, 325]"
+incorrectExplanation="La opción A describe un proxy explícito. La B describe un proxy inverso. La D describe una función de proxy caché, que no es exclusiva de los transparentes. [cite: 326, 308]"
+/>
+<InteractiveQuiz
+question="Un administrador de seguridad quiere desplegar un honeypot para atraer y analizar ataques dirigidos a servicios como SMB, FTP, y HTTP. ¿Qué herramienta sería la más adecuada para este propósito?"
+options={{
+A: "Cowrie",
+B: "Dionaea",
+C: "Suricata",
+D: "Ettercap"
+}}
+correctAnswer="B"
+correctExplanation="Dionaea es un honeypot de baja interacción diseñado para capturar malware que se propaga a través de protocolos como SMB, HTTP, FTP, y otros, simulando vulnerabilidades en estos servicios para que los atacantes interactúen con él. [cite: 974]"
+incorrectExplanation="Cowrie se enfoca en SSH. Suricata es un IDS/IPS, no un honeypot. Ettercap es una herramienta para ataques MitM, no un sistema señuelo. [cite: 1067, 747]"
+/>
+<InteractiveQuiz
+question="¿Qué es un proxy inverso y cuál es uno de sus casos de uso más comunes?"
+options={{
+A: "Un proxy que oculta la identidad del cliente; se usa para el anonimato del usuario.",
+B: "Un proxy que funciona de forma transparente; se usa en proveedores de Internet para filtrar contenido.",
+C: "Un proxy que se instala delante de los servidores web para distribuir la carga y proporcionar una capa de seguridad. [cite: 327, 329]",
+D: "Un proxy que solo acepta peticiones de la red local para controlar el acceso saliente."
+}}
+correctAnswer="C"
+correctExplanation="Un proxy inverso se sitúa frente a uno o más servidores, recibiendo las peticiones de los clientes y distribuyéndolas. Se utiliza comúnmente para el balanceo de carga, como terminador SSL y para proteger los servidores. [cite: 327, 329]"
+incorrectExplanation="La opción A describe un proxy forward o web. La B es un proxy transparente. La D es un proxy interno o local. [cite: 317, 324]"
+/>
+<InteractiveQuiz
+question="Al configurar Suricata, un analista de seguridad necesita visualizar las alertas y eventos de red en un panel gráfico. ¿Qué herramienta se integra comúnmente con Suricata para este fin?"
+options={{
+A: "Wireshark",
+B: "Grafana",
+C: "Nmap",
+D: "Metasploit"
+}}
+correctAnswer="B"
+correctExplanation="Aunque Suricata puede registrar eventos en varios formatos, herramientas como Grafana, o el Elastic Stack (con Kibana), son frecuentemente utilizadas para crear cuadros de mando que permiten visualizar y analizar las alertas generadas en tiempo real."
+incorrectExplanation="Wireshark es un analizador de protocolos para captura de paquetes. Nmap es un escáner de puertos y redes. Metasploit es un framework para explotación de vulnerabilidades. Ninguno es una herramienta principal de visualización para logs de IDS. [cite: 795, 1199, 1214]"
+/>
+<InteractiveQuiz
+question="¿Cuál es la función principal de la Zona Desmilitarizada (DMZ) en una arquitectura de red?"
+options={{
+A: "Cifrar todo el tráfico que sale hacia Internet para garantizar la confidencialidad.",
+B: "Alojar servidores que necesitan ser accesibles desde Internet, aislándolos de la red interna. [cite: 924]",
+C: "Ser una red exclusiva para los administradores de sistemas con privilegios elevados.",
+D: "Almacenar las copias de seguridad de toda la organización en una ubicación segura."
+}}
+correctAnswer="B"
+correctExplanation="Una DMZ es una subred perimetral que expone los servicios externos de una organización a una red no confiable como Internet, actuando como una zona de contención para proteger la red local interna en caso de que uno de esos servicios sea comprometido. [cite: 922, 924, 925, 926]"
+incorrectExplanation="Las otras opciones describen funciones de seguridad que no corresponden al propósito principal de una DMZ. El cifrado lo manejan protocolos como TLS o VPNs, y la gestión de administradores o backups se realiza en segmentos de red específicos y seguros. [cite: 950]"
+/>
+<InteractiveQuiz
+question="En iptables, ¿qué cadena (chain) es la primera en procesar el tráfico que entra a la máquina desde la red, antes de que se tome cualquier decisión de enrutamiento?"
+options={{
+A: "INPUT",
+B: "FORWARD",
+C: "OUTPUT",
+D: "PREROUTING"
+}}
+correctAnswer="D"
+correctExplanation="La cadena PREROUTING de la tabla 'nat' y 'mangle' es la primera que atraviesa un paquete al llegar a la interfaz de red. Es aquí donde se suelen realizar modificaciones en la dirección de destino (DNAT) antes de que el sistema decida si el paquete es para la propia máquina (INPUT) o debe ser reenviado (FORWARD). [cite: 147]"
+incorrectExplanation="INPUT es para paquetes destinados a la propia máquina, FORWARD para paquetes que se reenvían a través de la máquina, y OUTPUT para paquetes generados por la propia máquina. [cite: 148, 149, 150]"
+/>
+<InteractiveQuiz
+question="¿Qué comando de iptables se utiliza para cambiar la dirección IP de origen de un paquete que sale de la red, reemplazándola por la IP del firewall, en un escenario de NAT dinámico?"
+options={{
+A: "iptables -t nat -A PREROUTING -j DNAT",
+B: "iptables -t filter -A FORWARD -j ACCEPT",
+C: "iptables -t nat -A POSTROUTING -j MASQUERADE",
+D: "iptables -t mangle -A OUTPUT -j MARK"
+}}
+correctAnswer="C"
+correctExplanation="La acción MASQUERADE, utilizada en la cadena POSTROUTING de la tabla 'nat', está diseñada para enmascarar las direcciones IP de una red privada. Automáticamente utiliza la dirección IP de la interfaz de salida, lo que es ideal para IPs dinámicas. [cite: 140, 219]"
+incorrectExplanation="DNAT se usa en PREROUTING para cambiar el destino. FORWARD en 'filter' permite o deniega el paso de paquetes. MARK en 'mangle' marca paquetes para políticas avanzadas. [cite: 138, 144, 133]"
+/>
+<InteractiveQuiz
+question="¿Cuál es el propósito del ataque de envenenamiento de la caché ARP (ARP Poisoning)?"
+options={{
+A: "Inundar la red con paquetes ARP para causar una denegación de servicio.",
+B: "Engañar a los dispositivos de una red para que asocien la dirección IP de una víctima con la dirección MAC del atacante. [cite: 1157]",
+C: "Robar las cookies de sesión de un usuario para secuestrar su sesión web.",
+D: "Descubrir qué puertos están abiertos en un host de la red."
+}}
+correctAnswer="B"
+correctExplanation="El envenenamiento ARP consiste en enviar respuestas ARP falsificadas a una o varias víctimas en una red local. Esto hace que las víctimas actualicen su caché ARP con una entrada incorrecta (IP de un host legítimo, MAC del atacante), redirigiendo el tráfico a través del atacante y permitiendo un ataque Man-in-the-Middle. [cite: 1144, 1152, 1156]"
+incorrectExplanation="Aunque puede derivar en una denegación de servicio, su objetivo principal es la interceptación. El robo de cookies o el escaneo de puertos son técnicas de ataque diferentes. [cite: 1178]"
+/>
+<InteractiveQuiz
+question="En el contexto de la captura de tráfico con tcpdump, si se desea capturar únicamente los paquetes SYN, ¿qué tipo de filtro avanzado se podría usar?"
+options={{
+A: "tcpdump 'tcp port 80'",
+B: "tcpdump 'tcp[13] & 2 != 0'",
+C: "tcpdump 'ip proto tcp'",
+D: "tcpdump 'host 192.168.1.1'"
+}}
+correctAnswer="B"
+correctExplanation="Este filtro utiliza la notación de offset para inspeccionar el byte 13 de la cabecera TCP, que contiene los flags. Al aplicar una máscara de bits para el flag SYN (valor 2), se capturan solo los paquetes que lo tienen activado, independientemente de los otros flags. [cite: 697, 719, 720]"
+incorrectExplanation="Las otras opciones son filtros válidos pero no específicos para el flag SYN. 'tcp port 80' filtra por puerto, 'ip proto tcp' filtra todo el tráfico TCP, y 'host 192.168.1.1' filtra por dirección IP. [cite: 617, 614]"
+/>
+<InteractiveQuiz
+question="¿Qué es un ataque de tipo Man-in-the-Middle (MitM)?"
+options={{
+A: "Un ataque donde el actor malicioso se posiciona secretamente entre dos partes que se comunican, interceptando y posiblemente alterando sus mensajes. [cite: 745, 1159]",
+B: "Un ataque que explota una vulnerabilidad en un software el mismo día que se hace pública (Zero-Day).",
+C: "Un ataque que intenta adivinar una contraseña probando millones de combinaciones (fuerza bruta).",
+D: "Un ataque que sobrecarga un servidor con solicitudes para que deje de estar disponible (DoS)."
+}}
+correctAnswer="A"
+correctExplanation="Un ataque Man-in-the-Middle (MitM) ocurre cuando un atacante logra interceptar la comunicación entre dos sistemas. Esto se puede lograr con técnicas como el envenenamiento ARP, permitiendo al atacante espiar o manipular el tráfico sin que las víctimas se den cuenta. [cite: 745, 1159, 1161]"
+incorrectExplanation="Las otras opciones describen ataques de día cero, de fuerza bruta y de denegación de servicio, que son tipos de amenazas diferentes. [cite: 1012, 1232]"
+/>
+<InteractiveQuiz
+question="Según la documentación, la herramienta Ettercap se utiliza principalmente para:"
+options={{
+A: "Configurar reglas de firewall avanzadas en un kernel de Linux.",
+B: "Analizar el rendimiento de la red y generar estadísticas de latencia.",
+C: "Facilitar ataques Man-in-the-Middle (MitM) en redes conmutadas. [cite: 747, 748]",
+D: "Servir como un honeypot de alta interacción para investigación de malware."
+}}
+correctAnswer="C"
+correctExplanation="Ettercap es una suite completa para realizar ataques MitM. Incluye funcionalidades para envenenamiento ARP, spoofing de ICMP y DHCP, y sniffing de conexiones, lo que la hace una herramienta poderosa para interceptar tráfico en una LAN. [cite: 747, 750, 751]"
+incorrectExplanation="La configuración de firewalls se hace con herramientas como iptables. El análisis de rendimiento es más propio de otras utilidades, y los honeypots son sistemas diferentes como Cowrie o Dionaea. [cite: 120]"
+/>
+<InteractiveQuiz
+question="Al configurar un proxy caché con Squid, ¿qué política de reemplazo de caché elimina primero los objetos que fueron accedidos hace más tiempo, siendo la política por defecto?"
+options={{
+A: "LFUDA (Least Frequently Used with Dynamic Aging)",
+B: "GDSF (GreedyDual Size Frequency)",
+C: "LRU (Least Recently Used)",
+D: "FIFO (First-In, First-Out)"
+}}
+correctAnswer="C"
+correctExplanation="La política LRU (Least Recently Used) es la predeterminada en Squid. Su funcionamiento se basa en descartar los objetos que no han sido solicitados recientemente, manteniendo en caché los que tienen un acceso más reciente. [cite: 409, 410]"
+incorrectExplanation="LFUDA y GDSF son políticas alternativas que optimizan la caché basándose en la frecuencia de uso y el tamaño del objeto, no solo en la recencia. FIFO no se menciona como una de las políticas principales de Squid en el texto. [cite: 411, 412]"
+/>
+<InteractiveQuiz
+question="¿Qué comando se utilizaría para iniciar el análisis de tráfico en Ettercap en modo gráfico?"
+options={{
+A: "ettercap -T",
+B: "ettercap -C",
+C: "ettercap -G",
+D: "ettercap -M arp:remote"
+}}
+correctAnswer="C"
+correctExplanation="La opción '-G' inicia la interfaz gráfica de Ettercap, que está construida sobre las librerías GTK. Esta es la opción recomendada para un uso interactivo y visual de la herramienta. [cite: 765]"
+incorrectExplanation="La opción '-T' inicia la interfaz de texto. '-C' utiliza la interfaz basada en ncurses. '-M' se usa para ejecutar un ataque MitM específico desde la línea de comandos, no para iniciar la GUI. [cite: 765]"
+/>
+<InteractiveQuiz
+question="¿Cuál es una de las principales diferencias entre un sistema de detección de intrusiones (IDS) y un sistema de prevención de intrusiones (IPS)?"
+options={{
+A: "El IDS solo funciona en redes inalámbricas, mientras que el IPS funciona en redes cableadas.",
+B: "El IDS es proactivo y bloquea los ataques, mientras que el IPS es reactivo y solo alerta. [cite: 1071, 1074]",
+C: "El IDS es reactivo y solo detecta y alerta, mientras que el IPS es proactivo y puede bloquear activamente las amenazas detectadas. [cite: 1070, 1071, 1074]",
+D: "El IDS se basa en firmas, mientras que el IPS se basa en el comportamiento anómalo."
+}}
+correctAnswer="C"
+correctExplanation="La diferencia fundamental es la acción que toman. Un IDS monitoriza el tráfico, detecta posibles amenazas y genera una alerta (actuación reactiva). Un IPS, además de detectar, tiene la capacidad de tomar medidas para detener el ataque, como descartar paquetes o terminar conexiones (actuación preventiva). [cite: 1070, 1071, 1074]"
+incorrectExplanation="Ambos pueden funcionar en diferentes tipos de redes y usar tanto firmas como análisis de comportamiento. La opción B invierte los roles de IDS e IPS. [cite: 1089, 1090]"
+/>
+<InteractiveQuiz
+question="Dentro de la configuración de Squid, las Listas de Control de Acceso (ACL) se utilizan para:"
+options={{
+A: "Definir el tamaño máximo de los objetos que se pueden almacenar en la caché.",
+B: "Especificar el puerto en el que Squid escuchará las peticiones HTTP.",
+C: "Crear reglas para permitir o denegar el acceso a recursos web basándose en criterios como IP de origen, dominio, etc. [cite: 365]",
+D: "Establecer la política de reemplazo de la caché (LRU, LFUDA)."
+}}
+correctAnswer="C"
+correctExplanation="Las ACL (Access Control Lists) son el mecanismo principal en Squid para definir políticas de acceso. Permiten crear conjuntos de parámetros (como redes, dominios, puertos) y luego aplicar reglas 'http_access' para permitir o denegar el tráfico que coincida con esas ACL. [cite: 365, 371]"
+incorrectExplanation="El tamaño de objetos se define con 'maximum_object_size', el puerto con 'http_port' y la política de caché con 'cache_replacement_policy'. [cite: 405, 358, 414]"
+/>
+<InteractiveQuiz
+question="¿Qué tipo de ataque se aprovecha de la vulnerabilidad en el protocolo SMBv1, que fue explotado masivamente por el ransomware WannaCry?"
+options={{
+A: "Inyección SQL",
+B: "Man-in-the-Middle",
+C: "Ataque de fragmentación",
+D: "Ejecución remota de código a través de una vulnerabilidad de red"
+}}
+correctAnswer="D"
+correctExplanation="WannaCry se propagó explotando la vulnerabilidad MS17-010 en el protocolo SMBv1. Esta vulnerabilidad permitía a los atacantes ejecutar código de forma remota en sistemas Windows no parcheados, lo que facilitó su rápida expansión como un gusano. [cite: 86, 87]"
+incorrectExplanation="WannaCry no fue un ataque de inyección SQL, MitM o fragmentación, sino que su vector de propagación fue una vulnerabilidad específica del servicio de red SMB. [cite: 86]"
+/>
+<InteractiveQuiz
+question="En iptables, ¿para qué se utiliza la tabla 'nat'?"
+options={{
+A: "Para filtrar paquetes basándose en su estado de conexión (NEW, ESTABLISHED, RELATED).",
+B: "Para realizar la Traducción de Direcciones de Red (Network Address Translation), modificando la IP de origen o destino. [cite: 136]",
+C: "Para manipular cabeceras de paquetes de bajo nivel, como los campos TOS o TTL.",
+D: "Para permitir o denegar el paso de paquetes a través del firewall."
+}}
+correctAnswer="B"
+correctExplanation="La tabla 'nat' se utiliza exclusivamente para la traducción de direcciones de red. Opera sobre las cadenas PREROUTING (para DNAT), POSTROUTING (para SNAT/MASQUERADE) y OUTPUT. [cite: 136, 153]"
+incorrectExplanation="El filtrado general se realiza en la tabla 'filter'. La manipulación de cabeceras se hace en la tabla 'mangle'. [cite: 143, 128]"
+/>
+<InteractiveQuiz
+question="Si un atacante envía un paquete a una red con el bit 'no fragmentar' activado y un tamaño mayor que la MTU de la red, ¿qué sucederá?"
+options={{
+A: "El paquete será fragmentado por el router y entregado correctamente.",
+B: "El router descartará el paquete y no enviará ninguna respuesta.",
+C: "El router descartará el paquete y enviará un mensaje ICMP 'Destination Unreachable' al origen. [cite: 77]",
+D: "El paquete será aceptado pero su contenido estará corrupto."
+}}
+correctAnswer="C"
+correctExplanation="Esta técnica es utilizada por los atacantes para descubrir la MTU (Maximum Transmission Unit) de una red. Al enviar un paquete grande con el flag 'DF' (Don't Fragment), se fuerza al router a descartarlo si excede la MTU del siguiente salto y a notificarlo con un error ICMP, revelando así información de la red. [cite: 76, 77, 78]"
+incorrectExplanation="El flag 'no fragmentar' impide explícitamente la fragmentación. El router no lo ignora ni lo corrompe, sino que sigue el procedimiento estándar del protocolo de descartarlo y notificar el error. [cite: 76]"
+/>
+<InteractiveQuiz
+question="¿Cuál de las siguientes afirmaciones describe mejor un ataque de inyección SQL?"
+options={{
+A: "Insertar código HTML malicioso en una página web para que se ejecute en el navegador de otros usuarios.",
+B: "Enviar un correo electrónico que suplanta la identidad de una entidad de confianza para robar credenciales.",
+C: "Añadir o manipular una consulta SQL a través de un campo de entrada de una aplicación para acceder o modificar datos de forma no autorizada. [cite: 1426, 1428]",
+D: "Inyectar comandos del sistema operativo a través de una aplicación vulnerable para tomar control del servidor."
+}}
+correctAnswer="C"
+correctExplanation="La inyección SQL es una técnica que explota la validación insuficiente de las entradas del usuario para ejecutar sentencias SQL no previstas por el programador. Esto permite al atacante interactuar directamente con la base de datos subyacente. [cite: 1423, 1426, 1428]"
+incorrectExplanation="La opción A describe un ataque XSS (Cross-Site Scripting). La B describe el phishing. La D describe una inyección de comandos, que es similar pero ataca al sistema operativo, no a la base de datos. [cite: 902, 1422]"
+/>
+<InteractiveQuiz
+question="¿Qué tecnología de seguridad de red se define como una arquitectura, no un producto, diseñada para ser comprometida y así poder estudiar las acciones de los atacantes en un entorno real?"
+options={{
+A: "Firewall de Comportamiento (UEBA)",
+B: "Honeynet",
+C: "Sistema de Prevención de Intrusiones (IPS)",
+D: "Gateway de Seguridad Web"
+}}
+correctAnswer="B"
+correctExplanation="Una Honeynet es una arquitectura de red de alta interacción que contiene sistemas y datos reales o simulados. Su propósito no es la producción, sino ser un señuelo para atraer, observar y analizar las herramientas, tácticas y procedimientos de los atacantes. [cite: 968, 1039, 1042]"
+incorrectExplanation="UEBA, IPS y los Gateways de seguridad son tecnologías diseñadas para proteger sistemas de producción, no para ser comprometidas intencionadamente con fines de investigación. [cite: 1291, 1073]"
+/>
+<InteractiveQuiz
+question="¿Cuál es la función principal de la opción 'MASQUERADE' en iptables en comparación con 'SNAT'?"
+options={{
+A: "MASQUERADE se usa para IPs de destino, mientras que SNAT es para IPs de origen.",
+B: "MASQUERADE solo funciona en la cadena PREROUTING, y SNAT en POSTROUTING.",
+C: "MASQUERADE es para conexiones TCP, mientras que SNAT es para UDP.",
+D: "MASQUERADE obtiene la IP de la interfaz de salida automáticamente, ideal para IPs dinámicas, mientras que SNAT requiere especificar una IP estática. [cite: 140]"
+}}
+correctAnswer="D"
+correctExplanation="La principal diferencia práctica es que con SNAT se debe especificar la dirección IP de origen a utilizar en la traducción. Con MASQUERADE, iptables consulta automáticamente la IP asignada a la interfaz de salida, lo que es perfecto para conexiones a Internet con IP dinámica (como PPPoE). [cite: 139, 140]"
+incorrectExplanation="Ambas acciones se utilizan para cambiar la IP de origen (Source NAT) y operan en la cadena POSTROUTING. Ambas funcionan para cualquier protocolo IP, no solo TCP o UDP. [cite: 139, 140, 153]"
+/>
+<InteractiveQuiz
+question="En la terminología de seguridad, ¿qué es un 'rootkit'?"
+options={{
+A: "Un tipo de malware que cifra los archivos del usuario y pide un rescate para recuperarlos.",
+B: "Un conjunto de herramientas que un atacante utiliza para obtener control remoto y persistente de un sistema, ocultando su presencia. [cite: 108, 113, 114]",
+C: "El primer usuario creado en un sistema Unix/Linux con todos los privilegios.",
+D: "Una herramienta para escalar privilegios de usuario normal a administrador de forma legítima."
+}}
+correctAnswer="B"
+correctExplanation="Un rootkit es un software malicioso diseñado para permitir el acceso privilegiado continuo a un ordenador mientras oculta activamente su presencia. Modifica componentes del sistema operativo para esconder procesos, archivos y conexiones de red. [cite: 108, 113, 114, 116]"
+incorrectExplanation="La opción A describe el ransomware. La C describe la cuenta 'root'. La D describe herramientas de administración legítimas, no maliciosas. [cite: 81]"
+/>
+<InteractiveQuiz
+question="¿Cuál de las siguientes es una ventaja clave de los honeypots en la detección de amenazas, según el texto?"
+options={{
+A: "Generan un gran volumen de logs, proporcionando una visión completa de toda la actividad de la red.",
+B: "Tienen un carácter preventivo muy fuerte, disuadiendo a la mayoría de los atacantes.",
+C: "Generan muy pocos datos y de altísimo valor, con una tasa de falsos positivos casi nula. [cite: 1053, 1055]",
+D: "Requieren muchos recursos de hardware (CPU, memoria) para funcionar eficazmente."
+}}
+correctAnswer="C"
+correctExplanation="Dado que ningún usuario legítimo debería interactuar con un honeypot, cualquier actividad registrada es, por definición, sospechosa o maliciosa. Esto resulta en un bajo volumen de datos muy relevantes y una drástica reducción de los falsos positivos en comparación con los IDS tradicionales. [cite: 1053, 1054, 1055]"
+incorrectExplanation="Los honeypots generan un volumen de datos pequeño, no grande. Tienen un carácter preventivo limitado y requieren recursos mínimos. [cite: 1053, 1056, 1066]"
+/>
+<InteractiveQuiz
+question="¿Qué comando usaría para ver la tabla de enrutamiento ARP en una máquina Windows o Linux?"
+options={{
+A: "netstat -r",
+B: "ifconfig -a",
+C: "arp -a",
+D: "ping -a"
+}}
+correctAnswer="C"
+correctExplanation="El comando 'arp -a' se utiliza tanto en sistemas Windows como en Linux para mostrar las entradas actuales de la caché ARP, que mapea las direcciones IP a sus correspondientes direcciones MAC físicas en la red local. [cite: 804, 805, 806]"
+incorrectExplanation="'netstat -r' muestra la tabla de enrutamiento IP. 'ifconfig -a' (o 'ip addr' en Linux moderno) muestra la configuración de las interfaces de red. 'ping -a' intenta resolver el nombre de host de una IP. [cite: 530]"
+/>
+<InteractiveQuiz
+question="¿Qué es un ataque de fragmentación y cómo busca evadir las defensas de seguridad?"
+options={{
+A: "Dividiendo un paquete en fragmentos tan pequeños que el firewall no puede reensamblarlos a tiempo, causando una denegación de servicio.",
+B: "Enviando solo el primer fragmento de un paquete para que el firewall lo apruebe, y luego enviando los fragmentos maliciosos restantes que podrían no ser inspeccionados. [cite: 60, 74]",
+C: "Fragmentando paquetes de tal manera que, al reensamblarse, sobrescriban datos en la memoria del sistema objetivo.",
+D: "Usando fragmentos de diferentes protocolos (TCP, UDP, ICMP) dentro de un solo paquete para confundir al firewall."
+}}
+correctAnswer="B"
+correctExplanation="Los ataques de fragmentación explotan la forma en que los dispositivos de red manejan los paquetes IP fragmentados. Una técnica clásica consiste en dividir el paquete de tal forma que la información de control (como los puertos TCP/UDP) que el firewall inspecciona esté en el primer fragmento, y la carga maliciosa en los siguientes, esperando que estos últimos pasen sin un escrutinio tan riguroso. [cite: 59, 60, 74]"
+incorrectExplanation="Aunque pueden usarse para DoS, el objetivo principal descrito es la evasión. Las otras opciones describen técnicas de ataque más complejas como 'teardrop' o no son representativas del ataque de fragmentación básico. [cite: 67]"
+/>
+<InteractiveQuiz
+question="¿Cuál de estas herramientas de seguridad se centra en analizar el comportamiento de usuarios y entidades (UEBA) para detectar amenazas internas y reducir el ruido de las alertas?"
+options={{
+A: "Honeypot",
+B: "Firewall de Comportamiento",
+C: "Proxy Transparente",
+D: "Sistema de Detección de Intrusiones (IDS) basado en firmas"
+}}
+correctAnswer="B"
+correctExplanation="Los Firewalls de Comportamiento son una evolución de las soluciones UEBA (User and Entity Behavior Analytics). Aprenden el comportamiento normal de los usuarios y entidades para detectar desviaciones que puedan indicar una amenaza, como un compromiso de credenciales o un abuso de privilegios. [cite: 1297, 1307]"
+incorrectExplanation="Los honeypots son señuelos. Los proxies transparentes interceptan tráfico. Los IDS basados en firmas buscan patrones conocidos, no desviaciones de comportamiento. [cite: 975, 324, 1067]"
+/>
+<InteractiveQuiz
+question="Al usar tcpdump, si se especifica la opción '-w captura.pcap', ¿qué está haciendo el usuario?"
+options={{
+A: "Leyendo y mostrando el contenido del archivo 'captura.pcap'.",
+B: "Mostrando los paquetes en la terminal con el máximo nivel de detalle (wordy).",
+C: "Escribiendo los paquetes capturados en un archivo binario llamado 'captura.pcap' para su análisis posterior. [cite: 560]",
+D: "Filtrando el tráfico para capturar solo paquetes relacionados con la aplicación 'pcap'."
+}}
+correctAnswer="C"
+correctExplanation="La opción '-w' (write) instruye a tcpdump para que guarde los datos brutos de los paquetes en un archivo en lugar de mostrarlos en pantalla. Este archivo, comúnmente con extensión .pcap, puede ser analizado más tarde con el mismo tcpdump (usando -r) o con herramientas como Wireshark. [cite: 560, 561]"
+incorrectExplanation="Para leer un archivo se usa '-r'. El nivel de detalle se controla con '-v' o '-vv'. El filtrado se define con expresiones, no con la opción '-w'. [cite: 561, 543]"
+/>
+<InteractiveQuiz
+question="En un ataque de denegación de servicio (DoS) de tipo SYN Flood, ¿cuál es el objetivo principal del atacante?"
+options={{
+A: "Enviar paquetes SYN con una carga útil maliciosa para infectar el servidor.",
+B: "Saturar la tabla de conexiones del servidor con conexiones TCP semiabiertas, impidiendo que los usuarios legítimos se conecten. [cite: 1213]",
+C: "Descubrir qué puertos TCP están abiertos en el servidor.",
+D: "Engañar al servidor para que envíe sus respuestas a una tercera máquina (víctima)."
+}}
+correctAnswer="B"
+correctExplanation="En un SYN Flood, el atacante envía un gran número de paquetes SYN (inicio de conexión), a menudo con IPs de origen falsas. El servidor responde con SYN-ACK y reserva recursos para cada una de estas conexiones, esperando un ACK final que nunca llegará. Esto agota los recursos del servidor, que ya no puede aceptar nuevas conexiones legítimas. [cite: 1210, 1212, 1213]"
+incorrectExplanation="El paquete SYN inicial no lleva carga útil. El descubrimiento de puertos es un escaneo, no un DoS. Engañar al servidor para que responda a otro es un ataque de reflexión o amplificación, que es una técnica relacionada pero con un mecanismo diferente. [cite: 1253]"
+/>
+<InteractiveQuiz
+question="¿Qué dos capas del modelo OSI son las principales afectadas por un ataque de envenenamiento ARP?"
+options={{
+A: "Capa de Red (Capa 3) y Capa de Transporte (Capa 4)",
+B: "Capa de Enlace de Datos (Capa 2) y Capa de Red (Capa 3)",
+C: "Capa Física (Capa 1) y Capa de Enlace de Datos (Capa 2)",
+D: "Capa de Aplicación (Capa 7) y Capa de Presentación (Capa 6)"
+}}
+correctAnswer="B"
+correctExplanation="El protocolo ARP opera en la Capa 2 (Enlace de Datos) para mapear direcciones de Capa 3 (Red). El ataque manipula este mapeo (la tabla ARP), por lo que afecta directamente a la Capa 2. Como resultado, el enrutamiento de paquetes a nivel de Capa 3 se ve comprometido, ya que los paquetes se envían al destino físico equivocado. [cite: 1142]"
+incorrectExplanation="Aunque el ataque tiene consecuencias en capas superiores, su mecanismo de acción se centra en la interacción entre las capas de enlace y de red. [cite: 1142]"
+/>
+<InteractiveQuiz
+question="¿Cuál de las siguientes es una característica de un firewall 'bastión' en una arquitectura con DMZ?"
+options={{
+A: "Es el firewall más externo, que se comunica directamente con Internet. [cite: 13]",
+B: "Es el firewall interno, que protege la red local (LAN) de la DMZ y de Internet. [cite: 13]",
+C: "Es un tipo de firewall de aplicación que solo inspecciona el tráfico web.",
+D: "Es un firewall implementado como software en cada host de la red."
+}}
+correctAnswer="B"
+correctExplanation="En una arquitectura de red perimetral, el firewall de contención (o exterior) es el que se conecta a Internet, mientras que el firewall bastión (o interior) es el que se sitúa entre la DMZ y la red interna, protegiendo los recursos más críticos de la organización. [cite: 13]"
+incorrectExplanation="La opción A describe un firewall de contención. Las otras opciones describen tipos de firewall por su función o implementación, no por su posición en esta arquitectura específica. [cite: 13]"
+/>
+<InteractiveQuiz
+question="¿Qué tipo de información NO se suele obtener mediante 'footprinting' o OSINT (Open Source Intelligence)?"
+options={{
+A: "Direcciones de correo electrónico y nombres de empleados.",
+B: "Tecnologías utilizadas por el servidor web de la empresa.",
+C: "Contraseñas cifradas de los usuarios de la base de datos interna.",
+D: "Archivos y metadatos subidos a la web pública de la empresa. [cite: 1126]"
+}}
+correctAnswer="C"
+correctExplanation="El footprinting se basa en la recopilación de información desde fuentes de acceso público. Las contraseñas cifradas de una base de datos interna son información confidencial y no estarían disponibles públicamente, requerirían un ataque más intrusivo para ser obtenidas. [cite: 1126]"
+incorrectExplanation="Los nombres, tecnologías y metadatos son ejemplos clásicos de información que se puede obtener a través de la web, redes sociales, 'dorks' de Google y otras fuentes públicas. [cite: 1126, 1127, 1130]"
+/>
+<InteractiveQuiz
+question="En la configuración de un proxy caché como Squid, ¿cuál es el propósito de la directiva 'cache_dir'?"
+options={{
+A: "Especificar la ubicación en el disco, el formato y el tamaño de la caché de objetos. [cite: 398, 400]",
+B: "Definir un directorio para almacenar mensajes de error personalizados.",
+C: "Establecer el directorio donde se guardarán los archivos de log de acceso.",
+D: "Indicar el directorio raíz para el contenido web que el proxy servirá."
+}}
+correctAnswer="A"
+correctExplanation="La directiva 'cache_dir' es fundamental para habilitar el cacheo en disco. Define el tipo de sistema de almacenamiento (ej. ufs, aufs), la ruta del directorio, el tamaño total de la caché en megabytes y la estructura de subdirectorios. [cite: 398, 400, 401, 402]"
+incorrectExplanation="Los errores personalizados se gestionan con 'error_directory', y los logs con 'access_log' y 'cache_log'. Squid no es un servidor web, por lo que no sirve contenido de un directorio raíz. [cite: 383, 360, 361]"
+/>
+<InteractiveQuiz
+question="¿Qué es una red 'botnet' y cómo se utiliza en ataques DDoS?"
+options={{
+A: "Una red de ordenadores señuelo (honeypots) para atraer atacantes.",
+B: "Una red de ordenadores 'zombies' infectados y controlados remotamente por un atacante para lanzar ataques coordinados. [cite: 1256]",
+C: "Una red privada virtual (VPN) utilizada por los atacantes para anonimizar su tráfico.",
+D: "Un conjunto de reglas de firewall distribuidas para proteger contra ataques."
+}}
+correctAnswer="B"
+correctExplanation="Una botnet es una colección de dispositivos conectados a Internet que han sido comprometidos por malware y están bajo el control de un 'botmaster'. En un ataque DDoS (Denegación de Servicio Distribuida), el atacante ordena a todos los bots que envíen tráfico simultáneamente hacia un único objetivo, abrumando sus recursos. [cite: 1237, 1256, 1261]"
+incorrectExplanation="Las otras opciones describen honeynets, VPNs o sistemas de defensa, que son conceptos de seguridad distintos a una red de ataque como una botnet. [cite: 968, 1101]"
+/>
+<InteractiveQuiz
+question="Si un analista de seguridad ejecuta el comando 'etterlog -p prueba.ecp', ¿qué está intentando hacer?"
+options={{
+A: "Crear un nuevo archivo de log de Ettercap llamado 'prueba.ecp'.",
+B: "Iniciar una captura de paquetes en modo promiscuo con Ettercap.",
+C: "Interpretar y mostrar el contenido de los paquetes capturados guardados en el archivo binario 'prueba.ecp'.",
+D: "Envenenar la caché ARP de la red usando la información del archivo 'prueba.ecp'."
+}}
+correctAnswer="C"
+correctExplanation="El comando 'etterlog' es la utilidad para analizar los ficheros de log generados por Ettercap. El fichero con extensión .ecp contiene los paquetes capturados en formato binario. Etterlog permite interpretarlos y mostrarlos de forma legible. [cite: 866, 867, 870]"
+incorrectExplanation="La captura y los ataques se realizan con el comando 'ettercap'. 'etterlog' es exclusivamente para el análisis post-mortem de los logs. [cite: 776]"
+/>
+<InteractiveQuiz
+question="¿Cuál es la función del 'three-way handshake' en el protocolo TCP?"
+options={{
+A: "Negociar el cifrado que se usará en la comunicación.",
+B: "Establecer de forma fiable una conexión entre un cliente y un servidor antes de transferir datos. [cite: 578]",
+C: "Cerrar ordenadamente una conexión existente.",
+D: "Resolver la dirección MAC correspondiente a una dirección IP."
+}}
+correctAnswer="B"
+correctExplanation="El 'three-way handshake' es el proceso de tres pasos (SYN, SYN-ACK, ACK) que utiliza TCP para sincronizar los números de secuencia y establecer una conexión de manera fiable entre dos hosts, asegurando que ambos están listos para la comunicación. [cite: 578, 580]"
+incorrectExplanation="El cifrado se negocia en capas superiores (como TLS). El cierre de conexión tiene su propio proceso (con flags FIN). La resolución de MAC es tarea del protocolo ARP. [cite: 488]"
+/>
+<InteractiveQuiz
+question="Una de las principales ventajas de los proxies sobre los firewalls tradicionales es:"
+options={{
+A: "Son más rápidos y tienen menor latencia porque no inspeccionan los paquetes.",
+B: "Pueden entender protocolos de la capa de aplicación (como HTTP) y tomar decisiones basadas en el contenido, no solo en IPs y puertos. [cite: 305]",
+C: "Son inherentemente más seguros porque no se pueden atacar.",
+D: "No requieren configuración, a diferencia de los firewalls."
+}}
+correctAnswer="B"
+correctExplanation="Mientras que los firewalls de filtrado de paquetes operan en las capas 3 y 4 (IP y puertos), los proxies (o firewalls de aplicación) operan en la capa 7. Esto les permite inspeccionar el contenido real de la comunicación (por ejemplo, una URL en una petición HTTP) y aplicar políticas de filtrado mucho más granulares. [cite: 25, 305, 306]"
+incorrectExplanation="Los proxies suelen implicar un mayor procesamiento y latencia que los firewalls de paquetes simples. También son sistemas complejos que pueden tener vulnerabilidades. Su configuración, especialmente para políticas detalladas, puede ser muy compleja. [cite: 299]"
+/>
+<InteractiveQuiz
+question="En la configuración de iptables, ¿qué acción (target) descarta un paquete silenciosamente sin enviar ninguna notificación al origen?"
+options={{
+A: "ACCEPT",
+B: "REJECT",
+C: "DROP",
+D: "LOG"
+}}
+correctAnswer="C"
+correctExplanation="La acción DROP simplemente descarta el paquete, sin enviar ningún tipo de respuesta. Desde la perspectiva del remitente, es como si el paquete se hubiera perdido en la red. Esto es a menudo preferible por seguridad, ya que no revela la presencia del firewall. [cite: 168, 169]"
+incorrectExplanation="ACCEPT permite el paso del paquete. REJECT lo descarta, pero envía un mensaje de error ICMP (como 'port unreachable') al origen. LOG registra la información del paquete pero no decide su destino final. [cite: 167, 170]"
+/>
+<InteractiveQuiz
+question="¿Qué es una dirección IP privada y cuál de los siguientes rangos corresponde a la Clase C privada?"
+options={{
+A: "Una IP única y enrutable en Internet; rango 8.0.0.0 a 8.255.255.255.",
+B: "Una IP para uso interno en una LAN, no enrutable en Internet; rango 192.168.0.0 a 192.168.255.255. [cite: 27, 29]",
+C: "Una IP para uso en redes de broadcast; rango 255.0.0.0 a 255.255.255.255.",
+D: "Una IP reservada para localhost; rango 127.0.0.0 a 127.255.255.255."
+}}
+correctAnswer="B"
+correctExplanation="Las direcciones IP privadas son rangos reservados para su uso en redes locales. El rango definido por RFC 1918 para la Clase C es 192.168.0.0 - 192.168.255.255. Estas direcciones no son enrutables en la Internet pública y requieren NAT para comunicarse con el exterior. [cite: 27, 29]"
+incorrectExplanation="Las otras opciones describen direcciones públicas, de broadcast o de loopback, no el rango de IPs privadas de Clase C. [cite: 30]"
+/>
+<InteractiveQuiz
+question="¿Cuál de las siguientes herramientas NO es un componente del Elastic Stack (anteriormente ELK Stack), usado para la gestión y visualización de logs?"
+options={{
+A: "Elasticsearch",
+B: "Logstash",
+C: "Kibana",
+D: "Grafana"
+}}
+correctAnswer="D"
+correctExplanation="El Elastic Stack está compuesto principalmente por Elasticsearch (motor de búsqueda y análisis), Logstash (ingesta y procesamiento de datos) y Kibana (visualización y cuadros de mando). Beats también es un componente para el envío de datos."
+incorrectExplanation="Grafana es una herramienta de visualización muy popular y potente, y a menudo se utiliza en contextos similares (e incluso junto con Elasticsearch), pero no es un componente central del propio Elastic Stack. Se considera una alternativa o un complemento a Kibana."
+/>
+<InteractiveQuiz
+question="¿Cuál es la diferencia fundamental entre un firewall de contención y un firewall bastión en una arquitectura de seguridad perimetral?"
+options={{
+A: "El de contención es software y el bastión es hardware.",
+B: "El de contención protege la DMZ y el bastión protege la red interna (LAN).",
+C: "El de contención es el firewall externo que da a Internet, y el bastión es el interno que protege la LAN. [cite: 13]",
+D: "El de contención usa NAT y el bastión usa proxies."
+}}
+correctAnswer="C"
+correctExplanation="En una configuración con dos o más firewalls, el de contención es el más externo, el que se enfrenta directamente a Internet. El firewall bastión es el que se encuentra en una capa más interna, protegiendo los activos más críticos de la red local. [cite: 13]"
+incorrectExplanation="La distinción no se basa en si son hardware/software ni en los protocolos que usan, sino en su posición y rol dentro de la arquitectura de defensa en profundidad. [cite: 13]"
+/>
+<InteractiveQuiz
+question="¿Qué tipo de ataque consiste en enviar paquetes con información de origen falsa para que parezca que provienen de una red o equipo diferente?"
+options={{
+A: "Spoofing",
+B: "Sniffing",
+C: "Cracking",
+D: "Phishing"
+}}
+correctAnswer="A"
+correctExplanation="El spoofing es la técnica de suplantación de identidad en la que un atacante falsifica la información de origen de un paquete (como la dirección IP o MAC) para hacerse pasar por otro sistema. Se utiliza en muchos tipos de ataques, como DoS por reflexión o para eludir filtros de firewall. [cite: 52, 53]"
+incorrectExplanation="Sniffing es la escucha pasiva del tráfico. Cracking es la ruptura de sistemas o contraseñas. Phishing es un tipo de ingeniería social para robar credenciales. [cite: 1169]"
+/>
+<InteractiveQuiz
+question="Además de Cisco ASA y Juniper Netscreen, ¿qué otro fabricante de dispositivos de firewall tipo appliance se menciona en el documento?"
+options={{
+A: "Palo Alto Networks",
+B: "Fortinet",
+C: "SonicWALL",
+D: "Sophos"
+}}
+correctAnswer="C"
+correctExplanation="El documento menciona específicamente a SonicWALL como un ejemplo de fabricante que produce firewalls en formato appliance, que son soluciones hardware con su propio sistema operativo embebido. [cite: 16]"
+incorrectExplanation="Aunque Palo Alto, Fortinet y Sophos son importantes fabricantes de firewalls, SonicWALL es el que se nombra explícitamente en la sección correspondiente junto a Cisco y Juniper. [cite: 16]"
+/>
+<InteractiveQuiz
+question="Según el texto, ¿cuál es el principal riesgo de seguridad asociado al protocolo FTP en su configuración estándar?"
+options={{
+A: "Es susceptible a ataques de inyección de comandos.",
+B: "Transmite las credenciales (usuario y contraseña) en texto plano, sin cifrar. [cite: 248, 726]",
+C: "Utiliza puertos predecibles que son fáciles de escanear.",
+D: "No tiene un mecanismo para limitar el número de conexiones simultáneas."
+}}
+correctAnswer="B"
+correctExplanation="El protocolo FTP estándar fue diseñado sin tener en cuenta la seguridad moderna. Su principal debilidad es que toda la sesión de control, incluyendo la autenticación del usuario, se transmite en texto claro, lo que permite a un atacante que capture el tráfico (sniffing) robar fácilmente las credenciales. [cite: 248, 726, 732, 737]"
+incorrectExplanation="Aunque otros problemas pueden existir, la transmisión de credenciales sin cifrar es su fallo de seguridad más fundamental y conocido. [cite: 248]"
+/>
+<InteractiveQuiz
+question="¿Qué es la tecnología SIEM (Security Information and Event Management)?"
+options={{
+A: "Una solución para cifrar los discos duros de los servidores y portátiles.",
+B: "Un dispositivo de hardware que balancea la carga entre múltiples servidores web.",
+C: "Una solución que centraliza y correlaciona logs y eventos de seguridad de múltiples fuentes para detectar amenazas. [cite: 1092, 1094]",
+D: "Un tipo de malware que se propaga a través de la red local."
+}}
+correctAnswer="C"
+correctExplanation="Un SIEM es una tecnología que agrega datos de registro de diversas fuentes (firewalls, servidores, IDS, etc.), los normaliza y los analiza en tiempo real para identificar actividades sospechosas, patrones de ataque e incidentes de seguridad que de otro modo pasarían desapercibidos. [cite: 1092, 1093, 1094]"
+incorrectExplanation="Las otras opciones describen el cifrado de disco, balanceadores de carga y malware, que son tecnologías o conceptos diferentes. [cite: 81]"
+/>
+<InteractiveQuiz
+question="Para bloquear el tráfico ICMP (como el ping) que se dirige a la red interna 10.10.10.0/24, ¿qué regla de iptables sería la más adecuada?"
+options={{
+A: "iptables -A INPUT -p icmp -j DROP",
+B: "iptables -A OUTPUT -p icmp -j DROP",
+C: "iptables -A FORWARD -d 10.10.10.0/24 -p icmp -j DROP",
+D: "iptables -A FORWARD -s 10.10.10.0/24 -p icmp -j DROP"
+}}
+correctAnswer="C"
+correctExplanation="Para bloquear tráfico que atraviesa el firewall (no destinado a él) hacia una red específica, se utiliza la cadena FORWARD. La opción '-d' especifica la red de destino y '-p icmp' filtra por el protocolo. La acción DROP descarta los paquetes. [cite: 241]"
+incorrectExplanation="INPUT es para tráfico destinado al propio firewall. OUTPUT es para tráfico generado por el firewall. La opción '-s' especificaría el origen, no el destino. [cite: 148, 150, 159]"
+/>
+<InteractiveQuiz
+question="¿Cuál es el propósito principal de segmentar una red (por ejemplo, usando VLANs)?"
+options={{
+A: "Aumentar la velocidad de la red al reducir el número de dispositivos.",
+B: "Mejorar la seguridad y el rendimiento al dividir una red grande en subredes más pequeñas y aisladas. [cite: 946]",
+C: "Facilitar la administración al tener una única subred para todos los dispositivos.",
+D: "Garantizar que todos los dispositivos tengan la misma dirección IP."
+}}
+correctAnswer="B"
+correctExplanation="La segmentación de redes es una práctica de seguridad fundamental. Al separar sistemas en diferentes zonas (por ejemplo, usuarios, servidores, IoT), se limita el alcance de un posible ataque. Si un segmento es comprometido, el atacante no tiene acceso directo al resto de la red. También reduce el tráfico de broadcast y mejora el rendimiento. [cite: 946, 947]"
+incorrectExplanation="La segmentación no busca aumentar la velocidad por reducir dispositivos, sino por organizar el tráfico. No simplifica la administración a una sola subred, sino que la organiza lógicamente. Y definitivamente no asigna la misma IP a todos. [cite: 946]"
+/>
+<InteractiveQuiz
+question="Un atacante compromete un servidor web en la DMZ. ¿Qué medida de seguridad impediría que el atacante acceda directamente a la red interna (LAN) desde ese servidor?"
+options={{
+A: "Una regla de firewall que permite todo el tráfico desde la DMZ a la LAN.",
+B: "Una regla de firewall que bloquea las conexiones que se originan en la DMZ y se destinan a la LAN. [cite: 925, 927]",
+C: "El uso de NAT en el firewall externo.",
+D: "La instalación de un antivirus en el servidor web."
+}}
+correctAnswer="B"
+correctExplanation="Una regla fundamental en la configuración de una DMZ es denegar por defecto todo el tráfico que se inicia desde la DMZ hacia la red interna. Esto crea una barrera crucial que dificulta enormemente que un atacante, tras comprometer un servidor público, pueda pivotar hacia los sistemas internos más valiosos. [cite: 925, 927, 930]"
+incorrectExplanation="Permitir el tráfico (A) sería un grave error de configuración. NAT (C) no impide el acceso, solo traduce direcciones. Un antivirus (D) es una medida de seguridad en el host, pero la regla de firewall es la que controla el flujo de red entre segmentos. [cite: 930]"
+/>
+<InteractiveQuiz
+question="¿Qué tipo de filtrado de firewall examina el contenido de los datos en la capa de aplicación?"
+options={{
+A: "Filtrado a nivel de paquete de red",
+B: "Filtrado a nivel de circuito",
+C: "Filtrado a nivel de aplicación (proxy)",
+D: "Filtrado basado en estado (Stateful)"
+}}
+correctAnswer="C"
+correctExplanation="El filtrado a nivel de aplicación, también conocido como filtrado proxy, opera en la Capa 7 del modelo OSI. A diferencia de otros tipos que solo miran cabeceras de red o transporte, este puede inspeccionar el contenido real de la comunicación, como una URL o el cuerpo de un correo. [cite: 25]"
+incorrectExplanation="El filtrado de paquetes se basa en la cabecera IP (Capa 3). El filtrado de circuito se basa en las cabeceras TCP/UDP (Capa 4). El filtrado Stateful rastrea el estado de las conexiones pero no necesariamente inspecciona el contenido de la aplicación. [cite: 23, 24]"
+/>
+<InteractiveQuiz
+question="En el contexto de ataques de denegación de servicio por reflexión/amplificación, ¿por qué se utiliza el protocolo DNS?"
+options={{
+A: "Porque las peticiones DNS son muy grandes y las respuestas muy pequeñas, concentrando el ancho de banda en el atacante.",
+B: "Porque es fácil falsificar la IP de origen en una petición DNS y la respuesta del servidor puede ser mucho más grande que la petición, amplificando el ataque. [cite: 1269, 1270]",
+C: "Porque los servidores DNS no tienen mecanismos de seguridad y aceptan cualquier conexión.",
+D: "Porque DNS utiliza TCP, lo que permite agotar las conexiones del servidor víctima con un ataque SYN Flood."
+}}
+correctAnswer="B"
+correctExplanation="En un ataque de amplificación de DNS, el atacante envía una petición a un servidor DNS recursivo abierto usando la dirección IP falsificada de la víctima. Pide la resolución de un dominio que genera una respuesta muy grande. El servidor envía esta respuesta grande a la víctima. El atacante logra así amplificar el volumen de tráfico dirigido al objetivo. [cite: 1269, 1270, 1271]"
+incorrectExplanation="Es al contrario, la petición es pequeña y la respuesta es grande. Aunque algunos servidores DNS pueden estar mal configurados, tienen mecanismos de seguridad. DNS utiliza principalmente UDP, no TCP, para las consultas estándar. [cite: 1270]"
+/>
+<InteractiveQuiz
+question="Al configurar Squid, ¿qué comando se puede utilizar para comprobar la sintaxis del archivo de configuración sin necesidad de reiniciar el servicio?"
+options={{
+A: "squid -v",
+B: "squid -z",
+C: "squid -k parse",
+D: "squid -l /var/log/squid/squid.log"
+}}
+correctAnswer="C"
+correctExplanation="El comando 'squid -k parse' lee el archivo de configuración, verifica si hay errores de sintaxis y los reporta en la salida estándar. Es un paso muy útil para validar los cambios antes de intentar aplicar una nueva configuración, evitando así posibles caídas del servicio. [cite: 374, 375]"
+incorrectExplanation="'squid -v' muestra la versión. 'squid -z' crea las carpetas de caché. '-l' permite especificar un archivo de log diferente. [cite: 344]"
+/>
+<InteractiveQuiz
+question="¿Qué técnica de ataque de red aprovecha el protocolo DHCP para asignar al cliente una puerta de enlace y un servidor DNS maliciosos?"
+options={{
+A: "ARP Poisoning",
+B: "ICMP Redirect",
+C: "DHCP Spoofing",
+D: "SYN Flood"
+}}
+correctAnswer="C"
+correctExplanation="En un ataque de DHCP Spoofing, el atacante despliega un servidor DHCP falso en la red. Este servidor malicioso responde a las peticiones de los clientes antes que el servidor legítimo, asignándoles una configuración de red (IP, máscara, gateway, DNS) que redirige su tráfico a través del atacante. [cite: 847, 848, 849]"
+incorrectExplanation="ARP Poisoning manipula la caché ARP. ICMP Redirect manipula la tabla de enrutamiento mediante mensajes ICMP. SYN Flood es un ataque de DoS a nivel de TCP. [cite: 797, 832, 1203]"
+/>
+<InteractiveQuiz
+question="¿Cuál es la principal desventaja de implementar la seguridad en redes exclusivamente a través de un router, según la documentación?"
+options={{
+A: "Los routers son demasiado caros y difíciles de configurar.",
+B: "Los routers no están diseñados específicamente para ser firewalls y sus características de seguridad son más reducidas que las de un dispositivo dedicado. [cite: 937]",
+C: "Los routers solo pueden filtrar tráfico HTTP y no otros protocolos.",
+D: "Los routers no pueden realizar Traducción de Direcciones de Red (NAT)."
+}}
+correctAnswer="B"
+correctExplanation="El documento advierte que, aunque muchos routers ofrecen funcionalidades de DMZ o firewall, no es recomendable depender exclusivamente de ellos para la protección de la red. Esto se debe a que su propósito principal es el enrutamiento de paquetes, y no han sido diseñados con el mismo nivel de especialización y robustez en seguridad que un firewall dedicado. [cite: 936, 937]"
+incorrectExplanation="Si bien la configuración puede ser compleja, el argumento principal es su falta de especialización en seguridad. Los routers modernos pueden filtrar diversos protocolos y la mayoría realiza NAT. [cite: 937]"
+/>
+<InteractiveQuiz
+question="Según el texto, la herramienta nmap es ampliamente utilizada por los atacantes en la fase de reconocimiento para:"
+options={{
+A: "Capturar contraseñas que viajan por la red en texto plano.",
+B: "Determinar qué servicios ofrece una máquina víctima y a través de qué aplicaciones. [cite: 1227]",
+C: "Lanzar un ataque de denegación de servicio contra un servidor.",
+D: "Crear un túnel cifrado para ocultar su actividad."
+}}
+correctAnswer="B"
+correctExplanation="Nmap es un escáner de puertos y una herramienta de descubrimiento de redes. Se utiliza en las fases iniciales de un ataque para identificar qué hosts están activos en una red, qué puertos tienen abiertos y qué servicios y versiones de software se están ejecutando en esos puertos, lo que es crucial para encontrar posibles vulnerabilidades. [cite: 1199, 1227, 1229]"
+incorrectExplanation="La captura de contraseñas se hace con sniffers como tcpdump o Wireshark. Los ataques DoS y los túneles cifrados se realizan con otras herramientas especializadas. [cite: 506]"
+/>
+<InteractiveQuiz
+question="¿Cuál de las siguientes es una medida de seguridad esencial para protegerse contra ataques Man-in-the-Middle (MitM) en redes locales?"
+options={{
+A: "Desactivar el firewall del sistema operativo.",
+B: "Usar direcciones IP estáticas en todos los dispositivos.",
+C: "La encriptación de las comunicaciones y la autenticación de los extremos. [cite: 1173]",
+D: "Aumentar el tamaño de la caché ARP."
+}}
+correctAnswer="C"
+correctExplanation="Las dos contramedidas fundamentales contra MitM son la encriptación y la autenticación. La encriptación (usando protocolos como TLS o SSH) protege la confidencialidad, impidiendo que el atacante pueda leer el tráfico. La autenticación de los extremos (verificando certificados, por ejemplo) asegura que las partes se están comunicando con quien creen y no con un impostor. [cite: 1173]"
+incorrectExplanation="Desactivar el firewall es contraproducente. Las IPs estáticas y el tamaño de la caché ARP no impiden el envenenamiento ni la interceptación. [cite: 809]"
+/>
